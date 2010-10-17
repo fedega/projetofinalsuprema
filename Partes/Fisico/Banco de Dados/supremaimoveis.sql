@@ -4,7 +4,7 @@ Source Host: localhost
 Source Database: supremaimoveis
 Target Host: localhost
 Target Database: supremaimoveis
-Date: 16/10/2010 15:28:30
+Date: 16/10/2010 18:33:51
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,11 +27,11 @@ CREATE TABLE `tbl_clausula` (
   `Cod_Clausula` int(11) NOT NULL AUTO_INCREMENT,
   `Tipo` int(11) NOT NULL,
   `Descricao` varchar(655) DEFAULT NULL,
-  `tbl_contrato_Cod_Contrato` int(11) DEFAULT NULL,
+  `Cod_Contrato` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Clausula`),
   KEY `FK_tbl_clausula_tbl_tipo_causula_Cod_Tipo` (`Tipo`),
-  KEY `tbl_contrato_Cod_Contrato` (`tbl_contrato_Cod_Contrato`),
-  CONSTRAINT `tbl_clausula_ibfk_1` FOREIGN KEY (`tbl_contrato_Cod_Contrato`) REFERENCES `tbl_contrato` (`Cod_Contrato`),
+  KEY `Cod_Contrato` (`Cod_Contrato`),
+  CONSTRAINT `tbl_clausula_ibfk_1` FOREIGN KEY (`Cod_Contrato`) REFERENCES `tbl_contrato` (`Cod_Contrato`),
   CONSTRAINT `FK_tbl_clausula_tbl_tipo_causula_Cod_Tipo` FOREIGN KEY (`Tipo`) REFERENCES `tbl_tipo_causula` (`Cod_Tipo`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
@@ -72,19 +72,19 @@ CREATE TABLE `tbl_cliente` (
 -- ----------------------------
 CREATE TABLE `tbl_contrato` (
   `Cod_Contrato` int(11) NOT NULL AUTO_INCREMENT,
-  `tbl_funcionario_Cod_Funcionario` int(11) DEFAULT NULL,
-  `tbl_cliente_Cod_Cliente` int(11) DEFAULT NULL,
-  `tbl_imovel_Cod_Imovel` int(11) DEFAULT NULL,
-  `tbl_fiador_Cod_Fiador` int(11) DEFAULT NULL,
+  `Cod_Funcionario` int(11) DEFAULT NULL,
+  `Cod_Cliente` int(11) DEFAULT NULL,
+  `Cod_Imovel` int(11) DEFAULT NULL,
+  `Cod_Fiador` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Contrato`),
-  KEY `tbl_funcionario_Cod_Funcionario` (`tbl_funcionario_Cod_Funcionario`),
-  KEY `tbl_cliente_Cod_Cliente` (`tbl_cliente_Cod_Cliente`),
-  KEY `tbl_imovel_Cod_Imovel` (`tbl_imovel_Cod_Imovel`),
-  KEY `tbl_fiador_Cod_Fiador` (`tbl_fiador_Cod_Fiador`),
-  CONSTRAINT `tbl_contrato_ibfk_4` FOREIGN KEY (`tbl_fiador_Cod_Fiador`) REFERENCES `tbl_fiador` (`Cod_Fiador`),
-  CONSTRAINT `tbl_contrato_ibfk_1` FOREIGN KEY (`tbl_funcionario_Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
-  CONSTRAINT `tbl_contrato_ibfk_2` FOREIGN KEY (`tbl_cliente_Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
-  CONSTRAINT `tbl_contrato_ibfk_3` FOREIGN KEY (`tbl_imovel_Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`)
+  KEY `Cod_Funcionario` (`Cod_Funcionario`),
+  KEY `Cod_Cliente` (`Cod_Cliente`),
+  KEY `Cod_Imovel` (`Cod_Imovel`),
+  KEY `Cod_Fiador` (`Cod_Fiador`),
+  CONSTRAINT `tbl_contrato_ibfk_4` FOREIGN KEY (`Cod_Fiador`) REFERENCES `tbl_fiador` (`Cod_Fiador`),
+  CONSTRAINT `tbl_contrato_ibfk_1` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_contrato_ibfk_2` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
+  CONSTRAINT `tbl_contrato_ibfk_3` FOREIGN KEY (`Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
@@ -129,19 +129,19 @@ CREATE TABLE `tbl_estado` (
 -- ----------------------------
 CREATE TABLE `tbl_fiador` (
   `Cod_Fiador` int(11) NOT NULL AUTO_INCREMENT,
-  `tbl_orgaoemissor_Cod_Orgao` int(11) DEFAULT NULL,
-  `tbl_estado_Cod_Estado` int(11) DEFAULT NULL,
-  `tbl_cidade_Cod_Cidade` int(11) DEFAULT NULL,
-  `tbl_cliente_Cod_Cliente` int(11) DEFAULT NULL,
+  `Cod_Orgao` int(11) DEFAULT NULL,
+  `Cod_Estado` int(11) DEFAULT NULL,
+  `Cod_Cidade` int(11) DEFAULT NULL,
+  `Cod_Cliente` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Fiador`),
-  KEY `tbl_estado_Cod_Estado` (`tbl_estado_Cod_Estado`),
-  KEY `tbl_cidade_Cod_Cidade` (`tbl_cidade_Cod_Cidade`),
-  KEY `tbl_cliente_Cod_Cliente` (`tbl_cliente_Cod_Cliente`),
-  KEY `tbl_orgaoemissor_Cod_Orgao` (`tbl_orgaoemissor_Cod_Orgao`),
-  CONSTRAINT `tbl_fiador_ibfk_4` FOREIGN KEY (`tbl_orgaoemissor_Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`),
-  CONSTRAINT `tbl_fiador_ibfk_1` FOREIGN KEY (`tbl_estado_Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`),
-  CONSTRAINT `tbl_fiador_ibfk_2` FOREIGN KEY (`tbl_cidade_Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
-  CONSTRAINT `tbl_fiador_ibfk_3` FOREIGN KEY (`tbl_cliente_Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
+  KEY `Cod_Estado` (`Cod_Estado`),
+  KEY `Cod_Cidade` (`Cod_Cidade`),
+  KEY `Cod_Cliente` (`Cod_Cliente`),
+  KEY `Cod_Orgao` (`Cod_Orgao`),
+  CONSTRAINT `tbl_fiador_ibfk_4` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`),
+  CONSTRAINT `tbl_fiador_ibfk_1` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`),
+  CONSTRAINT `tbl_fiador_ibfk_2` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
+  CONSTRAINT `tbl_fiador_ibfk_3` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
@@ -150,16 +150,25 @@ CREATE TABLE `tbl_fiador` (
 CREATE TABLE `tbl_funcionario` (
   `Cod_Funcionario` int(11) NOT NULL AUTO_INCREMENT,
   `Nome` varchar(40) NOT NULL,
-  `tbl_cidade_Cod_Cidade` int(11) DEFAULT NULL,
-  `tbl_estado_Cod_Estado` int(11) DEFAULT NULL,
-  `tbl_orgaoemissor_Cod_Orgao` int(11) DEFAULT NULL,
+  `Cod_Cidade` int(11) DEFAULT NULL,
+  `Cod_Estado` int(11) DEFAULT NULL,
+  `Cod_Orgao` int(11) DEFAULT NULL,
+  `Nome_U` varchar(20) NOT NULL,
+  `Senha_U` varchar(20) NOT NULL,
+  `Endereco` varchar(40) DEFAULT NULL,
+  `Tel_Fixo` int(11) DEFAULT NULL,
+  `Tel_Cel` int(11) DEFAULT NULL,
+  `CPF` int(11) DEFAULT NULL,
+  `Data_Nasc` date DEFAULT NULL,
+  `CRECI` int(11) DEFAULT NULL,
+  `Nivel_Controle` int(11) NOT NULL,
   PRIMARY KEY (`Cod_Funcionario`),
-  KEY `tbl_cidade_Cod_Cidade` (`tbl_cidade_Cod_Cidade`),
-  KEY `tbl_estado_Cod_Estado` (`tbl_estado_Cod_Estado`),
-  KEY `tbl_orgaoemissor_Cod_Orgao` (`tbl_orgaoemissor_Cod_Orgao`),
-  CONSTRAINT `tbl_funcionario_ibfk_3` FOREIGN KEY (`tbl_orgaoemissor_Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`),
-  CONSTRAINT `tbl_funcionario_ibfk_1` FOREIGN KEY (`tbl_cidade_Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
-  CONSTRAINT `tbl_funcionario_ibfk_2` FOREIGN KEY (`tbl_estado_Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`)
+  KEY `Cod_Cidade` (`Cod_Cidade`),
+  KEY `Cod_Estado` (`Cod_Estado`),
+  KEY `Cod_Orgao` (`Cod_Orgao`),
+  CONSTRAINT `tbl_funcionario_ibfk_3` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`),
+  CONSTRAINT `tbl_funcionario_ibfk_1` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
+  CONSTRAINT `tbl_funcionario_ibfk_2` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
@@ -167,19 +176,36 @@ CREATE TABLE `tbl_funcionario` (
 -- ----------------------------
 CREATE TABLE `tbl_imovel` (
   `Cod_Imovel` int(11) NOT NULL AUTO_INCREMENT,
-  `tbl_cliente_Cod_Cliente` int(11) DEFAULT NULL,
-  `tbl_funcionario_Cod_Funcionario` int(11) DEFAULT NULL,
-  `tbl_situacao_Cod_Situacao` int(11) DEFAULT NULL,
-  `tbl_destinacao_Cod_destinacao` int(11) DEFAULT NULL,
+  `Cod_Cliente` int(11) DEFAULT NULL,
+  `Cod_Funcionario` int(11) DEFAULT NULL,
+  `Cod_Situacao` int(11) DEFAULT NULL,
+  `Cod_destinacao` int(11) DEFAULT NULL,
+  `Endereco` varchar(40) DEFAULT NULL,
+  `CEP` int(11) DEFAULT NULL,
+  `Bairro` varchar(20) DEFAULT NULL,
+  `Cod_Estado` int(11) DEFAULT NULL,
+  `Cod_Cidade` int(11) DEFAULT NULL,
+  `N_Quartos` int(11) DEFAULT NULL,
+  `N_Suites` int(11) DEFAULT NULL,
+  `N_Banheiros` int(11) DEFAULT NULL,
+  `N_Salas` int(11) DEFAULT NULL,
+  `N_Cozinhas` int(11) DEFAULT NULL,
+  `Dep_Empregada` bit(1) DEFAULT NULL,
+  `Garagem` bit(1) DEFAULT NULL,
+  `Mts_Quadrados` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Imovel`),
-  KEY `tbl_cliente_Cod_Cliente` (`tbl_cliente_Cod_Cliente`),
-  KEY `tbl_funcionario_Cod_Funcionario` (`tbl_funcionario_Cod_Funcionario`),
-  KEY `tbl_situacao_Cod_Situacao` (`tbl_situacao_Cod_Situacao`),
-  KEY `tbl_destinacao_Cod_destinacao` (`tbl_destinacao_Cod_destinacao`),
-  CONSTRAINT `tbl_imovel_ibfk_4` FOREIGN KEY (`tbl_destinacao_Cod_destinacao`) REFERENCES `tbl_destinacao` (`Cod_destinacao`),
-  CONSTRAINT `tbl_imovel_ibfk_1` FOREIGN KEY (`tbl_cliente_Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
-  CONSTRAINT `tbl_imovel_ibfk_2` FOREIGN KEY (`tbl_funcionario_Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
-  CONSTRAINT `tbl_imovel_ibfk_3` FOREIGN KEY (`tbl_situacao_Cod_Situacao`) REFERENCES `tbl_situacao` (`Cod_Situacao`)
+  KEY `Cod_Cliente` (`Cod_Cliente`),
+  KEY `Cod_Funcionario` (`Cod_Funcionario`),
+  KEY `Cod_Situacao` (`Cod_Situacao`),
+  KEY `Cod_destinacao` (`Cod_destinacao`),
+  KEY `Cod_Estado` (`Cod_Estado`),
+  KEY `Cod_Cidade` (`Cod_Cidade`),
+  CONSTRAINT `tbl_imovel_ibfk_6` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
+  CONSTRAINT `tbl_imovel_ibfk_1` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
+  CONSTRAINT `tbl_imovel_ibfk_2` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_imovel_ibfk_3` FOREIGN KEY (`Cod_Situacao`) REFERENCES `tbl_situacao` (`Cod_Situacao`),
+  CONSTRAINT `tbl_imovel_ibfk_4` FOREIGN KEY (`Cod_destinacao`) REFERENCES `tbl_destinacao` (`Cod_destinacao`),
+  CONSTRAINT `tbl_imovel_ibfk_5` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
@@ -218,12 +244,17 @@ CREATE TABLE `tbl_situacao` (
 -- ----------------------------
 CREATE TABLE `tbl_solicitacoes` (
   `Cod_Solicitacoes` int(11) NOT NULL AUTO_INCREMENT,
-  `Operacao` varchar(255) DEFAULT NULL,
   `Descricao` varchar(255) DEFAULT NULL,
-  `tbl_funcionario_Cod_Funcionario` int(11) DEFAULT NULL,
+  `Cod_Funcionario` int(11) DEFAULT NULL,
+  `Tipo_Solicitacao` int(11) DEFAULT NULL,
+  `Cod_Situacao` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Solicitacoes`),
-  KEY `tbl_funcionario_Cod_Funcionario` (`tbl_funcionario_Cod_Funcionario`),
-  CONSTRAINT `tbl_solicitacoes_ibfk_1` FOREIGN KEY (`tbl_funcionario_Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`)
+  KEY `Cod_Funcionario` (`Cod_Funcionario`),
+  KEY `Tipo_Solicitacao` (`Tipo_Solicitacao`),
+  KEY `Cod_Situacao` (`Cod_Situacao`),
+  CONSTRAINT `tbl_solicitacoes_ibfk_3` FOREIGN KEY (`Cod_Situacao`) REFERENCES `tbl_situacao` (`Cod_Situacao`),
+  CONSTRAINT `tbl_solicitacoes_ibfk_1` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_solicitacoes_ibfk_2` FOREIGN KEY (`Tipo_Solicitacao`) REFERENCES `tbl_tipo_solicitacao` (`Cod_Solicitacao`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
@@ -254,12 +285,44 @@ CREATE TABLE `tbl_tipo_doc` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
--- Table structure for tlb_aluguel
+-- Table structure for tbl_tipo_solicitacao
 -- ----------------------------
-CREATE TABLE `tlb_aluguel` (
-  `Cod_Aluguel` int(11) NOT NULL AUTO_INCREMENT,
-  PRIMARY KEY (`Cod_Aluguel`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+CREATE TABLE `tbl_tipo_solicitacao` (
+  `Cod_Solicitacao` int(11) NOT NULL,
+  `Descricao` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`Cod_Solicitacao`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for tbl_venda
+-- ----------------------------
+CREATE TABLE `tbl_venda` (
+  `Cod_Venda` int(11) NOT NULL,
+  `Data` varchar(20) DEFAULT NULL,
+  `Cod_Imovel` int(11) DEFAULT NULL,
+  `Cod_Funcionario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Cod_Venda`),
+  KEY `Cod_Imovel` (`Cod_Imovel`),
+  KEY `Cod_Funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_venda_ibfk_2` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_venda_ibfk_1` FOREIGN KEY (`Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for tbl_visita
+-- ----------------------------
+CREATE TABLE `tbl_visita` (
+  `Cod_Visita` int(11) NOT NULL,
+  `Data` date DEFAULT NULL,
+  `Hora` datetime DEFAULT NULL,
+  `Cod_Imovel` int(11) DEFAULT NULL,
+  `Cod_Funcionario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Cod_Visita`),
+  KEY `Cod_Imovel` (`Cod_Imovel`),
+  KEY `Cod_Funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_visita_ibfk_2` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_visita_ibfk_1` FOREIGN KEY (`Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records 
