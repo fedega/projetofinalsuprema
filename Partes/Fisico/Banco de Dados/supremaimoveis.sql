@@ -4,10 +4,31 @@ Source Host: localhost
 Source Database: supremaimoveis
 Target Host: localhost
 Target Database: supremaimoveis
-Date: 16/10/2010 18:33:51
+Date: 19/10/2010 13:49:01
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+-- ----------------------------
+-- Table structure for tbl_aluguel
+-- ----------------------------
+CREATE TABLE `tbl_aluguel` (
+  `Cod_Aluguel` int(11) NOT NULL,
+  `Data` date DEFAULT NULL,
+  `Cod_Imovel` int(11) DEFAULT NULL,
+  `Cod_Cliente` int(11) DEFAULT NULL,
+  `Cod_Fiador` int(11) DEFAULT NULL,
+  `Cod_Funcionario` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Cod_Aluguel`),
+  KEY `Cod_Imovel` (`Cod_Imovel`),
+  KEY `Cod_Cliente` (`Cod_Cliente`),
+  KEY `Cod_Fiador` (`Cod_Fiador`),
+  KEY `Cod_Funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_aluguel_ibfk_4` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
+  CONSTRAINT `tbl_aluguel_ibfk_1` FOREIGN KEY (`Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`),
+  CONSTRAINT `tbl_aluguel_ibfk_2` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
+  CONSTRAINT `tbl_aluguel_ibfk_3` FOREIGN KEY (`Cod_Fiador`) REFERENCES `tbl_fiador` (`Cod_Fiador`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 -- ----------------------------
 -- Table structure for tbl_cidade
 -- ----------------------------
@@ -88,6 +109,20 @@ CREATE TABLE `tbl_contrato` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
+-- Table structure for tbl_despesas
+-- ----------------------------
+CREATE TABLE `tbl_despesas` (
+  `Cod_Aluguel` int(11) NOT NULL,
+  `Data` varchar(20) DEFAULT NULL,
+  `Valor` int(11) NOT NULL,
+  `Cod_Despesa` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Cod_Aluguel`),
+  KEY `Cod_Despesa` (`Cod_Despesa`),
+  CONSTRAINT `tbl_despesas_ibfk_2` FOREIGN KEY (`Cod_Despesa`) REFERENCES `tbl_tipo_despesas` (`Cod_Despesa`),
+  CONSTRAINT `tbl_despesas_ibfk_1` FOREIGN KEY (`Cod_Aluguel`) REFERENCES `tbl_aluguel` (`Cod_Aluguel`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
 -- Table structure for tbl_destinacao
 -- ----------------------------
 CREATE TABLE `tbl_destinacao` (
@@ -133,15 +168,24 @@ CREATE TABLE `tbl_fiador` (
   `Cod_Estado` int(11) DEFAULT NULL,
   `Cod_Cidade` int(11) DEFAULT NULL,
   `Cod_Cliente` int(11) DEFAULT NULL,
+  `Nome` varchar(40) NOT NULL,
+  `Data_Nasc` date NOT NULL,
+  `Nome_U` varchar(16) NOT NULL,
+  `Senha_U` varchar(40) NOT NULL,
+  `Nacionalidaade` varchar(30) NOT NULL,
+  `Endereco` varchar(200) NOT NULL,
+  `Tel_Fixo` int(11) DEFAULT NULL,
+  `Tel_Cel` int(11) DEFAULT NULL,
+  `Tel_Comercial` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Fiador`),
   KEY `Cod_Estado` (`Cod_Estado`),
   KEY `Cod_Cidade` (`Cod_Cidade`),
   KEY `Cod_Cliente` (`Cod_Cliente`),
   KEY `Cod_Orgao` (`Cod_Orgao`),
-  CONSTRAINT `tbl_fiador_ibfk_4` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`),
   CONSTRAINT `tbl_fiador_ibfk_1` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`),
   CONSTRAINT `tbl_fiador_ibfk_2` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
-  CONSTRAINT `tbl_fiador_ibfk_3` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
+  CONSTRAINT `tbl_fiador_ibfk_3` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
+  CONSTRAINT `tbl_fiador_ibfk_4` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
@@ -273,6 +317,15 @@ CREATE TABLE `tbl_tipo_cliente` (
   `Cod_Tipo_Cliente` int(11) NOT NULL,
   `Descricao` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`Cod_Tipo_Cliente`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Table structure for tbl_tipo_despesas
+-- ----------------------------
+CREATE TABLE `tbl_tipo_despesas` (
+  `Cod_Despesa` int(11) NOT NULL,
+  `Descricao` varchar(20) NOT NULL,
+  PRIMARY KEY (`Cod_Despesa`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
