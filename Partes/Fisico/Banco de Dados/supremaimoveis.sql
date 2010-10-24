@@ -4,7 +4,7 @@ Source Host: localhost
 Source Database: supremaimoveis
 Target Host: localhost
 Target Database: supremaimoveis
-Date: 19/10/2010 13:49:01
+Date: 24/10/2010 14:15:44
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,7 +27,7 @@ CREATE TABLE `tbl_aluguel` (
   CONSTRAINT `tbl_aluguel_ibfk_1` FOREIGN KEY (`Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`),
   CONSTRAINT `tbl_aluguel_ibfk_2` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
   CONSTRAINT `tbl_aluguel_ibfk_3` FOREIGN KEY (`Cod_Fiador`) REFERENCES `tbl_fiador` (`Cod_Fiador`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_cidade
@@ -112,15 +112,20 @@ CREATE TABLE `tbl_contrato` (
 -- Table structure for tbl_despesas
 -- ----------------------------
 CREATE TABLE `tbl_despesas` (
-  `Cod_Aluguel` int(11) NOT NULL,
+  `Cod_Despesas` int(11) NOT NULL,
   `Data` varchar(20) DEFAULT NULL,
   `Valor` int(11) NOT NULL,
-  `Cod_Despesa` int(11) DEFAULT NULL,
-  PRIMARY KEY (`Cod_Aluguel`),
-  KEY `Cod_Despesa` (`Cod_Despesa`),
-  CONSTRAINT `tbl_despesas_ibfk_2` FOREIGN KEY (`Cod_Despesa`) REFERENCES `tbl_tipo_despesas` (`Cod_Despesa`),
-  CONSTRAINT `tbl_despesas_ibfk_1` FOREIGN KEY (`Cod_Aluguel`) REFERENCES `tbl_aluguel` (`Cod_Aluguel`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Tipo_Despesas` int(11) DEFAULT NULL,
+  `Cod_Aluguel` int(11) NOT NULL,
+  `tbl_situacao_Cod_Situacao` int(11) DEFAULT NULL,
+  PRIMARY KEY (`Cod_Despesas`),
+  KEY `Cod_Aluguel` (`Cod_Aluguel`),
+  KEY `Tipo_Despesas` (`Tipo_Despesas`),
+  KEY `tbl_situacao_Cod_Situacao` (`tbl_situacao_Cod_Situacao`),
+  CONSTRAINT `tbl_despesas_ibfk_3` FOREIGN KEY (`tbl_situacao_Cod_Situacao`) REFERENCES `tbl_situacao` (`Cod_Situacao`),
+  CONSTRAINT `tbl_despesas_ibfk_1` FOREIGN KEY (`Cod_Aluguel`) REFERENCES `tbl_aluguel` (`Cod_Aluguel`),
+  CONSTRAINT `tbl_despesas_ibfk_2` FOREIGN KEY (`Tipo_Despesas`) REFERENCES `tbl_tipo_despesas` (`Cod_Despesa`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_destinacao
@@ -129,7 +134,7 @@ CREATE TABLE `tbl_destinacao` (
   `Cod_destinacao` int(11) NOT NULL,
   `Destinacao` varchar(20) NOT NULL,
   PRIMARY KEY (`Cod_destinacao`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_documentacao
@@ -147,7 +152,7 @@ CREATE TABLE `tbl_documentacao` (
   CONSTRAINT `tbl_documentacao_ibfk_3` FOREIGN KEY (`Cod_Fiador`) REFERENCES `tbl_fiador` (`Cod_Fiador`),
   CONSTRAINT `tbl_documentacao_ibfk_1` FOREIGN KEY (`Tipo_Doc`) REFERENCES `tbl_tipo_doc` (`Cod_Doc`),
   CONSTRAINT `tbl_documentacao_ibfk_2` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_estado
@@ -182,10 +187,10 @@ CREATE TABLE `tbl_fiador` (
   KEY `Cod_Cidade` (`Cod_Cidade`),
   KEY `Cod_Cliente` (`Cod_Cliente`),
   KEY `Cod_Orgao` (`Cod_Orgao`),
+  CONSTRAINT `tbl_fiador_ibfk_4` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`),
   CONSTRAINT `tbl_fiador_ibfk_1` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`),
   CONSTRAINT `tbl_fiador_ibfk_2` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
-  CONSTRAINT `tbl_fiador_ibfk_3` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`),
-  CONSTRAINT `tbl_fiador_ibfk_4` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`)
+  CONSTRAINT `tbl_fiador_ibfk_3` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
@@ -281,7 +286,7 @@ CREATE TABLE `tbl_situacao` (
   `Cod_Situacao` int(11) NOT NULL,
   `Situacao` varchar(20) NOT NULL,
   PRIMARY KEY (`Cod_Situacao`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_solicitacoes
@@ -317,7 +322,7 @@ CREATE TABLE `tbl_tipo_cliente` (
   `Cod_Tipo_Cliente` int(11) NOT NULL,
   `Descricao` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`Cod_Tipo_Cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_tipo_despesas
@@ -326,7 +331,7 @@ CREATE TABLE `tbl_tipo_despesas` (
   `Cod_Despesa` int(11) NOT NULL,
   `Descricao` varchar(20) NOT NULL,
   PRIMARY KEY (`Cod_Despesa`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_tipo_doc
@@ -335,7 +340,7 @@ CREATE TABLE `tbl_tipo_doc` (
   `Cod_Doc` int(11) NOT NULL,
   `Descricao` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`Cod_Doc`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_tipo_solicitacao
@@ -344,7 +349,7 @@ CREATE TABLE `tbl_tipo_solicitacao` (
   `Cod_Solicitacao` int(11) NOT NULL,
   `Descricao` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`Cod_Solicitacao`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_venda
@@ -359,7 +364,7 @@ CREATE TABLE `tbl_venda` (
   KEY `Cod_Funcionario` (`Cod_Funcionario`),
   CONSTRAINT `tbl_venda_ibfk_2` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
   CONSTRAINT `tbl_venda_ibfk_1` FOREIGN KEY (`Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_visita
@@ -375,7 +380,7 @@ CREATE TABLE `tbl_visita` (
   KEY `Cod_Funcionario` (`Cod_Funcionario`),
   CONSTRAINT `tbl_visita_ibfk_2` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`),
   CONSTRAINT `tbl_visita_ibfk_1` FOREIGN KEY (`Cod_Imovel`) REFERENCES `tbl_imovel` (`Cod_Imovel`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records 
