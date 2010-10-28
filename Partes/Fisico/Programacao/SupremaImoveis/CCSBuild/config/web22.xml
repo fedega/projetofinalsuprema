@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd">
+<!--
+//webApp configuration head @1-19C83C1D
+-->
+<web-app>
+
+  <servlet>
+    <servlet-name>ClientI18N</servlet-name>
+    <servlet-class>com.codecharge.GetFileServlet</servlet-class>
+  </servlet>
+
+<!--
+
+//End webApp configuration head
+
+//siteInit head @2-5315A22A
+-->
+  <servlet>
+    <servlet-name>siteInit</servlet-name>
+    <servlet-class>com.codecharge.InitServlet</servlet-class>
+
+        <init-param>
+            <param-name>configuration.file</param-name>
+            <param-value>/WEB-INF/site.properties</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>languages.file</param-name>
+            <param-value>/WEB-INF/languages.properties</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>localesInfo.file</param-name>
+            <param-value>/WEB-INF/localesInfo.properties</param-value>
+        </init-param>
+<!--
+
+//End siteInit head
+
+//server specific parameters @3-09626FDE
+-->
+
+        <init-param>
+            <param-name>controllerHandlerClassName</param-name>
+            <param-value>com.codecharge.util.DefaultControllerHandler</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>usedUnpackedWarFile</param-name>
+            <param-value>false</param-value>
+        </init-param>
+
+        <init-param>
+            <param-name>convertReturnLinkToAbsolute</param-name>
+            <param-value>false</param-value>
+        </init-param>
+<!--
+
+//End server specific parameters
+
+//siteInit tail @5-C39F803C
+-->
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+
+<!--
+
+//End siteInit tail
+
+//Servlet mapping @6-E7528807
+-->
+  <servlet-mapping>
+    <servlet-name>ClientI18N</servlet-name>
+    <url-pattern>/ClientI18N.jsp</url-pattern>
+  </servlet-mapping>
+<!--
+
+//End Servlet mapping
+
+//webApp configuration welcome-file-list @7-35777E20
+-->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>Default.jsp</welcome-file>
+  </welcome-file-list>
+<!--
+
+//End webApp configuration welcome-file-list
+
+//webApp configuration taglib @8-220376BA
+-->
+  <taglib>
+    <taglib-uri>/ccstags</taglib-uri>
+    <taglib-location>/WEB-INF/CCStags.tld</taglib-location>
+  </taglib>
+<!--
+
+//End webApp configuration taglib
+
+//webApp configuration tail @9-0B1E5E48
+-->
+
+</web-app>
+<!--
+
+//End webApp configuration tail
+
+
+-->
+

@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Tbl Imovel</title>
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
+</head>
+<body>
+{Header}
+<!-- BEGIN Record tbl_imovelSearch -->
+<form id="tbl_imovelSearch" method="post" action="{Action}" name="{HTMLFormName}">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+          <tr>
+            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="th"><strong>Buscar Tbl Imovel </strong></td> 
+            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <td class="th"><label for="tbl_imovelSearchs_Endereco">Endereco</label></td> 
+            <td><input type="text" name="{s_Endereco_Name}" value="{s_Endereco}" maxlength="40" size="40" id="tbl_imovelSearchs_Endereco"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_imovelSearchs_Bairro">Bairro</label></td> 
+            <td><input type="text" name="{s_Bairro_Name}" value="{s_Bairro}" maxlength="20" size="20" id="tbl_imovelSearchs_Bairro"></td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_DoSearch --><input name="{Button_Name}" type="submit" value="Buscar" alt="Buscar" id="tbl_imovelSearchButton_DoSearch" class="Button"><!-- END Button Button_DoSearch --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record tbl_imovelSearch --><br>
+<!-- BEGIN Grid tbl_imovel -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <tr>
+          <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          <td class="th"><strong>List of Tbl Imovel</strong></td> 
+          <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+        </tr>
+ 
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Imovel --><a href="{Sort_URL}" id="tbl_imovelSorter_Cod_Imovel">Cod Imovel</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Imovel --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Cliente --><a href="{Sort_URL}" id="tbl_imovelSorter_Cod_Cliente">Cod Cliente</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Cliente --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Funcionario --><a href="{Sort_URL}" id="tbl_imovelSorter_Cod_Funcionario">Cod Funcionario</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Funcionario --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Situacao --><a href="{Sort_URL}" id="tbl_imovelSorter_Cod_Situacao">Cod Situacao</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Situacao --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_destinacao --><a href="{Sort_URL}" id="tbl_imovelSorter_Cod_destinacao">Cod Destinacao</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_destinacao --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Endereco --><a href="{Sort_URL}" id="tbl_imovelSorter_Endereco">Endereco</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Endereco --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_CEP --><a href="{Sort_URL}" id="tbl_imovelSorter_CEP">CEP</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_CEP --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Bairro --><a href="{Sort_URL}" id="tbl_imovelSorter_Bairro">Bairro</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Bairro --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Estado --><a href="{Sort_URL}" id="tbl_imovelSorter_Cod_Estado">Cod Estado</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Estado --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Cidade --><a href="{Sort_URL}" id="tbl_imovelSorter_Cod_Cidade">Cod Cidade</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Cidade --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_N_Quartos --><a href="{Sort_URL}" id="tbl_imovelSorter_N_Quartos">N Quartos</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_N_Quartos --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_N_Suites --><a href="{Sort_URL}" id="tbl_imovelSorter_N_Suites">N Suites</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_N_Suites --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_N_Banheiros --><a href="{Sort_URL}" id="tbl_imovelSorter_N_Banheiros">N Banheiros</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_N_Banheiros --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_N_Salas --><a href="{Sort_URL}" id="tbl_imovelSorter_N_Salas">N Salas</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_N_Salas --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_N_Cozinhas --><a href="{Sort_URL}" id="tbl_imovelSorter_N_Cozinhas">N Cozinhas</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_N_Cozinhas --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Dep_Empregada --><a href="{Sort_URL}" id="tbl_imovelSorter_Dep_Empregada">Dep Empregada</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Dep_Empregada --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Garagem --><a href="{Sort_URL}" id="tbl_imovelSorter_Garagem">Garagem</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Garagem --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Mts_Quadrados --><a href="{Sort_URL}" id="tbl_imovelSorter_Mts_Quadrados">Mts Quadrados</a> 
+          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Mts_Quadrados --></th>
+ 
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td style="text-align:right;"><a href="{Cod_Imovel_Src}" id="tbl_imovelCod_Imovel_{tbl_imovel:rowNumber}">{Cod_Imovel}</a>&nbsp;</td> 
+          <td style="text-align:right;">{Cod_Cliente}&nbsp;</td> 
+          <td style="text-align:right;">{Cod_Funcionario}&nbsp;</td> 
+          <td style="text-align:right;">{Cod_Situacao}&nbsp;</td> 
+          <td style="text-align:right;">{Cod_destinacao}&nbsp;</td> 
+          <td>{Endereco}&nbsp;</td> 
+          <td style="text-align:right;">{CEP}&nbsp;</td> 
+          <td>{Bairro}&nbsp;</td> 
+          <td style="text-align:right;">{Cod_Estado}&nbsp;</td> 
+          <td style="text-align:right;">{Cod_Cidade}&nbsp;</td> 
+          <td style="text-align:right;">{N_Quartos}&nbsp;</td> 
+          <td style="text-align:right;">{N_Suites}&nbsp;</td> 
+          <td style="text-align:right;">{N_Banheiros}&nbsp;</td> 
+          <td style="text-align:right;">{N_Salas}&nbsp;</td> 
+          <td style="text-align:right;">{N_Cozinhas}&nbsp;</td> 
+          <td>{Dep_Empregada}&nbsp;</td> 
+          <td>{Garagem}&nbsp;</td> 
+          <td style="text-align:right;">{Mts_Quadrados}&nbsp;</td> 
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="18">Sem registros</td> 
+        </tr>
+ <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="18"><a href="{tbl_imovel_Insert_Src}" id="tbl_imoveltbl_imovel_Insert">Add New</a>&nbsp; 
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">|&lt; </a> <!-- END First_On -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">&lt;&lt; </a> <!-- END Prev_On -->&nbsp;{Page_Number} de&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">&gt;&gt; </a> <!-- END Next_On -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">&gt;| </a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td> 
+        </tr>
+ 
+      </table>
+ </td> 
+  </tr>
+</table>
+<!-- END Grid tbl_imovel --><br>
+{Footer}
+</body>
+</html>

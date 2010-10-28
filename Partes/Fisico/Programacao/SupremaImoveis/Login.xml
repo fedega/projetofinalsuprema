@@ -1,0 +1,31 @@
+<!--Page model head @1-58D2F85C-->
+<Page name="Login" restricted="False" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record Login model @2-EB17F56B-->
+    <Record name="Login" connection="" restricted="False" returnPage="" convertRule="Relative" preserveParams="None" 
+            allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
+        <Button name="Button_DoLogin" operation=""
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <TextBox name="login" dataType="Text"
+                controlSourceType="DataSource" controlSource="Nome_U"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="password" dataType="Text"
+                controlSourceType="DataSource" controlSource="Senha_U"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+    </Record>
+<!--End Record Login model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

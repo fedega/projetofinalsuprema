@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Tbl Fiador</title>
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include Common JSFunctions @1-3857DB21
+</script>
+<script language="JavaScript" src="ClientI18N.jsp?file=Functions.js&amp;locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" src="ClientI18N.jsp?file=DatePicker.js&amp;locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-15DB8D37
+
+var tbl_fiador_DatePicker_Data_Nasc = new Object(); 
+tbl_fiador_DatePicker_Data_Nasc.format           = "ShortDate";
+tbl_fiador_DatePicker_Data_Nasc.style            = "Styles/Padrao/Style.css";
+tbl_fiador_DatePicker_Data_Nasc.relativePathPart = "";
+tbl_fiador_DatePicker_Data_Nasc.themeVersion = "3.0";
+
+//End Date Picker Object Definitions
+
+//tbl_fiadorButton_Delete_OnClick @5-BBCCD239
+function tbl_fiadorButton_Delete_OnClick()
+{
+    disableValidation = true;
+}
+//End tbl_fiadorButton_Delete_OnClick
+
+//bind_events @1-CB739709
+function bind_events() {
+    if (functionExists("Header_bind_events")) Header_bind_events();
+    if (functionExists("Footer_bind_events")) Footer_bind_events();
+    addEventHandler("tbl_fiadorButton_Delete", "click", tbl_fiadorButton_Delete_OnClick);
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+{Header}
+<!-- BEGIN Record tbl_fiador -->
+<form id="tbl_fiador" method="post" action="{Action}" name="{HTMLFormName}">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+          <tr>
+            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="th"><strong>Adicionar/Editar Tbl Fiador </strong></td> 
+            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorCod_Orgao">Cod Orgao</label></td> 
+            <td><input type="text" name="{Cod_Orgao_Name}" value="{Cod_Orgao}" maxlength="10" size="10" id="tbl_fiadorCod_Orgao"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorCod_Estado">Cod Estado</label></td> 
+            <td><input type="text" name="{Cod_Estado_Name}" value="{Cod_Estado}" maxlength="10" size="10" id="tbl_fiadorCod_Estado"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorCod_Cidade">Cod Cidade</label></td> 
+            <td><input type="text" name="{Cod_Cidade_Name}" value="{Cod_Cidade}" maxlength="10" size="10" id="tbl_fiadorCod_Cidade"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorCod_Cliente">Cod Cliente</label></td> 
+            <td><input type="text" name="{Cod_Cliente_Name}" value="{Cod_Cliente}" maxlength="10" size="10" id="tbl_fiadorCod_Cliente"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorNome">Nome</label></td> 
+            <td><input type="text" name="{Nome_Name}" value="{Nome}" maxlength="40" size="40" id="tbl_fiadorNome"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorData_Nasc">Data Nasc</label></td> 
+            <td><input type="text" name="{Data_Nasc_Name}" value="{Data_Nasc}" maxlength="100" size="10" id="tbl_fiadorData_Nasc">
+              <!-- BEGIN DatePicker DatePicker_Data_Nasc --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_fiadorDatePicker_Data_Nasc"><img src="Styles/Padrao/Images/DatePicker.gif" border="0" alt="Show Date Picker" id="tbl_fiadorDatePicker_Data_Nasc_Image"></a><!-- END DatePicker DatePicker_Data_Nasc --></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorNome_U">Nome U</label></td> 
+            <td><input type="text" name="{Nome_U_Name}" value="{Nome_U}" maxlength="16" size="16" id="tbl_fiadorNome_U"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorSenha_U">Senha U</label></td> 
+            <td><input type="text" name="{Senha_U_Name}" value="{Senha_U}" maxlength="40" size="40" id="tbl_fiadorSenha_U"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorNacionalidaade">Nacionalidaade</label></td> 
+            <td><input type="text" name="{Nacionalidaade_Name}" value="{Nacionalidaade}" maxlength="30" size="30" id="tbl_fiadorNacionalidaade"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorEndereco">Endereco</label></td> 
+            <td><input type="text" name="{Endereco_Name}" value="{Endereco}" maxlength="200" size="50" id="tbl_fiadorEndereco"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorTel_Fixo">Tel Fixo</label></td> 
+            <td><input type="text" name="{Tel_Fixo_Name}" value="{Tel_Fixo}" maxlength="10" size="10" id="tbl_fiadorTel_Fixo"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorTel_Cel">Tel Cel</label></td> 
+            <td><input type="text" name="{Tel_Cel_Name}" value="{Tel_Cel}" maxlength="10" size="10" id="tbl_fiadorTel_Cel"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorTel_Comercial">Tel Comercial</label></td> 
+            <td><input type="text" name="{Tel_Comercial_Name}" value="{Tel_Comercial}" maxlength="10" size="10" id="tbl_fiadorTel_Comercial"></td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Add" alt="Add" id="tbl_fiadorButton_Insert" class="Button"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Atualizar" alt="Atualizar" id="tbl_fiadorButton_Update" class="Button"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Delete" alt="Delete" id="tbl_fiadorButton_Delete" class="Button"><!-- END Button Button_Delete --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record tbl_fiador --><br>
+{Footer}
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Tbl Solicitacoes</title>
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
+</head>
+<body>
+{Header}
+<!-- BEGIN Record tbl_solicitacoes -->
+<form id="tbl_solicitacoes" method="post" action="{Action}" name="{HTMLFormName}">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+          <tr>
+            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="th"><strong>Adicionar/Editar Tbl Solicitacoes </strong></td> 
+            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <td class="th"><label for="tbl_solicitacoesDescricao">Descricao</label></td> 
+            <td><input type="text" name="{Descricao_Name}" value="{Descricao}" maxlength="250" size="50" id="tbl_solicitacoesDescricao"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_solicitacoesCod_Funcionario">Cod Funcionario</label></td> 
+            <td><input type="text" name="{Cod_Funcionario_Name}" value="{Cod_Funcionario}" maxlength="10" size="10" id="tbl_solicitacoesCod_Funcionario"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_solicitacoesTipo_Solicitacao">Tipo Solicitacao</label></td> 
+            <td><input type="text" name="{Tipo_Solicitacao_Name}" value="{Tipo_Solicitacao}" maxlength="10" size="10" id="tbl_solicitacoesTipo_Solicitacao"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_solicitacoesCod_Situacao">Cod Situacao</label></td> 
+            <td><input type="text" name="{Cod_Situacao_Name}" value="{Cod_Situacao}" maxlength="10" size="10" id="tbl_solicitacoesCod_Situacao"></td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Add" alt="Add" id="tbl_solicitacoesButton_Insert" class="Button"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Atualizar" alt="Atualizar" id="tbl_solicitacoesButton_Update" class="Button"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Delete" alt="Delete" id="tbl_solicitacoesButton_Delete" class="Button"><!-- END Button Button_Delete --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record tbl_solicitacoes --><br>
+{Footer}
+</body>
+</html>

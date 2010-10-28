@@ -1,0 +1,428 @@
+<Site id="0" language="JSP" name="SupremaImoveis" siteLanguage="en" publishingType="Project" FTPpublishingType="Project" securityType="Table" urlType="Absolute" useCCSCultureFormats="True" defaultDateFormat="ShortDate" LSEnableQueryString="True" LSQueryStringName="locale" LSEnableHTTPHeader="False" LSEnableSession="True" LSSessionName="locale" LSLanguageSessionName="lang" LSEnableCookie="False" LSCookieName="locale" LSCookieExpired="365" cachingMethod="None" useI18nFeatures="False" showDepreciatedStyles="Styles" useDynamicStyles="False" SSEnableQueryString="True" SSQueryStringName="style" SSEnableSession="True" SSSessionName="style" SSEnableCookie="False" SSCookieName="style" SSCookieExpired="365" htmlTemplateType="HTML" isSection508="True" createIdsForControls="True" createIdsForNonEditableControls="True" createLablesForControls="False" generateJS="True" tempSaveDir="CCSBuild\\LiveData" targetServer="Tomcat 6" appAsWar="False" userIDStoreMethod="Session" userIDVariable="UserID" userLoginVariable="UserLogin" groupIDVariable="GroupID" cookieVariable="UserInfo" automatedLogin="False" defaultHTMLEncoding="windows-1252" omitIfEmpty="True" separateEvents="False" cacheClassName="com.codecharge.utils.cache.CustomCache" FCKBasePath="FCKeditor" ccsVersion="4.3.00.7676" useAmp="True" codeFileEncoding="windows-1252" ALLoginCookieName="SupremaImoveisLogin" ALCookieExpired="30" ALEncryptionKey="s8z9714M26u793oO" ALAutoProlong="False" connection="Conexao" securityConnection="Conexao" usersTable="tbl_funcionario" userIDField="Cod_Funcionario" userLoginField="Nome_U" userPasswordField="Senha_U" userGroupField="Nivel_Controle" higherLevel="True" loginPage="Login.ccp" defaultStyle="Padrao" wizardTheme="Padrao" wizardThemeVersion="3.0">
+	<Components>
+	</Components>
+	<Connections>
+	</Connections>
+	<CodeFiles>
+		<CodeFile id="Prototype" language="JSP" name="prototype.js" path="js\pt" forShow="False" comment="//" codePage="utf-8" CheckSum="DF56ADDD"/>
+		<CodeFile id="PrototypeCcs" language="JSP" name="prototype_ccs.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="DF43E555"/>
+		<CodeFile id="AjaxPanel" language="JSP" name="ajaxpanel.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="6CF24204"/>
+		<CodeFile id="InlineEditing" language="JSP" name="inlineediting.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="AADEB3FC"/>
+		<CodeFile id="CaptchaCCS" language="JSP" name="captcha.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="3197B15E"/>
+		<CodeFile id="PTBuilder" language="JSP" name="builder.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="F58455A1"/>
+		<CodeFile id="PTControls" language="JSP" name="controls.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="5224641B"/>
+		<CodeFile id="PTDragDrop" language="JSP" name="dragdrop.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="F2FF6479"/>
+		<CodeFile id="PTEffects" language="JSP" name="effects.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="F9CE83BB"/>
+		<CodeFile id="PTScriptaculous" language="JSP" name="scriptaculous.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="FC331358"/>
+		<CodeFile id="PTSlider" language="JSP" name="slider.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="78349C90"/>
+		<CodeFile id="PTSound" language="JSP" name="sound.js" path="js\pt" forShow="False" comment="//" codePage="windows-1252" CheckSum="14D71A6D"/>
+		<CodeFile id="YUIAnimation" language="JSP" name="animation.js" path="js\yui\build\animation" forShow="False" comment="//" codePage="windows-1252" CheckSum="E2B575F5"/>
+		<CodeFile id="YUIAnimationMin" language="JSP" name="animation-min.js" path="js\yui\build\animation" forShow="False" comment="//" codePage="windows-1252" CheckSum="27AC6A27"/>
+		<CodeFile id="YUIAutocomplete" language="JSP" name="autocomplete.js" path="js\yui\build\autocomplete" forShow="False" comment="//" codePage="windows-1252" CheckSum="1C1F4551"/>
+		<CodeFile id="YUIAutocompleteMin" language="JSP" name="autocomplete-min.js" path="js\yui\build\autocomplete" forShow="False" comment="//" codePage="windows-1252" CheckSum="0BFE721A"/>
+		<CodeFile id="YUIAutocompleteCommons" language="JSP" name="autocomplete-commons.js" path="js\yui" forShow="False" comment="//" codePage="windows-1252" CheckSum="70B27280"/>
+		<CodeFile id="YUIConnection" language="JSP" name="connection.js" path="js\yui\build\connection" forShow="False" comment="//" codePage="windows-1252" CheckSum="1CEA7A1B"/>
+		<CodeFile id="YUICOnnectionMin" language="JSP" name="connection-min.js" path="js\yui\build\connection" forShow="False" comment="//" codePage="windows-1252" CheckSum="4D9D2F4E"/>
+		<CodeFile id="YUIDOM" language="JSP" name="dom.js" path="js\yui\build\dom" forShow="False" comment="//" codePage="windows-1252" CheckSum="23FB3233"/>
+		<CodeFile id="YUIDOMMin" language="JSP" name="dom-min.js" path="js\yui\build\dom" forShow="False" comment="//" codePage="windows-1252" CheckSum="347AFE26"/>
+		<CodeFile id="YUIElement" language="JSP" name="element-beta.js" path="js\yui\build\element" forShow="False" comment="//" codePage="windows-1252" CheckSum="FA483376"/>
+		<CodeFile id="YUIElementMin" language="JSP" name="element-beta-min.js" path="js\yui\build\element" forShow="False" comment="//" codePage="windows-1252" CheckSum="D928F640"/>
+		<CodeFile id="YUIEvent" language="JSP" name="event.js" path="js\yui\build\event" forShow="False" comment="//" codePage="windows-1252" CheckSum="249D272F"/>
+		<CodeFile id="YUIEventMin" language="JSP" name="event-min.js" path="js\yui\build\event" forShow="False" comment="//" codePage="windows-1252" CheckSum="10A03BD2"/>
+		<CodeFile id="YUITabView" language="JSP" name="tabview.js" path="js\yui\build\tabview" forShow="False" comment="//" codePage="windows-1252" CheckSum="00D2C772"/>
+		<CodeFile id="YUITabViewMin" language="JSP" name="tabview-min.js" path="js\yui\build\tabview" forShow="False" comment="//" codePage="windows-1252" CheckSum="DDBAB64C"/>
+		<CodeFile id="YUITabViewBorderTab" language="JSP" name="border_tabs.css" path="js\yui\build\tabview\assets" forShow="False" comment="//" codePage="windows-1252" CheckSum="7CB76A0E"/>
+		<CodeFile id="YUITabViewCss" language="JSP" name="tabview.css" path="js\yui\build\tabview\assets" forShow="False" comment="//" codePage="windows-1252" CheckSum="551A7EC7"/>
+		<CodeFile id="YUITabViewCoreCss" language="JSP" name="tabview-core.css" path="js\yui\build\tabview\assets" forShow="False" comment="//" codePage="windows-1252" CheckSum="73EE3885"/>
+		<CodeFile id="YUIYahoo" language="JSP" name="yahoo.js" path="js\yui\build\yahoo" forShow="False" comment="//" codePage="windows-1252" CheckSum="79E02F2F"/>
+		<CodeFile id="YUIYahooMin" language="JSP" name="yahoo-min.js" path="js\yui\build\yahoo" forShow="False" comment="//" codePage="windows-1252" CheckSum="601D3BF1"/>
+		<CodeFile id="YUIYahooDomEvent" language="JSP" name="yahoo-dom-event.js" path="js\yui\build\yahoo-dom-event" forShow="False" comment="//" codePage="windows-1252" CheckSum="71ED8388"/>
+		<CodeFile id="MenuScript" language="JSP" name="ADxMenu.js" path="js\menu" forShow="False" comment="//" codePage="windows-1252" CheckSum="A1D53520"/>
+		<CodeFile id="MenuWCHScript" language="JSP" name="WCH.js" path="js\menu" forShow="False" comment="//" codePage="windows-1252" CheckSum="20EABDE1"/>
+		<CodeFile id="YUIDragDropMin" language="JSP" name="dragdrop-min.js" path="js\yui\build\dragdrop" forShow="False" comment="//" codePage="windows-1252" CheckSum="7313465F"/>
+		<CodeFile id="WebXml" language="JSP" name="web22.xml" path="CCSBuild\config\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="WebXml23" language="JSP" name="web23.xml" path="CCSBuild\config\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Application12" language="JSP" name="application12.xml" path="CCSBuild\config\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Application13" language="JSP" name="application13.xml" path="CCSBuild\config\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SiteProperties" language="JSP" name="site.properties" path="CCSBuild\config\" forShow="False" comment="#" codePage="utf-8"/>
+		<CodeFile id="Languages" language="JSP" name="languages.properties" path="CCSBuild\config\" forShow="False" comment="#" codePage="utf-8"/>
+		<CodeFile id="BuildXml" language="JSP" name="build.xml" path="CCSBuild\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DeployXml" language="JSP" name="deploy.xml" path="CCSBuild\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="J2SEPackageList" language="JSP" name="package-list" path="CCSBuild\config\j2se" forShow="False" comment="#" codePage="windows-1252"/>
+		<CodeFile id="J2EEPackageList" language="JSP" name="package-list" path="CCSBuild\config\j2ee" forShow="False" comment="#" codePage="windows-1252"/>
+		<CodeFile id="JSFunctions" language="JSP" name="Functions.js" forShow="False" comment="//" codePage="utf-8"/>
+		<CodeFile id="JSDatePickerHTML" language="JSP" name="DatePicker.html" forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
+		<CodeFile id="JSDatePicker" language="JSP" name="DatePicker.js" forShow="False" comment="//" codePage="utf-8"/>
+		<CodeFile id="MessagesBundle" language="JSP" name="MessagesBundle.java" path="CCSBuild\src\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="localesInfo" language="JSP" name="localesInfo.properties" path="CCSBuild\config\" forShow="False" comment="//" codePage="utf-8"/>
+		<CodeFile id="Action" language="JSP" name="Action.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Constants" language="JSP" name="Constants.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Names" language="JSP" name="Names.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="InitServlet" language="JSP" name="InitServlet.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadedFile" language="JSP" name="UploadedFile.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IUploadStore" language="JSP" name="IUploadStore.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadStoreFactory" language="JSP" name="UploadStoreFactory.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MemoryUploadStore" language="JSP" name="MemoryUploadStore.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FileUploadStore" language="JSP" name="FileUploadStore.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DefaultFileFilter" language="JSP" name="DefaultFileFilter.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RequestParser" language="JSP" name="RequestParser.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RequestParameters" language="JSP" name="RequestParameters.java" path="CCSBuild\src\com\codecharge\util\multipart\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="JDBCConnection" language="JSP" name="JDBCConnection.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DBTools" language="JSP" name="DBTools.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControlSourceType" language="JSP" name="ControlSourceType.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DbRow" language="JSP" name="DbRow.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSDataSource" language="JSP" name="CCSDataSource.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PoolJDBCConnection" language="JSP" name="PoolJDBCConnection.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DS" language="JSP" name="DS.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DBConnectionManager" language="JSP" name="DBConnectionManager.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Field" language="JSP" name="Field.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FieldOperation" language="JSP" name="FieldOperation.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SortDirection" language="JSP" name="SortDirection.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="BooleanField" language="JSP" name="BooleanField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DateField" language="JSP" name="DateField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="LongField" language="JSP" name="LongField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DoubleField" language="JSP" name="DoubleField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SingleField" language="JSP" name="SingleField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TextField" language="JSP" name="TextField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="LongTextField" language="JSP" name="LongTextField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Parameter" language="JSP" name="Parameter.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReadOnlyField" language="JSP" name="ReadOnlyField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="OrderField" language="JSP" name="OrderField.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Command" language="JSP" name="Command.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RawCommand" language="JSP" name="RawCommand.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SqlCommand" language="JSP" name="SqlCommand.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ParameterSource" language="JSP" name="ParameterSource.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SqlFormat" language="JSP" name="SqlFormat.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SqlFormatControl" language="JSP" name="SqlFormatControl.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SqlParameter" language="JSP" name="SqlParameter.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SqlParameters" language="JSP" name="SqlParameters.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="WhereParams" language="JSP" name="WhereParams.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="WhereBuilder" language="JSP" name="WhereBuilder.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SPCommand" language="JSP" name="SPCommand.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="OracleSPCommand" language="JSP" name="OracleSPCommand.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SPCommandFactory" language="JSP" name="SPCommandFactory.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SPParameter" language="JSP" name="SPParameter.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="JDBCConnectionFactory" language="JSP" name="JDBCConnectionFactory.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IDataBinder" language="JSP" name="IDataBinder.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ObjectDataBinder" language="JSP" name="ObjectDataBinder.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IRowProvider" language="JSP" name="IRowProvider.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ObjectRowProvider" language="JSP" name="ObjectRowProvider.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DbRowRowProvider" language="JSP" name="DbRowRowProvider.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NoSuchDataSourceFieldException" language="JSP" name="NoSuchDataSourceFieldException.java" path="CCSBuild\src\com\codecharge\db\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Button" language="JSP" name="Button.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DatePicker" language="JSP" name="DatePicker.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Calendar" language="JSP" name="Calendar.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarNavigator" language="JSP" name="CalendarNavigator.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CheckBox" language="JSP" name="CheckBox.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CheckBoxList" language="JSP" name="CheckBoxList.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Component" language="JSP" name="Component.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Control" language="JSP" name="Control.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Directory" language="JSP" name="Directory.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Path" language="JSP" name="Path.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControlType" language="JSP" name="ControlType.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReadOnlyControl" language="JSP" name="ReadOnlyControl.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="VerifiableControl" language="JSP" name="VerifiableControl.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Grid" language="JSP" name="Grid.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="EditableGrid" language="JSP" name="EditableGrid.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GridControl" language="JSP" name="GridControl.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Label" language="JSP" name="Label.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Image" language="JSP" name="Image.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Link" language="JSP" name="Link.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ImageLink" language="JSP" name="ImageLink.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ListBox" language="JSP" name="ListBox.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="List" language="JSP" name="List.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Model" language="JSP" name="Model.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Navigator" language="JSP" name="Navigator.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Page" language="JSP" name="Page.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Block" language="JSP" name="Block.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Report" language="JSP" name="Report.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Panel" language="JSP" name="Panel.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportLabel" language="JSP" name="ReportLabel.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NoSuchComponentException" language="JSP" name="NoSuchComponentException.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Variable" language="JSP" name="Variable.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RadioButton" language="JSP" name="RadioButton.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Record" language="JSP" name="Record.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IRecord" language="JSP" name="IRecord.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Sorter" language="JSP" name="Sorter.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TextArea" language="JSP" name="TextArea.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TextBox" language="JSP" name="TextBox.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Hidden" language="JSP" name="Hidden.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CachedColumn" language="JSP" name="CachedColumn.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FileUpload" language="JSP" name="FileUpload.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Sortable" language="JSP" name="Sortable.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Navigable" language="JSP" name="Navigable.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ISection" language="JSP" name="ISection.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MinHandler" language="JSP" name="MinHandler.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MaxHandler" language="JSP" name="MaxHandler.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AverageHandler" language="JSP" name="AverageHandler.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CountHandler" language="JSP" name="CountHandler.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DefaultHandler" language="JSP" name="DefaultHandler.java" path="CCSBuild\src\com\codecharge\components\report\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FunctionHandler" language="JSP" name="FunctionHandler.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MutableDouble" language="JSP" name="MutableDouble.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MutableSingle" language="JSP" name="MutableSingle.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PercentOfTotalHandler" language="JSP" name="PercentOfTotalHandler.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportGroup" language="JSP" name="ReportGroup.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportGroups" language="JSP" name="ReportGroups.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportIterator" language="JSP" name="ReportIterator.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportRow" language="JSP" name="ReportRow.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportRows" language="JSP" name="ReportRows.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SumHandler" language="JSP" name="SumHandler.java" path="CCSBuild\src\com\codecharge\components\report" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FlashChart" language="JSP" name="FlashChart.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Menu" language="JSP" name="Menu.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Captcha" language="JSP" name="Captcha.java" path="CCSBuild\src\com\codecharge\components\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AbstractAction" language="JSP" name="AbstractAction.java" path="CCSBuild\src\com\codecharge\components\action\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarAction" language="JSP" name="CalendarAction.java" path="CCSBuild\src\com\codecharge\components\action\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportAction" language="JSP" name="ReportAction.java" path="CCSBuild\src\com\codecharge\components\action\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarItem" language="JSP" name="CalendarItem.java" path="CCSBuild\src\com\codecharge\components\calendar\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarMonthItem" language="JSP" name="CalendarMonthItem.java" path="CCSBuild\src\com\codecharge\components\calendar\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarComparator" language="JSP" name="CalendarComparator.java" path="CCSBuild\src\com\codecharge\components\calendar\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarNavigatorItem" language="JSP" name="CalendarNavigatorItem.java" path="CCSBuild\src\com\codecharge\components\calendar\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSTagsTld11" language="JSP" name="CCStags11.tld" path="CCSBuild\config\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSTagsTld12" language="JSP" name="CCStags12.tld" path="CCSBuild\config\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AscOffTag" language="JSP" name="AscOffTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AscOnTag" language="JSP" name="AscOnTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ButtonTag" language="JSP" name="ButtonTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControlTag" language="JSP" name="ControlTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DescOffTag" language="JSP" name="DescOffTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DescOnTag" language="JSP" name="DescOnTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ErrorBlockTag" language="JSP" name="ErrorBlockTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ErrorTextTag" language="JSP" name="ErrorTextTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FirstOffTag" language="JSP" name="FirstOffTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FirstOnTag" language="JSP" name="FirstOnTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FormActionTag" language="JSP" name="FormActionTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FormStateTag" language="JSP" name="FormStateTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FormScriptTag" language="JSP" name="FormScriptTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FormNameTag" language="JSP" name="FormNameTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FormEnctypeTag" language="JSP" name="FormEnctypeTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GridTag" language="JSP" name="GridTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="LastOffTag" language="JSP" name="LastOffTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="LastOnTag" language="JSP" name="LastOnTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NavigatorTag" language="JSP" name="NavigatorTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NextOffTag" language="JSP" name="NextOffTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NextOnTag" language="JSP" name="NextOnTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SeparatorTag" language="JSP" name="SeparatorTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NorecordsTag" language="JSP" name="NorecordsTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageHrefTag" language="JSP" name="PageHrefTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageNumberTag" language="JSP" name="PageNumberTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageOffTag" language="JSP" name="PageOffTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageOnTag" language="JSP" name="PageOnTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PagesTag" language="JSP" name="PagesTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PrevOffTag" language="JSP" name="PrevOffTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PrevOnTag" language="JSP" name="PrevOnTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RadioButtonTag" language="JSP" name="RadioButtonTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RadioTag" language="JSP" name="RadioTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RecordTag" language="JSP" name="RecordTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RepeaterTag" language="JSP" name="RepeaterTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RowTag" language="JSP" name="RowTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SorterHrefTag" language="JSP" name="SorterHrefTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SorterTag" language="JSP" name="SorterTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TotalPagesTag" language="JSP" name="TotalPagesTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="BlockTag" language="JSP" name="BlockTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CheckBoxListTag" language="JSP" name="CheckBoxListTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CheckBoxTag" language="JSP" name="CheckBoxTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DirectoryTag" language="JSP" name="DirectoryTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CategoriesTag" language="JSP" name="CategoriesTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SubcategoriesTag" language="JSP" name="SubcategoriesTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MoreTag" language="JSP" name="MoreTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PathTag" language="JSP" name="PathTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PathComponentTag" language="JSP" name="PathComponentTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CurrentCategoryTag" language="JSP" name="CurrentCategoryTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DatePickerTag" language="JSP" name="DatePickerTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DatePickerValueTag" language="JSP" name="DatePickerValueTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadTag" language="JSP" name="UploadTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadInfoTag" language="JSP" name="UploadInfoTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadPromptTag" language="JSP" name="UploadPromptTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadDeleteTag" language="JSP" name="UploadDeleteTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadPropertyTag" language="JSP" name="UploadPropertyTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportTag" language="JSP" name="ReportTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportSectionTag" language="JSP" name="ReportSectionTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportDetailTag" language="JSP" name="ReportDetailTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportRepeaterTag" language="JSP" name="ReportRepeaterTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PanelTag" language="JSP" name="PanelTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ResMessageTag" language="JSP" name="ResMessageTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MetaTag" language="JSP" name="MetaTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="VariableTag" language="JSP" name="VariableTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AttributeTag" language="JSP" name="AttributeTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FlashChartPropertyTag" language="JSP" name="FlashChartPropertyTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FlashChartTag" language="JSP" name="FlashChartTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MenuTag" language="JSP" name="MenuTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MenuIteratorTag" language="JSP" name="MenuIteratorTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MenuBlockTag" language="JSP" name="MenuBlockTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CaptchaPropertyTag" language="JSP" name="CaptchaPropertyTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CaptchaTag" language="JSP" name="CaptchaTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GNPropertyTag" language="JSP" name="GridNavigatorPropertyTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GNPageParametersTag" language="JSP" name="GridNavigatorPageParametersTag.java" path="CCSBuild\src\com\codecharge\tags\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarTag" language="JSP" name="CalendarTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DayTag" language="JSP" name="DayTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="EmptyDayTag" language="JSP" name="EmptyDayTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="EventRowTag" language="JSP" name="EventRowTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MonthTag" language="JSP" name="MonthTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NoEventsTag" language="JSP" name="NoEventsTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarSeparatorTag" language="JSP" name="SeparatorTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="WeekdaysTag" language="JSP" name="WeekdaysTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="WeekdayTag" language="JSP" name="WeekdayTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="WeekTag" language="JSP" name="WeekTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TemplateTag" language="JSP" name="TemplateTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarNavigatorPropertyTag" language="JSP" name="CalendarNavigatorPropertyTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarNavigatorSectionTag" language="JSP" name="CalendarNavigatorSectionTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarNavigatorRepeaterTag" language="JSP" name="CalendarNavigatorRepeaterTag.java" path="CCSBuild\src\com\codecharge\tags\calendar" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CacheTag" language="JSP" name="CacheTag.java" path="CCSBuild\src\com\codecharge\tags" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageTag" language="JSP" name="PageTag.java" path="CCSBuild\src\com\codecharge\tags" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ToPdfTag" language="JSP" name="ToPdfTag.java" path="CCSBuild\src\com\codecharge\tags" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AppEvent" language="JSP" name="AppEvent.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControllerEvent" language="JSP" name="ControllerEvent.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarListener" language="JSP" name="CalendarListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MenuListener" language="JSP" name="MenuListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FlashChartListener" language="JSP" name="FlashChartListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CaptchaListener" language="JSP" name="CaptchaListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControllerListener" language="JSP" name="ControllerListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Event" language="JSP" name="Event.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DataObjectEvent" language="JSP" name="DataObjectEvent.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControlListener" language="JSP" name="ControlListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ComponentListener" language="JSP" name="ComponentListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DirectoryListener" language="JSP" name="DirectoryListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ButtonListener" language="JSP" name="ButtonListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ListDataObjectListener" language="JSP" name="ListDataObjectListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GridListener" language="JSP" name="GridListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="EditableGridListener" language="JSP" name="EditableGridListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GridDataObjectListener" language="JSP" name="GridDataObjectListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RecordListener" language="JSP" name="RecordListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RecordDataObjectListener" language="JSP" name="RecordDataObjectListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageListener" language="JSP" name="PageListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ValidationListener" language="JSP" name="ValidationListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="EditableGridDataObjectListener" language="JSP" name="EditableGridDataObjectListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DataObjectListener" language="JSP" name="DataObjectListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PathListener" language="JSP" name="PathListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="UploadListener" language="JSP" name="UploadListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportListener" language="JSP" name="ReportListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SectionListener" language="JSP" name="SectionListener.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="BindEvent" language="JSP" name="BindEvent.java" path="CCSBuild\src\com\codecharge\events\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Verifiable" language="JSP" name="Verifiable.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControlError" language="JSP" name="ControlError.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ErrorCollection" language="JSP" name="ErrorCollection.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControlErrorType" language="JSP" name="ControlErrorType.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ControlErrorTypes" language="JSP" name="ControlErrorTypes.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ValidateHandler" language="JSP" name="ValidateHandler.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RequiredHandler" language="JSP" name="RequiredHandler.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RegexpHandlersFactory" language="JSP" name="RegexpHandlersFactory.java" path="CCSBuild\src\com\codecharge\validation\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ModelErrorHandler" language="JSP" name="ModelErrorHandler.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageController" language="JSP" name="PageController.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AbstractProcessor" language="JSP" name="AbstractProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CalendarProcessor" language="JSP" name="CalendarProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageProcessor" language="JSP" name="PageProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GridProcessor" language="JSP" name="GridProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="MenuProcessor" language="JSP" name="MenuProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FlashChartProcessor" language="JSP" name="FlashChartProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CaptchaProcessor" language="JSP" name="CaptchaProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RecordProcessor" language="JSP" name="RecordProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="EditableGridProcessor" language="JSP" name="EditableGridProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DirectoryProcessor" language="JSP" name="DirectoryProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PathProcessor" language="JSP" name="PathProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ListProcessor" language="JSP" name="ListProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ReportProcessor" language="JSP" name="ReportProcessor.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ModelParser" language="JSP" name="ModelParser.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCLogger" language="JSP" name="CCLogger.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSLocale" language="JSP" name="CCSLocale.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="LocaleChooser" language="JSP" name="LocaleChooser.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="StyleChooser" language="JSP" name="StyleChooser.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DefaultControllerHandler" language="JSP" name="DefaultControllerHandler.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="StringUtils" language="JSP" name="StringUtils.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Utils" language="JSP" name="Utils.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ErrorFormatter" language="JSP" name="ErrorFormatter.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Formatter" language="JSP" name="Formatter.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Query" language="JSP" name="Query.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="QueryString" language="JSP" name="QueryString.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PostParams" language="JSP" name="PostParams.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Storage" language="JSP" name="Storage.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ContextStorage" language="JSP" name="ContextStorage.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SessionStorage" language="JSP" name="SessionStorage.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="BooleanFormat" language="JSP" name="BooleanFormat.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NarrowWeekdayFormat" language="JSP" name="NarrowWeekdayFormat.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NumericFormat" language="JSP" name="NumericFormat.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSDateFormatSymbols" language="JSP" name="CCSDateFormatSymbols.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PreserveParameterType" language="JSP" name="PreserveParameterType.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="LinkParameter" language="JSP" name="LinkParameter.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SessionStorageInterface" language="JSP" name="SessionStorageInterface.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SimpleContextStorage" language="JSP" name="SimpleContextStorage.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SimpleSessionStorage" language="JSP" name="SimpleSessionStorage.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Queue" language="JSP" name="Queue.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Permission" language="JSP" name="Permission.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="SimpleMailer" language="JSP" name="SimpleMailer.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Authenticator" language="JSP" name="Authenticator.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AuthenticatorAbstractFactory" language="JSP" name="AuthenticatorAbstractFactory.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSAuthenticatorFactory" language="JSP" name="CCSAuthenticatorFactory.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSTableAuthenticator" language="JSP" name="CCSTableAuthenticator.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="HttpAuthenticator" language="JSP" name="HttpAuthenticator.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSPrincipal" language="JSP" name="CCSPrincipal.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AuthenticatorFactory" language="JSP" name="AuthenticatorFactory.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AgeFileFilter" language="JSP" name="AgeFileFilter.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="YSPdfToolConverter" language="JSP" name="YSPdfToolConverter.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IContentConverter" language="JSP" name="IContentConverter.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ModelAttribute" language="JSP" name="ModelAttribute.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSURL" language="JSP" name="CCSURL.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CacheFilter" language="JSP" name="CacheFilter.java" path="CCSBuild\src\com\codecharge\util\filters\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ByteResponseWrapper" language="JSP" name="ByteResponseWrapper.java" path="CCSBuild\src\com\codecharge\util\filters\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ByteResponseStream" language="JSP" name="ByteResponseStream.java" path="CCSBuild\src\com\codecharge\util\filters\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CacheConfigurator" language="JSP" name="CacheConfigurator.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CacheEvent" language="JSP" name="CacheEvent.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CachingParameter" language="JSP" name="CachingParameter.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="DbCache" language="JSP" name="DbCache.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ICache" language="JSP" name="ICache.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CacheAdapter" language="JSP" name="CacheAdapter.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ICacheListener" language="JSP" name="ICacheListener.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PageSettings" language="JSP" name="PageSettings.java" path="CCSBuild\src\com\codecharge\util\cache\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="View" language="JSP" name="View.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="GetFileServlet" language="JSP" name="GetFileServlet.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Template" language="JSP" name="Template.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ITemplate" language="JSP" name="ITemplate.java" path="CCSBuild\src\com\codecharge\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="FileTemplateSource" language="JSP" name="FileTemplateSource.java" path="CCSBuild\src\com\codecharge\template\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ITemplateParser" language="JSP" name="ITemplateParser.java" path="CCSBuild\src\com\codecharge\template\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ITemplateSource" language="JSP" name="ITemplateSource.java" path="CCSBuild\src\com\codecharge\template\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CCSTemplate" language="JSP" name="CCSTemplate.java" path="CCSBuild\src\com\codecharge\template\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TemplateParser" language="JSP" name="TemplateParser.java" path="CCSBuild\src\com\codecharge\template\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="NoSuchTemplateItemException" language="JSP" name="NoSuchTemplateItemException.java" path="CCSBuild\src\com\codecharge\template\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ItemList" language="JSP" name="ItemList.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ITemplateItem" language="JSP" name="ITemplateItem.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ITemplateNamedItem" language="JSP" name="ITemplateNamedItem.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="ResourceVariable" language="JSP" name="ResourceVariable.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TemplateBlock" language="JSP" name="TemplateBlock.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TemplateNamedItem" language="JSP" name="TemplateNamedItem.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TemplateText" language="JSP" name="TemplateText.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="TemplateVariable" language="JSP" name="TemplateVariable.java" path="CCSBuild\src\com\codecharge\template\structure\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="RC4Crypter" language="JSP" name="RC4Crypter.java" path="CCSBuild\src\com\codecharge\util\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="Service" language="JSP" name="Service.java" path="CCSBuild\src\com\codecharge\features\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="AbstractServiceAction" language="JSP" name="AbstractServiceAction.java" path="CCSBuild\src\com\codecharge\features\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IDataProvider" language="JSP" name="IDataProvider.java" path="CCSBuild\src\com\codecharge\features\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IDataRender" language="JSP" name="IDataRender.java" path="CCSBuild\src\com\codecharge\features\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IParameterProvider" language="JSP" name="IParameterProvider.java" path="CCSBuild\src\com\codecharge\features\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="IServiceChecker" language="JSP" name="IServiceChecker.java" path="CCSBuild\src\com\codecharge\features\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="PanelFilter" language="JSP" name="PanelFilter.java" path="CCSBuild\src\com\codecharge\util\filters\" forShow="False" comment="//" codePage="windows-1252"/>
+		<CodeFile id="CharsetFilter" language="JSP" name="CharsetFilter.java" path="CCSBuild\src\com\codecharge\util\filters\" forShow="False" comment="//" codePage="windows-1252"/>
+	</CodeFiles>
+	<Groups>
+		<Group id="2" name="Funcionario" value="1"/>
+		<Group id="3" name="Presidencia" value="2"/>
+	</Groups>
+	<Styles>
+		<Style id="4" name="Padrao" caption="Padrao"/>
+	</Styles>
+	<CustomButtons/>
+	<Profiles>
+		<Profile name="Server1" FTPPassiveMode="True" FTPSecureConnection="False" FTPpublishingAllMask="html;js;asp;php;jsp;cfm;pl;pm;cgi;mdb;gif;jpg;css;xml;java;ascx;aspx;cs;vb;vbproj;resx;config;vsdisco;csproj;webinfo;bat;tld;jar;properties;inc;txt;resources;swf" FTPpublishingExceptMask="ccs;ccp" FTPpublishingType="Project" appAsWar="False" ds="False" location="Local" logFile="none" logSize="1024" loginToManager="tomcat" passwordToManager="tomcat" publishingAllMask="html;js;asp;php;jsp;cfm;cfc;pl;pm;cgi;mdb;gif;jpg;png;css;xml;java;asax;ascx;aspx;asmx;cs;vb;vbproj;resx;config;vsdisco;csproj;webinfo;bat;tld;jar;properties;inc;txt;resources;swf" publishingExceptMask="ccs;ccp" publishingType="Project" targetServer="Tomcat 6" urlToManager="http://localhost:8080/manager" localServerPath="D:\apache-tomcat-6.0.29\webapps\SupremaImoveis" localServerURL="http://localhost:8080/SupremaImoveis" __specValue="" cp="D:\servlet2.5-jsp2.1-api.jar">
+			<Connections connection="Conexao">
+				<Connection id="1" serverDatabase="MySQL" DBNameUppercase="True" OptimizeSQL="True" database="MySQL" showViews="True" showSynonyms="True" showSysTable="False" showSysView="False" showAliases="False" relationshipDiscovery="True" numDBConn="5" timeoutDBConn="500" connectionType="ODBC" connectionString="supremaimoveis" name="Conexao" DBDateFormat="dd/mm/yyyy HH:nn:ss" DBBooleanFormat="1;0" dbLogin="root" dbDriver="sun.jdbc.odbc.JdbcOdbcDriver" dbURL="jdbc:odbc:supremaimoveis"/>
+			</Connections>
+		</Profile>
+		<Profile name="Server2" FTPPassiveMode="True" FTPSecureConnection="False" FTPpublishingAllMask="html;js;asp;php;jsp;cfm;pl;pm;cgi;mdb;gif;jpg;css;xml;java;ascx;aspx;cs;vb;vbproj;resx;config;vsdisco;csproj;webinfo;bat;tld;jar;properties;inc;txt;resources;swf" FTPpublishingExceptMask="ccs;ccp" FTPpublishingType="Project" appAsWar="False" ds="False" location="FTP" logFile="none" logSize="1024" loginToManager="manager" passwordToManager="manager" publishingAllMask="html;js;asp;php;jsp;cfm;cfc;pl;pm;cgi;mdb;gif;jpg;png;css;xml;java;asax;ascx;aspx;asmx;cs;vb;vbproj;resx;config;vsdisco;csproj;webinfo;bat;tld;jar;properties;inc;txt;resources;swf" publishingExceptMask="ccs;ccp" publishingType="Project" targetServer="Tomcat 6" urlToManager="http://localhost:8081/manager">
+			<Connections>
+				<Connection id="1" serverDatabase="ANSI" DBNameUppercase="True" OptimizeSQL="True" database="ANSI" showViews="True" showSynonyms="True" showSysTable="False" showSysView="False" showAliases="False" relationshipDiscovery="True" numDBConn="5" timeoutDBConn="500" name="Conexao"/>
+			</Connections>
+		</Profile>
+	</Profiles>
+	<Languages>
+		<Language name="en" defaultCountry="US" encoding="windows-1252">
+			<LocaleInfo language="en" country="US" encoding="windows-1252" msValue="1033" booleanFormat="Yes;No" decimalDigits="2" decimalSeparator="." groupSeparator="," monthNames="January;February;March;April;May;June;July;August;September;October;November;December" monthShortNames="Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec" weekdayNames="Sunday;Monday;Tuesday;Wednesday;Thursday;Friday;Saturday" weekdayShortNames="Sun;Mon;Tue;Wed;Thu;Fri;Sat" shortDate="m/d/yyyy" longDate="dddd, mmmm dd, yyyy" shortTime="h:nn tt" longTime="h:nn:ss tt" firstWeekDay="0" AMDesignator="AM" PMDesignator="PM" weekdayNarrowNames="S;M;T;W;T;F;S"/>
+		</Language>
+	</Languages>
+	<Events/>
+</Site>

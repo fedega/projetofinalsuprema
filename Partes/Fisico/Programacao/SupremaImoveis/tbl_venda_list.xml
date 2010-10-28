@@ -1,0 +1,79 @@
+<!--Page model head @1-40200B57-->
+<Page name="tbl_venda_list" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+    <Security>
+        <Group id="1"/>
+    </Security>
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_vendaSearch model @2-C0235BF2-->
+    <Record name="tbl_vendaSearch" connection="" restricted="False" returnPage="tbl_venda_list.jsp" convertRule="Relative" preserveParams="None" 
+            allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
+        <Button name="Button_DoSearch" operation="Search"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <TextBox name="s_Data" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+    </Record>
+<!--End Record tbl_vendaSearch model-->
+
+<!--Grid tbl_venda model @6-F20AFEC4-->
+    <Grid name="tbl_venda" connection="Conexao" restricted="False" fetchSize="20" allowRead="True" 
+            fetchSizeLimit="100" useCount="True" visible="True">
+        <Row>
+            <Link name="Cod_Venda" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="Cod_Venda"
+                    hrefType="Page" hrefSource="tbl_venda_maint.jsp" convertRule="Relative"
+                    format="" dbFormat="" isHtml="False" preserveParams="GET">
+                <LinkParameter name="Cod_Venda" sourceType="DataField" sourceName="Cod_Venda" format="yyyy-MM-dd"/>
+            </Link>
+            <Label name="Data" dataType="Text"
+                    controlSourceType="DataSource" controlSource="Data"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="Cod_Imovel" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="Cod_Imovel"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="Cod_Funcionario" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="Cod_Funcionario"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+        </Row>
+        <Link name="tbl_venda_Insert" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                hrefType="Page" hrefSource="tbl_venda_maint.jsp" convertRule="Relative"
+                format="" dbFormat="" isHtml="False" preserveParams="GET">
+            <ExcludeParameter name="Cod_Venda"/>
+        </Link>
+        <Sorter name="Sorter_Cod_Venda" ascColumn="Cod_Venda" visible="True"/>
+        <Sorter name="Sorter_Data" ascColumn="Data" visible="True"/>
+        <Sorter name="Sorter_Cod_Imovel" ascColumn="Cod_Imovel" visible="True"/>
+        <Sorter name="Sorter_Cod_Funcionario" ascColumn="Cod_Funcionario" visible="True"/>
+        <Navigator name="Navigator" pageSizes="1;5;10;25;50"/>
+        <Select query="SELECT Cod_Venda, Data, Cod_Imovel, Cod_Funcionario FROM tbl_venda {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <CountSql query="SELECT COUNT(*) FROM tbl_venda" type="raw"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="s_Data9"/>
+
+                </WhereClause>
+                <WhereParameter name="s_Data9" field="Data" type="Text"
+                        operation="CONTAINS" useIsNull="False" sourceType="URL" sourceName="s_Data"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+    </Grid>
+<!--End Grid tbl_venda model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

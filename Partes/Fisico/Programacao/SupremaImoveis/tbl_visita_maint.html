@@ -1,0 +1,113 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Tbl Visita</title>
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//Include Common JSFunctions @1-3857DB21
+</script>
+<script language="JavaScript" src="ClientI18N.jsp?file=Functions.js&amp;locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" src="ClientI18N.jsp?file=DatePicker.js&amp;locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-B29C9375
+
+var tbl_visita_DatePicker_Data = new Object(); 
+tbl_visita_DatePicker_Data.format           = "ShortDate";
+tbl_visita_DatePicker_Data.style            = "Styles/Padrao/Style.css";
+tbl_visita_DatePicker_Data.relativePathPart = "";
+tbl_visita_DatePicker_Data.themeVersion = "3.0";
+
+var tbl_visita_DatePicker_Hora = new Object(); 
+tbl_visita_DatePicker_Hora.format           = "ShortDate";
+tbl_visita_DatePicker_Hora.style            = "Styles/Padrao/Style.css";
+tbl_visita_DatePicker_Hora.relativePathPart = "";
+tbl_visita_DatePicker_Hora.themeVersion = "3.0";
+
+//End Date Picker Object Definitions
+
+//tbl_visitaButton_Delete_OnClick @5-BA96335E
+function tbl_visitaButton_Delete_OnClick()
+{
+    disableValidation = true;
+}
+//End tbl_visitaButton_Delete_OnClick
+
+//bind_events @1-35B380A0
+function bind_events() {
+    if (functionExists("Header_bind_events")) Header_bind_events();
+    if (functionExists("Footer_bind_events")) Footer_bind_events();
+    addEventHandler("tbl_visitaButton_Delete", "click", tbl_visitaButton_Delete_OnClick);
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
+//End CCS script
+</script>
+</head>
+<body>
+{Header}
+<!-- BEGIN Record tbl_visita -->
+<form id="tbl_visita" method="post" action="{Action}" name="{HTMLFormName}">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+          <tr>
+            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="th"><strong>Adicionar/Editar Tbl Visita </strong></td> 
+            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          </tr>
+ 
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td> 
+          </tr>
+ <!-- END Error -->
+          <tr class="Controls">
+            <td class="th"><label for="tbl_visitaData">Data</label></td> 
+            <td><input type="text" name="{Data_Name}" value="{Data}" maxlength="100" size="10" id="tbl_visitaData">
+              <!-- BEGIN DatePicker DatePicker_Data --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_visitaDatePicker_Data"><img src="Styles/Padrao/Images/DatePicker.gif" border="0" alt="Show Date Picker" id="tbl_visitaDatePicker_Data_Image"></a><!-- END DatePicker DatePicker_Data --></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_visitaHora">Hora</label></td> 
+            <td><input type="text" name="{Hora_Name}" value="{Hora}" maxlength="100" size="10" id="tbl_visitaHora">
+              <!-- BEGIN DatePicker DatePicker_Hora --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_visitaDatePicker_Hora"><img src="Styles/Padrao/Images/DatePicker.gif" border="0" alt="Show Date Picker" id="tbl_visitaDatePicker_Hora_Image"></a><!-- END DatePicker DatePicker_Hora --></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_visitaCod_Imovel">Cod Imovel</label></td> 
+            <td><input type="text" name="{Cod_Imovel_Name}" value="{Cod_Imovel}" maxlength="10" size="10" id="tbl_visitaCod_Imovel"></td> 
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_visitaCod_Funcionario">Cod Funcionario</label></td> 
+            <td><input type="text" name="{Cod_Funcionario_Name}" value="{Cod_Funcionario}" maxlength="10" size="10" id="tbl_visitaCod_Funcionario"></td> 
+          </tr>
+ 
+          <tr class="Bottom">
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Add" alt="Add" id="tbl_visitaButton_Insert" class="Button"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Atualizar" alt="Atualizar" id="tbl_visitaButton_Update" class="Button"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Delete" alt="Delete" id="tbl_visitaButton_Delete" class="Button"><!-- END Button Button_Delete --></td> 
+          </tr>
+ 
+        </table>
+ </td> 
+    </tr>
+ 
+  </table>
+</form>
+<!-- END Record tbl_visita --><br>
+{Footer}
+</body>
+</html>
