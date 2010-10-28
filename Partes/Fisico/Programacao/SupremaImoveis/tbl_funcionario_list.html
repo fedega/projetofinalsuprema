@@ -1,57 +1,54 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Tbl Funcionario</title>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 </head>
 <body>
-{Header}
+{Header} 
 <!-- BEGIN Record tbl_funcionarioSearch -->
-<form id="tbl_funcionarioSearch" method="post" action="{Action}" name="{HTMLFormName}">
+<form id="tbl_funcionarioSearch" name="{HTMLFormName}" action="{Action}" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Buscar Tbl Funcionario </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Buscar Funcionario </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <!-- BEGIN Error -->
           <tr class="Error">
-            <td colspan="2">{Error}</td> 
+            <td colspan="2">{Error}</td>
           </tr>
- <!-- END Error -->
+          <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioSearchs_Nome">Nome</label></td> 
-            <td><input type="text" name="{s_Nome_Name}" value="{s_Nome}" maxlength="40" size="40" id="tbl_funcionarioSearchs_Nome"></td> 
+            <td><input id="tbl_funcionarioSearchs_Nome" maxlength="40" size="40" value="{s_Nome}" name="{s_Nome_Name}"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioSearchs_Nome_U">Nome U</label></td> 
-            <td><input type="text" name="{s_Nome_U_Name}" value="{s_Nome_U}" maxlength="20" size="20" id="tbl_funcionarioSearchs_Nome_U"></td> 
+            <td class="th"><label for="tbl_funcionarioSearchs_Nome_U">Nome Usuario</label></td> 
+            <td><input id="tbl_funcionarioSearchs_Nome_U" maxlength="20" value="{s_Nome_U}" name="{s_Nome_U_Name}" size="20"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioSearchs_Endereco">Endereco</label></td> 
-            <td><input type="text" name="{s_Endereco_Name}" value="{s_Endereco}" maxlength="40" size="40" id="tbl_funcionarioSearchs_Endereco"></td> 
+            <td><input id="tbl_funcionarioSearchs_Endereco" maxlength="40" size="40" value="{s_Endereco}" name="{s_Endereco_Name}"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <!-- BEGIN Button Button_DoSearch --><input name="{Button_Name}" type="submit" value="Buscar" alt="Buscar" id="tbl_funcionarioSearchButton_DoSearch" class="Button"><!-- END Button Button_DoSearch --></td> 
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input class="Button" id="tbl_funcionarioSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 <!-- END Record tbl_funcionarioSearch --><br>
@@ -59,120 +56,117 @@
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td valign="top">
-      <table cellspacing="0" cellpadding="0" border="0" class="Header">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
         <tr>
-          <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-          <td class="th"><strong>List of Tbl Funcionario</strong></td> 
-          <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="th"><strong>Lista de&nbsp;Funcionario</strong></td> 
+          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
         </tr>
- 
       </table>
  
       <table class="Grid" cellspacing="0" cellpadding="0">
         <tr class="Caption">
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Cod_Funcionario --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Funcionario">Cod Funcionario</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Funcionario --></th>
+          <!-- BEGIN Sorter Sorter_Cod_Funcionario --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Funcionario">Codigo do Funcionario</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Funcionario --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Nome --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Nome">Nome</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Nome --></th>
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Nome --></th>
  
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Cod_Cidade --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Cidade">Cod Cidade</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Cidade --></th>
+          <!-- BEGIN Sorter Sorter_Cod_Cidade --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Cidade">Cidade</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Cidade --></th>
  
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Cod_Estado --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Estado">Cod Estado</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Estado --></th>
+          <!-- BEGIN Sorter Sorter_Cod_Estado --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Estado">Estado</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Estado --></th>
  
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Cod_Orgao --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Orgao">Cod Orgao</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Orgao --></th>
+          <!-- BEGIN Sorter Sorter_Cod_Orgao --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Cod_Orgao">Orgao Expedidor</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Orgao --></th>
  
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Nome_U --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Nome_U">Nome U</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Nome_U --></th>
+          <!-- BEGIN Sorter Sorter_Nome_U --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Nome_U">Nome Usuario</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Nome_U --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Endereco --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Endereco">Endereco</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Endereco --></th>
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Endereco --></th>
  
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Tel_Fixo --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Tel_Fixo">Tel Fixo</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Tel_Fixo --></th>
+          <!-- BEGIN Sorter Sorter_Tel_Fixo --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Tel_Fixo">Telefone Fixo</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Tel_Fixo --></th>
  
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Tel_Cel --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Tel_Cel">Tel Cel</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Tel_Cel --></th>
+          <!-- BEGIN Sorter Sorter_Tel_Cel --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Tel_Cel">Telefone Celular</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Tel_Cel --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_CPF --><a href="{Sort_URL}" id="tbl_funcionarioSorter_CPF">CPF</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_CPF --></th>
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_CPF --></th>
  
           <th scope="col">
-          <!-- BEGIN Sorter Sorter_Data_Nasc --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Data_Nasc">Data Nasc</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Data_Nasc --></th>
+          <!-- BEGIN Sorter Sorter_Data_Nasc --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Data_Nasc">Data Nascimento</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Data_Nasc --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_CRECI --><a href="{Sort_URL}" id="tbl_funcionarioSorter_CRECI">CRECI</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_CRECI --></th>
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_CRECI --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Nivel_Controle --><a href="{Sort_URL}" id="tbl_funcionarioSorter_Nivel_Controle">Nivel Controle</a> 
-          <!-- BEGIN Asc_On --><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"><!-- END Desc_On --><!-- END Sorter Sorter_Nivel_Controle --></th>
- 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Nivel_Controle --></th>
         </tr>
  
         <!-- BEGIN Row -->
         <tr class="Row">
-          <td style="text-align:right;"><a href="{Cod_Funcionario_Src}" id="tbl_funcionarioCod_Funcionario_{tbl_funcionario:rowNumber}">{Cod_Funcionario}</a>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><a href="{Cod_Funcionario_Src}" id="tbl_funcionarioCod_Funcionario_{tbl_funcionario:rowNumber}">{Cod_Funcionario}</a>&nbsp;</td> 
           <td>{Nome}&nbsp;</td> 
-          <td style="text-align:right;">{Cod_Cidade}&nbsp;</td> 
-          <td style="text-align:right;">{Cod_Estado}&nbsp;</td> 
-          <td style="text-align:right;">{Cod_Orgao}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Cidade}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Estado}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Orgao}&nbsp;</td> 
           <td>{Nome_U}&nbsp;</td> 
           <td>{Endereco}&nbsp;</td> 
-          <td style="text-align:right;">{Tel_Fixo}&nbsp;</td> 
-          <td style="text-align:right;">{Tel_Cel}&nbsp;</td> 
-          <td style="text-align:right;">{CPF}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Tel_Fixo}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Tel_Cel}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{CPF}&nbsp;</td> 
           <td>{Data_Nasc}&nbsp;</td> 
-          <td style="text-align:right;">{CRECI}&nbsp;</td> 
-          <td style="text-align:right;">{Nivel_Controle}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{CRECI}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Nivel_Controle}&nbsp;</td>
         </tr>
  <!-- END Row -->
         <!-- BEGIN NoRecords -->
         <tr class="NoRecords">
-          <td colspan="13">Sem registros</td> 
+          <td colspan="13">Sem registros</td>
         </tr>
- <!-- END NoRecords -->
+        <!-- END NoRecords -->
         <tr class="Footer">
-          <td colspan="13"><a href="{tbl_funcionario_Insert_Src}" id="tbl_funcionariotbl_funcionario_Insert">Add New</a>&nbsp; 
+          <td colspan="13"><a href="{tbl_funcionario_Insert_Src}" id="tbl_funcionariotbl_funcionario_Insert">Adicionar</a>&nbsp; 
             <!-- BEGIN Navigator Navigator -->
-            <!-- BEGIN First_On --><a href="{First_URL}">|&lt; </a> <!-- END First_On -->
-            <!-- BEGIN Prev_On --><a href="{Prev_URL}">&lt;&lt; </a> <!-- END Prev_On -->&nbsp;{Page_Number} de&nbsp;{Total_Pages}&nbsp; 
-            <!-- BEGIN Next_On --><a href="{Next_URL}">&gt;&gt; </a> <!-- END Next_On -->
-            <!-- BEGIN Last_On --><a href="{Last_URL}">&gt;| </a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td> 
+            <!-- BEGIN First_On --><a href="{First_URL}">|&lt;</a> <!-- END First_On -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">&lt;&lt;</a> <!-- END Prev_On -->&nbsp;{Page_Number} de&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">&gt;&gt;</a> <!-- END Next_On -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">&gt;|</a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td>
         </tr>
- 
       </table>
- </td> 
+    </td>
   </tr>
 </table>
 <!-- END Grid tbl_funcionario --><br>
-{Footer}
+{Footer} 
 </body>
 </html>

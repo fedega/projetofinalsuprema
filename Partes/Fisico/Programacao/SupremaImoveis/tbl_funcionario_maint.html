@@ -1,10 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Tbl Funcionario</title>
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css" />
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-3857DB21
@@ -14,10 +14,10 @@
 <script language="JavaScript" type="text/javascript">
 //End Include Common JSFunctions
 
-//Date Picker Object Definitions @1-04D1B96D
+//Date Picker Object Definitions @1-ADC53557
 
 var tbl_funcionario_DatePicker_Data_Nasc = new Object(); 
-tbl_funcionario_DatePicker_Data_Nasc.format           = "ShortDate";
+tbl_funcionario_DatePicker_Data_Nasc.format           = "dd/mm/yyyy";
 tbl_funcionario_DatePicker_Data_Nasc.style            = "Styles/Padrao/Style.css";
 tbl_funcionario_DatePicker_Data_Nasc.relativePathPart = "";
 tbl_funcionario_DatePicker_Data_Nasc.themeVersion = "3.0";
@@ -45,17 +45,17 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-{Header}
+{Header} 
 <!-- BEGIN Record tbl_funcionario -->
-<form id="tbl_funcionario" method="post" action="{Action}" name="{HTMLFormName}">
+<form id="tbl_funcionario" name="{HTMLFormName}" action="{Action}" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
             <td class="th"><strong>Adicionar/Editar Tbl Funcionario </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
           </tr>
  
         </table>
@@ -68,75 +68,90 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
  <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioNome">Nome</label></td> 
-            <td><input type="text" name="{Nome_Name}" value="{Nome}" maxlength="40" size="40" id="tbl_funcionarioNome"></td> 
+            <td><input id="tbl_funcionarioNome" maxlength="40" size="40" value="{Nome}" name="{Nome_Name}"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioCod_Cidade">Cod Cidade</label></td> 
-            <td><input type="text" name="{Cod_Cidade_Name}" value="{Cod_Cidade}" maxlength="10" size="10" id="tbl_funcionarioCod_Cidade"></td> 
+            <td>
+              <select id="tbl_funcionarioCod_Cidade" name="{Cod_Cidade_Name}">
+                <option value="" selected>Selecionar valor</option>
+ {Cod_Cidade_Options} 
+              </select>
+ </td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioCod_Estado">Cod Estado</label></td> 
-            <td><input type="text" name="{Cod_Estado_Name}" value="{Cod_Estado}" maxlength="10" size="10" id="tbl_funcionarioCod_Estado"></td> 
+            <td>
+              <select name="{Cod_Estado_Name}" id="tbl_funcionarioCod_Estado">
+                <option value="">Selecionar valor</option>
+ {Cod_Estado_Options} 
+              </select>
+ </td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioCod_Orgao">Cod Orgao</label></td> 
-            <td><input type="text" name="{Cod_Orgao_Name}" value="{Cod_Orgao}" maxlength="10" size="10" id="tbl_funcionarioCod_Orgao"></td> 
+            <td>
+              <select name="{Cod_Orgao_Name}" id="tbl_funcionarioCod_Orgao">
+                <option value="">Selecionar valor</option>
+ {Cod_Orgao_Options} 
+              </select>
+ </td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioNome_U">Nome U</label></td> 
-            <td><input type="text" name="{Nome_U_Name}" value="{Nome_U}" maxlength="20" size="20" id="tbl_funcionarioNome_U"></td> 
+            <td><input id="tbl_funcionarioNome_U" maxlength="20" value="{Nome_U}" name="{Nome_U_Name}" size="20"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioSenha_U">Senha U</label></td> 
-            <td><input type="password" name="{Senha_U_Name}" value="{Senha_U}" maxlength="20" size="20" id="tbl_funcionarioSenha_U"></td> 
+            <td><input id="tbl_funcionarioSenha_U" type="password" maxlength="20" value="{Senha_U}" name="{Senha_U_Name}" size="20"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioEndereco">Endereco</label></td> 
-            <td><input type="text" name="{Endereco_Name}" value="{Endereco}" maxlength="40" size="40" id="tbl_funcionarioEndereco"></td> 
+            <td><input id="tbl_funcionarioEndereco" maxlength="40" size="40" value="{Endereco}" name="{Endereco_Name}"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioTel_Fixo">Tel Fixo</label></td> 
-            <td><input type="text" name="{Tel_Fixo_Name}" value="{Tel_Fixo}" maxlength="10" size="10" id="tbl_funcionarioTel_Fixo"></td> 
+            <td><input id="tbl_funcionarioTel_Fixo" maxlength="10" size="10" value="{Tel_Fixo}" name="{Tel_Fixo_Name}"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioTel_Cel">Tel Cel</label></td> 
-            <td><input type="text" name="{Tel_Cel_Name}" value="{Tel_Cel}" maxlength="10" size="10" id="tbl_funcionarioTel_Cel"></td> 
+            <td><input id="tbl_funcionarioTel_Cel" maxlength="10" size="10" value="{Tel_Cel}" name="{Tel_Cel_Name}"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioCPF">CPF</label></td> 
-            <td><input type="text" name="{CPF_Name}" value="{CPF}" maxlength="10" size="10" id="tbl_funcionarioCPF"></td> 
+            <td><input id="tbl_funcionarioCPF" maxlength="11" size="11" value="{CPF}" name="{CPF_Name}"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioData_Nasc">Data Nasc</label></td> 
-            <td><input type="text" name="{Data_Nasc_Name}" value="{Data_Nasc}" maxlength="100" size="10" id="tbl_funcionarioData_Nasc">
-              <!-- BEGIN DatePicker DatePicker_Data_Nasc --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_funcionarioDatePicker_Data_Nasc"><img src="Styles/Padrao/Images/DatePicker.gif" border="0" alt="Show Date Picker" id="tbl_funcionarioDatePicker_Data_Nasc_Image"></a><!-- END DatePicker DatePicker_Data_Nasc --></td> 
+            <td><input id="tbl_funcionarioData_Nasc" maxlength="100" size="10" value="{Data_Nasc}" name="{Data_Nasc_Name}">
+              <!-- BEGIN DatePicker DatePicker_Data_Nasc --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_funcionarioDatePicker_Data_Nasc"><img id="tbl_funcionarioDatePicker_Data_Nasc_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_Data_Nasc --></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioCRECI">CRECI</label></td> 
-            <td><input type="text" name="{CRECI_Name}" value="{CRECI}" maxlength="10" size="10" id="tbl_funcionarioCRECI"></td> 
+            <td><input id="tbl_funcionarioCRECI" maxlength="10" size="10" value="{CRECI}" name="{CRECI_Name}"></td> 
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioNivel_Controle">Nivel Controle</label></td> 
-            <td><input type="text" name="{Nivel_Controle_Name}" value="{Nivel_Controle}" maxlength="10" size="10" id="tbl_funcionarioNivel_Controle"></td> 
+            <td><input id="tbl_funcionarioNivel_Controle" maxlength="10" size="10" value="{Nivel_Controle}" name="{Nivel_Controle_Name}"></td> 
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Add" alt="Add" id="tbl_funcionarioButton_Insert" class="Button"><!-- END Button Button_Insert -->
-              <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Atualizar" alt="Atualizar" id="tbl_funcionarioButton_Update" class="Button"><!-- END Button Button_Update -->
-              <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Delete" alt="Delete" id="tbl_funcionarioButton_Delete" class="Button"><!-- END Button Button_Delete --></td> 
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="Button" id="tbl_funcionarioButton_Insert" type="submit" alt="Add" value="Add" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="Button" id="tbl_funcionarioButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="Button" id="tbl_funcionarioButton_Delete" type="submit" alt="Delete" value="Delete" name="{Button_Name}"><!-- END Button Button_Delete --></td> 
           </tr>
  
         </table>
@@ -146,6 +161,6 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
   </table>
 </form>
 <!-- END Record tbl_funcionario --><br>
-{Footer}
+{Footer} 
 </body>
 </html>

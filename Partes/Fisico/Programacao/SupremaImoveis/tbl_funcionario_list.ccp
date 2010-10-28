@@ -198,7 +198,7 @@
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="49" fieldSourceType="DBColumn" dataType="Date" html="False" name="Data_Nasc" fieldSource="Data_Nasc" wizardCaption="Data Nasc" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" wizardAddNbsp="True" parentName="tbl_funcionario" rowNumber="1" PathID="tbl_funcionarioData_Nasc">
+				<Label id="49" fieldSourceType="DBColumn" dataType="Date" html="False" name="Data_Nasc" fieldSource="Data_Nasc" wizardCaption="Data Nasc" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" wizardAddNbsp="True" parentName="tbl_funcionario" rowNumber="1" PathID="tbl_funcionarioData_Nasc" format="dd/mm/yyyy" DBFormat="yyyy-mm-dd HH:nn:ss">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -235,21 +235,21 @@
 				<TableParameter id="12" conditionType="Parameter" useIsNull="False" field="tbl_funcionario.Nome_U" parameterSource="s_Nome_U" dataType="Text" logicOperator="And" searchConditionType="Contains" parameterType="URL" orderNumber="2" leftBrackets="0" rightBrackets="0"/>
 				<TableParameter id="13" conditionType="Parameter" useIsNull="False" field="tbl_funcionario.Endereco" parameterSource="s_Endereco" dataType="Text" logicOperator="And" searchConditionType="Contains" parameterType="URL" orderNumber="3" leftBrackets="0" rightBrackets="0"/>
 				<TableParameter id="73" conditionType="Parameter" useIsNull="False" field="tbl_funcionario.Cod_Cidade" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_cidade.Cod_Cidade"/>
-<TableParameter id="74" conditionType="Parameter" useIsNull="False" field="tbl_funcionario.Cod_Estado" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_estado.Cod_Estado"/>
-<TableParameter id="75" conditionType="Parameter" useIsNull="False" field="tbl_funcionario.Cod_Orgao" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_orgaoemissor.Cod_Orgao"/>
-</TableParameters>
+				<TableParameter id="74" conditionType="Parameter" useIsNull="False" field="tbl_funcionario.Cod_Estado" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_estado.Cod_Estado"/>
+				<TableParameter id="75" conditionType="Parameter" useIsNull="False" field="tbl_funcionario.Cod_Orgao" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_orgaoemissor.Cod_Orgao"/>
+			</TableParameters>
 			<JoinTables>
 				<JoinTable id="9" tableName="tbl_funcionario" posWidth="129" posHeight="180" posLeft="10" posRight="-1" posTop="10"/>
 				<JoinTable id="66" tableName="tbl_estado" posLeft="160" posTop="10" posWidth="95" posHeight="104"/>
-<JoinTable id="68" tableName="tbl_cidade" posLeft="276" posTop="10" posWidth="95" posHeight="104"/>
-<JoinTable id="71" tableName="tbl_orgaoemissor" posLeft="392" posTop="10" posWidth="95" posHeight="104"/>
-</JoinTables>
+				<JoinTable id="68" tableName="tbl_cidade" posLeft="276" posTop="10" posWidth="95" posHeight="104"/>
+				<JoinTable id="71" tableName="tbl_orgaoemissor" posLeft="392" posTop="10" posWidth="95" posHeight="104"/>
+			</JoinTables>
 			<JoinLinks>
 				<JoinTable2 id="67" tableLeft="tbl_funcionario" tableRight="tbl_estado" fieldLeft="tbl_funcionario.Cod_Estado" fieldRight="tbl_estado.Cod_Estado" joinType="inner" conditionType="Equal"/>
-<JoinTable2 id="69" tableLeft="tbl_funcionario" tableRight="tbl_cidade" fieldLeft="tbl_funcionario.Cod_Cidade" fieldRight="tbl_cidade.Cod_Cidade" joinType="inner" conditionType="Equal"/>
-<JoinTable2 id="70" tableLeft="tbl_cidade" tableRight="tbl_estado" fieldLeft="tbl_cidade.Cod_Estado" fieldRight="tbl_estado.Cod_Estado" joinType="inner" conditionType="Equal"/>
-<JoinTable2 id="72" tableLeft="tbl_funcionario" tableRight="tbl_orgaoemissor" fieldLeft="tbl_funcionario.Cod_Orgao" fieldRight="tbl_orgaoemissor.Cod_Orgao" joinType="inner" conditionType="Equal"/>
-</JoinLinks>
+				<JoinTable2 id="69" tableLeft="tbl_funcionario" tableRight="tbl_cidade" fieldLeft="tbl_funcionario.Cod_Cidade" fieldRight="tbl_cidade.Cod_Cidade" joinType="inner" conditionType="Equal"/>
+				<JoinTable2 id="70" tableLeft="tbl_cidade" tableRight="tbl_estado" fieldLeft="tbl_cidade.Cod_Estado" fieldRight="tbl_estado.Cod_Estado" joinType="inner" conditionType="Equal"/>
+				<JoinTable2 id="72" tableLeft="tbl_funcionario" tableRight="tbl_orgaoemissor" fieldLeft="tbl_funcionario.Cod_Orgao" fieldRight="tbl_orgaoemissor.Cod_Orgao" joinType="inner" conditionType="Equal"/>
+			</JoinLinks>
 			<Fields>
 				<Field id="65" fieldName="*"/>
 			</Fields>

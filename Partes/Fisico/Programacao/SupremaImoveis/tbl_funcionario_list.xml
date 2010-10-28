@@ -32,7 +32,7 @@
     </Record>
 <!--End Record tbl_funcionarioSearch model-->
 
-<!--Grid tbl_funcionario model @8-227C5D01-->
+<!--Grid tbl_funcionario model @8-65E4CC8D-->
     <Grid name="tbl_funcionario" connection="Conexao" restricted="False" fetchSize="20" allowRead="True" 
             fetchSizeLimit="100" useCount="True" visible="True">
         <Row>
@@ -80,7 +80,7 @@
             </Label>
             <Label name="Data_Nasc" dataType="Date"
                     controlSourceType="DataSource" controlSource="Data_Nasc"
-                    isHtml="False" format="" dbFormat="">
+                    isHtml="False" format="dd/MM/yyyy" dbFormat="yyyy-MM-dd HH:mm:ss">
             </Label>
             <Label name="CRECI" dataType="Integer"
                     controlSourceType="DataSource" controlSource="CRECI"
