@@ -4,7 +4,7 @@ Source Host: localhost
 Source Database: supremaimoveis
 Target Host: localhost
 Target Database: supremaimoveis
-Date: 27/10/2010 22:49:49
+Date: 28/10/2010 02:53:43
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -47,7 +47,7 @@ CREATE TABLE `tbl_cidade` (
 CREATE TABLE `tbl_clausula` (
   `Cod_Clausula` int(11) NOT NULL AUTO_INCREMENT,
   `Tipo` int(11) NOT NULL,
-  `Descricao` varchar(655) DEFAULT NULL,
+  `Descricao` varchar(655) CHARACTER SET latin1 DEFAULT NULL,
   `Cod_Contrato` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Clausula`),
   KEY `FK_tbl_clausula_tbl_tipo_causula_Cod_Tipo` (`Tipo`),
@@ -131,10 +131,10 @@ CREATE TABLE `tbl_despesas` (
 -- Table structure for tbl_destinacao
 -- ----------------------------
 CREATE TABLE `tbl_destinacao` (
-  `Cod_destinacao` int(11) NOT NULL,
+  `Cod_destinacao` int(11) NOT NULL AUTO_INCREMENT,
   `Destinacao` varchar(20) NOT NULL,
   PRIMARY KEY (`Cod_destinacao`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_documentacao
@@ -162,7 +162,7 @@ CREATE TABLE `tbl_estado` (
   `UF` varchar(40) CHARACTER SET latin1 NOT NULL,
   `Nome` varchar(40) CHARACTER SET latin1 NOT NULL,
   PRIMARY KEY (`Cod_Estado`)
-) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=28 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Table structure for tbl_fiador
@@ -207,8 +207,8 @@ CREATE TABLE `tbl_funcionario` (
   `Endereco` varchar(40) CHARACTER SET latin1 DEFAULT NULL,
   `Tel_Fixo` int(11) DEFAULT NULL,
   `Tel_Cel` int(11) DEFAULT NULL,
-  `CPF` int(11) DEFAULT NULL,
-  `Data_Nasc` date DEFAULT NULL,
+  `CPF` double(11,0) unsigned zerofill NOT NULL,
+  `Data_Nasc` datetime DEFAULT NULL,
   `CRECI` int(11) DEFAULT NULL,
   `Nivel_Controle` int(11) NOT NULL,
   PRIMARY KEY (`Cod_Funcionario`),
@@ -218,7 +218,7 @@ CREATE TABLE `tbl_funcionario` (
   CONSTRAINT `tbl_funcionario_ibfk_1` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
   CONSTRAINT `tbl_funcionario_ibfk_2` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`),
   CONSTRAINT `tbl_funcionario_ibfk_3` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Table structure for tbl_imovel
@@ -5870,6 +5870,8 @@ INSERT INTO `tbl_cidade` VALUES ('5504', 'Tupirama', '27');
 INSERT INTO `tbl_cidade` VALUES ('5505', 'Tupiratins', '27');
 INSERT INTO `tbl_cidade` VALUES ('5506', 'Wanderlândia', '27');
 INSERT INTO `tbl_cidade` VALUES ('5507', 'Xambioá', '27');
+INSERT INTO `tbl_destinacao` VALUES ('1', 'Administração');
+INSERT INTO `tbl_destinacao` VALUES ('2', 'Venda');
 INSERT INTO `tbl_estado` VALUES ('1', 'AC', 'Acre');
 INSERT INTO `tbl_estado` VALUES ('2', 'AL', 'Alagoas');
 INSERT INTO `tbl_estado` VALUES ('3', 'AP', 'Amapá');
@@ -5897,7 +5899,8 @@ INSERT INTO `tbl_estado` VALUES ('24', 'SC', 'Santa Catarina');
 INSERT INTO `tbl_estado` VALUES ('25', 'SP', 'São Paulo');
 INSERT INTO `tbl_estado` VALUES ('26', 'SE', 'Sergipe');
 INSERT INTO `tbl_estado` VALUES ('27', 'TO', 'Tocantins');
-INSERT INTO `tbl_funcionario` VALUES ('1', 'Elomar Rodrigues da Silveira', '801', '7', '1', 'elomar', 'elomar', 'uahuhau', '242424424', '242424', '242424', '1988-10-26', '242424', '3');
+INSERT INTO `tbl_funcionario` VALUES ('1', 'Elomar Rodrigues da Silveira', '801', '7', '1', 'elomar', 'elomar', 'uahuhau', '242424424', '242424', '02356402128', '2010-10-19 02:27:28', '242424', '3');
+INSERT INTO `tbl_funcionario` VALUES ('2', 'Rogerio CMS', '801', '7', '1', 'rogerio', 'rogerio', 'testando', '232323232', '23232323', '02323232333', '2010-10-30 00:00:00', '23233', '3');
 INSERT INTO `tbl_orgaoemissor` VALUES ('1', 'SSP', 'Secretaria de  Segurança Pública');
 INSERT INTO `tbl_orgaoemissor` VALUES ('2', 'PC', 'Polícia Civil');
 INSERT INTO `tbl_orgaoemissor` VALUES ('3', 'PM', 'Polícia Militar');
