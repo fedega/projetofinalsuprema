@@ -10,7 +10,7 @@
     <Include name="Footer"/>
 <!--End Page componets-->
 
-<!--Record tbl_cidade model @2-A6D55158-->
+<!--Record tbl_cidade model @2-50F099AB-->
     <Record name="tbl_cidade" connection="Conexao" restricted="False" returnPage="tbl_cidade_list.jsp" convertRule="Relative" preserveParams="GET" 
             allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
         <Button name="Button_Insert" operation="Insert"
@@ -29,18 +29,26 @@
                 controlSourceType="DataSource" controlSource="Nome"
                 required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
-        <TextBox name="Cod_Estado" caption="Cod Estado" dataType="Integer"
-                controlSourceType="DataSource" controlSource="Cod_Estado"
-                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
+        <ListBox name="Cod_Estado" caption="Cod Estado" dataType="Integer"
+                controlSourceType="DataSource" boundColumn="Cod_Estado" textColumn="UF"
+                connection="Conexao" controlSource="Cod_Estado"
+                required="True" unique="" errorControl="" isHtml="">
+            <Select query="SELECT * FROM tbl_estado {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            </Select>
+        </ListBox>
         <Select query="SELECT * FROM tbl_cidade {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
             <Where>
                 <WhereClause>
                     <Parameter name="Cod_Cidade6"/>
+                    <Operation operator="And"/>
+                    <Parameter name="tbl_estado.Cod_Estado15"/>
 
                 </WhereClause>
                 <WhereParameter name="Cod_Cidade6" field="Cod_Cidade" type="Integer"
                         operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Cidade"
+                        format="" dbFormat=""/>
+                <WhereParameter name="tbl_estado.Cod_Estado15" field="Cod_Estado" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="tbl_estado.Cod_Estado"
                         format="" dbFormat=""/>
             </Where>
         </Select>
@@ -54,10 +62,15 @@
             <Where>
                 <WhereClause>
                     <Parameter name="Cod_Cidade6"/>
+                    <Operation operator="And"/>
+                    <Parameter name="tbl_estado.Cod_Estado15"/>
 
                 </WhereClause>
                 <WhereParameter name="Cod_Cidade6" field="Cod_Cidade" type="Integer"
                         operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Cidade"
+                        format="" dbFormat=""/>
+                <WhereParameter name="tbl_estado.Cod_Estado15" field="Cod_Estado" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="tbl_estado.Cod_Estado"
                         format="" dbFormat=""/>
             </Where>
         </Update>
@@ -65,10 +78,15 @@
             <Where>
                 <WhereClause>
                     <Parameter name="Cod_Cidade6"/>
+                    <Operation operator="And"/>
+                    <Parameter name="tbl_estado.Cod_Estado15"/>
 
                 </WhereClause>
                 <WhereParameter name="Cod_Cidade6" field="Cod_Cidade" type="Integer"
                         operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Cidade"
+                        format="" dbFormat=""/>
+                <WhereParameter name="tbl_estado.Cod_Estado15" field="Cod_Estado" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="tbl_estado.Cod_Estado"
                         format="" dbFormat=""/>
             </Where>
         </Delete>

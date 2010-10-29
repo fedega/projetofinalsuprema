@@ -2,17 +2,37 @@
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="tbl_cidadeSearch" returnPage="tbl_cidade_list.ccp" wizardCaption="Buscar Tbl Cidade " wizardOrientation="Vertical" wizardFormMethod="post" PathID="tbl_cidadeSearch">
 			<Components>
-				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoSearch" operation="Search" wizardCaption="Buscar" parentName="tbl_cidadeSearch" PathID="tbl_cidadeSearchButton_DoSearch">
+				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoSearch" operation="Search" wizardCaption="Buscar" PathID="tbl_cidadeSearchButton_DoSearch">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Button>
-				<TextBox id="4" visible="Yes" fieldSourceType="DBColumn" dataType="Text" name="s_Nome" wizardCaption="Nome" wizardSize="40" wizardMaxLength="40" wizardIsPassword="False" parentName="tbl_cidadeSearch" PathID="tbl_cidadeSearchs_Nome">
+				<TextBox id="4" visible="Dynamic" fieldSourceType="DBColumn" dataType="Text" name="s_Nome" wizardCaption="Nome" wizardSize="40" wizardMaxLength="40" wizardIsPassword="False" PathID="tbl_cidadeSearchs_Nome" features="(assigned)">
 					<Components/>
 					<Events/>
 					<Attributes/>
-					<Features/>
+					<Features>
+<HideShow id="25" enabled="True" name="HideShow1" category="Ajax" featureNameChanged="No" ccsIdsOnly="False" show="tbl_cidadeSearch.onload;">
+<Components/>
+<Events/>
+<ControlPoints>
+<ControlPoint id="26" name="tbl_cidadeSearch.onload" relProperty="show">
+<Items>
+<ControlPointItem id="27" name="tbl_cidade_list" ccpId="1" type="Page" isFeature="False"/>
+<ControlPointItem id="28" name="tbl_cidadeSearch" ccpId="2" type="Record" isFeature="False" PathID="tbl_cidadeSearch"/>
+</Items>
+</ControlPoint>
+</ControlPoints>
+<TableParameters/>
+<SPParameters/>
+<SQLParameters/>
+<JoinTables/>
+<JoinLinks/>
+<Fields/>
+<Features/>
+</HideShow>
+</Features>
 				</TextBox>
 			</Components>
 			<Events/>
@@ -36,9 +56,9 @@
 			<Attributes/>
 			<Features/>
 		</Record>
-		<Grid id="6" secured="False" sourceType="Table" returnValueType="Number" defaultPageSize="20" name="tbl_cidade" connection="Conexao" pageSizeLimit="100" wizardCaption="List of Tbl Cidade " wizardGridType="Tabular" wizardAllowSorting="True" wizardSortingType="SimpleDir" wizardUsePageScroller="True" wizardAllowInsert="True" wizardAltRecord="False" wizardRecordSeparator="False" wizardAltRecordType="Controls" dataSource="tbl_cidade">
+		<Grid id="6" secured="False" sourceType="Table" returnValueType="Number" defaultPageSize="20" name="tbl_cidade" connection="Conexao" pageSizeLimit="100" wizardCaption="List of Tbl Cidade " wizardGridType="Tabular" wizardAllowSorting="True" wizardSortingType="SimpleDir" wizardUsePageScroller="True" wizardAllowInsert="True" wizardAltRecord="False" wizardRecordSeparator="False" wizardAltRecordType="Controls" dataSource="tbl_cidade, tbl_estado" activeCollection="TableParameters">
 			<Components>
-				<Link id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Text" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="tbl_cidade_Insert" hrefSource="tbl_cidade_maint.ccp" removeParameters="Cod_Cidade" wizardThemeItem="NavigatorLink" wizardDefaultValue="Add New" parentName="tbl_cidade" PathID="tbl_cidadetbl_cidade_Insert">
+				<Link id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Text" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="tbl_cidade_Insert" hrefSource="tbl_cidade_maint.ccp" removeParameters="Cod_Cidade" wizardThemeItem="NavigatorLink" wizardDefaultValue="Add New" PathID="tbl_cidadetbl_cidade_Insert">
 					<Components/>
 					<Events/>
 					<LinkParameters/>
@@ -63,7 +83,7 @@
 					<Attributes/>
 					<Features/>
 				</Sorter>
-				<Link id="14" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="Cod_Cidade" fieldSource="Cod_Cidade" wizardCaption="Cod Cidade" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" hrefSource="tbl_cidade_maint.ccp" parentName="tbl_cidade" rowNumber="1" PathID="tbl_cidadeCod_Cidade">
+				<Link id="14" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="Cod_Cidade" fieldSource="Cod_Cidade" wizardCaption="Cod Cidade" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" hrefSource="tbl_cidade_maint.ccp" PathID="tbl_cidadeCod_Cidade">
 					<Components/>
 					<Events/>
 					<LinkParameters>
@@ -72,13 +92,13 @@
 					<Attributes/>
 					<Features/>
 				</Link>
-				<Label id="17" fieldSourceType="DBColumn" dataType="Text" html="False" name="Nome" fieldSource="Nome" wizardCaption="Nome" wizardSize="40" wizardMaxLength="40" wizardIsPassword="False" wizardAddNbsp="True" parentName="tbl_cidade" rowNumber="1" PathID="tbl_cidadeNome">
+				<Label id="17" fieldSourceType="DBColumn" dataType="Text" html="False" name="Nome" fieldSource="tbl_cidade_Nome" wizardCaption="Nome" wizardSize="40" wizardMaxLength="40" wizardIsPassword="False" wizardAddNbsp="True" PathID="tbl_cidadeNome">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="19" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Estado" fieldSource="Cod_Estado" wizardCaption="Cod Estado" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" parentName="tbl_cidade" rowNumber="1" PathID="tbl_cidadeCod_Estado">
+				<Label id="19" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Estado" fieldSource="UF" wizardCaption="Cod Estado" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_cidadeCod_Estado">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -99,29 +119,34 @@
 			</Components>
 			<Events/>
 			<TableParameters>
-				<TableParameter id="9" conditionType="Parameter" useIsNull="False" field="Nome" parameterSource="s_Nome" dataType="Text" logicOperator="And" searchConditionType="Contains" parameterType="URL" orderNumber="1"/>
-			</TableParameters>
+				<TableParameter id="9" conditionType="Parameter" useIsNull="False" field="tbl_cidade.Nome" parameterSource="s_Nome" dataType="Text" logicOperator="And" searchConditionType="Contains" parameterType="URL" orderNumber="1"/>
+				<TableParameter id="32" conditionType="Parameter" useIsNull="False" field="tbl_cidade.Cod_Estado" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_estado.Cod_Estado"/>
+</TableParameters>
 			<JoinTables>
-				<JoinTable id="7" tableName="tbl_cidade" posWidth="-1" posHeight="-1" posLeft="-1" posRight="-1"/>
-			</JoinTables>
-			<JoinLinks/>
+				<JoinTable id="7" tableName="tbl_cidade" posWidth="95" posHeight="104" posLeft="10" posRight="-1" posTop="10"/>
+				<JoinTable id="29" tableName="tbl_estado" posLeft="126" posTop="10" posWidth="95" posHeight="104"/>
+</JoinTables>
+			<JoinLinks>
+<JoinTable2 id="30" tableLeft="tbl_cidade" tableRight="tbl_estado" fieldLeft="tbl_cidade.Cod_Estado" fieldRight="tbl_estado.Cod_Estado" joinType="inner" conditionType="Equal"/>
+</JoinLinks>
 			<Fields>
 				<Field id="13" tableName="tbl_cidade" fieldName="Cod_Cidade"/>
-				<Field id="16" tableName="tbl_cidade" fieldName="Nome"/>
-				<Field id="18" tableName="tbl_cidade" fieldName="Cod_Estado"/>
-			</Fields>
+				<Field id="16" tableName="tbl_cidade" fieldName="tbl_cidade.Nome" alias="tbl_cidade_Nome"/>
+				<Field id="18" tableName="tbl_cidade" fieldName="tbl_cidade.Cod_Estado" alias="tbl_cidade_Cod_Estado"/>
+				<Field id="31" tableName="tbl_estado" fieldName="tbl_estado.*"/>
+</Fields>
 			<SPParameters/>
 			<SQLParameters/>
 			<SecurityGroups/>
 			<Attributes/>
 			<Features/>
 		</Grid>
-		<IncludePage id="23" name="Header" PathID="Header" parentType="Page" page="Header.ccp">
+		<IncludePage id="23" name="Header" PathID="Header" page="Header.ccp">
 			<Components/>
 			<Events/>
 			<Features/>
 		</IncludePage>
-		<IncludePage id="24" name="Footer" PathID="Footer" parentType="Page" page="Footer.ccp">
+		<IncludePage id="24" name="Footer" PathID="Footer" page="Footer.ccp">
 			<Components/>
 			<Events/>
 			<Features/>
@@ -129,9 +154,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="tbl_cidade_list.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-<CodeFile id="JSP" language="JSP" name="tbl_cidade_list.jsp" path="." forShow="True" url="tbl_cidade_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-<CodeFile id="Handlers" language="JSP" name="tbl_cidade_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-</CodeFiles>
+		<CodeFile id="JSP" language="JSP" name="tbl_cidade_list.jsp" path="." forShow="True" url="tbl_cidade_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+		<CodeFile id="Handlers" language="JSP" name="tbl_cidade_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+	</CodeFiles>
 	<SecurityGroups>
 		<Group id="22" groupID="1"/>
 	</SecurityGroups>

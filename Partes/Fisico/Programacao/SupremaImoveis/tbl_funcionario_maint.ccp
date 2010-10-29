@@ -27,30 +27,30 @@
 					<Features/>
 				</TextBox>
 				<ListBox id="9" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" name="Cod_Estado" fieldSource="Cod_Estado" required="False" caption="Cod Estado" wizardCaption="Cod Estado" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" PathID="tbl_funcionarioCod_Estado" sourceType="Table" connection="Conexao" dataSource="tbl_estado" boundColumn="Cod_Estado" textColumn="UF">
-<Components/>
+					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 					<TableParameters/>
-<SPParameters/>
-<SQLParameters/>
-<JoinTables/>
-<JoinLinks/>
-<Fields/>
-</ListBox>
-<ListBox id="10" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" name="Cod_Orgao" fieldSource="Cod_Orgao" required="False" caption="Cod Orgao" wizardCaption="Cod Orgao" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" PathID="tbl_funcionarioCod_Orgao" sourceType="Table" connection="Conexao" dataSource="tbl_orgaoemissor" boundColumn="Cod_Orgao" textColumn="Sigla">
-<Components/>
+					<SPParameters/>
+					<SQLParameters/>
+					<JoinTables/>
+					<JoinLinks/>
+					<Fields/>
+				</ListBox>
+				<ListBox id="10" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" name="Cod_Orgao" fieldSource="Cod_Orgao" required="False" caption="Cod Orgao" wizardCaption="Cod Orgao" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" PathID="tbl_funcionarioCod_Orgao" sourceType="Table" connection="Conexao" dataSource="tbl_orgaoemissor" boundColumn="Cod_Orgao" textColumn="Sigla">
+					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 					<TableParameters/>
-<SPParameters/>
-<SQLParameters/>
-<JoinTables/>
-<JoinLinks/>
-<Fields/>
-</ListBox>
-<TextBox id="11" visible="Yes" fieldSourceType="DBColumn" dataType="Text" name="Nome_U" fieldSource="Nome_U" required="True" caption="Nome U" wizardCaption="Nome U" wizardSize="20" wizardMaxLength="20" wizardIsPassword="False" PathID="tbl_funcionarioNome_U">
+					<SPParameters/>
+					<SQLParameters/>
+					<JoinTables/>
+					<JoinLinks/>
+					<Fields/>
+				</ListBox>
+				<TextBox id="11" visible="Yes" fieldSourceType="DBColumn" dataType="Text" name="Nome_U" fieldSource="Nome_U" required="True" caption="Nome U" wizardCaption="Nome U" wizardSize="20" wizardMaxLength="20" wizardIsPassword="False" PathID="tbl_funcionarioNome_U">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -111,18 +111,18 @@
 					<Features/>
 				</TextBox>
 				<ListBox id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" name="Cod_Cidade" caption="Cod Cidade" fieldSource="Cod_Cidade" required="False" PathID="tbl_funcionarioCod_Cidade" sourceType="Table" connection="Conexao" dataSource="tbl_cidade" boundColumn="Cod_Cidade" textColumn="Nome">
-<Components/>
-<Events/>
-<Attributes/>
-<Features/>
-<TableParameters/>
-<SPParameters/>
-<SQLParameters/>
-<JoinTables/>
-<JoinLinks/>
-<Fields/>
-</ListBox>
-</Components>
+					<Components/>
+					<Events/>
+					<Attributes/>
+					<Features/>
+					<TableParameters/>
+					<SPParameters/>
+					<SQLParameters/>
+					<JoinTables/>
+					<JoinLinks/>
+					<Fields/>
+				</ListBox>
+			</Components>
 			<Events/>
 			<TableParameters>
 				<TableParameter id="6" conditionType="Parameter" useIsNull="False" field="Cod_Funcionario" parameterSource="Cod_Funcionario" dataType="Integer" logicOperator="And" searchConditionType="Equal" parameterType="URL" orderNumber="1" leftBrackets="0" rightBrackets="0"/>
@@ -130,12 +130,12 @@
 			<SPParameters/>
 			<SQLParameters/>
 			<JoinTables>
-<JoinTable id="24" tableName="tbl_funcionario" posLeft="10" posTop="10" posWidth="129" posHeight="180"/>
-</JoinTables>
+				<JoinTable id="24" tableName="tbl_funcionario" posLeft="10" posTop="10" posWidth="129" posHeight="180"/>
+			</JoinTables>
 			<JoinLinks/>
 			<Fields>
-<Field id="35" fieldName="*"/>
-</Fields>
+				<Field id="35" fieldName="*"/>
+			</Fields>
 			<ISPParameters/>
 			<ISQLParameters/>
 			<IFormElements/>

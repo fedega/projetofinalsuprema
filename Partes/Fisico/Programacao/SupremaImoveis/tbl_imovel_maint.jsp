@@ -30,6 +30,29 @@
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
+//Include Common JSFunctions @1-CE0F0269
+</script>
+<script language="JavaScript" src="ClientI18N.jsp?file=Functions.js&amp;locale=<ccs:message key="CCS_LocaleID"/>" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//tbl_imovelButton_Delete_OnClick @5-1AFBB6F1
+function tbl_imovelButton_Delete_OnClick()
+{
+    disableValidation = true;
+}
+//End tbl_imovelButton_Delete_OnClick
+
+//bind_events @1-2DA8D1BA
+function bind_events() {
+    if (functionExists("Header_bind_events")) Header_bind_events();
+    if (functionExists("Footer_bind_events")) Footer_bind_events();
+    addEventHandler("tbl_imovelButton_Delete", "click", tbl_imovelButton_Delete_OnClick);
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
 //End CCS script
 </script>
 </head>

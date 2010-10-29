@@ -14,7 +14,7 @@
 					<Attributes/>
 					<Features/>
 				</TextBox>
-				<TextBox id="5" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="s_Data" wizardCaption="Data" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_visitaSearch" PathID="tbl_visitaSearchs_Data">
+				<TextBox id="5" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="s_Data" wizardCaption="Data" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_visitaSearch" PathID="tbl_visitaSearchs_Data" format="dd/mm/yyyy" DBFormat="yyyy-mm-dd HH:nn:ss">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -26,18 +26,12 @@
 					<Attributes/>
 					<Features/>
 				</DatePicker>
-				<TextBox id="7" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="s_Hora" wizardCaption="Hora" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_visitaSearch" PathID="tbl_visitaSearchs_Hora">
+				<TextBox id="7" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="s_Hora" wizardCaption="Hora" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_visitaSearch" PathID="tbl_visitaSearchs_Hora" format="ShortTime">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</TextBox>
-				<DatePicker id="8" name="DatePicker_s_Hora" control="s_Hora" wizardSatellite="True" wizardControl="s_Hora" wizardDatePickerType="Image" parentName="tbl_visitaSearch" wizardPicture="Styles/Padrao/Images/DatePicker.gif" style="Styles/Padrao/Style.css" PathID="tbl_visitaSearchDatePicker_s_Hora">
-					<Components/>
-					<Events/>
-					<Attributes/>
-					<Features/>
-				</DatePicker>
 			</Components>
 			<Events/>
 			<TableParameters/>
@@ -181,9 +175,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="tbl_visita_list.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-<CodeFile id="JSP" language="JSP" name="tbl_visita_list.jsp" path="." forShow="True" url="tbl_visita_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-<CodeFile id="Handlers" language="JSP" name="tbl_visita_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-</CodeFiles>
+		<CodeFile id="JSP" language="JSP" name="tbl_visita_list.jsp" path="." forShow="True" url="tbl_visita_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+		<CodeFile id="Handlers" language="JSP" name="tbl_visita_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+	</CodeFiles>
 	<SecurityGroups>
 		<Group id="34" groupID="1"/>
 	</SecurityGroups>

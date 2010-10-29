@@ -10,11 +10,14 @@
     public class tbl_cidade_listServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-0F76B408
+//feature binding @1-F17B1FBF
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
             if ((new HeaderServiceChecker()).check(request, response, context)) return true;
             if ((new FooterServiceChecker()).check(request, response, context)) return true;
+            if ( "HideShow1".equals ( attr ) ) {
+                return true;
+            }
             return false;
         }
 //End feature binding

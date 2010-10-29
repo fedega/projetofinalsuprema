@@ -2,123 +2,38 @@
 <Page name="Header" restricted="False" included="True" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
-<!--Page componets @1-4151F3DA-->
-    <Link name="tbl_aluguel_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_aluguel_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_cidade_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_cidade_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_clausula_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_clausula_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_cliente_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_cliente_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_contrato_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_contrato_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_despesas_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_despesas_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_destinacao_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_destinacao_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_documentaca_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_documentaca_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_estado_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_estado_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_fiador_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_fiador_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_funcionario_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_funcionario_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_imovel_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_imovel_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_orgaoemisso_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_orgaoemisso_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_preferencia_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_preferencia_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_situacao_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_situacao_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_solicitacoe_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_solicitacoe_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_tipo_causul_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_tipo_causul_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_tipo_client_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_tipo_client_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_tipo_despes_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_tipo_despes_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_tipo_doc_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_tipo_doc_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_tipo_solici_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_tipo_solici_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_venda_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_venda_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-    <Link name="tbl_visita_list" dataType="Text"
-            controlSourceType="DataSource" controlSource=""
-            hrefType="Page" hrefSource="/tbl_visita_list.jsp" convertRule="Relative"
-            format="" dbFormat="" isHtml="False" preserveParams="None">
-    </Link>
-<!--End Page componets-->
+<!--Menu Menu1 model @2-F9308DEB-->
+    <Menu name="Menu1" menu_type="Horizontal" menuSourceType="Static" restricted="False" >
+        <MenuItem name="MenuItem1" caption="Aluguel" parent="" url="/tbl_aluguel_lista.jsp" target="" title="" />
+        <MenuItem name="MenuItem2" caption="Cidade" parent="" url="/tbl_cidade_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem3" caption="Clausula" parent="" url="/tbl_clausula_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem4" caption="Cliente" parent="" url="/tbl_cliente_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem5" caption="Contrato" parent="" url="/tbl_contrato_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem6" caption="Despesas" parent="" url="/tbl_despesas_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem7" caption="Destinacao" parent="" url="/tbl_destinacao_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem8" caption="Documentacao" parent="" url="/tbl_documentaca_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem9" caption="Estado" parent="" url="/tbl_estado_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem10" caption="Fiador" parent="" url="/tbl_fiador_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem11" caption="Funcionario" parent="" url="/tbl_funcionario_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem12" caption="Imovel" parent="" url="/tbl_imovel_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem13" caption="Orgao Expedidor" parent="" url="/tbl_orgaoemisso_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem14" caption="Preferencia" parent="" url="/tbl_preferencia_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem15" caption="Situacao" parent="" url="/tbl_situacao_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem16" caption="Solicitacoes" parent="" url="/tbl_solicitacoe_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem17" caption="Tipo Clausula" parent="" url="/tbl_tipo_causul_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem18" caption="Tipo Cliente" parent="" url="/tbl_tipo_client_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem19" caption="Tipo Despesas" parent="" url="/tbl_tipo_despes_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem20" caption="Tipo Documento" parent="" url="/tbl_tipo_doc_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem21" caption="Tipo Solicitacao" parent="" url="/tbl_tipo_solici_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem22" caption="Venda" parent="" url="/tbl_venda_list.jsp" target="" title="" />
+        <MenuItem name="MenuItem23" caption="Visita" parent="" url="/tbl_visita_list.jsp" target="" title="" />
+        <Link name="ItemLink" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                hrefType="Page" hrefSource="" convertRule="Relative"
+                format="" dbFormat="" isHtml="False" preserveParams="GET">
+        </Link>
+    </Menu>
+<!--End Menu Menu1 model-->
 
 <!--Page model tail @1-2BAFA7FA-->
 </Page>

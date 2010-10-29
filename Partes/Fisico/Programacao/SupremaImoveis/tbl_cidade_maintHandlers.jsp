@@ -246,9 +246,9 @@
     }
 //End Nome TextBox Handler Tail
 
-//Cod_Estado TextBox Handler Head @8-687E72D3
-    public class tbl_cidadeCod_EstadoTextBoxHandler implements ValidationListener {
-//End Cod_Estado TextBox Handler Head
+//Cod_Estado ListBox Handler Head @8-2034AB19
+    public class tbl_cidadeCod_EstadoListBoxHandler implements ValidationListener, ListDataObjectListener {
+//End Cod_Estado ListBox Handler Head
 
 //Cod_Estado BeforeShow Method Head @8-46046458
         public void beforeShow(Event e) {
@@ -273,15 +273,39 @@
         }
 //End Cod_Estado OnValidate Method Tail
 
-//Cod_Estado TextBox Handler Tail @8-FCB6E20C
+//Cod_Estado BeforeBuildSelect Method Head @8-3041BA14
+        public void beforeBuildSelect(DataObjectEvent e) {
+//End Cod_Estado BeforeBuildSelect Method Head
+
+//Cod_Estado BeforeBuildSelect Method Tail @8-FCB6E20C
+        }
+//End Cod_Estado BeforeBuildSelect Method Tail
+
+//Cod_Estado BeforeExecuteSelect Method Head @8-8391D9D6
+        public void beforeExecuteSelect(DataObjectEvent e) {
+//End Cod_Estado BeforeExecuteSelect Method Head
+
+//Cod_Estado BeforeExecuteSelect Method Tail @8-FCB6E20C
+        }
+//End Cod_Estado BeforeExecuteSelect Method Tail
+
+//Cod_Estado AfterExecuteSelect Method Head @8-0972E7FA
+        public void afterExecuteSelect(DataObjectEvent e) {
+//End Cod_Estado AfterExecuteSelect Method Head
+
+//Cod_Estado AfterExecuteSelect Method Tail @8-FCB6E20C
+        }
+//End Cod_Estado AfterExecuteSelect Method Tail
+
+//Cod_Estado ListBox Handler Tail @8-FCB6E20C
     }
-//End Cod_Estado TextBox Handler Tail
+//End Cod_Estado ListBox Handler Tail
 
 //Comment workaround @1-A0AAE532
 %> <%
 //End Comment workaround
 
-//Processing @1-DCBF1B4A
+//Processing @1-5915254C
     Page tbl_cidade_maintModel = (Page)request.getAttribute("tbl_cidade_maint_page");
     Page tbl_cidade_maintParent = (Page)request.getAttribute("tbl_cidade_maintParent");
     if (tbl_cidade_maintModel == null) {
@@ -293,7 +317,7 @@
         //}
         ((Record)tbl_cidade_maintModel.getChild("tbl_cidade")).addRecordListener(new tbl_cidade_mainttbl_cidadeRecordHandler());
         ((TextBox)((Record)tbl_cidade_maintModel.getChild("tbl_cidade")).getChild("Nome")).addValidationListener(new tbl_cidadeNomeTextBoxHandler());
-        ((TextBox)((Record)tbl_cidade_maintModel.getChild("tbl_cidade")).getChild("Cod_Estado")).addValidationListener(new tbl_cidadeCod_EstadoTextBoxHandler());
+        ((ListBox)((Record)tbl_cidade_maintModel.getChild("tbl_cidade")).getChild("Cod_Estado")).addValidationListener(new tbl_cidadeCod_EstadoListBoxHandler());
         tbl_cidade_maintCntr.process();
 %>
         <% request.setAttribute("HeaderParent", tbl_cidade_maintModel); %>

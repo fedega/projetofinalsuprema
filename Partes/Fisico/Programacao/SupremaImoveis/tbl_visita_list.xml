@@ -10,7 +10,7 @@
     <Include name="Footer"/>
 <!--End Page componets-->
 
-<!--Record tbl_visitaSearch model @2-10AA4814-->
+<!--Record tbl_visitaSearch model @2-E50A3FCF-->
     <Record name="tbl_visitaSearch" connection="" restricted="False" returnPage="tbl_visita_list.jsp" convertRule="Relative" preserveParams="None" 
             allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
         <Button name="Button_DoSearch" operation="Search"
@@ -23,14 +23,13 @@
         </TextBox>
         <TextBox name="s_Data" dataType="Date"
                 controlSourceType="DataSource" controlSource=""
-                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+                required="" unique="" format="dd/MM/yyyy" dbFormat="yyyy-MM-dd HH:mm:ss" verificationRule="" errorControl="">
         </TextBox>
         <DatePicker name="DatePicker_s_Data" control="s_Data" style="Styles/Padrao/Style.css"/>
         <TextBox name="s_Hora" dataType="Date"
                 controlSourceType="DataSource" controlSource=""
-                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+                required="" unique="" format="ShortTime" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
-        <DatePicker name="DatePicker_s_Hora" control="s_Hora" style="Styles/Padrao/Style.css"/>
     </Record>
 <!--End Record tbl_visitaSearch model-->
 

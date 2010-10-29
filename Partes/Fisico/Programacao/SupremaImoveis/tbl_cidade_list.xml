@@ -24,7 +24,7 @@
     </Record>
 <!--End Record tbl_cidadeSearch model-->
 
-<!--Grid tbl_cidade model @6-49010A62-->
+<!--Grid tbl_cidade model @6-EDE572A0-->
     <Grid name="tbl_cidade" connection="Conexao" restricted="False" fetchSize="20" allowRead="True" 
             fetchSizeLimit="100" useCount="True" visible="True">
         <Row>
@@ -35,11 +35,11 @@
                 <LinkParameter name="Cod_Cidade" sourceType="DataField" sourceName="Cod_Cidade" format="yyyy-MM-dd"/>
             </Link>
             <Label name="Nome" dataType="Text"
-                    controlSourceType="DataSource" controlSource="Nome"
+                    controlSourceType="DataSource" controlSource="tbl_cidade_Nome"
                     isHtml="False" format="" dbFormat="">
             </Label>
             <Label name="Cod_Estado" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="Cod_Estado"
+                    controlSourceType="DataSource" controlSource="UF"
                     isHtml="False" format="" dbFormat="">
             </Label>
         </Row>
@@ -53,15 +53,20 @@
         <Sorter name="Sorter_Nome" ascColumn="Nome" visible="True"/>
         <Sorter name="Sorter_Cod_Estado" ascColumn="Cod_Estado" visible="True"/>
         <Navigator name="Navigator" pageSizes="1;5;10;25;50"/>
-        <Select query="SELECT Cod_Cidade, Nome, Cod_Estado FROM tbl_cidade {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
-            <CountSql query="SELECT COUNT(*) FROM tbl_cidade" type="raw"/>
+        <Select query="SELECT Cod_Cidade, tbl_cidade.Nome AS tbl_cidade_Nome, tbl_cidade.Cod_Estado AS tbl_cidade_Cod_Estado, tbl_estado.* FROM tbl_cidade INNER JOIN tbl_estado ON tbl_cidade.Cod_Estado = tbl_estado.Cod_Estado {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <CountSql query="SELECT COUNT(*) FROM tbl_cidade INNER JOIN tbl_estado ON tbl_cidade.Cod_Estado = tbl_estado.Cod_Estado" type="raw"/>
             <Where>
                 <WhereClause>
                     <Parameter name="s_Nome9"/>
+                    <Operation operator="And"/>
+                    <Parameter name="tbl_estado.Cod_Estado32"/>
 
                 </WhereClause>
-                <WhereParameter name="s_Nome9" field="Nome" type="Text"
+                <WhereParameter name="s_Nome9" field="tbl_cidade.Nome" type="Text"
                         operation="CONTAINS" useIsNull="False" sourceType="URL" sourceName="s_Nome"
+                        format="" dbFormat=""/>
+                <WhereParameter name="tbl_estado.Cod_Estado32" field="tbl_cidade.Cod_Estado" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="tbl_estado.Cod_Estado"
                         format="" dbFormat=""/>
             </Where>
         </Select>

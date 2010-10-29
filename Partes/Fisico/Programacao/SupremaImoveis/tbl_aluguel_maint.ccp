@@ -1,6 +1,6 @@
 <Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
-		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_aluguel" dataSource="tbl_aluguel" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Aluguel " wizardFormMethod="post" returnPage="tbl_aluguel_list.ccp" PathID="tbl_aluguel">
+		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_aluguel" dataSource="tbl_aluguel" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Aluguel " wizardFormMethod="post" returnPage="tbl_aluguel_lista.ccp" PathID="tbl_aluguel">
 			<Components>
 				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_Insert" operation="Insert" wizardCaption="Add" parentName="tbl_aluguel" PathID="tbl_aluguelButton_Insert">
 					<Components/>
@@ -20,7 +20,7 @@
 					<Attributes/>
 					<Features/>
 				</Button>
-				<TextBox id="7" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="Data" fieldSource="Data" required="False" caption="Data" wizardCaption="Data" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_aluguel" PathID="tbl_aluguelData">
+				<TextBox id="7" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="Data" fieldSource="Data" required="False" caption="Data" wizardCaption="Data" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_aluguel" PathID="tbl_aluguelData" format="dd/mm/yyyy" DBFormat="yyyy-mm-dd HH:nn:ss">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -93,9 +93,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="tbl_aluguel_maint.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-<CodeFile id="JSP" language="JSP" name="tbl_aluguel_maint.jsp" path="." forShow="True" url="tbl_aluguel_maint.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-<CodeFile id="Handlers" language="JSP" name="tbl_aluguel_maintHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-</CodeFiles>
+		<CodeFile id="JSP" language="JSP" name="tbl_aluguel_maint.jsp" path="." forShow="True" url="tbl_aluguel_maint.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+		<CodeFile id="Handlers" language="JSP" name="tbl_aluguel_maintHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+	</CodeFiles>
 	<SecurityGroups>
 		<Group id="13" groupID="1"/>
 	</SecurityGroups>
