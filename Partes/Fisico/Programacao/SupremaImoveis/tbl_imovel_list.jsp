@@ -20,7 +20,7 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-BF7F0888--%>
+<%--JSP Page Content @1-702A6F5B--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -96,7 +96,7 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
       <table class="Header" cellspacing="0" cellpadding="0" border="0">
         <tr>
           <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
-          <td class="th"><strong>List of Tbl Imovel</strong></td> 
+          <td class="th"><strong>Lista de Imóveis</strong></td> 
           <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
         </tr>
       </table>
@@ -210,10 +210,10 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <td style="TEXT-ALIGN: right"><ccs:control name='N_Suites'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='N_Banheiros'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='N_Salas'/>&nbsp;</td> 
-          <td style="TEXT-ALIGN: right"><ccs:control name='N_Cozinhas'/>&nbsp;</td> 
-          <td><ccs:control name='Dep_Empregada'/>&nbsp;</td> 
-          <td><ccs:control name='Garagem'/>&nbsp;</td> 
-          <td style="TEXT-ALIGN: right"><ccs:control name='Mts_Quadrados'/>&nbsp;</td>
+          <td style="TEXT-ALIGN: right"><ccs:variable name='N_Cozinhas'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:variable name='Dep_Empregada'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:variable name='Garagem'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:variable name='Mts_Quadrados'/>&nbsp;</td>
         </tr>
  </ccs:row></ccs:repeater>
         <ccs:norecords>
@@ -222,12 +222,12 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
         </tr>
         </ccs:norecords>
         <tr class="Footer">
-          <td colspan="18"><a href="<ccs:control name='tbl_imovel_Insert' property='href'/>" id="tbl_imoveltbl_imovel_Insert">Novo Registro</a>&nbsp; 
-            <ccs:navigator name='Navigator' type='Simple' size='10'>
-            <ccs:first_on><a href="<ccs:page_href/>">|&lt;</a> </ccs:first_on>
-            <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt;</a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
-            <ccs:next_on><a href="<ccs:page_href/>">&gt;&gt;</a> </ccs:next_on>
-            <ccs:last_on><a href="<ccs:page_href/>">&gt;|</a> </ccs:last_on></ccs:navigator>&nbsp;</td>
+          <td colspan="18"><a href="<ccs:variable name='tbl_imovel_Insert_Src'/>" id="tbl_imoveltbl_imovel_Insert">Novo Registro</a>&nbsp; 
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="<ccs:page_href/>">|&lt;</a> <!-- END First_On -->
+            <!-- BEGIN Prev_On --><a href="<ccs:page_href/>">&lt;&lt;</a> <!-- END Prev_On -->&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
+            <!-- BEGIN Next_On --><a href="<ccs:page_href/>">&gt;&gt;</a> <!-- END Next_On -->
+            <!-- BEGIN Last_On --><a href="<ccs:page_href/>">&gt;|</a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td>
         </tr>
       </table>
     </td>
