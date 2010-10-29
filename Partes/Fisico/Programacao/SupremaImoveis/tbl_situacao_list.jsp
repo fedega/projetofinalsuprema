@@ -27,8 +27,7 @@
 <ccs:meta header="Content-Type"/>
 <title>Tbl Situacao</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
-<script language="JavaScript" type="text/javascript">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-CE0F0269
 </script>

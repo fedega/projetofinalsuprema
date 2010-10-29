@@ -2,11 +2,6 @@
 <Page name="Login" restricted="False" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
-<!--Page componets @1-09196063-->
-    <Include name="Header"/>
-    <Include name="Footer"/>
-<!--End Page componets-->
-
 <!--Record Login model @2-EB17F56B-->
     <Record name="Login" connection="" restricted="False" returnPage="" convertRule="Relative" preserveParams="None" 
             allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">

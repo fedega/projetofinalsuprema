@@ -20,13 +20,13 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-DE461BA6--%>
+<%--JSP Page Content @1-AC6B987A--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <ccs:meta header="Content-Type"/>
 <title>Tbl Fiador</title>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
@@ -37,10 +37,10 @@
 <script language="JavaScript" type="text/javascript">
 //End Include Common JSFunctions
 
-//Date Picker Object Definitions @1-15DB8D37
+//Date Picker Object Definitions @1-7FD87C0E
 
 var tbl_fiador_DatePicker_Data_Nasc = new Object(); 
-tbl_fiador_DatePicker_Data_Nasc.format           = "ShortDate";
+tbl_fiador_DatePicker_Data_Nasc.format           = "dd/mm/yyyy";
 tbl_fiador_DatePicker_Data_Nasc.style            = "Styles/Padrao/Style.css";
 tbl_fiador_DatePicker_Data_Nasc.relativePathPart = "";
 tbl_fiador_DatePicker_Data_Nasc.themeVersion = "3.0";
@@ -68,108 +68,105 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<jsp:include page="/Header.jsp" flush="true"/>
+<jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_fiador'>
-<form id="tbl_fiador" method="post" action="<ccs:form_action/>" name="<ccs:form_name/>">
+<form id="tbl_fiador" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Adicionar/Editar Tbl Fiador </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Adicionar/Editar Fiador </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <ccs:error_block>
           <tr class="Error">
-            <td colspan="2"><ccs:error_text/></td> 
+            <td colspan="2"><ccs:error_text/></td>
           </tr>
- </ccs:error_block>
+          </ccs:error_block>
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorCod_Orgao">Cod Orgao</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Orgao' property='name'/>" value="<ccs:control name='Cod_Orgao'/>" maxlength="10" size="10" id="tbl_fiadorCod_Orgao"></td> 
-          </tr>
- 
-          <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorCod_Estado">Cod Estado</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Estado' property='name'/>" value="<ccs:control name='Cod_Estado'/>" maxlength="10" size="10" id="tbl_fiadorCod_Estado"></td> 
+            <td class="th"><label for="tbl_fiadorCod_Orgao">Orgao</label></td> 
+            <td><input id="tbl_fiadorCod_Orgao" maxlength="10" size="10" value="<ccs:control name='Cod_Orgao'/>" name="<ccs:control name='Cod_Orgao' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorCod_Cidade">Cod Cidade</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Cidade' property='name'/>" value="<ccs:control name='Cod_Cidade'/>" maxlength="10" size="10" id="tbl_fiadorCod_Cidade"></td> 
+            <td class="th"><label for="tbl_fiadorCod_Estado">Estado</label></td> 
+            <td><input id="tbl_fiadorCod_Estado" maxlength="10" size="10" value="<ccs:control name='Cod_Estado'/>" name="<ccs:control name='Cod_Estado' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorCod_Cliente">Cod Cliente</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Cliente' property='name'/>" value="<ccs:control name='Cod_Cliente'/>" maxlength="10" size="10" id="tbl_fiadorCod_Cliente"></td> 
+            <td class="th"><label for="tbl_fiadorCod_Cidade">Cidade</label></td> 
+            <td><input id="tbl_fiadorCod_Cidade" maxlength="10" size="10" value="<ccs:control name='Cod_Cidade'/>" name="<ccs:control name='Cod_Cidade' property='name'/>"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_fiadorCod_Cliente">Cliente</label></td> 
+            <td><input id="tbl_fiadorCod_Cliente" maxlength="10" size="10" value="<ccs:control name='Cod_Cliente'/>" name="<ccs:control name='Cod_Cliente' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_fiadorNome">Nome</label></td> 
-            <td><input type="text" name="<ccs:control name='Nome' property='name'/>" value="<ccs:control name='Nome'/>" maxlength="40" size="40" id="tbl_fiadorNome"></td> 
+            <td><input id="tbl_fiadorNome" maxlength="40" size="40" value="<ccs:control name='Nome'/>" name="<ccs:control name='Nome' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorData_Nasc">Data Nasc</label></td> 
-            <td><input type="text" name="<ccs:control name='Data_Nasc' property='name'/>" value="<ccs:control name='Data_Nasc'/>" maxlength="100" size="10" id="tbl_fiadorData_Nasc">
-              <ccs:datepicker name='DatePicker_Data_Nasc'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_fiadorDatePicker_Data_Nasc"><img src="Styles/Padrao/Images/DatePicker.gif" border="0" alt="Show Date Picker" id="tbl_fiadorDatePicker_Data_Nasc_Image"></a></ccs:datepicker></td> 
+            <td class="th"><label for="tbl_fiadorData_Nasc">Data Nascimento</label></td> 
+            <td><input id="tbl_fiadorData_Nasc" maxlength="100" size="10" value="<ccs:control name='Data_Nasc'/>" name="<ccs:control name='Data_Nasc' property='name'/>">
+              <ccs:datepicker name='DatePicker_Data_Nasc'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_fiadorDatePicker_Data_Nasc"><img id="tbl_fiadorDatePicker_Data_Nasc_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a></ccs:datepicker></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorNome_U">Nome U</label></td> 
-            <td><input type="text" name="<ccs:control name='Nome_U' property='name'/>" value="<ccs:control name='Nome_U'/>" maxlength="16" size="16" id="tbl_fiadorNome_U"></td> 
+            <td class="th"><label for="tbl_fiadorNome_U">Nome de Usuario</label></td> 
+            <td><input id="tbl_fiadorNome_U" maxlength="16" size="16" value="<ccs:control name='Nome_U'/>" name="<ccs:control name='Nome_U' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorSenha_U">Senha U</label></td> 
-            <td><input type="text" name="<ccs:control name='Senha_U' property='name'/>" value="<ccs:control name='Senha_U'/>" maxlength="40" size="40" id="tbl_fiadorSenha_U"></td> 
+            <td class="th"><label for="tbl_fiadorSenha_U">Senha</label></td> 
+            <td><input id="tbl_fiadorSenha_U" maxlength="40" size="40" value="<ccs:control name='Senha_U'/>" name="<ccs:control name='Senha_U' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorNacionalidaade">Nacionalidaade</label></td> 
-            <td><input type="text" name="<ccs:control name='Nacionalidaade' property='name'/>" value="<ccs:control name='Nacionalidaade'/>" maxlength="30" size="30" id="tbl_fiadorNacionalidaade"></td> 
+            <td class="th"><label for="tbl_fiadorNacionalidaade">Nacionalidade</label></td> 
+            <td><input id="tbl_fiadorNacionalidaade" maxlength="30" size="30" value="<ccs:control name='Nacionalidaade'/>" name="<ccs:control name='Nacionalidaade' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_fiadorEndereco">Endereco</label></td> 
-            <td><input type="text" name="<ccs:control name='Endereco' property='name'/>" value="<ccs:control name='Endereco'/>" maxlength="200" size="50" id="tbl_fiadorEndereco"></td> 
+            <td><input id="tbl_fiadorEndereco" maxlength="200" size="50" value="<ccs:control name='Endereco'/>" name="<ccs:control name='Endereco' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorTel_Fixo">Tel Fixo</label></td> 
-            <td><input type="text" name="<ccs:control name='Tel_Fixo' property='name'/>" value="<ccs:control name='Tel_Fixo'/>" maxlength="10" size="10" id="tbl_fiadorTel_Fixo"></td> 
+            <td class="th"><label for="tbl_fiadorTel_Fixo">Telefone Fixo</label></td> 
+            <td><input id="tbl_fiadorTel_Fixo" maxlength="10" size="10" value="<ccs:control name='Tel_Fixo'/>" name="<ccs:control name='Tel_Fixo' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorTel_Cel">Tel Cel</label></td> 
-            <td><input type="text" name="<ccs:control name='Tel_Cel' property='name'/>" value="<ccs:control name='Tel_Cel'/>" maxlength="10" size="10" id="tbl_fiadorTel_Cel"></td> 
+            <td class="th"><label for="tbl_fiadorTel_Cel">Telefone Celular</label></td> 
+            <td><input id="tbl_fiadorTel_Cel" maxlength="10" size="10" value="<ccs:control name='Tel_Cel'/>" name="<ccs:control name='Tel_Cel' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_fiadorTel_Comercial">Tel Comercial</label></td> 
-            <td><input type="text" name="<ccs:control name='Tel_Comercial' property='name'/>" value="<ccs:control name='Tel_Comercial'/>" maxlength="10" size="10" id="tbl_fiadorTel_Comercial"></td> 
+            <td class="th"><label for="tbl_fiadorTel_Comercial">Telefone Comercial</label></td> 
+            <td><input id="tbl_fiadorTel_Comercial" maxlength="10" size="10" value="<ccs:control name='Tel_Comercial'/>" name="<ccs:control name='Tel_Comercial' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <ccs:button name='Button_Insert'><input name="<ccs:control name='Button_Insert' property='name'/>" type="submit" value="Add" alt="Add" id="tbl_fiadorButton_Insert" class="Button"></ccs:button>
-              <ccs:button name='Button_Update'><input name="<ccs:control name='Button_Update' property='name'/>" type="submit" value="Atualizar" alt="Atualizar" id="tbl_fiadorButton_Update" class="Button"></ccs:button>
-              <ccs:button name='Button_Delete'><input name="<ccs:control name='Button_Delete' property='name'/>" type="submit" value="Delete" alt="Delete" id="tbl_fiadorButton_Delete" class="Button"></ccs:button></td> 
+            <td align="right" colspan="2">
+              <ccs:button name='Button_Insert'><input class="Button" id="tbl_fiadorButton_Insert" type="submit" alt="Add" value="Adicionar" name="<ccs:control name='Button_Insert' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Update'><input class="Button" id="tbl_fiadorButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="<ccs:control name='Button_Update' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Delete'><input class="Button" id="tbl_fiadorButton_Delete" type="submit" alt="Delete" value="Remover" name="<ccs:control name='Button_Delete' property='name'/>"></ccs:button></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 </ccs:record><br>
-<jsp:include page="/Footer.jsp" flush="true"/>
+<jsp:include page="/Footer.jsp" flush="true"/> 
 </body>
 </html>
 <%--End JSP Page Content--%>

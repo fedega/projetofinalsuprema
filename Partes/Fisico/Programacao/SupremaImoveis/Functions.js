@@ -13,7 +13,7 @@ var disableValidation = false;
 // Date formatting functions begin ---------------------------------------------------
 
 
-var arrayLocaleInfo = "en|en|US|Yes;No;|2|.|,|January;February;March;April;May;June;July;August;September;October;November;December|Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec|Sunday;Monday;Tuesday;Wednesday;Thursday;Friday;Saturday|Sun;Mon;Tue;Wed;Thu;Fri;Sat|m/d/yyyy|dddd, mmmm dd, yyyy|h:nn tt|h:nn:ss tt|0|AM|PM".split("|");
+var arrayLocaleInfo = "en|en|US|Yes;No;|2|.|,|Janeiro;Fevereiro;Março;Abril;Maio;Junho;Julho;Agosto;Setembro;Outobro;Novembro;Dezembro|Jan;Fev;Mar;Abr;Mai;Jun;Jul;Aug;Set;Out;Nov;Dez|Domingo;Segunda;Terça;Quarta;Quinta;Sexta;Sabado|Dom;Seg;Ter;Quar;Qui;Sex;Sab|m/d/yyyy|dddd, mmmm dd, yyyy|h:nn tt|h:nn:ss tt|0|AM|PM".split("|");
 
 function getLocaleInfo(id)
 {

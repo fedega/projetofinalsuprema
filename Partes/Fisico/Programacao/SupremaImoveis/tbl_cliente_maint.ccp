@@ -26,7 +26,7 @@
 					<Attributes/>
 					<Features/>
 				</TextBox>
-				<TextBox id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="Data_Nasc" fieldSource="Data_Nasc" required="True" caption="Data Nasc" wizardCaption="Data Nasc" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_cliente" PathID="tbl_clienteData_Nasc">
+				<TextBox id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Date" name="Data_Nasc" fieldSource="Data_Nasc" required="True" caption="Data Nasc" wizardCaption="Data Nasc" wizardSize="10" wizardMaxLength="100" wizardIsPassword="False" parentName="tbl_cliente" PathID="tbl_clienteData_Nasc" format="dd/mm/yyyy" DBFormat="yyyy-mm-dd HH:nn:ss">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -147,9 +147,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="tbl_cliente_maint.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-<CodeFile id="JSP" language="JSP" name="tbl_cliente_maint.jsp" path="." forShow="True" url="tbl_cliente_maint.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-<CodeFile id="Handlers" language="JSP" name="tbl_cliente_maintHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-</CodeFiles>
+		<CodeFile id="JSP" language="JSP" name="tbl_cliente_maint.jsp" path="." forShow="True" url="tbl_cliente_maint.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+		<CodeFile id="Handlers" language="JSP" name="tbl_cliente_maintHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+	</CodeFiles>
 	<SecurityGroups>
 		<Group id="22" groupID="1"/>
 	</SecurityGroups>

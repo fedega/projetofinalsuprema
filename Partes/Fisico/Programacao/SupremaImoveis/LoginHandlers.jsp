@@ -10,11 +10,9 @@
     public class LoginServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-0F76B408
+//feature binding @1-6DADF1A6
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
-            if ((new HeaderServiceChecker()).check(request, response, context)) return true;
-            if ((new FooterServiceChecker()).check(request, response, context)) return true;
             return false;
         }
 //End feature binding
@@ -134,7 +132,7 @@ e.getComponent().getControl("password").setFormattedValue("");
 %> <%
 //End Comment workaround
 
-//Processing @1-B6685D36
+//Processing @1-1B3E25F0
     Page LoginModel = (Page)request.getAttribute("Login_page");
     Page LoginParent = (Page)request.getAttribute("LoginParent");
     if (LoginModel == null) {
@@ -149,10 +147,6 @@ e.getComponent().getControl("password").setFormattedValue("");
         ((TextBox)((Record)LoginModel.getChild("Login")).getChild("password")).addValidationListener(new LoginpasswordTextBoxHandler());
         LoginCntr.process();
 %>
-        <% request.setAttribute("HeaderParent", LoginModel); %>
-        <%{%><%@include file="/HeaderHandlers.jsp"%><%}%>
-        <% request.setAttribute("FooterParent", LoginModel); %>
-        <%{%><%@include file="/FooterHandlers.jsp"%><%}%>
 <%
         if (LoginParent == null) {
             LoginModel.setCookies();

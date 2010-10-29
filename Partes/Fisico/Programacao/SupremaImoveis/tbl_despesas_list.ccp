@@ -1,14 +1,14 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0" pasteActions="pasteActions">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="tbl_despesasSearch" returnPage="tbl_despesas_list.ccp" wizardCaption="Buscar Tbl Despesas " wizardOrientation="Vertical" wizardFormMethod="post" PathID="tbl_despesasSearch">
 			<Components>
-				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoSearch" operation="Search" wizardCaption="Buscar" parentName="tbl_despesasSearch" PathID="tbl_despesasSearchButton_DoSearch">
+				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoSearch" operation="Search" wizardCaption="Buscar" PathID="tbl_despesasSearchButton_DoSearch">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Button>
-				<TextBox id="4" visible="Yes" fieldSourceType="DBColumn" dataType="Text" name="s_Data" wizardCaption="Data" wizardSize="20" wizardMaxLength="20" wizardIsPassword="False" parentName="tbl_despesasSearch" PathID="tbl_despesasSearchs_Data">
+				<TextBox id="4" visible="Yes" fieldSourceType="DBColumn" dataType="Text" name="s_Data" wizardCaption="Data" wizardSize="20" wizardMaxLength="20" wizardIsPassword="False" PathID="tbl_despesasSearchs_Data">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -38,7 +38,7 @@
 		</Record>
 		<Grid id="6" secured="False" sourceType="Table" returnValueType="Number" defaultPageSize="20" name="tbl_despesas" connection="Conexao" pageSizeLimit="100" wizardCaption="List of Tbl Despesas " wizardGridType="Tabular" wizardAllowSorting="True" wizardSortingType="SimpleDir" wizardUsePageScroller="True" wizardAllowInsert="True" wizardAltRecord="False" wizardRecordSeparator="False" wizardAltRecordType="Controls" dataSource="tbl_despesas">
 			<Components>
-				<Link id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Text" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="tbl_despesas_Insert" hrefSource="tbl_despesas_maint.ccp" removeParameters="Cod_Despesas" wizardThemeItem="NavigatorLink" wizardDefaultValue="Add New" parentName="tbl_despesas" PathID="tbl_despesastbl_despesas_Insert">
+				<Link id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Text" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="tbl_despesas_Insert" hrefSource="tbl_despesas_maint.ccp" removeParameters="Cod_Despesas" wizardThemeItem="NavigatorLink" wizardDefaultValue="Add New" PathID="tbl_despesastbl_despesas_Insert">
 					<Components/>
 					<Events/>
 					<LinkParameters/>
@@ -81,7 +81,7 @@
 					<Attributes/>
 					<Features/>
 				</Sorter>
-				<Link id="17" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="Cod_Despesas" fieldSource="Cod_Despesas" wizardCaption="Cod Despesas" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" hrefSource="tbl_despesas_maint.ccp" parentName="tbl_despesas" rowNumber="1" PathID="tbl_despesasCod_Despesas">
+				<Link id="17" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="Cod_Despesas" fieldSource="Cod_Despesas" wizardCaption="Cod Despesas" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" hrefSource="tbl_despesas_maint.ccp" PathID="tbl_despesasCod_Despesas">
 					<Components/>
 					<Events/>
 					<LinkParameters>
@@ -90,31 +90,31 @@
 					<Attributes/>
 					<Features/>
 				</Link>
-				<Label id="20" fieldSourceType="DBColumn" dataType="Text" html="False" name="Data" fieldSource="Data" wizardCaption="Data" wizardSize="20" wizardMaxLength="20" wizardIsPassword="False" wizardAddNbsp="True" parentName="tbl_despesas" rowNumber="1" PathID="tbl_despesasData">
+				<Label id="20" fieldSourceType="DBColumn" dataType="Text" html="False" name="Data" fieldSource="Data" wizardCaption="Data" wizardSize="20" wizardMaxLength="20" wizardIsPassword="False" wizardAddNbsp="True" PathID="tbl_despesasData">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="22" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Valor" fieldSource="Valor" wizardCaption="Valor" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" parentName="tbl_despesas" rowNumber="1" PathID="tbl_despesasValor">
+				<Label id="22" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Valor" fieldSource="Valor" wizardCaption="Valor" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_despesasValor">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="24" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Tipo_Despesas" fieldSource="Tipo_Despesas" wizardCaption="Tipo Despesas" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" parentName="tbl_despesas" rowNumber="1" PathID="tbl_despesasTipo_Despesas">
+				<Label id="24" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Tipo_Despesas" fieldSource="Tipo_Despesas" wizardCaption="Tipo Despesas" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_despesasTipo_Despesas">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="26" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Aluguel" fieldSource="Cod_Aluguel" wizardCaption="Cod Aluguel" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" parentName="tbl_despesas" rowNumber="1" PathID="tbl_despesasCod_Aluguel">
+				<Label id="26" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Aluguel" fieldSource="Cod_Aluguel" wizardCaption="Cod Aluguel" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_despesasCod_Aluguel">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="28" fieldSourceType="DBColumn" dataType="Integer" html="False" name="tbl_situacao_Cod_Situacao" fieldSource="tbl_situacao_Cod_Situacao" wizardCaption="Tbl Situacao Cod Situacao" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" parentName="tbl_despesas" rowNumber="1" PathID="tbl_despesastbl_situacao_Cod_Situacao">
+				<Label id="28" fieldSourceType="DBColumn" dataType="Integer" html="False" name="tbl_situacao_Cod_Situacao" fieldSource="tbl_situacao_Cod_Situacao" wizardCaption="Tbl Situacao Cod Situacao" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_despesastbl_situacao_Cod_Situacao">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -155,12 +155,12 @@
 			<Attributes/>
 			<Features/>
 		</Grid>
-		<IncludePage id="32" name="Header" PathID="Header" parentType="Page" page="Header.ccp">
+		<IncludePage id="32" name="Header" PathID="Header" page="Header.ccp">
 			<Components/>
 			<Events/>
 			<Features/>
 		</IncludePage>
-		<IncludePage id="33" name="Footer" PathID="Footer" parentType="Page" page="Footer.ccp">
+		<IncludePage id="33" name="Footer" PathID="Footer" page="Footer.ccp">
 			<Components/>
 			<Events/>
 			<Features/>
@@ -168,9 +168,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="tbl_despesas_list.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-<CodeFile id="JSP" language="JSP" name="tbl_despesas_list.jsp" path="." forShow="True" url="tbl_despesas_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-<CodeFile id="Handlers" language="JSP" name="tbl_despesas_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-</CodeFiles>
+		<CodeFile id="JSP" language="JSP" name="tbl_despesas_list.jsp" path="." forShow="True" url="tbl_despesas_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+		<CodeFile id="Handlers" language="JSP" name="tbl_despesas_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+	</CodeFiles>
 	<SecurityGroups>
 		<Group id="31" groupID="1"/>
 	</SecurityGroups>

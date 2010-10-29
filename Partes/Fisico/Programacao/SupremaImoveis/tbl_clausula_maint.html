@@ -1,11 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Tbl Clausula</title>
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
-<script language="JavaScript" type="text/javascript">
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-F3587A4D
 </script>
@@ -34,56 +33,53 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-{Header}
+{Header} 
 <!-- BEGIN Record tbl_clausula -->
-<form id="tbl_clausula" method="post" action="{Action}" name="{HTMLFormName}">
+<form id="tbl_clausula" name="{HTMLFormName}" action="{Action}" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Adicionar/Editar Tbl Clausula </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Adicionar/Editar Cláusula </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <!-- BEGIN Error -->
           <tr class="Error">
-            <td colspan="2">{Error}</td> 
+            <td colspan="2">{Error}</td>
           </tr>
- <!-- END Error -->
+          <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_clausulaTipo">Tipo</label></td> 
-            <td><input type="text" name="{Tipo_Name}" value="{Tipo}" maxlength="10" size="10" id="tbl_clausulaTipo"></td> 
+            <td><input id="tbl_clausulaTipo" maxlength="10" size="10" value="{Tipo}" name="{Tipo_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_clausulaDescricao">Descricao</label></td> 
-            <td><input type="text" name="{Descricao_Name}" value="{Descricao}" maxlength="250" size="50" id="tbl_clausulaDescricao"></td> 
+            <td><input id="tbl_clausulaDescricao" maxlength="250" size="50" value="{Descricao}" name="{Descricao_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_clausulaCod_Contrato">Cod Contrato</label></td> 
-            <td><input type="text" name="{Cod_Contrato_Name}" value="{Cod_Contrato}" maxlength="10" size="10" id="tbl_clausulaCod_Contrato"></td> 
+            <td><input id="tbl_clausulaCod_Contrato" maxlength="10" size="10" value="{Cod_Contrato}" name="{Cod_Contrato_Name}"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Add" alt="Add" id="tbl_clausulaButton_Insert" class="Button"><!-- END Button Button_Insert -->
-              <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Atualizar" alt="Atualizar" id="tbl_clausulaButton_Update" class="Button"><!-- END Button Button_Update -->
-              <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Delete" alt="Delete" id="tbl_clausulaButton_Delete" class="Button"><!-- END Button Button_Delete --></td> 
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="Button" id="tbl_clausulaButton_Insert" type="submit" alt="Add" value="Adicionar" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="Button" id="tbl_clausulaButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="Button" id="tbl_clausulaButton_Delete" type="submit" alt="Delete" value="Remover" name="{Button_Name}"><!-- END Button Button_Delete --></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 <!-- END Record tbl_clausula --><br>
-{Footer}
+{Footer} 
 </body>
 </html>

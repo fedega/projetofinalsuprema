@@ -1,11 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Tbl Contrato</title>
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
-<script language="JavaScript" type="text/javascript">
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-F3587A4D
 </script>
@@ -34,61 +33,58 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-{Header}
+{Header} 
 <!-- BEGIN Record tbl_contrato -->
-<form id="tbl_contrato" method="post" action="{Action}" name="{HTMLFormName}">
+<form id="tbl_contrato" name="{HTMLFormName}" action="{Action}" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Adicionar/Editar Tbl Contrato </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Adicionar/Editar Contrato </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <!-- BEGIN Error -->
           <tr class="Error">
-            <td colspan="2">{Error}</td> 
+            <td colspan="2">{Error}</td>
           </tr>
- <!-- END Error -->
+          <!-- END Error -->
           <tr class="Controls">
-            <td class="th"><label for="tbl_contratoCod_Funcionario">Cod Funcionario</label></td> 
-            <td><input type="text" name="{Cod_Funcionario_Name}" value="{Cod_Funcionario}" maxlength="10" size="10" id="tbl_contratoCod_Funcionario"></td> 
-          </tr>
- 
-          <tr class="Controls">
-            <td class="th"><label for="tbl_contratoCod_Cliente">Cod Cliente</label></td> 
-            <td><input type="text" name="{Cod_Cliente_Name}" value="{Cod_Cliente}" maxlength="10" size="10" id="tbl_contratoCod_Cliente"></td> 
+            <td class="th"><label for="tbl_contratoCod_Funcionario">Funcionario</label></td> 
+            <td><input id="tbl_contratoCod_Funcionario" maxlength="10" size="10" value="{Cod_Funcionario}" name="{Cod_Funcionario_Name}"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_contratoCod_Imovel">Cod Imovel</label></td> 
-            <td><input type="text" name="{Cod_Imovel_Name}" value="{Cod_Imovel}" maxlength="10" size="10" id="tbl_contratoCod_Imovel"></td> 
+            <td class="th"><label for="tbl_contratoCod_Cliente">Cliente</label></td> 
+            <td><input id="tbl_contratoCod_Cliente" maxlength="10" size="10" value="{Cod_Cliente}" name="{Cod_Cliente_Name}"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_contratoCod_Fiador">Cod Fiador</label></td> 
-            <td><input type="text" name="{Cod_Fiador_Name}" value="{Cod_Fiador}" maxlength="10" size="10" id="tbl_contratoCod_Fiador"></td> 
+            <td class="th"><label for="tbl_contratoCod_Imovel">Imovel</label></td> 
+            <td><input id="tbl_contratoCod_Imovel" maxlength="10" size="10" value="{Cod_Imovel}" name="{Cod_Imovel_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_contratoCod_Fiador">Fiador</label></td> 
+            <td><input id="tbl_contratoCod_Fiador" maxlength="10" size="10" value="{Cod_Fiador}" name="{Cod_Fiador_Name}"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Add" alt="Add" id="tbl_contratoButton_Insert" class="Button"><!-- END Button Button_Insert -->
-              <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Atualizar" alt="Atualizar" id="tbl_contratoButton_Update" class="Button"><!-- END Button Button_Update -->
-              <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Delete" alt="Delete" id="tbl_contratoButton_Delete" class="Button"><!-- END Button Button_Delete --></td> 
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="Button" id="tbl_contratoButton_Insert" type="submit" alt="Add" value="Adicionar" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="Button" id="tbl_contratoButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="Button" id="tbl_contratoButton_Delete" type="submit" alt="Delete" value="Remover" name="{Button_Name}"><!-- END Button Button_Delete --></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 <!-- END Record tbl_contrato --><br>
-{Footer}
+{Footer} 
 </body>
 </html>

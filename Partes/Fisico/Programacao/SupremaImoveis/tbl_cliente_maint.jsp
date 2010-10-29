@@ -20,13 +20,13 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-064638FA--%>
+<%--JSP Page Content @1-D7F42F53--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <ccs:meta header="Content-Type"/>
 <title>Tbl Cliente</title>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
@@ -37,10 +37,10 @@
 <script language="JavaScript" type="text/javascript">
 //End Include Common JSFunctions
 
-//Date Picker Object Definitions @1-FA9AE41D
+//Date Picker Object Definitions @1-BE72D663
 
 var tbl_cliente_DatePicker_Data_Nasc = new Object(); 
-tbl_cliente_DatePicker_Data_Nasc.format           = "ShortDate";
+tbl_cliente_DatePicker_Data_Nasc.format           = "dd/mm/yyyy";
 tbl_cliente_DatePicker_Data_Nasc.style            = "Styles/Padrao/Style.css";
 tbl_cliente_DatePicker_Data_Nasc.relativePathPart = "";
 tbl_cliente_DatePicker_Data_Nasc.themeVersion = "3.0";
@@ -68,113 +68,110 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<jsp:include page="/Header.jsp" flush="true"/>
+<jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_cliente'>
-<form id="tbl_cliente" method="post" action="<ccs:form_action/>" name="<ccs:form_name/>">
+<form id="tbl_cliente" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Adicionar/Editar Tbl Cliente </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Adicionar/Editar Cliente </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <ccs:error_block>
           <tr class="Error">
-            <td colspan="2"><ccs:error_text/></td> 
+            <td colspan="2"><ccs:error_text/></td>
           </tr>
- </ccs:error_block>
+          </ccs:error_block>
           <tr class="Controls">
             <td class="th"><label for="tbl_clienteNome">Nome</label></td> 
-            <td><input type="text" name="<ccs:control name='Nome' property='name'/>" value="<ccs:control name='Nome'/>" maxlength="40" size="40" id="tbl_clienteNome"></td> 
+            <td><input id="tbl_clienteNome" maxlength="40" size="40" value="<ccs:control name='Nome'/>" name="<ccs:control name='Nome' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteData_Nasc">Data Nasc</label></td> 
-            <td><input type="text" name="<ccs:control name='Data_Nasc' property='name'/>" value="<ccs:control name='Data_Nasc'/>" maxlength="100" size="10" id="tbl_clienteData_Nasc">
-              <ccs:datepicker name='DatePicker_Data_Nasc'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_clienteDatePicker_Data_Nasc"><img src="Styles/Padrao/Images/DatePicker.gif" border="0" alt="Show Date Picker" id="tbl_clienteDatePicker_Data_Nasc_Image"></a></ccs:datepicker></td> 
+            <td class="th"><label for="tbl_clienteData_Nasc">Data de&nbsp;Nascimento</label></td> 
+            <td><input id="tbl_clienteData_Nasc" maxlength="100" size="10" value="<ccs:control name='Data_Nasc'/>" name="<ccs:control name='Data_Nasc' property='name'/>">
+              <ccs:datepicker name='DatePicker_Data_Nasc'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_clienteDatePicker_Data_Nasc"><img id="tbl_clienteDatePicker_Data_Nasc_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a></ccs:datepicker></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteNome_U">Nome U</label></td> 
-            <td><input type="text" name="<ccs:control name='Nome_U' property='name'/>" value="<ccs:control name='Nome_U'/>" maxlength="16" size="16" id="tbl_clienteNome_U"></td> 
+            <td class="th"><label for="tbl_clienteNome_U">Nome de Usuario</label></td> 
+            <td><input id="tbl_clienteNome_U" maxlength="16" size="16" value="<ccs:control name='Nome_U'/>" name="<ccs:control name='Nome_U' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteSenha_U">Senha U</label></td> 
-            <td><input type="text" name="<ccs:control name='Senha_U' property='name'/>" value="<ccs:control name='Senha_U'/>" maxlength="40" size="40" id="tbl_clienteSenha_U"></td> 
+            <td class="th"><label for="tbl_clienteSenha_U">Senha</label></td> 
+            <td><input id="tbl_clienteSenha_U" maxlength="40" size="40" value="<ccs:control name='Senha_U'/>" name="<ccs:control name='Senha_U' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_clienteNacionalidade">Nacionalidade</label></td> 
-            <td><input type="text" name="<ccs:control name='Nacionalidade' property='name'/>" value="<ccs:control name='Nacionalidade'/>" maxlength="30" size="30" id="tbl_clienteNacionalidade"></td> 
+            <td><input id="tbl_clienteNacionalidade" maxlength="30" size="30" value="<ccs:control name='Nacionalidade'/>" name="<ccs:control name='Nacionalidade' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteEndereco">Endereco</label></td> 
-            <td><input type="text" name="<ccs:control name='Endereco' property='name'/>" value="<ccs:control name='Endereco'/>" maxlength="200" size="50" id="tbl_clienteEndereco"></td> 
+            <td class="th"><label for="tbl_clienteEndereco">Endereço</label></td> 
+            <td><input id="tbl_clienteEndereco" maxlength="200" size="50" value="<ccs:control name='Endereco'/>" name="<ccs:control name='Endereco' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteTel_Fixo">Tel Fixo</label></td> 
-            <td><input type="text" name="<ccs:control name='Tel_Fixo' property='name'/>" value="<ccs:control name='Tel_Fixo'/>" maxlength="10" size="10" id="tbl_clienteTel_Fixo"></td> 
+            <td class="th"><label for="tbl_clienteTel_Fixo">Telefone Fixo</label></td> 
+            <td><input id="tbl_clienteTel_Fixo" maxlength="10" size="10" value="<ccs:control name='Tel_Fixo'/>" name="<ccs:control name='Tel_Fixo' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteTel_Cel">Tel Cel</label></td> 
-            <td><input type="text" name="<ccs:control name='Tel_Cel' property='name'/>" value="<ccs:control name='Tel_Cel'/>" maxlength="10" size="10" id="tbl_clienteTel_Cel"></td> 
+            <td class="th"><label for="tbl_clienteTel_Cel">Telefone Celuar</label></td> 
+            <td><input id="tbl_clienteTel_Cel" maxlength="10" size="10" value="<ccs:control name='Tel_Cel'/>" name="<ccs:control name='Tel_Cel' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteTel_Comercial">Tel Comercial</label></td> 
-            <td><input type="text" name="<ccs:control name='Tel_Comercial' property='name'/>" value="<ccs:control name='Tel_Comercial'/>" maxlength="10" size="10" id="tbl_clienteTel_Comercial"></td> 
+            <td class="th"><label for="tbl_clienteTel_Comercial">Telefone Comercial</label></td> 
+            <td><input id="tbl_clienteTel_Comercial" maxlength="10" size="10" value="<ccs:control name='Tel_Comercial'/>" name="<ccs:control name='Tel_Comercial' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteCod_Estado">Cod Estado</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Estado' property='name'/>" value="<ccs:control name='Cod_Estado'/>" maxlength="10" size="10" id="tbl_clienteCod_Estado"></td> 
+            <td class="th"><label for="tbl_clienteCod_Estado">Estado</label></td> 
+            <td><input id="tbl_clienteCod_Estado" maxlength="10" size="10" value="<ccs:control name='Cod_Estado'/>" name="<ccs:control name='Cod_Estado' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteCod_Cidade">Cod Cidade</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Cidade' property='name'/>" value="<ccs:control name='Cod_Cidade'/>" maxlength="10" size="10" id="tbl_clienteCod_Cidade"></td> 
+            <td class="th"><label for="tbl_clienteCod_Cidade">Cidade</label></td> 
+            <td><input id="tbl_clienteCod_Cidade" maxlength="10" size="10" value="<ccs:control name='Cod_Cidade'/>" name="<ccs:control name='Cod_Cidade' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_clienteCod_Funcionario">Cod Funcionario</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Funcionario' property='name'/>" value="<ccs:control name='Cod_Funcionario'/>" maxlength="10" size="10" id="tbl_clienteCod_Funcionario"></td> 
+            <td class="th"><label for="tbl_clienteCod_Funcionario">Funcionario</label></td> 
+            <td><input id="tbl_clienteCod_Funcionario" maxlength="10" size="10" value="<ccs:control name='Cod_Funcionario'/>" name="<ccs:control name='Cod_Funcionario' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_clienteOrgao_Emissor">Orgao Emissor</label></td> 
-            <td><input type="text" name="<ccs:control name='Orgao_Emissor' property='name'/>" value="<ccs:control name='Orgao_Emissor'/>" maxlength="10" size="10" id="tbl_clienteOrgao_Emissor"></td> 
+            <td><input id="tbl_clienteOrgao_Emissor" maxlength="10" size="10" value="<ccs:control name='Orgao_Emissor'/>" name="<ccs:control name='Orgao_Emissor' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_clienteTipo_Cliente">Tipo Cliente</label></td> 
-            <td><input type="text" name="<ccs:control name='Tipo_Cliente' property='name'/>" value="<ccs:control name='Tipo_Cliente'/>" maxlength="10" size="10" id="tbl_clienteTipo_Cliente"></td> 
+            <td><input id="tbl_clienteTipo_Cliente" maxlength="10" size="10" value="<ccs:control name='Tipo_Cliente'/>" name="<ccs:control name='Tipo_Cliente' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <ccs:button name='Button_Insert'><input name="<ccs:control name='Button_Insert' property='name'/>" type="submit" value="Add" alt="Add" id="tbl_clienteButton_Insert" class="Button"></ccs:button>
-              <ccs:button name='Button_Update'><input name="<ccs:control name='Button_Update' property='name'/>" type="submit" value="Atualizar" alt="Atualizar" id="tbl_clienteButton_Update" class="Button"></ccs:button>
-              <ccs:button name='Button_Delete'><input name="<ccs:control name='Button_Delete' property='name'/>" type="submit" value="Delete" alt="Delete" id="tbl_clienteButton_Delete" class="Button"></ccs:button></td> 
+            <td align="right" colspan="2">
+              <ccs:button name='Button_Insert'><input class="Button" id="tbl_clienteButton_Insert" type="submit" alt="Add" value="Adicionar" name="<ccs:control name='Button_Insert' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Update'><input class="Button" id="tbl_clienteButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="<ccs:control name='Button_Update' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Delete'><input class="Button" id="tbl_clienteButton_Delete" type="submit" alt="Delete" value="Remover" name="<ccs:control name='Button_Delete' property='name'/>"></ccs:button></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 </ccs:record><br>
-<jsp:include page="/Footer.jsp" flush="true"/>
+<jsp:include page="/Footer.jsp" flush="true"/> 
 </body>
 </html>
 <%--End JSP Page Content--%>

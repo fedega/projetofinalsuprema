@@ -1,11 +1,10 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Tbl Despesas</title>
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
-<script language="JavaScript" type="text/javascript">
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-F3587A4D
 </script>
@@ -34,66 +33,63 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-{Header}
+{Header} 
 <!-- BEGIN Record tbl_despesas -->
-<form id="tbl_despesas" method="post" action="{Action}" name="{HTMLFormName}">
+<form id="tbl_despesas" name="{HTMLFormName}" action="{Action}" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Adicionar/Editar Tbl Despesas </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Adicionar/Editar Despesas </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <!-- BEGIN Error -->
           <tr class="Error">
-            <td colspan="2">{Error}</td> 
+            <td colspan="2">{Error}</td>
           </tr>
- <!-- END Error -->
+          <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_despesasData">Data</label></td> 
-            <td><input type="text" name="{Data_Name}" value="{Data}" maxlength="20" size="20" id="tbl_despesasData"></td> 
+            <td><input id="tbl_despesasData" maxlength="20" value="{Data}" name="{Data_Name}" size="20"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_despesasValor">Valor</label></td> 
-            <td><input type="text" name="{Valor_Name}" value="{Valor}" maxlength="10" size="10" id="tbl_despesasValor"></td> 
+            <td><input id="tbl_despesasValor" maxlength="10" size="10" value="{Valor}" name="{Valor_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_despesasTipo_Despesas">Tipo Despesas</label></td> 
-            <td><input type="text" name="{Tipo_Despesas_Name}" value="{Tipo_Despesas}" maxlength="10" size="10" id="tbl_despesasTipo_Despesas"></td> 
+            <td><input id="tbl_despesasTipo_Despesas" maxlength="10" size="10" value="{Tipo_Despesas}" name="{Tipo_Despesas_Name}"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_despesasCod_Aluguel">Cod Aluguel</label></td> 
-            <td><input type="text" name="{Cod_Aluguel_Name}" value="{Cod_Aluguel}" maxlength="10" size="10" id="tbl_despesasCod_Aluguel"></td> 
+            <td class="th"><label for="tbl_despesasCod_Aluguel">Imovel</label></td> 
+            <td><input id="tbl_despesasCod_Aluguel" maxlength="10" size="10" value="{Cod_Aluguel}" name="{Cod_Aluguel_Name}"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_despesastbl_situacao_Cod_Situacao">Tbl Situacao Cod Situacao</label></td> 
-            <td><input type="text" name="{tbl_situacao_Cod_Situacao_Name}" value="{tbl_situacao_Cod_Situacao}" maxlength="10" size="10" id="tbl_despesastbl_situacao_Cod_Situacao"></td> 
+            <td class="th"><label for="tbl_despesastbl_situacao_Cod_Situacao">Situacao</label></td> 
+            <td><input id="tbl_despesastbl_situacao_Cod_Situacao" maxlength="10" size="10" value="{tbl_situacao_Cod_Situacao}" name="{tbl_situacao_Cod_Situacao_Name}"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <!-- BEGIN Button Button_Insert --><input name="{Button_Name}" type="submit" value="Add" alt="Add" id="tbl_despesasButton_Insert" class="Button"><!-- END Button Button_Insert -->
-              <!-- BEGIN Button Button_Update --><input name="{Button_Name}" type="submit" value="Atualizar" alt="Atualizar" id="tbl_despesasButton_Update" class="Button"><!-- END Button Button_Update -->
-              <!-- BEGIN Button Button_Delete --><input name="{Button_Name}" type="submit" value="Delete" alt="Delete" id="tbl_despesasButton_Delete" class="Button"><!-- END Button Button_Delete --></td> 
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_Insert --><input class="Button" id="tbl_despesasButton_Insert" type="submit" alt="Add" value="Adicionar" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input class="Button" id="tbl_despesasButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input class="Button" id="tbl_despesasButton_Delete" type="submit" alt="Delete" value="Remover" name="{Button_Name}"><!-- END Button Button_Delete --></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 <!-- END Record tbl_despesas --><br>
-{Footer}
+{Footer} 
 </body>
 </html>

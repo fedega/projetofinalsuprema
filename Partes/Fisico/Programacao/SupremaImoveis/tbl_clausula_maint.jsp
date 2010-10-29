@@ -20,15 +20,14 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-FFF6A98D--%>
+<%--JSP Page Content @1-DFAC8CC0--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <ccs:meta header="Content-Type"/>
 <title>Tbl Clausula</title>
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
-<script language="JavaScript" type="text/javascript">
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-CE0F0269
 </script>
@@ -57,57 +56,54 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<jsp:include page="/Header.jsp" flush="true"/>
+<jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_clausula'>
-<form id="tbl_clausula" method="post" action="<ccs:form_action/>" name="<ccs:form_name/>">
+<form id="tbl_clausula" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Adicionar/Editar Tbl Clausula </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Adicionar/Editar Cláusula </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <ccs:error_block>
           <tr class="Error">
-            <td colspan="2"><ccs:error_text/></td> 
+            <td colspan="2"><ccs:error_text/></td>
           </tr>
- </ccs:error_block>
+          </ccs:error_block>
           <tr class="Controls">
             <td class="th"><label for="tbl_clausulaTipo">Tipo</label></td> 
-            <td><input type="text" name="<ccs:control name='Tipo' property='name'/>" value="<ccs:control name='Tipo'/>" maxlength="10" size="10" id="tbl_clausulaTipo"></td> 
+            <td><input id="tbl_clausulaTipo" maxlength="10" size="10" value="<ccs:control name='Tipo'/>" name="<ccs:control name='Tipo' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_clausulaDescricao">Descricao</label></td> 
-            <td><input type="text" name="<ccs:control name='Descricao' property='name'/>" value="<ccs:control name='Descricao'/>" maxlength="250" size="50" id="tbl_clausulaDescricao"></td> 
+            <td><input id="tbl_clausulaDescricao" maxlength="250" size="50" value="<ccs:control name='Descricao'/>" name="<ccs:control name='Descricao' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_clausulaCod_Contrato">Cod Contrato</label></td> 
-            <td><input type="text" name="<ccs:control name='Cod_Contrato' property='name'/>" value="<ccs:control name='Cod_Contrato'/>" maxlength="10" size="10" id="tbl_clausulaCod_Contrato"></td> 
+            <td><input id="tbl_clausulaCod_Contrato" maxlength="10" size="10" value="<ccs:control name='Cod_Contrato'/>" name="<ccs:control name='Cod_Contrato' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <ccs:button name='Button_Insert'><input name="<ccs:control name='Button_Insert' property='name'/>" type="submit" value="Add" alt="Add" id="tbl_clausulaButton_Insert" class="Button"></ccs:button>
-              <ccs:button name='Button_Update'><input name="<ccs:control name='Button_Update' property='name'/>" type="submit" value="Atualizar" alt="Atualizar" id="tbl_clausulaButton_Update" class="Button"></ccs:button>
-              <ccs:button name='Button_Delete'><input name="<ccs:control name='Button_Delete' property='name'/>" type="submit" value="Delete" alt="Delete" id="tbl_clausulaButton_Delete" class="Button"></ccs:button></td> 
+            <td align="right" colspan="2">
+              <ccs:button name='Button_Insert'><input class="Button" id="tbl_clausulaButton_Insert" type="submit" alt="Add" value="Adicionar" name="<ccs:control name='Button_Insert' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Update'><input class="Button" id="tbl_clausulaButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="<ccs:control name='Button_Update' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Delete'><input class="Button" id="tbl_clausulaButton_Delete" type="submit" alt="Delete" value="Remover" name="<ccs:control name='Button_Delete' property='name'/>"></ccs:button></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 </ccs:record><br>
-<jsp:include page="/Footer.jsp" flush="true"/>
+<jsp:include page="/Footer.jsp" flush="true"/> 
 </body>
 </html>
 <%--End JSP Page Content--%>

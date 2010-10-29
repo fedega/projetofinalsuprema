@@ -20,15 +20,14 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-295F7498--%>
+<%--JSP Page Content @1-A9CDDAD4--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <ccs:meta header="Content-Type"/>
 <title>Tbl Contrato</title>
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
-<script language="JavaScript" type="text/javascript">
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-CE0F0269
 </script>
@@ -49,51 +48,48 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<jsp:include page="/Header.jsp" flush="true"/>
+<jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_contratoSearch'>
-<form id="tbl_contratoSearch" method="post" action="<ccs:form_action/>" name="<ccs:form_name/>">
+<form id="tbl_contratoSearch" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Buscar Tbl Contrato </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Buscar Contrato </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <ccs:error_block>
           <tr class="Error">
-            <td colspan="2"><ccs:error_text/></td> 
+            <td colspan="2"><ccs:error_text/></td>
           </tr>
- </ccs:error_block>
+          </ccs:error_block>
           <tr class="Controls">
-            <td class="th"><label for="tbl_contratoSearchs_Cod_Contrato">Cod Contrato</label></td> 
-            <td><input type="text" name="<ccs:control name='s_Cod_Contrato' property='name'/>" value="<ccs:control name='s_Cod_Contrato'/>" maxlength="10" size="10" id="tbl_contratoSearchs_Cod_Contrato"></td> 
-          </tr>
- 
-          <tr class="Controls">
-            <td class="th"><label for="tbl_contratoSearchs_Cod_Cliente">Cod Cliente</label></td> 
-            <td><input type="text" name="<ccs:control name='s_Cod_Cliente' property='name'/>" value="<ccs:control name='s_Cod_Cliente'/>" maxlength="10" size="10" id="tbl_contratoSearchs_Cod_Cliente"></td> 
+            <td class="th"><label for="tbl_contratoSearchs_Cod_Contrato">N° do Contrato</label></td> 
+            <td><input id="tbl_contratoSearchs_Cod_Contrato" maxlength="10" size="10" value="<ccs:control name='s_Cod_Contrato'/>" name="<ccs:control name='s_Cod_Contrato' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_contratoSearchs_Cod_Imovel">Cod Imovel</label></td> 
-            <td><input type="text" name="<ccs:control name='s_Cod_Imovel' property='name'/>" value="<ccs:control name='s_Cod_Imovel'/>" maxlength="10" size="10" id="tbl_contratoSearchs_Cod_Imovel"></td> 
+            <td class="th"><label for="tbl_contratoSearchs_Cod_Cliente">Cliente</label></td> 
+            <td><input id="tbl_contratoSearchs_Cod_Cliente" maxlength="10" size="10" value="<ccs:control name='s_Cod_Cliente'/>" name="<ccs:control name='s_Cod_Cliente' property='name'/>"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_contratoSearchs_Cod_Imovel">Imovel</label></td> 
+            <td><input id="tbl_contratoSearchs_Cod_Imovel" maxlength="10" size="10" value="<ccs:control name='s_Cod_Imovel'/>" name="<ccs:control name='s_Cod_Imovel' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <ccs:button name='Button_DoSearch'><input name="<ccs:control name='Button_DoSearch' property='name'/>" type="submit" value="Buscar" alt="Buscar" id="tbl_contratoSearchButton_DoSearch" class="Button"></ccs:button></td> 
+            <td align="right" colspan="2">
+              <ccs:button name='Button_DoSearch'><input class="Button" id="tbl_contratoSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="<ccs:control name='Button_DoSearch' property='name'/>"></ccs:button></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 </ccs:record><br>
@@ -101,73 +97,70 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td valign="top">
-      <table cellspacing="0" cellpadding="0" border="0" class="Header">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
         <tr>
-          <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-          <td class="th"><strong>List of Tbl Contrato</strong></td> 
-          <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="th"><strong>Lista de Contratos</strong></td> 
+          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
         </tr>
- 
       </table>
  
       <table class="Grid" cellspacing="0" cellpadding="0">
         <tr class="Caption">
           <th scope="col">
-          <ccs:sorter name='Sorter_Cod_Contrato' column='Cod_Contrato'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Contrato">Cod Contrato</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
+          <ccs:sorter name='Sorter_Cod_Contrato' column='Cod_Contrato'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Contrato">N° do Contrato</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
-          <ccs:sorter name='Sorter_Cod_Funcionario' column='Cod_Funcionario'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Funcionario">Cod Funcionario</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
+          <ccs:sorter name='Sorter_Cod_Funcionario' column='Cod_Funcionario'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Funcionario">Funcionario</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
-          <ccs:sorter name='Sorter_Cod_Cliente' column='Cod_Cliente'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Cliente">Cod Cliente</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
+          <ccs:sorter name='Sorter_Cod_Cliente' column='Cod_Cliente'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Cliente">Cliente</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
-          <ccs:sorter name='Sorter_Cod_Imovel' column='Cod_Imovel'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Imovel">Cod Imovel</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
+          <ccs:sorter name='Sorter_Cod_Imovel' column='Cod_Imovel'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Imovel">Imovel</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
-          <ccs:sorter name='Sorter_Cod_Fiador' column='Cod_Fiador'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Fiador">Cod Fiador</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
- 
+          <ccs:sorter name='Sorter_Cod_Fiador' column='Cod_Fiador'><a href="<ccs:sorter_href/>" id="tbl_contratoSorter_Cod_Fiador">Fiador</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
         </tr>
  
         <ccs:repeater><ccs:row>
         <tr class="Row">
-          <td style="text-align:right;"><a href="<ccs:control name='Cod_Contrato' property='href'/>" id="tbl_contratoCod_Contrato_<ccs:attribute owner = 'tbl_contrato' name = 'rowNumber' />"><ccs:control name='Cod_Contrato'/></a>&nbsp;</td> 
-          <td style="text-align:right;"><ccs:control name='Cod_Funcionario'/>&nbsp;</td> 
-          <td style="text-align:right;"><ccs:control name='Cod_Cliente'/>&nbsp;</td> 
-          <td style="text-align:right;"><ccs:control name='Cod_Imovel'/>&nbsp;</td> 
-          <td style="text-align:right;"><ccs:control name='Cod_Fiador'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><a href="<ccs:control name='Cod_Contrato' property='href'/>" id="tbl_contratoCod_Contrato_<ccs:attribute owner = 'tbl_contrato' name = 'rowNumber' />"><ccs:control name='Cod_Contrato'/></a>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Funcionario'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Cliente'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Imovel'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Fiador'/>&nbsp;</td>
         </tr>
  </ccs:row></ccs:repeater>
         <ccs:norecords>
         <tr class="NoRecords">
-          <td colspan="5">Sem registros</td> 
+          <td colspan="5">Sem registros</td>
         </tr>
- </ccs:norecords>
+        </ccs:norecords>
         <tr class="Footer">
-          <td colspan="5"><a href="<ccs:control name='tbl_contrato_Insert' property='href'/>" id="tbl_contratotbl_contrato_Insert">Add New</a>&nbsp; 
+          <td colspan="5"><a href="<ccs:control name='tbl_contrato_Insert' property='href'/>" id="tbl_contratotbl_contrato_Insert">Novo Contrato</a>&nbsp; 
             <ccs:navigator name='Navigator' type='Simple' size='10'>
-            <ccs:first_on><a href="<ccs:page_href/>">|&lt; </a> </ccs:first_on>
-            <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt; </a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
-            <ccs:next_on><a href="<ccs:page_href/>">&gt;&gt; </a> </ccs:next_on>
-            <ccs:last_on><a href="<ccs:page_href/>">&gt;| </a> </ccs:last_on></ccs:navigator>&nbsp;</td> 
+            <ccs:first_on><a href="<ccs:page_href/>">|&lt;</a> </ccs:first_on>
+            <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt;</a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
+            <ccs:next_on><a href="<ccs:page_href/>">&gt;&gt;</a> </ccs:next_on>
+            <ccs:last_on><a href="<ccs:page_href/>">&gt;|</a> </ccs:last_on></ccs:navigator>&nbsp;</td>
         </tr>
- 
       </table>
- </td> 
+    </td>
   </tr>
 </table>
 </ccs:grid><br>
-<jsp:include page="/Footer.jsp" flush="true"/>
+<jsp:include page="/Footer.jsp" flush="true"/> 
 </body>
 </html>
 <%--End JSP Page Content--%>

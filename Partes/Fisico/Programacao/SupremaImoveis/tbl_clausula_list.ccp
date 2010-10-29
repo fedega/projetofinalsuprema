@@ -142,9 +142,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="tbl_clausula_list.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-<CodeFile id="JSP" language="JSP" name="tbl_clausula_list.jsp" path="." forShow="True" url="tbl_clausula_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-<CodeFile id="Handlers" language="JSP" name="tbl_clausula_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-</CodeFiles>
+		<CodeFile id="JSP" language="JSP" name="tbl_clausula_list.jsp" path="." forShow="True" url="tbl_clausula_list.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+		<CodeFile id="Handlers" language="JSP" name="tbl_clausula_listHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+	</CodeFiles>
 	<SecurityGroups>
 		<Group id="25" groupID="1"/>
 	</SecurityGroups>

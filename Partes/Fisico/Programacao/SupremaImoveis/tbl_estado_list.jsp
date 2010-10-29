@@ -20,15 +20,14 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-B34B1461--%>
+<%--JSP Page Content @1-57AE1FA2--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <ccs:meta header="Content-Type"/>
 <title>Tbl Estado</title>
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
-<script language="JavaScript" type="text/javascript">
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-CE0F0269
 </script>
@@ -49,46 +48,43 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<jsp:include page="/Header.jsp" flush="true"/>
+<jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_estadoSearch'>
-<form id="tbl_estadoSearch" method="post" action="<ccs:form_action/>" name="<ccs:form_name/>">
+<form id="tbl_estadoSearch" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
     <tr>
       <td valign="top">
-        <table cellspacing="0" cellpadding="0" border="0" class="Header">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
           <tr>
-            <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-            <td class="th"><strong>Buscar Tbl Estado </strong></td> 
-            <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Buscar Estado </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <ccs:error_block>
           <tr class="Error">
-            <td colspan="2"><ccs:error_text/></td> 
+            <td colspan="2"><ccs:error_text/></td>
           </tr>
- </ccs:error_block>
+          </ccs:error_block>
           <tr class="Controls">
             <td class="th"><label for="tbl_estadoSearchs_UF">UF</label></td> 
-            <td><input type="text" name="<ccs:control name='s_UF' property='name'/>" value="<ccs:control name='s_UF'/>" maxlength="40" size="40" id="tbl_estadoSearchs_UF"></td> 
+            <td><input id="tbl_estadoSearchs_UF" maxlength="40" size="40" value="<ccs:control name='s_UF'/>" name="<ccs:control name='s_UF' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_estadoSearchs_Nome">Nome</label></td> 
-            <td><input type="text" name="<ccs:control name='s_Nome' property='name'/>" value="<ccs:control name='s_Nome'/>" maxlength="40" size="40" id="tbl_estadoSearchs_Nome"></td> 
+            <td><input id="tbl_estadoSearchs_Nome" maxlength="40" size="40" value="<ccs:control name='s_Nome'/>" name="<ccs:control name='s_Nome' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td colspan="2" align="right">
-              <ccs:button name='Button_DoSearch'><input name="<ccs:control name='Button_DoSearch' property='name'/>" type="submit" value="Buscar" alt="Buscar" id="tbl_estadoSearchButton_DoSearch" class="Button"></ccs:button></td> 
+            <td align="right" colspan="2">
+              <ccs:button name='Button_DoSearch'><input class="Button" id="tbl_estadoSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="<ccs:control name='Button_DoSearch' property='name'/>"></ccs:button></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 </ccs:record><br>
@@ -96,61 +92,58 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 <table cellspacing="0" cellpadding="0" border="0">
   <tr>
     <td valign="top">
-      <table cellspacing="0" cellpadding="0" border="0" class="Header">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
         <tr>
-          <td class="HeaderLeft"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
-          <td class="th"><strong>List of Tbl Estado</strong></td> 
-          <td class="HeaderRight"><img border="0" src="Styles/Padrao/Images/Spacer.gif" alt=""></td> 
+          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="th"><strong>Lista de&nbsp;Estados</strong></td> 
+          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
         </tr>
- 
       </table>
  
       <table class="Grid" cellspacing="0" cellpadding="0">
         <tr class="Caption">
           <th scope="col">
-          <ccs:sorter name='Sorter_Cod_Estado' column='Cod_Estado'><a href="<ccs:sorter_href/>" id="tbl_estadoSorter_Cod_Estado">Cod Estado</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
+          <ccs:sorter name='Sorter_Cod_Estado' column='Cod_Estado'><a href="<ccs:sorter_href/>" id="tbl_estadoSorter_Cod_Estado">Codigo do Estado</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
           <ccs:sorter name='Sorter_UF' column='UF'><a href="<ccs:sorter_href/>" id="tbl_estadoSorter_UF">UF</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
           <ccs:sorter name='Sorter_Nome' column='Nome'><a href="<ccs:sorter_href/>" id="tbl_estadoSorter_Nome">Nome</a> 
-          <ccs:asc_on><img border="0" src="Styles/Padrao/Images/Asc.gif" alt="Ascending"></ccs:asc_on>
-          <ccs:desc_on><img border="0" src="Styles/Padrao/Images/Desc.gif" alt="Descending"></ccs:desc_on></ccs:sorter></th>
- 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
         </tr>
  
         <ccs:repeater><ccs:row>
         <tr class="Row">
-          <td style="text-align:right;"><a href="<ccs:control name='Cod_Estado' property='href'/>" id="tbl_estadoCod_Estado_<ccs:attribute owner = 'tbl_estado' name = 'rowNumber' />"><ccs:control name='Cod_Estado'/></a>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><a href="<ccs:control name='Cod_Estado' property='href'/>" id="tbl_estadoCod_Estado_<ccs:attribute owner = 'tbl_estado' name = 'rowNumber' />"><ccs:control name='Cod_Estado'/></a>&nbsp;</td> 
           <td><ccs:control name='UF'/>&nbsp;</td> 
-          <td><ccs:control name='Nome'/>&nbsp;</td> 
+          <td><ccs:control name='Nome'/>&nbsp;</td>
         </tr>
  </ccs:row></ccs:repeater>
         <ccs:norecords>
         <tr class="NoRecords">
-          <td colspan="3">Sem registros</td> 
+          <td colspan="3">Sem registros</td>
         </tr>
- </ccs:norecords>
+        </ccs:norecords>
         <tr class="Footer">
-          <td colspan="3"><a href="<ccs:control name='tbl_estado_Insert' property='href'/>" id="tbl_estadotbl_estado_Insert">Add New</a>&nbsp; 
+          <td colspan="3"><a href="<ccs:control name='tbl_estado_Insert' property='href'/>" id="tbl_estadotbl_estado_Insert">Novo Registro</a>&nbsp; 
             <ccs:navigator name='Navigator' type='Simple' size='10'>
-            <ccs:first_on><a href="<ccs:page_href/>">|&lt; </a> </ccs:first_on>
-            <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt; </a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
-            <ccs:next_on><a href="<ccs:page_href/>">&gt;&gt; </a> </ccs:next_on>
-            <ccs:last_on><a href="<ccs:page_href/>">&gt;| </a> </ccs:last_on></ccs:navigator>&nbsp;</td> 
+            <ccs:first_on><a href="<ccs:page_href/>">|&lt;</a> </ccs:first_on>
+            <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt;</a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
+            <ccs:next_on><a href="<ccs:page_href/>">&gt;&gt;</a> </ccs:next_on>
+            <ccs:last_on><a href="<ccs:page_href/>">&gt;|</a> </ccs:last_on></ccs:navigator>&nbsp;</td>
         </tr>
- 
       </table>
- </td> 
+    </td>
   </tr>
 </table>
 </ccs:grid><br>
-<jsp:include page="/Footer.jsp" flush="true"/>
+<jsp:include page="/Footer.jsp" flush="true"/> 
 </body>
 </html>
 <%--End JSP Page Content--%>

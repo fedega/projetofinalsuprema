@@ -20,7 +20,7 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-5DDF58E7--%>
+<%--JSP Page Content @1-DD9E926A--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -30,26 +30,11 @@
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
-//Include Common JSFunctions @1-CE0F0269
-</script>
-<script language="JavaScript" src="ClientI18N.jsp?file=Functions.js&amp;locale=<ccs:message key="CCS_LocaleID"/>" type="text/javascript" charset="utf-8"></script>
-<script language="JavaScript" type="text/javascript">
-//End Include Common JSFunctions
-
-//bind_events @1-99F07CBB
-function bind_events() {
-    if (functionExists("Header_bind_events")) Header_bind_events();
-    if (functionExists("Footer_bind_events")) Footer_bind_events();
-}
-//End bind_events
-
-window.onload = bind_events; //Assign bind_events @1-19F7B649
-
 //End CCS script
 </script>
 </head>
 <body>
-<jsp:include page="/Header.jsp" flush="true"/> 
+&nbsp;
 <ccs:record name='Login'>
 <form id="Login" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
   <table cellspacing="0" cellpadding="0" border="0">
@@ -88,7 +73,7 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
     </tr>
   </table>
 </form>
-</ccs:record><jsp:include page="/Footer.jsp" flush="true"/> 
+</ccs:record>
 </body>
 </html>
 <%--End JSP Page Content--%>
