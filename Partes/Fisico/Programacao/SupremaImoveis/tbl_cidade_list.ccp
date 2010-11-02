@@ -13,26 +13,26 @@
 					<Events/>
 					<Attributes/>
 					<Features>
-<HideShow id="25" enabled="True" name="HideShow1" category="Ajax" featureNameChanged="No" ccsIdsOnly="False" show="tbl_cidadeSearch.onload;">
-<Components/>
-<Events/>
-<ControlPoints>
-<ControlPoint id="26" name="tbl_cidadeSearch.onload" relProperty="show">
-<Items>
-<ControlPointItem id="27" name="tbl_cidade_list" ccpId="1" type="Page" isFeature="False"/>
-<ControlPointItem id="28" name="tbl_cidadeSearch" ccpId="2" type="Record" isFeature="False" PathID="tbl_cidadeSearch"/>
-</Items>
-</ControlPoint>
-</ControlPoints>
-<TableParameters/>
-<SPParameters/>
-<SQLParameters/>
-<JoinTables/>
-<JoinLinks/>
-<Fields/>
-<Features/>
-</HideShow>
-</Features>
+						<HideShow id="25" enabled="True" name="HideShow1" category="Ajax" featureNameChanged="No" ccsIdsOnly="False" show="tbl_cidadeSearch.onload;">
+							<Components/>
+							<Events/>
+							<ControlPoints>
+								<ControlPoint id="26" name="tbl_cidadeSearch.onload" relProperty="show">
+									<Items>
+										<ControlPointItem id="27" name="tbl_cidade_list" ccpId="1" type="Page" isFeature="False"/>
+										<ControlPointItem id="28" name="tbl_cidadeSearch" ccpId="2" type="Record" isFeature="False" PathID="tbl_cidadeSearch"/>
+									</Items>
+								</ControlPoint>
+							</ControlPoints>
+							<TableParameters/>
+							<SPParameters/>
+							<SQLParameters/>
+							<JoinTables/>
+							<JoinLinks/>
+							<Fields/>
+							<Features/>
+						</HideShow>
+					</Features>
 				</TextBox>
 			</Components>
 			<Events/>
@@ -121,20 +121,20 @@
 			<TableParameters>
 				<TableParameter id="9" conditionType="Parameter" useIsNull="False" field="tbl_cidade.Nome" parameterSource="s_Nome" dataType="Text" logicOperator="And" searchConditionType="Contains" parameterType="URL" orderNumber="1"/>
 				<TableParameter id="32" conditionType="Parameter" useIsNull="False" field="tbl_cidade.Cod_Estado" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_estado.Cod_Estado"/>
-</TableParameters>
+			</TableParameters>
 			<JoinTables>
 				<JoinTable id="7" tableName="tbl_cidade" posWidth="95" posHeight="104" posLeft="10" posRight="-1" posTop="10"/>
 				<JoinTable id="29" tableName="tbl_estado" posLeft="126" posTop="10" posWidth="95" posHeight="104"/>
-</JoinTables>
+			</JoinTables>
 			<JoinLinks>
-<JoinTable2 id="30" tableLeft="tbl_cidade" tableRight="tbl_estado" fieldLeft="tbl_cidade.Cod_Estado" fieldRight="tbl_estado.Cod_Estado" joinType="inner" conditionType="Equal"/>
-</JoinLinks>
+				<JoinTable2 id="30" tableLeft="tbl_cidade" tableRight="tbl_estado" fieldLeft="tbl_cidade.Cod_Estado" fieldRight="tbl_estado.Cod_Estado" joinType="inner" conditionType="Equal"/>
+			</JoinLinks>
 			<Fields>
 				<Field id="13" tableName="tbl_cidade" fieldName="Cod_Cidade"/>
 				<Field id="16" tableName="tbl_cidade" fieldName="tbl_cidade.Nome" alias="tbl_cidade_Nome"/>
 				<Field id="18" tableName="tbl_cidade" fieldName="tbl_cidade.Cod_Estado" alias="tbl_cidade_Cod_Estado"/>
 				<Field id="31" tableName="tbl_estado" fieldName="tbl_estado.*"/>
-</Fields>
+			</Fields>
 			<SPParameters/>
 			<SQLParameters/>
 			<SecurityGroups/>
