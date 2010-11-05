@@ -1,0 +1,171 @@
+<!--Page model head @1-064E90F0-->
+<Page name="ManterImovel" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+    <Security>
+        <Group id="1"/>
+    </Security>
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_imovel model @2-A54D43DF-->
+    <Record name="tbl_imovel" connection="Conexao" restricted="False" returnPage="tbl_imovel_list.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Cod_Cliente" caption="Cod Cliente" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Cliente"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Funcionario" caption="Cod Funcionario" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Funcionario"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Situacao" caption="Cod Situacao" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Situacao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_destinacao" caption="Cod Destinacao" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_destinacao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Endereco" caption="Endereco" dataType="Text"
+                controlSourceType="DataSource" controlSource="Endereco"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="CEP" caption="CEP" dataType="Integer"
+                controlSourceType="DataSource" controlSource="CEP"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Bairro" caption="Bairro" dataType="Text"
+                controlSourceType="DataSource" controlSource="Bairro"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Estado" caption="Cod Estado" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Estado"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Cidade" caption="Cod Cidade" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Cidade"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="N_Quartos" caption="N Quartos" dataType="Integer"
+                controlSourceType="DataSource" controlSource="N_Quartos"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="N_Suites" caption="N Suites" dataType="Integer"
+                controlSourceType="DataSource" controlSource="N_Suites"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="N_Banheiros" caption="N Banheiros" dataType="Integer"
+                controlSourceType="DataSource" controlSource="N_Banheiros"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="N_Salas" caption="N Salas" dataType="Integer"
+                controlSourceType="DataSource" controlSource="N_Salas"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="N_Cozinhas" caption="N Cozinhas" dataType="Integer"
+                controlSourceType="DataSource" controlSource="N_Cozinhas"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <CheckBox name="Dep_Empregada" dataType="Boolean"
+                controlSourceType="DataSource" controlSource="Dep_Empregada"
+                checkedValue="" uncheckedValue="" errorControl="">
+        </CheckBox>
+        <CheckBox name="Garagem" dataType="Boolean"
+                controlSourceType="DataSource" controlSource="Garagem"
+                checkedValue="" uncheckedValue="" errorControl="">
+        </CheckBox>
+        <TextBox name="Mts_Quadrados" caption="Mts Quadrados" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Mts_Quadrados"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Select query="SELECT * FROM tbl_imovel {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Imovel6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Imovel6" field="Cod_Imovel" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Imovel"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_imovel ( Cod_Cliente, Cod_Funcionario, Cod_Situacao, Cod_destinacao, Endereco, CEP, Bairro, Cod_Estado, Cod_Cidade, N_Quartos, N_Suites, N_Banheiros, N_Salas, N_Cozinhas, Dep_Empregada, Garagem, Mts_Quadrados ) VALUES ( {Cod_Cliente}, {Cod_Funcionario}, {Cod_Situacao}, {Cod_destinacao}, {Endereco}, {CEP}, {Bairro}, {Cod_Estado}, {Cod_Cidade}, {N_Quartos}, {N_Suites}, {N_Banheiros}, {N_Salas}, {N_Cozinhas}, {Dep_Empregada}, {Garagem}, {Mts_Quadrados} )" type="raw">
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Situacao" type="Integer" sourceName="Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="Cod_Situacao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_destinacao" type="Integer" sourceName="Cod_destinacao" sourceType="Control" dbFormat="" fieldSource="Cod_destinacao" omitIfEmpty="True"/>
+            <SqlParameter name="Endereco" type="Text" sourceName="Endereco" sourceType="Control" dbFormat="" fieldSource="Endereco" omitIfEmpty="True"/>
+            <SqlParameter name="CEP" type="Integer" sourceName="CEP" sourceType="Control" dbFormat="" fieldSource="CEP" omitIfEmpty="True"/>
+            <SqlParameter name="Bairro" type="Text" sourceName="Bairro" sourceType="Control" dbFormat="" fieldSource="Bairro" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Estado" type="Integer" sourceName="Cod_Estado" sourceType="Control" dbFormat="" fieldSource="Cod_Estado" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cidade" type="Integer" sourceName="Cod_Cidade" sourceType="Control" dbFormat="" fieldSource="Cod_Cidade" omitIfEmpty="True"/>
+            <SqlParameter name="N_Quartos" type="Integer" sourceName="N_Quartos" sourceType="Control" dbFormat="" fieldSource="N_Quartos" omitIfEmpty="True"/>
+            <SqlParameter name="N_Suites" type="Integer" sourceName="N_Suites" sourceType="Control" dbFormat="" fieldSource="N_Suites" omitIfEmpty="True"/>
+            <SqlParameter name="N_Banheiros" type="Integer" sourceName="N_Banheiros" sourceType="Control" dbFormat="" fieldSource="N_Banheiros" omitIfEmpty="True"/>
+            <SqlParameter name="N_Salas" type="Integer" sourceName="N_Salas" sourceType="Control" dbFormat="" fieldSource="N_Salas" omitIfEmpty="True"/>
+            <SqlParameter name="N_Cozinhas" type="Integer" sourceName="N_Cozinhas" sourceType="Control" dbFormat="" fieldSource="N_Cozinhas" omitIfEmpty="True"/>
+            <SqlParameter name="Dep_Empregada" type="Boolean" sourceName="Dep_Empregada" sourceType="Control" dbFormat="" fieldSource="Dep_Empregada"/>
+            <SqlParameter name="Garagem" type="Boolean" sourceName="Garagem" sourceType="Control" dbFormat="" fieldSource="Garagem"/>
+            <SqlParameter name="Mts_Quadrados" type="Integer" sourceName="Mts_Quadrados" sourceType="Control" dbFormat="" fieldSource="Mts_Quadrados" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_imovel SET Cod_Cliente = {Cod_Cliente}, Cod_Funcionario = {Cod_Funcionario}, Cod_Situacao = {Cod_Situacao}, Cod_destinacao = {Cod_destinacao}, Endereco = {Endereco}, CEP = {CEP}, Bairro = {Bairro}, Cod_Estado = {Cod_Estado}, Cod_Cidade = {Cod_Cidade}, N_Quartos = {N_Quartos}, N_Suites = {N_Suites}, N_Banheiros = {N_Banheiros}, N_Salas = {N_Salas}, N_Cozinhas = {N_Cozinhas}, Dep_Empregada = {Dep_Empregada}, Garagem = {Garagem}, Mts_Quadrados = {Mts_Quadrados}" type="raw">
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Situacao" type="Integer" sourceName="Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="Cod_Situacao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_destinacao" type="Integer" sourceName="Cod_destinacao" sourceType="Control" dbFormat="" fieldSource="Cod_destinacao" omitIfEmpty="True"/>
+            <SqlParameter name="Endereco" type="Text" sourceName="Endereco" sourceType="Control" dbFormat="" fieldSource="Endereco" omitIfEmpty="True"/>
+            <SqlParameter name="CEP" type="Integer" sourceName="CEP" sourceType="Control" dbFormat="" fieldSource="CEP" omitIfEmpty="True"/>
+            <SqlParameter name="Bairro" type="Text" sourceName="Bairro" sourceType="Control" dbFormat="" fieldSource="Bairro" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Estado" type="Integer" sourceName="Cod_Estado" sourceType="Control" dbFormat="" fieldSource="Cod_Estado" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cidade" type="Integer" sourceName="Cod_Cidade" sourceType="Control" dbFormat="" fieldSource="Cod_Cidade" omitIfEmpty="True"/>
+            <SqlParameter name="N_Quartos" type="Integer" sourceName="N_Quartos" sourceType="Control" dbFormat="" fieldSource="N_Quartos" omitIfEmpty="True"/>
+            <SqlParameter name="N_Suites" type="Integer" sourceName="N_Suites" sourceType="Control" dbFormat="" fieldSource="N_Suites" omitIfEmpty="True"/>
+            <SqlParameter name="N_Banheiros" type="Integer" sourceName="N_Banheiros" sourceType="Control" dbFormat="" fieldSource="N_Banheiros" omitIfEmpty="True"/>
+            <SqlParameter name="N_Salas" type="Integer" sourceName="N_Salas" sourceType="Control" dbFormat="" fieldSource="N_Salas" omitIfEmpty="True"/>
+            <SqlParameter name="N_Cozinhas" type="Integer" sourceName="N_Cozinhas" sourceType="Control" dbFormat="" fieldSource="N_Cozinhas" omitIfEmpty="True"/>
+            <SqlParameter name="Dep_Empregada" type="Boolean" sourceName="Dep_Empregada" sourceType="Control" dbFormat="" fieldSource="Dep_Empregada"/>
+            <SqlParameter name="Garagem" type="Boolean" sourceName="Garagem" sourceType="Control" dbFormat="" fieldSource="Garagem"/>
+            <SqlParameter name="Mts_Quadrados" type="Integer" sourceName="Mts_Quadrados" sourceType="Control" dbFormat="" fieldSource="Mts_Quadrados" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Imovel6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Imovel6" field="Cod_Imovel" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Imovel"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_imovel" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Imovel6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Imovel6" field="Cod_Imovel" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Imovel"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_imovel model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

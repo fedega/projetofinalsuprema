@@ -1,0 +1,144 @@
+<%--JSP Page Init @1-E1008677--%>
+<%@page import="com.codecharge.*,com.codecharge.components.*,com.codecharge.util.*,com.codecharge.events.*,com.codecharge.db.*,com.codecharge.validation.*,java.util.*,java.io.*,com.codecharge.util.cache.CacheEvent,com.codecharge.util.cache.ICache,com.codecharge.template.*"%>
+<%if ((new ListaDocumentacaoServiceChecker()).check(request, response, getServletContext())) return;%>
+<%@page contentType="text/html; charset=windows-1252"%>
+<%@taglib uri="/ccstags" prefix="ccs"%>
+<%--End JSP Page Init--%>
+
+<%--Page Body @1-EF473C89--%>
+<%@include file="ListaDocumentacaoHandlers.jsp"%>
+<%
+    if (!ListaDocumentacaoModel.isVisible()) return;
+    if (ListaDocumentacaoParent != null) {
+        if (!ListaDocumentacaoParent.getChild(ListaDocumentacaoModel.getName()).isVisible()) return;
+    }
+    pageContext.setAttribute("parent", ListaDocumentacaoModel);
+    pageContext.setAttribute("page", ListaDocumentacaoModel);
+    ListaDocumentacaoModel.fireOnInitializeViewEvent(new Event());
+    ListaDocumentacaoModel.fireBeforeShowEvent(new Event());
+    if (!ListaDocumentacaoModel.isVisible()) return;
+%>
+<%--End Page Body--%>
+
+<%--JSP Page Content @1-41054BE8--%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<ccs:meta header="Content-Type"/>
+<title>Tbl Documentacao</title>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//End CCS script
+</script>
+</head>
+<body>
+<jsp:include page="/Header.jsp" flush="true"/> 
+<ccs:record name='tbl_documentacaoSearch'>
+<form id="tbl_documentacaoSearch" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Buscar Documentacao </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <ccs:error_block>
+          <tr class="Error">
+            <td colspan="2"><ccs:error_text/></td>
+          </tr>
+          </ccs:error_block>
+          <tr class="Controls">
+            <td class="th"><label for="tbl_documentacaoSearchs_Anexo">Anexo</label></td> 
+            <td><input type="text" name="<ccs:control name='s_Anexo' property='name'/>" value="<ccs:control name='s_Anexo'/>" size="50" id="tbl_documentacaoSearchs_Anexo"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <ccs:button name='Button_DoSearch'><input class="Button" id="tbl_documentacaoSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="<ccs:control name='Button_DoSearch' property='name'/>"></ccs:button></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+</ccs:record><br>
+<ccs:grid name='tbl_documentacao'>
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="th"><strong>Lista de&nbsp;Documentacao</strong></td> 
+          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th scope="col">
+          <ccs:sorter name='Sorter_Cod_Doc' column='Cod_Doc'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Cod_Doc">N° do Documento</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+ 
+          <th scope="col">
+          <ccs:sorter name='Sorter_Tipo_Doc' column='Tipo_Doc'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Tipo_Doc">Tipo do Documento</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+ 
+          <th scope="col">
+          <ccs:sorter name='Sorter_Cod_Cliente' column='Cod_Cliente'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Cod_Cliente">Cliente</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+ 
+          <th scope="col">
+          <ccs:sorter name='Sorter_Cod_Fiador' column='Cod_Fiador'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Cod_Fiador">Fiador</a> 
+          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
+          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+        </tr>
+ 
+        <ccs:repeater><ccs:row>
+        <tr class="Row">
+          <td style="TEXT-ALIGN: right"><a href="<ccs:control name='Cod_Doc' property='href'/>" id="tbl_documentacaoCod_Doc_<ccs:attribute owner = 'tbl_documentacao' name = 'rowNumber' />"><ccs:control name='Cod_Doc'/></a>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Tipo_Doc'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Cliente'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Fiador'/>&nbsp;</td>
+        </tr>
+ </ccs:row></ccs:repeater>
+        <ccs:norecords>
+        <tr class="NoRecords">
+          <td colspan="4">Sem registros</td>
+        </tr>
+        </ccs:norecords>
+        <tr class="Footer">
+          <td colspan="4"><a href="<ccs:control name='tbl_documentacao_Insert' property='href'/>" id="tbl_documentacaotbl_documentacao_Insert">Novo Registro</a>&nbsp; 
+            <ccs:navigator name='Navigator' type='Simple' size='10'>
+            <ccs:first_on><a href="<ccs:page_href/>">|&lt;</a> </ccs:first_on>
+            <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt;</a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
+            <ccs:next_on><a href="<ccs:page_href/>">&gt;&gt;</a> </ccs:next_on>
+            <ccs:last_on><a href="<ccs:page_href/>">&gt;|</a> </ccs:last_on></ccs:navigator>&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</ccs:grid><br>
+<jsp:include page="/Footer.jsp" flush="true"/> 
+</body>
+</html>
+<%--End JSP Page Content--%>
+
+<%--JSP Page BeforeOutput @1-FE6BBACC--%>
+<%ListaDocumentacaoModel.fireBeforeOutputEvent();%>
+<%--End JSP Page BeforeOutput--%>
+
+<%--JSP Page Unload @1-111D4432--%>
+<%ListaDocumentacaoModel.fireBeforeUnloadEvent();%>
+<%--End JSP Page Unload--%>
+

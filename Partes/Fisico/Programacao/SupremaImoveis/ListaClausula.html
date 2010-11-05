@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Tbl Clausula</title>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"></head>
+<body>
+{Header} 
+<!-- BEGIN Record tbl_clausulaSearch -->
+<form id="tbl_clausulaSearch" name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Buscar Cláusula </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <td class="th"><label for="tbl_clausulaSearchs_Descricao">Descricao</label></td> 
+            <td><input id="tbl_clausulaSearchs_Descricao" maxlength="250" size="50" value="{s_Descricao}" name="{s_Descricao_Name}"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input class="Button" id="tbl_clausulaSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record tbl_clausulaSearch --><br>
+<!-- BEGIN Grid tbl_clausula -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="th"><strong>Lista de Cláusulas</strong></td> 
+          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Clausula --><a href="{Sort_URL}" id="tbl_clausulaSorter_Cod_Clausula">Cláusula N°</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Clausula --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Tipo --><a href="{Sort_URL}" id="tbl_clausulaSorter_Tipo">Tipo</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Tipo --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Descricao --><a href="{Sort_URL}" id="tbl_clausulaSorter_Descricao">Descricao</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Descricao --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Contrato --><a href="{Sort_URL}" id="tbl_clausulaSorter_Cod_Contrato">N° do Contrato</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Contrato --></th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td style="TEXT-ALIGN: right"><a href="{Cod_Clausula_Src}" id="tbl_clausulaCod_Clausula_{tbl_clausula:rowNumber}">{Cod_Clausula}</a>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Tipo}&nbsp;</td> 
+          <td>{Descricao}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Contrato}&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="4">Sem registros</td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="4"><a href="{tbl_clausula_Insert_Src}" id="tbl_clausulatbl_clausula_Insert">Registrar Nova</a>&nbsp; 
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">|&lt;</a> <!-- END First_On -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">&lt;&lt;</a> <!-- END Prev_On -->&nbsp;{Page_Number} de&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">&gt;&gt;</a> <!-- END Next_On -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">&gt;|</a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid tbl_clausula --><br>
+{Footer} 
+</body>
+</html>

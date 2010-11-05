@@ -2,11 +2,11 @@
 <Page name="Login" restricted="False" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
-<!--Record Login model @2-EB17F56B-->
+<!--Record Login model @2-0CDA4E6A-->
     <Record name="Login" connection="" restricted="False" returnPage="" convertRule="Relative" preserveParams="None" 
             allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
         <Button name="Button_DoLogin" operation=""
-                returnPage="" convertRule="Relative"
+                returnPage="ListaFuncionario.jsp" convertRule="Relative"
                 defaultButton="False" doValidate="True" order="1">
         </Button>
         <TextBox name="login" dataType="Text"

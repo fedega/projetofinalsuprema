@@ -1,0 +1,123 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Tbl Contrato</title>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"></head>
+<body>
+{Header} 
+<!-- BEGIN Record tbl_contratoSearch -->
+<form id="tbl_contratoSearch" name="{HTMLFormName}" action="{Action}" method="post">
+  <table cellspacing="0" cellpadding="0" border="0">
+    <tr>
+      <td valign="top">
+        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+          <tr>
+            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="th"><strong>Buscar Contrato </strong></td> 
+            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+          </tr>
+        </table>
+ 
+        <table class="Record" cellspacing="0" cellpadding="0">
+          <!-- BEGIN Error -->
+          <tr class="Error">
+            <td colspan="2">{Error}</td>
+          </tr>
+          <!-- END Error -->
+          <tr class="Controls">
+            <td class="th"><label for="tbl_contratoSearchs_Cod_Contrato">N° do Contrato</label></td> 
+            <td><input id="tbl_contratoSearchs_Cod_Contrato" maxlength="10" size="10" value="{s_Cod_Contrato}" name="{s_Cod_Contrato_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_contratoSearchs_Cod_Cliente">Cliente</label></td> 
+            <td><input id="tbl_contratoSearchs_Cod_Cliente" maxlength="10" size="10" value="{s_Cod_Cliente}" name="{s_Cod_Cliente_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_contratoSearchs_Cod_Imovel">Imovel</label></td> 
+            <td><input id="tbl_contratoSearchs_Cod_Imovel" maxlength="10" size="10" value="{s_Cod_Imovel}" name="{s_Cod_Imovel_Name}"></td>
+          </tr>
+ 
+          <tr class="Bottom">
+            <td align="right" colspan="2">
+              <!-- BEGIN Button Button_DoSearch --><input class="Button" id="tbl_contratoSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END Record tbl_contratoSearch --><br>
+<!-- BEGIN Grid tbl_contrato -->
+<table cellspacing="0" cellpadding="0" border="0">
+  <tr>
+    <td valign="top">
+      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="th"><strong>Lista de Contratos</strong></td> 
+          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+        </tr>
+      </table>
+ 
+      <table class="Grid" cellspacing="0" cellpadding="0">
+        <tr class="Caption">
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Contrato --><a href="{Sort_URL}" id="tbl_contratoSorter_Cod_Contrato">N° do Contrato</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Contrato --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Funcionario --><a href="{Sort_URL}" id="tbl_contratoSorter_Cod_Funcionario">Funcionario</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Funcionario --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Cliente --><a href="{Sort_URL}" id="tbl_contratoSorter_Cod_Cliente">Cliente</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Cliente --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Imovel --><a href="{Sort_URL}" id="tbl_contratoSorter_Cod_Imovel">Imovel</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Imovel --></th>
+ 
+          <th scope="col">
+          <!-- BEGIN Sorter Sorter_Cod_Fiador --><a href="{Sort_URL}" id="tbl_contratoSorter_Cod_Fiador">Fiador</a> 
+          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Fiador --></th>
+        </tr>
+ 
+        <!-- BEGIN Row -->
+        <tr class="Row">
+          <td style="TEXT-ALIGN: right"><a href="{Cod_Contrato_Src}" id="tbl_contratoCod_Contrato_{tbl_contrato:rowNumber}">{Cod_Contrato}</a>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Funcionario}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Cliente}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Imovel}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">{Cod_Fiador}&nbsp;</td>
+        </tr>
+ <!-- END Row -->
+        <!-- BEGIN NoRecords -->
+        <tr class="NoRecords">
+          <td colspan="5">Sem registros</td>
+        </tr>
+        <!-- END NoRecords -->
+        <tr class="Footer">
+          <td colspan="5"><a href="{tbl_contrato_Insert_Src}" id="tbl_contratotbl_contrato_Insert">Novo Contrato</a>&nbsp; 
+            <!-- BEGIN Navigator Navigator -->
+            <!-- BEGIN First_On --><a href="{First_URL}">|&lt;</a> <!-- END First_On -->
+            <!-- BEGIN Prev_On --><a href="{Prev_URL}">&lt;&lt;</a> <!-- END Prev_On -->&nbsp;{Page_Number} de&nbsp;{Total_Pages}&nbsp; 
+            <!-- BEGIN Next_On --><a href="{Next_URL}">&gt;&gt;</a> <!-- END Next_On -->
+            <!-- BEGIN Last_On --><a href="{Last_URL}">&gt;|</a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- END Grid tbl_contrato --><br>
+{Footer} 
+</body>
+</html>

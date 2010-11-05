@@ -2,7 +2,7 @@
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="Login" wizardCaption="Entrar" wizardOrientation="Vertical" wizardFormMethod="post" PathID="Login">
 			<Components>
-				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoLogin" wizardCaption="Entrar" parentName="Login" PathID="LoginButton_DoLogin">
+				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoLogin" wizardCaption="Entrar" parentName="Login" PathID="LoginButton_DoLogin" returnPage="ListaFuncionario.ccp">
 					<Components/>
 					<Events>
 						<Event name="OnClick" type="Server">
