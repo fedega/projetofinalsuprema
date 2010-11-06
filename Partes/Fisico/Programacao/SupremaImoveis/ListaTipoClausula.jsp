@@ -29,6 +29,21 @@
 <title>Tbl Tipo Causula</title>
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
+//Include Common JSFunctions @1-CE0F0269
+</script>
+<script language="JavaScript" src="ClientI18N.jsp?file=Functions.js&amp;locale=<ccs:message key="CCS_LocaleID"/>" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" type="text/javascript">
+//End Include Common JSFunctions
+
+//bind_events @1-99F07CBB
+function bind_events() {
+    if (functionExists("Header_bind_events")) Header_bind_events();
+    if (functionExists("Footer_bind_events")) Footer_bind_events();
+}
+//End bind_events
+
+window.onload = bind_events; //Assign bind_events @1-19F7B649
+
 //End CCS script
 </script>
 </head>

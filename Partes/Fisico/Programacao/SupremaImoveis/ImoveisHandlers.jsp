@@ -10,7 +10,7 @@
     public class ImoveisServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-5C69F999
+//feature binding @1-EC30F1CF
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
             if ( "FlashChart1".equals ( attr ) ) {
@@ -39,7 +39,7 @@
                 RawCommand command = new RawCommand( ds );
 
                 command.setSql( "SELECT *  \n"
-                            + "FROM tbl_imovel {SQL_Where} {SQL_OrderBy}" );
+                            + "FROM tbl_funcionario {SQL_Where} {SQL_OrderBy}" );
 
                 command.setFetchSize(25);
                 Enumeration records = null;
@@ -50,10 +50,9 @@
                         DbRow record = null;
                         while (records.hasMoreElements()) {
                             record = (DbRow) records.nextElement();
-                            tmpl.setTag("main/Row", "@Cod_Funcionario", ""+record.get("Cod_Funcionario") );
-                            tmpl.setTag("main/Row", "@Cod_Cidade", ""+record.get("Cod_Cidade") );
-                            tmpl.setTag("main/Row", "@Cod_Estado", ""+record.get("Cod_Estado") );
+                            tmpl.setTag("main/Row", "@Cod_Orgao", ""+record.get("Cod_Orgao") );
                             tmpl.setTag("main/Row", "@Nivel_Controle", ""+record.get("Nivel_Controle") );
+                            tmpl.setTag("main/Row", "@Nome", ""+record.get("Nome") );
                             tmpl.render("main/Row", "main/Row", true, Template.IF_DOESNT_EXIST_IS_ERROR);
                         }
                     }

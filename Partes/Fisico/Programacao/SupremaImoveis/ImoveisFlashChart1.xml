@@ -1,4 +1,4 @@
-<!--Flash Chart XML template @2-554CD6CE-->
+<!--Flash Chart XML template @2-59E56A10-->
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
 	<schema name="Autumn">
@@ -18,14 +18,14 @@
 			<hints border="yes" enabled="yes"/>
 		</chart>
 		<legend sqr_size="12" sqr_borders="yes" border_thick="0" position="left-center" layout="vertical" visible="yes"/>
-		<title position="top" align="center" border="no" alpha="100" visible="yes" text="Ganhos"/>
+		<title position="top" align="center" border="no" alpha="100" visible="yes" text="Chart Title"/>
 	</chartarea>
 	<objects>
 	</objects>
 	<data>
 		<columns>
-			<column field="Cod_Funcionario" name="Cod_Funcionario"/><column field="Cod_Cidade" name="Cod_Cidade"/><column field="Cod_Estado" name="Cod_Estado"/><column field="Nivel_Controle" name="Nivel_Controle"/></columns>
-		<rows><!-- BEGIN Row --><row col1="{Cod_Funcionario}" col2="{Cod_Cidade}" col3="{Cod_Estado}" col4="{Nivel_Controle}"/><!-- END Row --></rows></data>
+			<column field="Cod_Orgao" name="Cod_Orgao"/><column field="Nivel_Controle" name="Nivel_Controle"/></columns>
+		<rows><!-- BEGIN Row --><row col1="{Cod_Orgao}" col2="{Nivel_Controle}" name="{Nome}"/><!-- END Row --></rows></data>
 </root>
 
 

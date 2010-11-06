@@ -2,8 +2,8 @@
 <Page name="Imoveis" restricted="False" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
-<!--FlashChart FlashChart1 model @2-04703D31-->
-    <FlashChart name="FlashChart1" restricted="False" title="Ganhos" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart1" >
+<!--FlashChart FlashChart1 model @2-7F2EDC4C-->
+    <FlashChart name="FlashChart1" restricted="False" title="Chart Title" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart1" >
     </FlashChart>
 <!--End FlashChart FlashChart1 model-->
 
