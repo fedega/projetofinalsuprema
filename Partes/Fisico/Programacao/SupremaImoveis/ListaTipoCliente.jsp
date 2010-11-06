@@ -20,13 +20,13 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-01FC89C8--%>
+<%--JSP Page Content @1-9D2366D8--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <ccs:meta header="Content-Type"/>
-<title>Tbl Tipo Cliente</title>
+<title>Tipo de Cliente</title>
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-CE0F0269

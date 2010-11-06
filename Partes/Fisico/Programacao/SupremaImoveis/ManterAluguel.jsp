@@ -20,12 +20,12 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-6AF02F07--%>
+<%--JSP Page Content @1-A2EE05BA--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <ccs:meta header="Content-Type"/>
-<title>Tbl Aluguel</title>
+<title>Aluguel</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">

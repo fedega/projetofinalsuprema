@@ -20,7 +20,7 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-349E81F8--%>
+<%--JSP Page Content @1-C680FABD--%>
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-6F24C0B3
@@ -48,7 +48,11 @@ function Header_bind_events() {
 </script>
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <form method="post">
-  <p>&nbsp; 
+  <h1 align="center"><font face="Times New Roman" size="7"><em>SUPREMA IMOVEIS</em></font></h1>
+ 
+  <p>&nbsp;</p>
+ 
+  <hr>
   <ccs:menu name="Menu1">
   <div class="MenuStyle" id="HeaderMenu1Container">
     <ul class="adxm <ccs:attribute owner = 'Menu1' name = 'MenuType' /> level1">
@@ -66,8 +70,7 @@ function Header_bind_events() {
     </ul>
  
   </div>
- </ccs:menu></p>
- 
+ </ccs:menu>
   <p>&nbsp;</p>
 </form>
 
