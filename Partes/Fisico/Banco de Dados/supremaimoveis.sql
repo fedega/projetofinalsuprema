@@ -4,7 +4,7 @@ Source Host: localhost
 Source Database: supremaimoveis
 Target Host: localhost
 Target Database: supremaimoveis
-Date: 28/10/2010 02:53:43
+Date: 09/11/2010 20:43:47
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -39,7 +39,7 @@ CREATE TABLE `tbl_cidade` (
   PRIMARY KEY (`Cod_Cidade`),
   KEY `FK_tbl_cidade_tbl_estado_Cod_Estado` (`Cod_Estado`),
   CONSTRAINT `FK_tbl_cidade_tbl_estado_Cod_Estado` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`)
-) ENGINE=InnoDB AUTO_INCREMENT=5508 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=5511 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Table structure for tbl_clausula
@@ -218,7 +218,7 @@ CREATE TABLE `tbl_funcionario` (
   CONSTRAINT `tbl_funcionario_ibfk_1` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
   CONSTRAINT `tbl_funcionario_ibfk_2` FOREIGN KEY (`Cod_Estado`) REFERENCES `tbl_estado` (`Cod_Estado`),
   CONSTRAINT `tbl_funcionario_ibfk_3` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Table structure for tbl_imovel
@@ -337,10 +337,10 @@ CREATE TABLE `tbl_tipo_despesas` (
 -- Table structure for tbl_tipo_doc
 -- ----------------------------
 CREATE TABLE `tbl_tipo_doc` (
-  `Cod_Doc` int(11) NOT NULL,
+  `Cod_Doc` int(11) NOT NULL AUTO_INCREMENT,
   `Descricao` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`Cod_Doc`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_tipo_solicitacao
@@ -372,7 +372,7 @@ CREATE TABLE `tbl_venda` (
 CREATE TABLE `tbl_visita` (
   `Cod_Visita` int(11) NOT NULL,
   `Data` date DEFAULT NULL,
-  `Hora` datetime DEFAULT NULL,
+  `Hora` time DEFAULT NULL,
   `Cod_Imovel` int(11) DEFAULT NULL,
   `Cod_Funcionario` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Visita`),
@@ -5870,6 +5870,9 @@ INSERT INTO `tbl_cidade` VALUES ('5504', 'Tupirama', '27');
 INSERT INTO `tbl_cidade` VALUES ('5505', 'Tupiratins', '27');
 INSERT INTO `tbl_cidade` VALUES ('5506', 'Wanderlândia', '27');
 INSERT INTO `tbl_cidade` VALUES ('5507', 'Xambioá', '27');
+INSERT INTO `tbl_cidade` VALUES ('5508', 'Guará', '7');
+INSERT INTO `tbl_cidade` VALUES ('5509', 'Taguatinga', '7');
+INSERT INTO `tbl_cidade` VALUES ('5510', 'Sudoeste', '7');
 INSERT INTO `tbl_destinacao` VALUES ('1', 'Administração');
 INSERT INTO `tbl_destinacao` VALUES ('2', 'Venda');
 INSERT INTO `tbl_estado` VALUES ('1', 'AC', 'Acre');
@@ -5901,6 +5904,8 @@ INSERT INTO `tbl_estado` VALUES ('26', 'SE', 'Sergipe');
 INSERT INTO `tbl_estado` VALUES ('27', 'TO', 'Tocantins');
 INSERT INTO `tbl_funcionario` VALUES ('1', 'Elomar Rodrigues da Silveira', '801', '7', '1', 'elomar', 'elomar', 'uahuhau', '242424424', '242424', '02356402128', '2010-10-19 02:27:28', '242424', '3');
 INSERT INTO `tbl_funcionario` VALUES ('2', 'Rogerio CMS', '801', '7', '1', 'rogerio', 'rogerio', 'testando', '232323232', '23232323', '02323232333', '2010-10-30 00:00:00', '23233', '3');
+INSERT INTO `tbl_funcionario` VALUES ('3', 'Jose', '801', '7', '1', 'jose', 'jose', 'qe', '23232323', '232323', '00232323232', '2010-11-17 00:00:00', '232322', '2');
+INSERT INTO `tbl_funcionario` VALUES ('4', 'Maruo', '40', '7', '1', '23232323', '23333343', 'sdsdsdsds', '23232323', '2323232', '00232323232', '2010-11-17 00:00:00', '323232', '3');
 INSERT INTO `tbl_orgaoemissor` VALUES ('1', 'SSP', 'Secretaria de  Segurança Pública');
 INSERT INTO `tbl_orgaoemissor` VALUES ('2', 'PC', 'Polícia Civil');
 INSERT INTO `tbl_orgaoemissor` VALUES ('3', 'PM', 'Polícia Militar');
@@ -5908,3 +5913,4 @@ INSERT INTO `tbl_tipo_cliente` VALUES ('1', 'Facilitador');
 INSERT INTO `tbl_tipo_cliente` VALUES ('2', 'Locador');
 INSERT INTO `tbl_tipo_cliente` VALUES ('3', 'Locatario');
 INSERT INTO `tbl_tipo_cliente` VALUES ('4', 'Proprietario');
+INSERT INTO `tbl_tipo_doc` VALUES ('1', 'Comprovante de Renda');
