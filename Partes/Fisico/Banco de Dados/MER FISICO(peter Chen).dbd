@@ -25,7 +25,7 @@
         <Width>827 in/100</Width>
         <Height>1169 in/100</Height>
       </PaperSize>
-      <PaperSourceName>Seleção automática</PaperSourceName>
+      <PaperSourceName>Selecionar automaticame</PaperSourceName>
       <IsLandscape>true</IsLandscape>
     </Options>
     <Options xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:type="PrintOptions">
@@ -56,8 +56,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>1408 px</X>
-              <Y>1026 px</Y>
+              <X>920 px</X>
+              <Y>1020 px</Y>
             </Location>
             <Size>
               <Width>185 px</Width>
@@ -79,8 +79,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>2018 px</X>
-              <Y>157 px</Y>
+              <X>1820 px</X>
+              <Y>450 px</Y>
             </Location>
             <Size>
               <Width>182 px</Width>
@@ -102,8 +102,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>268 px</X>
-              <Y>1119 px</Y>
+              <X>760 px</X>
+              <Y>1520 px</Y>
             </Location>
             <Size>
               <Width>194 px</Width>
@@ -155,8 +155,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>210.467741935484 px</X>
-                  <Y>92.6290322580645 px</Y>
+                  <X>0 px</X>
+                  <Y>54.5 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -167,8 +167,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>-0.225806451612925 px</X>
-                  <Y>117.129032258065 px</Y>
+                  <X>0 px</X>
+                  <Y>72.5 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -178,16 +178,6 @@
                 </CustomProperties>
               </Port>
             </PortAnchors>
-            <BendPoints>
-              <PointD>
-                <X>1900.70967741935 px</X>
-                <Y>560.629032258065 px</Y>
-              </PointD>
-              <PointD>
-                <X>1900.70967741935 px</X>
-                <Y>274.129032258065 px</Y>
-              </PointD>
-            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_cliente.cliente_estado</Path>
@@ -204,8 +194,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-390.709716796875 px</X>
-                  <Y>143.250003937752 px</Y>
+                  <X>-155 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -227,8 +217,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>520 px</X>
-              <Y>1112 px</Y>
+              <X>640 px</X>
+              <Y>1210 px</Y>
             </Location>
             <Size>
               <Width>174 px</Width>
@@ -282,15 +272,15 @@
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>529.822580645161 px</X>
-                <Y>40 px</Y>
+                <X>649.822580645161 px</X>
+                <Y>390 px</Y>
               </PointD>
               <PointD>
                 <X>1309.22580645161 px</X>
-                <Y>40 px</Y>
+                <Y>390 px</Y>
               </PointD>
             </BendPoints>
-            <IsManuallyRouted>false</IsManuallyRouted>
+            <IsManuallyRouted>true</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_contrato.tbl_contrato_ibfk_2</Path>
               <TypeName>ForeignKey</TypeName>
@@ -306,8 +296,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-389.701619794292 px</X>
-                  <Y>1072 px</Y>
+                  <X>9.84438008799771E-06 px</X>
+                  <Y>410 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -336,11 +326,11 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>194.048387096774 px</X>
-                  <Y>73.1612903225805 px</Y>
+                  <X>27 px</X>
+                  <Y>0 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>18</OID>
                   <PortType>FloatAnchor</PortType>
@@ -348,11 +338,11 @@
               </Port>
               <Port>
                 <Location>
-                  <X>0.580645161290363 px</X>
-                  <Y>80.1612903225805 px</Y>
+                  <X>147 px</X>
+                  <Y>0 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Anchors>Left Right</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>19</OID>
                   <PortType>FloatAnchor</PortType>
@@ -375,11 +365,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-29 px</X>
-                  <Y>3.54397679984686E-05 px</Y>
+                  <X>0 px</X>
+                  <Y>74.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Right</Align>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>20</OID>
                   <PortType>FixedAnchor</PortType>
@@ -398,8 +388,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>1621 px</X>
-              <Y>1384 px</Y>
+              <X>1020 px</X>
+              <Y>1380 px</Y>
             </Location>
             <Size>
               <Width>273 px</Width>
@@ -428,8 +418,20 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>138 px</X>
-                  <Y>-0.838709677419502 px</Y>
+                  <X>134.666666666667 px</X>
+                  <Y>170.666666666667 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
+                <CustomProperties>
+                  <OID>25</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>68.25 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -438,23 +440,15 @@
                   <PortType>FloatAnchor</PortType>
                 </CustomProperties>
               </Port>
-              <Port>
-                <Location>
-                  <X>184.645161290323 px</X>
-                  <Y>169.241935483871 px</Y>
-                </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
-                <CustomProperties>
-                  <OID>25</OID>
-                  <PortType>FloatAnchor</PortType>
-                </CustomProperties>
-              </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>1759 px</X>
-                <Y>1195.24193548387 px</Y>
+                <X>1088.25 px</X>
+                <Y>1360 px</Y>
+              </PointD>
+              <PointD>
+                <X>1054.66666666667 px</X>
+                <Y>1360 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -473,8 +467,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>0 px</X>
-                  <Y>94.3790283203125 px</Y>
+                  <X>33.5833740234375 px</X>
+                  <Y>101 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -496,8 +490,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>3561 px</X>
-              <Y>1537 px</Y>
+              <X>1760 px</X>
+              <Y>1630 px</Y>
             </Location>
             <Size>
               <Width>206 px</Width>
@@ -611,8 +605,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>2316 px</X>
-              <Y>536 px</Y>
+              <X>2010 px</X>
+              <Y>710 px</Y>
             </Location>
             <Size>
               <Width>182 px</Width>
@@ -641,37 +635,33 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>181.532258064516 px</X>
-                  <Y>117.129032258065 px</Y>
+                  <X>142.666666666667 px</X>
+                  <Y>115.333333333333 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>37</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>0.596774193548299 px</X>
-                  <Y>9.22580645161293 px</Y>
+                  <X>2.66666666666652 px</X>
+                  <Y>77.3333333333334 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Left</Align>
                 <CustomProperties>
                   <OID>38</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>2258.06451612903 px</X>
-                <Y>274.129032258065 px</Y>
-              </PointD>
-              <PointD>
-                <X>2258.06451612903 px</X>
-                <Y>545.225806451613 px</Y>
+                <X>1962.66662597656 px</X>
+                <Y>787.333312988281 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -690,11 +680,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-58.064453125 px</X>
-                  <Y>-135.548396941154 px</Y>
+                  <X>4.06901042424579E-05 px</X>
+                  <Y>-105.166656494141 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Right</Align>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>39</OID>
                   <PortType>FixedAnchor</PortType>
@@ -769,14 +759,14 @@
             <BendPoints>
               <PointD>
                 <X>693.096774193548 px</X>
-                <Y>98.5322580645162 px</Y>
+                <Y>340 px</Y>
               </PointD>
               <PointD>
-                <X>2405.93548387097 px</X>
-                <Y>98.5322580645162 px</Y>
+                <X>2099.93548387097 px</X>
+                <Y>340 px</Y>
               </PointD>
             </BendPoints>
-            <IsManuallyRouted>false</IsManuallyRouted>
+            <IsManuallyRouted>true</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_fiador.mora</Path>
               <TypeName>ForeignKey</TypeName>
@@ -792,8 +782,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-856.419400122858 px</X>
-                  <Y>480.467742919922 px</Y>
+                  <X>-703.419400122858 px</X>
+                  <Y>239 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -822,36 +812,44 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>106.677419354839 px</X>
-                  <Y>0.112903225806463 px</Y>
+                  <X>86 px</X>
+                  <Y>2.66666666666669 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Top</Align>
                 <CustomProperties>
-                  <OID>48</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <OID>49</OID>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>-0.225806451612925 px</X>
-                  <Y>9.30645161290323 px</Y>
+                  <X>0 px</X>
+                  <Y>78.5 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Align>Right</Align>
                 <CustomProperties>
-                  <OID>49</OID>
+                  <OID>48</OID>
                   <PortType>FloatAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>791.677419354839 px</X>
-                <Y>166.306451612903 px</Y>
+                <X>907 px</X>
+                <Y>657.5 px</Y>
+              </PointD>
+              <PointD>
+                <X>907 px</X>
+                <Y>410 px</Y>
+              </PointD>
+              <PointD>
+                <X>1906 px</X>
+                <Y>410 px</Y>
               </PointD>
             </BendPoints>
-            <IsManuallyRouted>false</IsManuallyRouted>
+            <IsManuallyRouted>true</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_fiador.reside</Path>
               <TypeName>ForeignKey</TypeName>
@@ -867,11 +865,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-613.161325762349 px</X>
-                  <Y>412.693542480469 px</Y>
+                  <X>-519.5 px</X>
+                  <Y>247.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Top</Align>
+                <Align>Right</Align>
                 <CustomProperties>
                   <OID>50</OID>
                   <PortType>FixedAnchor</PortType>
@@ -992,7 +990,7 @@
             <BendPoints>
               <PointD>
                 <X>785.516129032258 px</X>
-                <Y>1115.14516129032 px</Y>
+                <Y>1109.14516129032 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -1011,8 +1009,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>311.241943359375 px</X>
-                  <Y>1.96887599486217E-05 px</Y>
+                  <X>134.48388671875 px</X>
+                  <Y>108.072590489541 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Left</Align>
@@ -1041,8 +1039,20 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>105.322580645161 px</X>
-                  <Y>0.0645161290321994 px</Y>
+                  <X>80.3333333333334 px</X>
+                  <Y>309 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
+                <CustomProperties>
+                  <OID>64</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>130.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -1051,23 +1061,15 @@
                   <PortType>FloatAnchor</PortType>
                 </CustomProperties>
               </Port>
-              <Port>
-                <Location>
-                  <X>-1.14516129032256 px</X>
-                  <Y>157.225806451613 px</Y>
-                </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
-                <CustomProperties>
-                  <OID>64</OID>
-                  <PortType>FloatAnchor</PortType>
-                </CustomProperties>
-              </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>625.322580645161 px</X>
-                <Y>736.225806451613 px</Y>
+                <X>770.5 px</X>
+                <Y>1190 px</Y>
+              </PointD>
+              <PointD>
+                <X>765.333333333333 px</X>
+                <Y>1190 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -1086,8 +1088,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>9.84437974693719E-06 px</X>
-                  <Y>187.887084960938 px</Y>
+                  <X>5.16668701171875 px</X>
+                  <Y>168.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -1178,8 +1180,8 @@
               </Port>
             </PortAnchors>
             <CommentOffset>
-              <X>22 px</X>
-              <Y>2 px</Y>
+              <X>8.74176788330078 px</X>
+              <Y>-29.870967741935 px</Y>
             </CommentOffset>
           </Model>
           <Model xsi:type="TableModel">
@@ -1188,8 +1190,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>2214 px</X>
-              <Y>958 px</Y>
+              <X>1320 px</X>
+              <Y>1000 px</Y>
             </Location>
             <Size>
               <Width>217 px</Width>
@@ -1218,36 +1220,36 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>10.1774193548385 px</X>
-                  <Y>0.0322580645160997 px</Y>
+                  <X>180 px</X>
+                  <Y>2.66666666666663 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Top</Align>
                 <CustomProperties>
                   <OID>74</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>172.290322580645 px</X>
-                  <Y>126.370967741935 px</Y>
+                  <X>94 px</X>
+                  <Y>125.333333333333 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>75</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>2224.17741935484 px</X>
+                <X>1500 px</X>
                 <Y>899.5 px</Y>
               </PointD>
               <PointD>
-                <X>2190.29032258064 px</X>
+                <X>1914 px</X>
                 <Y>899.5 px</Y>
               </PointD>
             </BendPoints>
@@ -1267,8 +1269,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>33.8871361517135 px</X>
-                  <Y>366.25 px</Y>
+                  <X>-207 px</X>
+                  <Y>100.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -1297,8 +1299,20 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>184.645161290323 px</X>
-                  <Y>70.6612903225805 px</Y>
+                  <X>0 px</X>
+                  <Y>140.666666666667 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>80</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>Undefined</X>
+                  <Y>120.666666666667 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -1307,29 +1321,7 @@
                   <PortType>FloatAnchor</PortType>
                 </CustomProperties>
               </Port>
-              <Port>
-                <Location>
-                  <X>0.935483870967801 px</X>
-                  <Y>203.354838709678 px</Y>
-                </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
-                <CustomProperties>
-                  <OID>80</OID>
-                  <PortType>FloatAnchor</PortType>
-                </CustomProperties>
-              </Port>
             </PortAnchors>
-            <BendPoints>
-              <PointD>
-                <X>1817.53225806452 px</X>
-                <Y>1096.66129032258 px</Y>
-              </PointD>
-              <PointD>
-                <X>1817.53225806452 px</X>
-                <Y>1161.35483870968 px</Y>
-              </PointD>
-            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_aluguel.confirma</Path>
@@ -1346,8 +1338,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-422.76611328125 px</X>
-                  <Y>-64.693568075857 px</Y>
+                  <X>-107.5 px</X>
+                  <Y>4.06901042424579E-05 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -1376,39 +1368,29 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>210.467741935484 px</X>
-                  <Y>323.677419354839 px</Y>
+                  <X>70.3333333333333 px</X>
+                  <Y>326.666666666667 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>84</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>0.935483870967801 px</X>
-                  <Y>9.27419354838707 px</Y>
+                  <X>49.3333333333333 px</X>
+                  <Y>7.33333333333337 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>85</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
-            <BendPoints>
-              <PointD>
-                <X>1934.59677419355 px</X>
-                <Y>791.677419354839 px</Y>
-              </PointD>
-              <PointD>
-                <X>1934.59677419355 px</X>
-                <Y>967.274193548387 px</Y>
-              </PointD>
-            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_cliente.recebido</Path>
@@ -1425,11 +1407,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-424.596801757813 px</X>
-                  <Y>-87.7983802057079 px</Y>
+                  <X>-4.06901042424579E-05 px</X>
+                  <Y>-100.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Right</Align>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>86</OID>
                   <PortType>FixedAnchor</PortType>
@@ -1455,20 +1437,20 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>173.096774193548 px</X>
-                  <Y>151.016129032258 px</Y>
+                  <X>173.333333333333 px</X>
+                  <Y>82 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Right</Align>
                 <CustomProperties>
                   <OID>89</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>0.935483870967801 px</X>
-                  <Y>305.016129032258 px</Y>
+                  <X>Undefined</X>
+                  <Y>294.666666666667 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -1478,6 +1460,16 @@
                 </CustomProperties>
               </Port>
             </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>824 px</X>
+                <Y>1292 px</Y>
+              </PointD>
+              <PointD>
+                <X>824 px</X>
+                <Y>1294.66666666667 px</Y>
+              </PointD>
+            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_contrato.tbl_contrato_ibfk_1</Path>
@@ -1494,8 +1486,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-760 px</X>
-                  <Y>1.57510080498469E-05 px</Y>
+                  <X>-258 px</X>
+                  <Y>-2.6666259765625 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -1517,8 +1509,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>3234 px</X>
-              <Y>1392 px</Y>
+              <X>2070 px</X>
+              <Y>1390 px</Y>
             </Location>
             <Size>
               <Width>211 px</Width>
@@ -1547,23 +1539,23 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>0.629032258064399 px</X>
-                  <Y>68.1774193548385 px</Y>
+                  <X>52 px</X>
+                  <Y>-6 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>95</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>210.467741935484 px</X>
-                  <Y>246.661290322581 px</Y>
+                  <X>158.25 px</X>
+                  <Y>0 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>Left Right</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>96</OID>
                   <PortType>FloatAnchor</PortType>
@@ -1572,15 +1564,15 @@
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>3117.56451612903 px</X>
-                <Y>1460.17741935484 px</Y>
+                <X>2122 px</X>
+                <Y>930 px</Y>
               </PointD>
               <PointD>
-                <X>3117.56451612903 px</X>
-                <Y>714.661290322581 px</Y>
+                <X>1457.25 px</X>
+                <Y>930 px</Y>
               </PointD>
             </BendPoints>
-            <IsManuallyRouted>false</IsManuallyRouted>
+            <IsManuallyRouted>true</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_imovel.possui</Path>
               <TypeName>ForeignKey</TypeName>
@@ -1596,11 +1588,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>920.2177734375 px</X>
-                  <Y>745.51610343687 px</Y>
+                  <X>332.375 px</X>
+                  <Y>460 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Left</Align>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>97</OID>
                   <PortType>FixedAnchor</PortType>
@@ -1609,8 +1601,8 @@
               </Port>
             </PortAnchors>
             <CommentOffset>
-              <X>22 px</X>
-              <Y>2 px</Y>
+              <X>422.239585876465 px</X>
+              <Y>-72 px</Y>
             </CommentOffset>
           </Model>
           <Model xsi:type="RelationLinkModel">
@@ -1626,41 +1618,33 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>0.629032258064399 px</X>
-                  <Y>129.790322580645 px</Y>
+                  <X>2.66666666666652 px</X>
+                  <Y>-0.666666666666742 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>100</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>207.33870967742 px</X>
-                  <Y>0.0322580645160997 px</Y>
+                  <X>213.333333333333 px</X>
+                  <Y>99.3333333333333 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
-                <Align>Top</Align>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
                 <CustomProperties>
                   <OID>101</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>3059.03225806452 px</X>
-                <Y>1521.79032258064 px</Y>
-              </PointD>
-              <PointD>
-                <X>3059.03225806452 px</X>
-                <Y>899.5 px</Y>
-              </PointD>
-              <PointD>
-                <X>2421.33870967742 px</X>
-                <Y>899.5 px</Y>
+                <X>2072.66674804688 px</X>
+                <Y>1099.33337402344 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -1679,11 +1663,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>174.9677734375 px</X>
-                  <Y>311.145180979082 px</Y>
+                  <X>267.833292643229 px</X>
+                  <Y>290.666625976563 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Left</Align>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>102</OID>
                   <PortType>FixedAnchor</PortType>
@@ -1692,8 +1676,8 @@
               </Port>
             </PortAnchors>
             <CommentOffset>
-              <X>22 px</X>
-              <Y>2 px</Y>
+              <X>302.239585876465 px</X>
+              <Y>-62.6666666666665 px</Y>
             </CommentOffset>
           </Model>
           <Model xsi:type="RelationLinkModel">
@@ -1709,23 +1693,23 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>210.112903225806 px</X>
-                  <Y>191.403225806452 px</Y>
+                  <X>0.666666666666515 px</X>
+                  <Y>293.333333333333 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
                 <CustomProperties>
                   <OID>105</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>0.177419354838548 px</X>
-                  <Y>46.4032258064517 px</Y>
+                  <X>Undefined</X>
+                  <Y>53.3333333333333 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Align>Right</Align>
                 <CustomProperties>
                   <OID>106</OID>
                   <PortType>FloatAnchor</PortType>
@@ -1734,7 +1718,7 @@
             </PortAnchors>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
-              <Path>supremaimoveis.tbl_imovel.tbl_imovel_ibfk_4</Path>
+              <Path>supremaimoveis.tbl_imovel.foi</Path>
               <TypeName>ForeignKey</TypeName>
             </DbOid>
           </Model>
@@ -1748,11 +1732,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-58 px</X>
-                  <Y>2.75642644282925E-05 px</Y>
+                  <X>52 px</X>
+                  <Y>-4.06901042424579E-05 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Right</Align>
+                <Align>Left</Align>
                 <CustomProperties>
                   <OID>107</OID>
                   <PortType>FixedAnchor</PortType>
@@ -1761,8 +1745,8 @@
               </Port>
             </PortAnchors>
             <CommentOffset>
-              <X>22 px</X>
-              <Y>2 px</Y>
+              <X>37.8016529083252 px</X>
+              <Y>-23.3333333333333 px</Y>
             </CommentOffset>
           </Model>
           <Model xsi:type="RelationLinkModel">
@@ -1778,37 +1762,37 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>0.629032258064399 px</X>
-                  <Y>6.5645161290322 px</Y>
+                  <X>86 px</X>
+                  <Y>3.33333333333326 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Anchors>None</Anchors>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>110</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>182.354838709678 px</X>
-                  <Y>101.645161290323 px</Y>
+                  <X>144.666666666667 px</X>
+                  <Y>79.3333333333334 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>111</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>3176.09677419355 px</X>
-                <Y>1398.56451612903 px</Y>
+                <X>2156 px</X>
+                <Y>1370 px</Y>
               </PointD>
               <PointD>
-                <X>3176.09677419355 px</X>
-                <Y>637.645161290323 px</Y>
+                <X>2154.66666666667 px</X>
+                <Y>1370 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -1827,11 +1811,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>57.9033203125 px</X>
-                  <Y>380.459657730595 px</Y>
+                  <X>1.333251953125 px</X>
+                  <Y>295 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Left</Align>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>112</OID>
                   <PortType>FixedAnchor</PortType>
@@ -1840,8 +1824,8 @@
               </Port>
             </PortAnchors>
             <CommentOffset>
-              <X>22 px</X>
-              <Y>2 px</Y>
+              <X>532.239585876465 px</X>
+              <Y>-82.6666666666665 px</Y>
             </CommentOffset>
           </Model>
           <Model xsi:type="RelationLinkModel">
@@ -1857,37 +1841,33 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>105.370967741936 px</X>
-                  <Y>0.403225806451701 px</Y>
+                  <X>132.666666666667 px</X>
+                  <Y>12 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Top</Align>
                 <CustomProperties>
                   <OID>115</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>89.1129032258063 px</X>
-                  <Y>0.0645161290322562 px</Y>
+                  <X>180.666666666667 px</X>
+                  <Y>76 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
-                <Align>Top</Align>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
                 <CustomProperties>
                   <OID>116</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>3339.37096774194 px</X>
-                <Y>40 px</Y>
-              </PointD>
-              <PointD>
-                <X>2107.11290322581 px</X>
-                <Y>40 px</Y>
+                <X>2202.66666666667 px</X>
+                <Y>526 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -1906,8 +1886,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>0.000118132561055972 px</X>
-                  <Y>676 px</Y>
+                  <X>-8.13802084849158E-05 px</X>
+                  <Y>432 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -1919,8 +1899,8 @@
               </Port>
             </PortAnchors>
             <CommentOffset>
-              <X>22 px</X>
-              <Y>2 px</Y>
+              <X>42.2395858764648 px</X>
+              <Y>7.33333333333348 px</Y>
             </CommentOffset>
           </Model>
           <Model xsi:type="RelationLinkModel">
@@ -1936,14 +1916,14 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>153.838709677419 px</X>
-                  <Y>178.483870967742 px</Y>
+                  <X>69.3333333333334 px</X>
+                  <Y>172 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>120</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
@@ -1961,8 +1941,8 @@
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>1561.83870967742 px</X>
-                <Y>1771.32258064516 px</Y>
+                <X>989.333333333333 px</X>
+                <Y>1769.32258064516 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -1981,8 +1961,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-836.080662881174 px</X>
-                  <Y>-567.322631835938 px</Y>
+                  <X>-540.333292643229 px</X>
+                  <Y>-571.322631835938 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Bottom</Align>
@@ -2036,11 +2016,11 @@
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>606.838709677419 px</X>
+                <X>726.838709677419 px</X>
                 <Y>1832.93548387097 px</Y>
               </PointD>
               <PointD>
-                <X>3339.37096774194 px</X>
+                <X>2175.37096774194 px</X>
                 <Y>1832.93548387097 px</Y>
               </PointD>
             </BendPoints>
@@ -2060,8 +2040,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-1366.26602665071 px</X>
-                  <Y>-559.935424804688 px</Y>
+                  <X>-724.266026650706 px</X>
+                  <Y>-461.935424804688 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Bottom</Align>
@@ -2083,8 +2063,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>1220 px</X>
-              <Y>857 px</Y>
+              <X>1110 px</X>
+              <Y>870 px</Y>
             </Location>
             <Size>
               <Width>178 px</Width>
@@ -2136,6 +2116,16 @@
                 </CustomProperties>
               </Port>
             </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>907 px</X>
+                <Y>884.096774193548 px</Y>
+              </PointD>
+              <PointD>
+                <X>907 px</X>
+                <Y>897.096774193548 px</Y>
+              </PointD>
+            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_fiador.registrado</Path>
@@ -2152,8 +2142,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-166.5 px</X>
-                  <Y>-2.75642644282925E-05 px</Y>
+                  <X>-121.5 px</X>
+                  <Y>-13.0000275642644 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -2182,23 +2172,23 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>0.935483870967801 px</X>
-                  <Y>104.774193548387 px</Y>
+                  <X>0 px</X>
+                  <Y>8.66666666666663 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Left</Align>
                 <CustomProperties>
                   <OID>136</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>178.564516129032 px</X>
-                  <Y>101.032258064516 px</Y>
+                  <X>89 px</X>
+                  <Y>0 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>Left Right</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>137</OID>
                   <PortType>FloatAnchor</PortType>
@@ -2207,12 +2197,8 @@
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>1876.06451612903 px</X>
-                <Y>1062.77419354839 px</Y>
-              </PointD>
-              <PointD>
-                <X>1876.06451612903 px</X>
-                <Y>958.032258064516 px</Y>
+                <X>1199 px</X>
+                <Y>1008.66666666667 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -2231,8 +2217,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>576.967712402344 px</X>
-                  <Y>104.741905950731 px</Y>
+                  <X>60.5 px</X>
+                  <Y>-2.03450521212289E-05 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Left</Align>
@@ -2254,8 +2240,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>1396 px</X>
-              <Y>224 px</Y>
+              <X>1640 px</X>
+              <Y>740 px</Y>
             </Location>
             <Size>
               <Width>209 px</Width>
@@ -2284,29 +2270,39 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>104.225806451613 px</X>
-                  <Y>127.145161290323 px</Y>
+                  <X>207.666666666667 px</X>
+                  <Y>304 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
-                <Align>Bottom</Align>
+                <Anchors>None</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>143</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>31.75 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Left</Align>
                 <CustomProperties>
                   <OID>142</OID>
                   <PortType>FloatAnchor</PortType>
                 </CustomProperties>
               </Port>
-              <Port>
-                <Location>
-                  <X>201.225806451613 px</X>
-                  <Y>0.209677419354819 px</Y>
-                </Location>
-                <Anchors>Left Right</Anchors>
-                <Align>Top</Align>
-                <CustomProperties>
-                  <OID>143</OID>
-                  <PortType>FloatAnchor</PortType>
-                </CustomProperties>
-              </Port>
             </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1620 px</X>
+                <Y>771.75 px</Y>
+              </PointD>
+              <PointD>
+                <X>1620 px</X>
+                <Y>772 px</Y>
+              </PointD>
+            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_preferencia.cadastra</Path>
@@ -2323,11 +2319,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-2.36265120747703E-05 px</X>
-                  <Y>-58.5 px</Y>
+                  <X>75 px</X>
+                  <Y>-0.25 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Bottom</Align>
+                <Align>Left</Align>
                 <CustomProperties>
                   <OID>144</OID>
                   <PortType>FixedAnchor</PortType>
@@ -2346,8 +2342,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>2228 px</X>
-              <Y>1549 px</Y>
+              <X>1520 px</X>
+              <Y>1640 px</Y>
             </Location>
             <Size>
               <Width>193 px</Width>
@@ -2376,37 +2372,41 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>0.629032258064399 px</X>
-                  <Y>314.629032258064 px</Y>
+                  <X>-0.666666666666515 px</X>
+                  <Y>325.333333333333 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Left</Align>
                 <CustomProperties>
                   <OID>148</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>193.33870967742 px</X>
-                  <Y>83.6935483870966 px</Y>
+                  <X>110.666666666667 px</X>
+                  <Y>92.3333333333333 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>149</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>2883.43548387097 px</X>
-                <Y>1706.62903225806 px</Y>
+                <X>2050 px</X>
+                <Y>1715.33333333333 px</Y>
               </PointD>
               <PointD>
-                <X>2883.43548387097 px</X>
-                <Y>1632.6935483871 px</Y>
+                <X>2050 px</X>
+                <Y>1752 px</Y>
+              </PointD>
+              <PointD>
+                <X>1630.66666666667 px</X>
+                <Y>1752 px</Y>
               </PointD>
             </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
@@ -2425,8 +2425,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>581.7822265625 px</X>
-                  <Y>73.9354287424389 px</Y>
+                  <X>229.666687011719 px</X>
+                  <Y>-36.6666666666667 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Left</Align>
@@ -2448,8 +2448,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>2217 px</X>
-              <Y>1330 px</Y>
+              <X>1310 px</X>
+              <Y>1420 px</Y>
             </Location>
             <Size>
               <Width>211 px</Width>
@@ -2478,8 +2478,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>105.758064516129 px</X>
-                  <Y>0.790322580645125 px</Y>
+                  <X>105.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -2490,17 +2490,23 @@
               </Port>
               <Port>
                 <Location>
-                  <X>108.758064516129 px</X>
-                  <Y>314.258064516129 px</Y>
+                  <X>0 px</X>
+                  <Y>157 px</Y>
                 </Location>
-                <Anchors>Left Right</Anchors>
-                <Align>Bottom</Align>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
                 <CustomProperties>
                   <OID>155</OID>
                   <PortType>FloatAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1415.5 px</X>
+                <Y>1157 px</Y>
+              </PointD>
+            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_solicitacoes.tbl_solicitacoes_ibfk_1</Path>
@@ -2517,8 +2523,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>7.87550379754975E-06 px</X>
-                  <Y>29 px</Y>
+                  <X>0 px</X>
+                  <Y>131.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Top</Align>
@@ -2547,8 +2553,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>105.758064516129 px</X>
-                  <Y>160.983870967742 px</Y>
+                  <X>210.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Bottom</Align>
@@ -2559,8 +2565,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>94.7580645161288 px</X>
-                  <Y>0.51612903225805 px</Y>
+                  <X>0.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>Left Right</Anchors>
                 <Align>Top</Align>
@@ -2586,8 +2592,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>7.87550379754975E-06 px</X>
-                  <Y>-29 px</Y>
+                  <X>0 px</X>
+                  <Y>-29.5 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Bottom</Align>
@@ -2609,8 +2615,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>41 px</X>
-              <Y>1146 px</Y>
+              <X>770 px</X>
+              <Y>1710 px</Y>
             </Location>
             <Size>
               <Width>168 px</Width>
@@ -2639,32 +2645,42 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>-0.0322580645160997 px</X>
-                  <Y>73.1612903225805 px</Y>
+                  <X>132 px</X>
+                  <Y>137.333333333333 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Left</Align>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>165</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>168.435483870968 px</X>
-                  <Y>46.1612903225805 px</Y>
+                  <X>124 px</X>
+                  <Y>0 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
-                <Align>Right</Align>
+                <Anchors>Left Right</Anchors>
+                <Align>Top</Align>
                 <CustomProperties>
                   <OID>166</OID>
                   <PortType>FloatAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
-            <IsManuallyRouted>false</IsManuallyRouted>
+            <BendPoints>
+              <PointD>
+                <X>892 px</X>
+                <Y>1670 px</Y>
+              </PointD>
+              <PointD>
+                <X>894 px</X>
+                <Y>1670 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>true</IsManuallyRouted>
             <DbOid>
-              <Path>supremaimoveis.tbl_clausula.fk_tbl_clausula_tbl_tipo_causula_cod_tipo</Path>
+              <Path>supremaimoveis.tbl_clausula.existe</Path>
               <TypeName>ForeignKey</TypeName>
             </DbOid>
           </Model>
@@ -2678,11 +2694,11 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>29.5 px</X>
-                  <Y>3.54397679984686E-05 px</Y>
+                  <X>-2 px</X>
+                  <Y>-26 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
-                <Align>Left</Align>
+                <Align>Bottom</Align>
                 <CustomProperties>
                   <OID>167</OID>
                   <PortType>FixedAnchor</PortType>
@@ -2691,8 +2707,8 @@
               </Port>
             </PortAnchors>
             <CommentOffset>
-              <X>22 px</X>
-              <Y>2 px</Y>
+              <X>26 px</X>
+              <Y>28 px</Y>
             </CommentOffset>
           </Model>
           <Model xsi:type="TableModel">
@@ -2701,8 +2717,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>1626 px</X>
-              <Y>409 px</Y>
+              <X>1670 px</X>
+              <Y>590 px</Y>
             </Location>
             <Size>
               <Width>216 px</Width>
@@ -2731,14 +2747,14 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>210.467741935484 px</X>
-                  <Y>6.37096774193549 px</Y>
+                  <X>209 px</X>
+                  <Y>188 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Right</Align>
                 <CustomProperties>
                   <OID>171</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
@@ -2754,6 +2770,16 @@
                 </CustomProperties>
               </Port>
             </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1530 px</X>
+                <Y>656 px</Y>
+              </PointD>
+              <PointD>
+                <X>1530 px</X>
+                <Y>655.370967741935 px</Y>
+              </PointD>
+            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_cliente.identificado</Path>
@@ -2770,8 +2796,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-58 px</X>
-                  <Y>-3.93775201246171E-06 px</Y>
+                  <X>-90 px</X>
+                  <Y>0.6290283203125 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -2793,8 +2819,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>1663 px</X>
-              <Y>1620 px</Y>
+              <X>1060 px</X>
+              <Y>1640 px</Y>
             </Location>
             <Size>
               <Width>192 px</Width>
@@ -2846,6 +2872,16 @@
                 </CustomProperties>
               </Port>
             </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1158 px</X>
+                <Y>1578 px</Y>
+              </PointD>
+              <PointD>
+                <X>1156 px</X>
+                <Y>1578 px</Y>
+              </PointD>
+            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_despesas.tem</Path>
@@ -2862,8 +2898,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>0 px</X>
-                  <Y>-29 px</Y>
+                  <X>2 px</X>
+                  <Y>-51 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Bottom</Align>
@@ -2977,8 +3013,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>1910 px</X>
-              <Y>1300 px</Y>
+              <X>1290 px</X>
+              <Y>1650 px</Y>
             </Location>
             <Size>
               <Width>205 px</Width>
@@ -3000,8 +3036,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>2488 px</X>
-              <Y>1254 px</Y>
+              <X>1670 px</X>
+              <Y>1430 px</Y>
             </Location>
             <Size>
               <Width>211 px</Width>
@@ -3030,8 +3066,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>210.596774193548 px</X>
-                  <Y>135.322580645161 px</Y>
+                  <X>0 px</X>
+                  <Y>108 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -3042,8 +3078,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>0.629032258064399 px</X>
-                  <Y>253.016129032258 px</Y>
+                  <X>0 px</X>
+                  <Y>148 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -3053,16 +3089,6 @@
                 </CustomProperties>
               </Port>
             </PortAnchors>
-            <BendPoints>
-              <PointD>
-                <X>2941.96774193548 px</X>
-                <Y>1389.32258064516 px</Y>
-              </PointD>
-              <PointD>
-                <X>2941.96774193548 px</X>
-                <Y>1645.01612903226 px</Y>
-              </PointD>
-            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_venda.`É`</Path>
@@ -3079,8 +3105,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-242.9677734375 px</X>
-                  <Y>-127.846791913433 px</Y>
+                  <X>-94.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -3109,8 +3135,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>1.11290322580635 px</X>
-                  <Y>9.01612903225805 px</Y>
+                  <X>0 px</X>
+                  <Y>6 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -3121,8 +3147,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>216.58064516129 px</X>
-                  <Y>305.016129032258 px</Y>
+                  <X>0 px</X>
+                  <Y>296 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -3132,9 +3158,19 @@
                 </CustomProperties>
               </Port>
             </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1620 px</X>
+                <Y>1436 px</Y>
+              </PointD>
+              <PointD>
+                <X>1620 px</X>
+                <Y>1296 px</Y>
+              </PointD>
+            </BendPoints>
             <IsManuallyRouted>false</IsManuallyRouted>
             <DbOid>
-              <Path>supremaimoveis.tbl_venda.tbl_venda_ibfk_2</Path>
+              <Path>supremaimoveis.tbl_venda.realiza</Path>
               <TypeName>ForeignKey</TypeName>
             </DbOid>
           </Model>
@@ -3148,8 +3184,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>28.5 px</X>
-                  <Y>1.57510080498469E-05 px</Y>
+                  <X>50 px</X>
+                  <Y>70 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Left</Align>
@@ -3171,8 +3207,8 @@
               <Parent>0</Parent>
             </CustomProperties>
             <Location>
-              <X>2757 px</X>
-              <Y>1155 px</Y>
+              <X>1660 px</X>
+              <Y>1120 px</Y>
             </Location>
             <Size>
               <Width>185 px</Width>
@@ -3201,40 +3237,40 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>184.967741935484 px</X>
-                  <Y>151.145161290322 px</Y>
+                  <X>177.333333333333 px</X>
+                  <Y>92 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Right</Align>
                 <CustomProperties>
                   <OID>201</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
               <Port>
                 <Location>
-                  <X>0.629032258064399 px</X>
-                  <Y>191.403225806452 px</Y>
+                  <X>9.33333333333348 px</X>
+                  <Y>126 px</Y>
                 </Location>
-                <Anchors>Top Bottom</Anchors>
+                <Anchors>None</Anchors>
                 <Align>Left</Align>
                 <CustomProperties>
                   <OID>202</OID>
-                  <PortType>FloatAnchor</PortType>
+                  <PortType>FixedAnchor</PortType>
                 </CustomProperties>
               </Port>
             </PortAnchors>
             <BendPoints>
               <PointD>
-                <X>3000.5 px</X>
-                <Y>1306.14516129032 px</Y>
+                <X>1960 px</X>
+                <Y>1212 px</Y>
               </PointD>
               <PointD>
-                <X>3000.5 px</X>
-                <Y>1583.40322580645 px</Y>
+                <X>1960 px</X>
+                <Y>1516 px</Y>
               </PointD>
             </BendPoints>
-            <IsManuallyRouted>false</IsManuallyRouted>
+            <IsManuallyRouted>true</IsManuallyRouted>
             <DbOid>
               <Path>supremaimoveis.tbl_visita.agendada</Path>
               <TypeName>ForeignKey</TypeName>
@@ -3250,8 +3286,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>-58.5 px</X>
-                  <Y>-138.629008631553 px</Y>
+                  <X>-115 px</X>
+                  <Y>-152 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Right</Align>
@@ -3280,8 +3316,8 @@
             <PortAnchors>
               <Port>
                 <Location>
-                  <X>0.129032258064399 px</X>
-                  <Y>9.4354838709678 px</Y>
+                  <X>0 px</X>
+                  <Y>120.75 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Left</Align>
@@ -3292,8 +3328,8 @@
               </Port>
               <Port>
                 <Location>
-                  <X>216.58064516129 px</X>
-                  <Y>206.435483870968 px</Y>
+                  <X>0 px</X>
+                  <Y>240.75 px</Y>
                 </Location>
                 <Anchors>Top Bottom</Anchors>
                 <Align>Right</Align>
@@ -3319,8 +3355,8 @@
             <PortAnchors>
               <Port xsi:type="LinkPort">
                 <Location>
-                  <X>163 px</X>
-                  <Y>5.90662803006126E-05 px</Y>
+                  <X>61.5 px</X>
+                  <Y>0 px</Y>
                 </Location>
                 <Anchors>None</Anchors>
                 <Align>Left</Align>
@@ -3336,13 +3372,88 @@
               <Y>2 px</Y>
             </CommentOffset>
           </Model>
+          <Model xsi:type="RelationLinkModel">
+            <CustomProperties>
+              <OID>209</OID>
+              <Comment>210</Comment>
+              <OutModel>186</OutModel>
+              <InModel>151</InModel>
+              <OutPort>211</OutPort>
+              <InPort>212</InPort>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port>
+                <Location>
+                  <X>16.3333333333335 px</X>
+                  <Y>155.333333333333 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Bottom</Align>
+                <CustomProperties>
+                  <OID>212</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+              </Port>
+              <Port>
+                <Location>
+                  <X>0 px</X>
+                  <Y>46.5 px</Y>
+                </Location>
+                <Anchors>Top Bottom</Anchors>
+                <Align>Right</Align>
+                <CustomProperties>
+                  <OID>211</OID>
+                  <PortType>FloatAnchor</PortType>
+                </CustomProperties>
+              </Port>
+            </PortAnchors>
+            <BendPoints>
+              <PointD>
+                <X>1326.33333333333 px</X>
+                <Y>1696.5 px</Y>
+              </PointD>
+            </BendPoints>
+            <IsManuallyRouted>false</IsManuallyRouted>
+            <DbOid>
+              <Path>supremaimoveis.tbl_tipo_solicitacao.ligado</Path>
+              <TypeName>ForeignKey</TypeName>
+            </DbOid>
+          </Model>
+          <Model xsi:type="RelationCommentModel">
+            <CustomProperties>
+              <OID>210</OID>
+              <HolderModel>209</HolderModel>
+              <Port>213</Port>
+              <Parent>0</Parent>
+            </CustomProperties>
+            <PortAnchors>
+              <Port xsi:type="LinkPort">
+                <Location>
+                  <X>84.3333129882813 px</X>
+                  <Y>0 px</Y>
+                </Location>
+                <Anchors>None</Anchors>
+                <Align>Left</Align>
+                <CustomProperties>
+                  <OID>213</OID>
+                  <PortType>FixedAnchor</PortType>
+                </CustomProperties>
+                <LinkPortAnchor>OutPoint</LinkPortAnchor>
+              </Port>
+            </PortAnchors>
+            <CommentOffset>
+              <X>120.737854003906 px</X>
+              <Y>-86.5 px</Y>
+            </CommentOffset>
+          </Model>
         </Children>
         <ViewPort>
           <ScaleMode>Free</ScaleMode>
-          <Scale>0.5</Scale>
+          <Scale>0.75</Scale>
           <Location>
-            <X>808 px</X>
-            <Y>436 px</Y>
+            <X>393.333333333333 px</X>
+            <Y>260 px</Y>
           </Location>
         </ViewPort>
       </Model>
