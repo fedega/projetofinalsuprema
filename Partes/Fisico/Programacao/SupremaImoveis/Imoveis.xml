@@ -1,9 +1,15 @@
-<!--Page model head @1-F160A56C-->
-<Page name="Imoveis" restricted="False" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--Page model head @1-331D1E51-->
+<Page name="Imoveis" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+    <Security>
+    </Security>
 <!--End Page model head-->
 
-<!--FlashChart FlashChart1 model @2-7F2EDC4C-->
-    <FlashChart name="FlashChart1" restricted="False" title="Chart Title" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart1" >
+<!--Page componets @1-14CCCE70-->
+    <Include name="Header"/>
+<!--End Page componets-->
+
+<!--FlashChart FlashChart1 model @2-8C757675-->
+    <FlashChart name="FlashChart1" restricted="False" title="Carteira De Imoveis" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart1" >
     </FlashChart>
 <!--End FlashChart FlashChart1 model-->
 

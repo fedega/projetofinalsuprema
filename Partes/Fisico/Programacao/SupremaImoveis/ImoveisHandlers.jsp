@@ -10,9 +10,10 @@
     public class ImoveisServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-EC30F1CF
+//feature binding @1-99B86260
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
+            if ((new HeaderServiceChecker()).check(request, response, context)) return true;
             if ( "FlashChart1".equals ( attr ) ) {
                 CCSTemplate tmpl = new CCSTemplate();
                 CCLogger logger = CCLogger.getInstance();
@@ -52,7 +53,7 @@
                             record = (DbRow) records.nextElement();
                             tmpl.setTag("main/Row", "@Cod_Orgao", ""+record.get("Cod_Orgao") );
                             tmpl.setTag("main/Row", "@Nivel_Controle", ""+record.get("Nivel_Controle") );
-                            tmpl.setTag("main/Row", "@Nome", ""+record.get("Nome") );
+                            tmpl.setTag("main/Row", "@Data_Nasc", ""+record.get("Data_Nasc") );
                             tmpl.render("main/Row", "main/Row", true, Template.IF_DOESNT_EXIST_IS_ERROR);
                         }
                     }
@@ -160,7 +161,7 @@
 %> <%
 //End Comment workaround
 
-//Processing @1-46DD3FD7
+//Processing @1-D688324F
     Page ImoveisModel = (Page)request.getAttribute("Imoveis_page");
     Page ImoveisParent = (Page)request.getAttribute("ImoveisParent");
     if (ImoveisModel == null) {
@@ -173,6 +174,8 @@
         ImoveisModel.addPageListener(new ImoveisPageHandler());
         ImoveisCntr.process();
 %>
+        <% request.setAttribute("HeaderParent", ImoveisModel); %>
+        <%{%><%@include file="/HeaderHandlers.jsp"%><%}%>
 <%
         if (ImoveisParent == null) {
             ImoveisModel.setCookies();

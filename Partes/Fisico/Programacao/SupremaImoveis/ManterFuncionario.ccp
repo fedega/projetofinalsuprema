@@ -2,7 +2,7 @@
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_funcionario" dataSource="tbl_funcionario" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Funcionario " wizardFormMethod="post" returnPage="tbl_funcionario_list.ccp" PathID="tbl_funcionario" activeCollection="TableParameters">
 			<Components>
-				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_Insert" operation="Insert" wizardCaption="Add" PathID="tbl_funcionarioButton_Insert">
+				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_Insert" operation="Insert" wizardCaption="Add" PathID="tbl_funcionarioButton_Insert" returnPage="ListaFuncionario.ccp">
 					<Components/>
 					<Events/>
 					<Attributes/>

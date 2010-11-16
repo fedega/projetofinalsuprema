@@ -201,9 +201,9 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Funcionario'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Situacao'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Cod_destinacao'/>&nbsp;</td> 
-          <td><ccs:control name='Endereco'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Endereco'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='CEP'/>&nbsp;</td> 
-          <td><ccs:control name='Bairro'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right"><ccs:control name='Bairro'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Estado'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Cidade'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='N_Quartos'/>&nbsp;</td> 

@@ -10,11 +10,11 @@
     <Include name="Footer"/>
 <!--End Page componets-->
 
-<!--Record tbl_funcionario model @2-61469D01-->
+<!--Record tbl_funcionario model @2-E5176ED0-->
     <Record name="tbl_funcionario" connection="Conexao" restricted="False" returnPage="tbl_funcionario_list.jsp" convertRule="Relative" preserveParams="GET" 
             allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
         <Button name="Button_Insert" operation="Insert"
-                returnPage="" convertRule="Relative"
+                returnPage="ListaFuncionario.jsp" convertRule="Relative"
                 defaultButton="False" doValidate="True" order="1">
         </Button>
         <Button name="Button_Update" operation="Update"

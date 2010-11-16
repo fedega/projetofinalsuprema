@@ -20,14 +20,14 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-6021D518--%>
+<%--JSP Page Content @1-947CAD91--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <ccs:meta header="Content-Type"/>
 <title>Funcionario</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css" />
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-78CCF231
@@ -70,117 +70,114 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 <body>
 <jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_funcionario'>
-<form id="tbl_funcionario" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
-  <table cellspacing="0" cellpadding="0" border="0">
+<form id="tbl_funcionario" method="post" name="<ccs:form_name/>" action="<ccs:form_action/>">
+  <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td valign="top">
-        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <table class="Header" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
-            <td class="th"><strong>Adicionar/Editar Tbl Funcionario </strong></td> 
-            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
+            <td class="th"><strong>Adicionar/Editar Funcionario </strong></td> 
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <ccs:error_block>
           <tr class="Error">
-            <td colspan="2"><ccs:error_text/></td> 
+            <td colspan="2"><ccs:error_text/></td>
           </tr>
- </ccs:error_block>
+          </ccs:error_block>
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioNome">Nome</label></td> 
-            <td><input id="tbl_funcionarioNome" maxlength="40" size="40" value="<ccs:control name='Nome'/>" name="<ccs:control name='Nome' property='name'/>"></td> 
+            <td><input id="tbl_funcionarioNome" value="<ccs:control name='Nome'/>" maxlength="40" size="40" name="<ccs:control name='Nome' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioCod_Cidade">Cod Cidade</label></td> 
+            <td class="th"><label for="tbl_funcionarioCod_Cidade">Cidade</label></td> 
             <td>
               <select id="tbl_funcionarioCod_Cidade" name="<ccs:control name='Cod_Cidade' property='name'/>">
-                <option value="" selected>Selecionar valor</option>
- <ccs:control name='Cod_Cidade' property='options'/> 
+                <option selected value="">Selecionar valor</option>
+                <ccs:control name='Cod_Cidade' property='options'/>
               </select>
- </td> 
+ </td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioCod_Estado">Cod Estado</label></td> 
+            <td class="th"><label for="tbl_funcionarioCod_Estado">Estado</label></td> 
             <td>
-              <select name="<ccs:control name='Cod_Estado' property='name'/>" id="tbl_funcionarioCod_Estado">
-                <option value="">Selecionar valor</option>
- <ccs:control name='Cod_Estado' property='options'/> 
+              <select id="tbl_funcionarioCod_Estado" name="<ccs:control name='Cod_Estado' property='name'/>">
+                <option selected value="">Selecionar valor</option>
+                <ccs:control name='Cod_Estado' property='options'/>
               </select>
- </td> 
+ </td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioCod_Orgao">Cod Orgao</label></td> 
+            <td class="th"><label for="tbl_funcionarioCod_Orgao">Orgao Emissor</label></td> 
             <td>
-              <select name="<ccs:control name='Cod_Orgao' property='name'/>" id="tbl_funcionarioCod_Orgao">
-                <option value="">Selecionar valor</option>
- <ccs:control name='Cod_Orgao' property='options'/> 
+              <select id="tbl_funcionarioCod_Orgao" name="<ccs:control name='Cod_Orgao' property='name'/>">
+                <option selected value="">Selecionar valor</option>
+                <ccs:control name='Cod_Orgao' property='options'/>
               </select>
- </td> 
+ </td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioNome_U">Nome U</label></td> 
-            <td><input id="tbl_funcionarioNome_U" maxlength="20" value="<ccs:control name='Nome_U'/>" name="<ccs:control name='Nome_U' property='name'/>" size="20"></td> 
+            <td class="th"><label for="tbl_funcionarioNome_U">Nome Usuario</label></td> 
+            <td><input id="tbl_funcionarioNome_U" value="<ccs:control name='Nome_U'/>" maxlength="20" name="<ccs:control name='Nome_U' property='name'/>" size="20"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioSenha_U">Senha U</label></td> 
-            <td><input id="tbl_funcionarioSenha_U" type="password" maxlength="20" value="<ccs:control name='Senha_U'/>" name="<ccs:control name='Senha_U' property='name'/>" size="20"></td> 
+            <td class="th"><label for="tbl_funcionarioSenha_U">Senha</label></td> 
+            <td><input id="tbl_funcionarioSenha_U" value="<ccs:control name='Senha_U'/>" maxlength="20" type="password" name="<ccs:control name='Senha_U' property='name'/>" size="20"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioEndereco">Endereco</label></td> 
-            <td><input id="tbl_funcionarioEndereco" maxlength="40" size="40" value="<ccs:control name='Endereco'/>" name="<ccs:control name='Endereco' property='name'/>"></td> 
+            <td><input id="tbl_funcionarioEndereco" value="<ccs:control name='Endereco'/>" maxlength="40" size="40" name="<ccs:control name='Endereco' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioTel_Fixo">Tel Fixo</label></td> 
-            <td><input id="tbl_funcionarioTel_Fixo" maxlength="10" size="10" value="<ccs:control name='Tel_Fixo'/>" name="<ccs:control name='Tel_Fixo' property='name'/>"></td> 
+            <td class="th"><label for="tbl_funcionarioTel_Fixo">Telefone Fixo</label></td> 
+            <td><input id="tbl_funcionarioTel_Fixo" value="<ccs:control name='Tel_Fixo'/>" maxlength="10" size="10" name="<ccs:control name='Tel_Fixo' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioTel_Cel">Tel Cel</label></td> 
-            <td><input id="tbl_funcionarioTel_Cel" maxlength="10" size="10" value="<ccs:control name='Tel_Cel'/>" name="<ccs:control name='Tel_Cel' property='name'/>"></td> 
+            <td class="th"><label for="tbl_funcionarioTel_Cel">Telefone Celular</label></td> 
+            <td><input id="tbl_funcionarioTel_Cel" value="<ccs:control name='Tel_Cel'/>" maxlength="10" size="10" name="<ccs:control name='Tel_Cel' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioCPF">CPF</label></td> 
-            <td><input id="tbl_funcionarioCPF" maxlength="11" size="11" value="<ccs:control name='CPF'/>" name="<ccs:control name='CPF' property='name'/>"></td> 
+            <td><input id="tbl_funcionarioCPF" value="<ccs:control name='CPF'/>" maxlength="11" size="11" name="<ccs:control name='CPF' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_funcionarioData_Nasc">Data Nasc</label></td> 
-            <td><input id="tbl_funcionarioData_Nasc" maxlength="100" size="10" value="<ccs:control name='Data_Nasc'/>" name="<ccs:control name='Data_Nasc' property='name'/>">
-              <ccs:datepicker name='DatePicker_Data_Nasc'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_funcionarioDatePicker_Data_Nasc"><img id="tbl_funcionarioDatePicker_Data_Nasc_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a></ccs:datepicker></td> 
+            <td class="th"><label for="tbl_funcionarioData_Nasc">Data Nascimento</label></td> 
+            <td><input id="tbl_funcionarioData_Nasc" value="<ccs:control name='Data_Nasc'/>" maxlength="100" size="10" name="<ccs:control name='Data_Nasc' property='name'/>">
+              <ccs:datepicker name='DatePicker_Data_Nasc'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_funcionarioDatePicker_Data_Nasc"><img id="tbl_funcionarioDatePicker_Data_Nasc_Image" border="0" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif"></a></ccs:datepicker></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioCRECI">CRECI</label></td> 
-            <td><input id="tbl_funcionarioCRECI" maxlength="10" size="10" value="<ccs:control name='CRECI'/>" name="<ccs:control name='CRECI' property='name'/>"></td> 
+            <td><input id="tbl_funcionarioCRECI" value="<ccs:control name='CRECI'/>" maxlength="10" size="10" name="<ccs:control name='CRECI' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_funcionarioNivel_Controle">Nivel Controle</label></td> 
-            <td><input id="tbl_funcionarioNivel_Controle" maxlength="10" size="10" value="<ccs:control name='Nivel_Controle'/>" name="<ccs:control name='Nivel_Controle' property='name'/>"></td> 
+            <td><input id="tbl_funcionarioNivel_Controle" value="<ccs:control name='Nivel_Controle'/>" maxlength="10" size="10" name="<ccs:control name='Nivel_Controle' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td align="right" colspan="2">
-              <ccs:button name='Button_Insert'><input class="Button" id="tbl_funcionarioButton_Insert" type="submit" alt="Add" value="Add" name="<ccs:control name='Button_Insert' property='name'/>"></ccs:button>
-              <ccs:button name='Button_Update'><input class="Button" id="tbl_funcionarioButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="<ccs:control name='Button_Update' property='name'/>"></ccs:button>
-              <ccs:button name='Button_Delete'><input class="Button" id="tbl_funcionarioButton_Delete" type="submit" alt="Delete" value="Delete" name="<ccs:control name='Button_Delete' property='name'/>"></ccs:button></td> 
+            <td colspan="2" align="right">
+              <ccs:button name='Button_Insert'><input id="tbl_funcionarioButton_Insert" class="Button" value="Add" alt="Add" type="submit" name="<ccs:control name='Button_Insert' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Update'><input id="tbl_funcionarioButton_Update" class="Button" value="Atualizar" alt="Atualizar" type="submit" name="<ccs:control name='Button_Update' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Delete'><input id="tbl_funcionarioButton_Delete" class="Button" value="Delete" alt="Delete" type="submit" name="<ccs:control name='Button_Delete' property='name'/>"></ccs:button></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 </ccs:record><br>
