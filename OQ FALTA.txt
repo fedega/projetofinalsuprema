@@ -1,16 +1,15 @@
 
 
 
-4.4 Modelo de Entidades e Relacionamento Lógico (Converter pra logico)
+
 5.1 Descrição dos Casos de Uso (Falta Concluir)
-5.2 Diagramas de Seqüência 
 
 
-4.2 Diagrama de Classes de Domínio	(Falta colocar)
-4.3 Diagrama de Classes	(Falta Colocar)
 
 
-6.1 Estimativas
+
+
+
 6.4 Projeto de Interfaces
 7. CONCLUSÃO
 
