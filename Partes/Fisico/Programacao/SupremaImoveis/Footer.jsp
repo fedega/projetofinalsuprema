@@ -20,7 +20,7 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-296C8E8F--%>
+<%--JSP Page Content @1-5ACD3F73--%>
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //End CCS script
@@ -28,7 +28,6 @@
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <center>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-<p>Prototipo de monografia ceubão - Suprema Imoveis</p>
 <center>
 </center>
 </center>

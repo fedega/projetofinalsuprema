@@ -10,11 +10,11 @@
     public class ListaVendaServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-0F76B408
+//feature binding @1-C8A5CEE3
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
-            if ((new HeaderServiceChecker()).check(request, response, context)) return true;
             if ((new FooterServiceChecker()).check(request, response, context)) return true;
+            if ((new HeaderServiceChecker()).check(request, response, context)) return true;
             return false;
         }
 //End feature binding
@@ -54,7 +54,7 @@
 %> <%
 //End Comment workaround
 
-//Processing @1-E450BF8E
+//Processing @1-33687835
     Page ListaVendaModel = (Page)request.getAttribute("ListaVenda_page");
     Page ListaVendaParent = (Page)request.getAttribute("ListaVendaParent");
     if (ListaVendaModel == null) {
@@ -67,10 +67,10 @@
         ((Navigator)((Grid)ListaVendaModel.getChild("tbl_venda")).getChild("Navigator")).addControlListener(new tbl_vendaNavigatorNavigatorHandler());
         ListaVendaCntr.process();
 %>
-        <% request.setAttribute("HeaderParent", ListaVendaModel); %>
-        <%{%><%@include file="/HeaderHandlers.jsp"%><%}%>
         <% request.setAttribute("FooterParent", ListaVendaModel); %>
         <%{%><%@include file="/FooterHandlers.jsp"%><%}%>
+        <% request.setAttribute("HeaderParent", ListaVendaModel); %>
+        <%{%><%@include file="/HeaderHandlers.jsp"%><%}%>
 <%
         if (ListaVendaParent == null) {
             ListaVendaModel.setCookies();

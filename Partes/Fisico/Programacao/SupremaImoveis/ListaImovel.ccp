@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0" isInDroping="true">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0" pasteActions="pasteActions">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="tbl_imovelSearch" returnPage="ListaImovel.ccp" wizardCaption="Buscar Tbl Imovel " wizardOrientation="Vertical" wizardFormMethod="post" PathID="tbl_imovelSearch">
 			<Components>
@@ -42,8 +42,15 @@
 			<Attributes/>
 			<Features/>
 		</Record>
-		<Grid id="7" secured="False" sourceType="Table" returnValueType="Number" defaultPageSize="20" name="tbl_imovel" connection="Conexao" pageSizeLimit="100" wizardCaption="List of Tbl Imovel " wizardGridType="Tabular" wizardAllowSorting="True" wizardSortingType="SimpleDir" wizardUsePageScroller="True" wizardAllowInsert="True" wizardAltRecord="False" wizardRecordSeparator="False" wizardAltRecordType="Controls" dataSource="tbl_imovel" pasteAsReplace="pasteAsReplace">
+		<Grid id="7" secured="False" sourceType="Table" returnValueType="Number" defaultPageSize="20" name="tbl_imovel" connection="Conexao" pageSizeLimit="100" wizardCaption="List of Tbl Imovel " wizardGridType="Tabular" wizardAllowSorting="True" wizardSortingType="SimpleDir" wizardUsePageScroller="True" wizardAllowInsert="True" wizardAltRecord="False" wizardRecordSeparator="False" wizardAltRecordType="Controls" dataSource="tbl_imovel">
 			<Components>
+				<Link id="9" visible="Yes" fieldSourceType="DBColumn" dataType="Text" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="tbl_imovel_Insert" hrefSource="ManterImovel.ccp" removeParameters="Cod_Imovel" wizardThemeItem="NavigatorLink" wizardDefaultValue="Add New" parentName="tbl_imovel" PathID="tbl_imoveltbl_imovel_Insert">
+					<Components/>
+					<Events/>
+					<LinkParameters/>
+					<Attributes/>
+					<Features/>
+				</Link>
 				<Sorter id="12" visible="True" name="Sorter_Cod_Imovel" column="Cod_Imovel" wizardCaption="Cod Imovel" wizardSortingType="SimpleDir" wizardControl="Cod_Imovel" wizardAddNbsp="False" PathID="tbl_imovelSorter_Cod_Imovel">
 					<Components/>
 					<Events/>
@@ -239,6 +246,42 @@
 					<Attributes/>
 					<Features/>
 				</Label>
+				<Label id="60" fieldSourceType="DBColumn" dataType="Integer" html="False" name="N_Cozinhas" fieldSource="N_Cozinhas" wizardCaption="N Cozinhas" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" parentName="tbl_imovel" rowNumber="1" PathID="tbl_imovelN_Cozinhas">
+					<Components/>
+					<Events/>
+					<Attributes/>
+					<Features/>
+				</Label>
+				<Label id="62" fieldSourceType="DBColumn" dataType="Boolean" html="False" name="Dep_Empregada" fieldSource="Dep_Empregada" wizardCaption="Dep Empregada" wizardSize="1" wizardMaxLength="1" wizardIsPassword="False" wizardAddNbsp="True" parentName="tbl_imovel" rowNumber="1" PathID="tbl_imovelDep_Empregada">
+					<Components/>
+					<Events/>
+					<Attributes/>
+					<Features/>
+				</Label>
+				<Label id="64" fieldSourceType="DBColumn" dataType="Boolean" html="False" name="Garagem" fieldSource="Garagem" wizardCaption="Garagem" wizardSize="1" wizardMaxLength="1" wizardIsPassword="False" wizardAddNbsp="True" parentName="tbl_imovel" rowNumber="1" PathID="tbl_imovelGaragem">
+					<Components/>
+					<Events/>
+					<Attributes/>
+					<Features/>
+				</Label>
+				<Label id="66" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Mts_Quadrados" fieldSource="Mts_Quadrados" wizardCaption="Mts Quadrados" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" parentName="tbl_imovel" rowNumber="1" PathID="tbl_imovelMts_Quadrados">
+					<Components/>
+					<Events/>
+					<Attributes/>
+					<Features/>
+				</Label>
+				<Navigator id="67" size="10" type="Simple" pageSizes="1;5;10;25;50" name="Navigator" wizardFirst="True" wizardPrev="True" wizardFirstText="|&lt;" wizardPrevText="&lt;&lt;" wizardNextText="&gt;&gt;" wizardLastText="&gt;|" wizardNext="True" wizardLast="True" wizardPageNumbers="Simple" wizardSize="10" wizardTotalPages="True" wizardHideDisabled="True" wizardOfText="de" wizardImagesScheme="Padrao">
+					<Components/>
+					<Events>
+						<Event name="BeforeShow" type="Server">
+							<Actions>
+								<Action actionName="Hide-Show Component" actionCategory="General" id="68" action="Hide" conditionType="Parameter" dataType="Integer" condition="LessThan" name1="TotalPages" sourceType1="SpecialValue" name2="2" sourceType2="Expression"/>
+							</Actions>
+						</Event>
+					</Events>
+					<Attributes/>
+					<Features/>
+				</Navigator>
 			</Components>
 			<Events/>
 			<TableParameters>
@@ -275,12 +318,7 @@
 			<Attributes/>
 			<Features/>
 		</Grid>
-		<IncludePage id="70" name="Header" PathID="Header" parentType="Page" page="Header.ccp">
-			<Components/>
-			<Events/>
-			<Features/>
-		</IncludePage>
-		<IncludePage id="71" name="Footer" PathID="Footer" parentType="Page" page="Footer.ccp">
+		<IncludePage id="70" name="Header" page="Header.ccp">
 			<Components/>
 			<Events/>
 			<Features/>

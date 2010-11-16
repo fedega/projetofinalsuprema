@@ -2,7 +2,7 @@
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_imovel" dataSource="tbl_imovel" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Imovel " wizardFormMethod="post" returnPage="tbl_imovel_list.ccp" PathID="tbl_imovel">
 			<Components>
-				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_Insert" operation="Insert" wizardCaption="Add" parentName="tbl_imovel" PathID="tbl_imovelButton_Insert">
+				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_Insert" operation="Insert" wizardCaption="Add" parentName="tbl_imovel" PathID="tbl_imovelButton_Insert" returnPage="ListaImovel.ccp">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -146,16 +146,6 @@
 			<Attributes/>
 			<Features/>
 		</Record>
-		<IncludePage id="25" name="Header" PathID="Header" parentType="Page" page="Header.ccp">
-			<Components/>
-			<Events/>
-			<Features/>
-		</IncludePage>
-		<IncludePage id="26" name="Footer" PathID="Footer" parentType="Page" page="Footer.ccp">
-			<Components/>
-			<Events/>
-			<Features/>
-		</IncludePage>
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ManterImovel.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>

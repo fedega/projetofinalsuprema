@@ -129,17 +129,17 @@
 			<Attributes/>
 			<Features/>
 		</Grid>
-		<IncludePage id="26" name="Header" PathID="Header" parentType="Page" page="Header.ccp">
-			<Components/>
-			<Events/>
-			<Features/>
-		</IncludePage>
 		<IncludePage id="27" name="Footer" PathID="Footer" parentType="Page" page="Footer.ccp">
 			<Components/>
 			<Events/>
 			<Features/>
 		</IncludePage>
-	</Components>
+		<IncludePage id="26" name="Header" page="Header.ccp">
+<Components/>
+<Events/>
+<Features/>
+</IncludePage>
+</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ListaVenda.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
 		<CodeFile id="JSP" language="JSP" name="ListaVenda.jsp" path="." forShow="True" url="ListaVenda.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>

@@ -4,7 +4,8 @@
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Venda</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
+<script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-F3587A4D
 </script>
@@ -12,10 +13,10 @@
 <script language="JavaScript" type="text/javascript">
 //End Include Common JSFunctions
 
-//bind_events @1-99F07CBB
+//bind_events @1-1ACB7F04
 function bind_events() {
-    if (functionExists("Header_bind_events")) Header_bind_events();
     if (functionExists("Footer_bind_events")) Footer_bind_events();
+    if (functionExists("Header_bind_events")) Header_bind_events();
 }
 //End bind_events
 
@@ -27,15 +28,15 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 <body>
 {Header} 
 <!-- BEGIN Record tbl_vendaSearch -->
-<form id="tbl_vendaSearch" name="{HTMLFormName}" action="{Action}" method="post">
-  <table cellspacing="0" cellpadding="0" border="0">
+<form id="tbl_vendaSearch" method="post" name="{HTMLFormName}" action="{Action}">
+  <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td valign="top">
-        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <table class="Header" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Buscar Venda </strong></td> 
-            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
         </table>
  
@@ -47,12 +48,12 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_vendaSearchs_Data">Data</label></td> 
-            <td><input id="tbl_vendaSearchs_Data" maxlength="20" value="{s_Data}" name="{s_Data_Name}" size="20"></td>
+            <td><input id="tbl_vendaSearchs_Data" value="{s_Data}" maxlength="20" name="{s_Data_Name}" size="20"></td>
           </tr>
  
           <tr class="Bottom">
-            <td align="right" colspan="2">
-              <!-- BEGIN Button Button_DoSearch --><input class="Button" id="tbl_vendaSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_DoSearch --><input id="tbl_vendaSearchButton_DoSearch" class="Button" value="Buscar" alt="Buscar" type="submit" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
           </tr>
         </table>
       </td>
@@ -61,14 +62,14 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </form>
 <!-- END Record tbl_vendaSearch --><br>
 <!-- BEGIN Grid tbl_venda -->
-<table cellspacing="0" cellpadding="0" border="0">
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top">
-      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+      <table class="Header" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
           <td class="th"><strong>Lista de&nbsp;Vendas</strong></td> 
-          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+          <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
         </tr>
       </table>
  
@@ -76,23 +77,23 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
         <tr class="Caption">
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Cod_Venda --><a href="{Sort_URL}" id="tbl_vendaSorter_Cod_Venda">N° da Venda</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Venda --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Venda --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Data --><a href="{Sort_URL}" id="tbl_vendaSorter_Data">Data</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Data --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Data --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Cod_Imovel --><a href="{Sort_URL}" id="tbl_vendaSorter_Cod_Imovel">Imovel</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Imovel --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Imovel --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Cod_Funcionario --><a href="{Sort_URL}" id="tbl_vendaSorter_Cod_Funcionario">Funcionario</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Funcionario --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Funcionario --></th>
         </tr>
  
         <!-- BEGIN Row -->
