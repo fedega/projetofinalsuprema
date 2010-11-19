@@ -1,0 +1,87 @@
+<!--Page model head @1-3C8D8F01-->
+<Page name="ManterClausula" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+    <Security>
+        <Group id="1"/>
+    </Security>
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_clausula model @2-D1F26B57-->
+    <Record name="tbl_clausula" connection="Conexao" restricted="False" returnPage="tbl_clausula_list.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Tipo" caption="Tipo" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Tipo"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Descricao" caption="Descricao" dataType="Text"
+                controlSourceType="DataSource" controlSource="Descricao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Contrato" caption="Cod Contrato" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Contrato"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Select query="SELECT * FROM tbl_clausula {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Clausula6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Clausula6" field="Cod_Clausula" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Clausula"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_clausula ( Tipo, Descricao, Cod_Contrato ) VALUES ( {Tipo}, {Descricao}, {Cod_Contrato} )" type="raw">
+            <SqlParameter name="Tipo" type="Integer" sourceName="Tipo" sourceType="Control" dbFormat="" fieldSource="Tipo" omitIfEmpty="True"/>
+            <SqlParameter name="Descricao" type="Text" sourceName="Descricao" sourceType="Control" dbFormat="" fieldSource="Descricao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Contrato" type="Integer" sourceName="Cod_Contrato" sourceType="Control" dbFormat="" fieldSource="Cod_Contrato" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_clausula SET Tipo = {Tipo}, Descricao = {Descricao}, Cod_Contrato = {Cod_Contrato}" type="raw">
+            <SqlParameter name="Tipo" type="Integer" sourceName="Tipo" sourceType="Control" dbFormat="" fieldSource="Tipo" omitIfEmpty="True"/>
+            <SqlParameter name="Descricao" type="Text" sourceName="Descricao" sourceType="Control" dbFormat="" fieldSource="Descricao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Contrato" type="Integer" sourceName="Cod_Contrato" sourceType="Control" dbFormat="" fieldSource="Cod_Contrato" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Clausula6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Clausula6" field="Cod_Clausula" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Clausula"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_clausula" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Clausula6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Clausula6" field="Cod_Clausula" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Clausula"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_clausula model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

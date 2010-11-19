@@ -1,0 +1,33 @@
+<!--Flash Chart XML template @4-2D93CED6-->
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<schema name="Autumn">
+		<mask/>
+		<colors/>
+	</schema>
+	<separator decimal="," group=""/>
+	<background border="yes"/>
+	<chartarea border="yes">
+		<grid line_style="medium" visible="yes"/>
+		<vertical_axis visible="yes"/>
+		<horizontal_axis visible="yes" rotation="degrees" autoRotate="yes"/>
+		<chart line_thick="2" enabled="yes" type="3d_columns" series="columns">
+			<inscriptions visible="yes"/>
+			<animation type="none"/>
+			<markers size="8" type="0"/>
+			<hints border="yes" enabled="yes"/>
+		</chart>
+		<legend sqr_size="12" sqr_borders="yes" border_thick="0" position="left-center" layout="vertical" visible="yes"/>
+		<title position="top" align="center" border="no" alpha="100" visible="yes" text="Chart Title"/>
+	</chartarea>
+	<objects>
+	</objects>
+	<data>
+		<columns>
+			<column field="Cod_Funcionario" name="Cod_Funcionario"/><column field="Cod_Cidade" name="Cod_Cidade"/><column field="Cod_Estado" name="Cod_Estado"/><column field="Cod_Orgao" name="Cod_Orgao"/><column field="Tel_Fixo" name="Tel_Fixo"/><column field="Nivel_Controle" name="Nivel_Controle"/></columns>
+		<rows><!-- BEGIN Row --><row col1="{Cod_Funcionario}" col2="{Cod_Cidade}" col3="{Cod_Estado}" col4="{Cod_Orgao}" col5="{Tel_Fixo}" col6="{Nivel_Controle}"/><!-- END Row --></rows></data>
+</root>
+
+
+<!--End Flash Chart XML template-->
+

@@ -4,7 +4,7 @@ Source Host: localhost
 Source Database: supremaimoveis
 Target Host: localhost
 Target Database: supremaimoveis
-Date: 18/11/2010 14:59:41
+Date: 19/11/2010 16:58:55
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -136,7 +136,7 @@ CREATE TABLE `tbl_destinacao` (
 -- Table structure for tbl_documentacao
 -- ----------------------------
 CREATE TABLE `tbl_documentacao` (
-  `Cod_Doc` int(11) NOT NULL,
+  `Cod_Doc` int(11) NOT NULL AUTO_INCREMENT,
   `Anexo` blob,
   `Tipo_Doc` int(11) DEFAULT NULL,
   `Cod_Cliente` int(11) DEFAULT NULL,
@@ -148,7 +148,7 @@ CREATE TABLE `tbl_documentacao` (
   CONSTRAINT `Apresenta` FOREIGN KEY (`Cod_Fiador`) REFERENCES `tbl_fiador` (`Cod_Fiador`),
   CONSTRAINT `Classificada` FOREIGN KEY (`Tipo_Doc`) REFERENCES `tbl_tipo_doc` (`Cod_Doc`),
   CONSTRAINT `Entrega` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Table structure for tbl_estado
@@ -169,12 +169,12 @@ CREATE TABLE `tbl_fiador` (
   `Cod_Estado` int(11) DEFAULT NULL,
   `Cod_Cidade` int(11) DEFAULT NULL,
   `Cod_Cliente` int(11) DEFAULT NULL,
-  `Nome` varchar(40) NOT NULL,
+  `Nome` varchar(40) CHARACTER SET latin1 NOT NULL,
   `Data_Nasc` date NOT NULL,
-  `Nome_U` varchar(16) NOT NULL,
-  `Senha_U` varchar(40) NOT NULL,
-  `Nacionalidaade` varchar(30) NOT NULL,
-  `Endereco` varchar(200) NOT NULL,
+  `Nome_U` varchar(16) CHARACTER SET latin1 NOT NULL,
+  `Senha_U` varchar(40) CHARACTER SET latin1 NOT NULL,
+  `Nacionalidaade` varchar(30) CHARACTER SET latin1 NOT NULL,
+  `Endereco` varchar(200) CHARACTER SET latin1 NOT NULL,
   `Tel_Fixo` int(11) DEFAULT NULL,
   `Tel_Cel` int(11) DEFAULT NULL,
   `Tel_Comercial` int(11) DEFAULT NULL,
@@ -187,7 +187,7 @@ CREATE TABLE `tbl_fiador` (
   CONSTRAINT `Registrado` FOREIGN KEY (`Cod_Orgao`) REFERENCES `tbl_orgaoemissor` (`Cod_Orgao`),
   CONSTRAINT `Reside` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
   CONSTRAINT `tbl_fiador_ibfk_3` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Table structure for tbl_funcionario
@@ -372,6 +372,8 @@ CREATE TABLE `tbl_visita` (
   `Hora` time DEFAULT NULL,
   `Cod_Imovel` int(11) DEFAULT NULL,
   `Cod_Funcionario` int(11) DEFAULT NULL,
+  `Cliente` char(255) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
+  `Contato` int(11) DEFAULT NULL,
   PRIMARY KEY (`Cod_Visita`),
   KEY `Cod_Imovel` (`Cod_Imovel`),
   KEY `Cod_Funcionario` (`Cod_Funcionario`),
@@ -5873,6 +5875,7 @@ INSERT INTO `tbl_cidade` VALUES ('5510', 'Sudoeste', '7');
 INSERT INTO `tbl_cliente` VALUES ('1', 'Felepe Dos Santos', '1988-11-18', 'Filip', 'filip', 'Brasileira', 'SQN 232 bl K ap 10', '2222222', '2222222', '2222222', '7', '811', '1', '1', '1');
 INSERT INTO `tbl_destinacao` VALUES ('1', 'Administração');
 INSERT INTO `tbl_destinacao` VALUES ('2', 'Venda');
+INSERT INTO `tbl_documentacao` VALUES ('2', 0x32303130313131383034303630342E53656D2074C3AD74756C6F2E6A7067, '1', '1', '1');
 INSERT INTO `tbl_estado` VALUES ('1', 'AC', 'Acre');
 INSERT INTO `tbl_estado` VALUES ('2', 'AL', 'Alagoas');
 INSERT INTO `tbl_estado` VALUES ('3', 'AP', 'Amapá');
@@ -5900,6 +5903,7 @@ INSERT INTO `tbl_estado` VALUES ('24', 'SC', 'Santa Catarina');
 INSERT INTO `tbl_estado` VALUES ('25', 'SP', 'São Paulo');
 INSERT INTO `tbl_estado` VALUES ('26', 'SE', 'Sergipe');
 INSERT INTO `tbl_estado` VALUES ('27', 'TO', 'Tocantins');
+INSERT INTO `tbl_fiador` VALUES ('1', '1', '7', '801', '1', 'Fiador do seculo', '1920-11-09', 'Fiador', 'Fiador', 'Brasileira', 'SIA TRECHO 1', '2323232', '242424242', '424242424');
 INSERT INTO `tbl_funcionario` VALUES ('1', 'Elomar Rodrigues da Silveira', '801', '7', '1', 'elomar', 'elomar', 'uahuhau', '242424424', '242424', '02356402128', '2010-10-19 02:27:28', '242424', '3');
 INSERT INTO `tbl_funcionario` VALUES ('2', 'Rogerio CMS', '801', '7', '1', 'rogerio', 'rogerio', 'testando', '232323232', '23232323', '02323232333', '2010-10-30 00:00:00', '23233', '3');
 INSERT INTO `tbl_funcionario` VALUES ('3', 'Jose', '801', '7', '1', 'jose', 'jose', 'qe', '23232323', '232323', '00232323232', '2010-11-17 00:00:00', '232322', '2');

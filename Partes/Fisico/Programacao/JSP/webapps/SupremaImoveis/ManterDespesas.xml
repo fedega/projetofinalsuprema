@@ -1,0 +1,99 @@
+<!--Page model head @1-216FC903-->
+<Page name="ManterDespesas" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+    <Security>
+        <Group id="1"/>
+    </Security>
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_despesas model @2-09C58AEA-->
+    <Record name="tbl_despesas" connection="Conexao" restricted="False" returnPage="tbl_despesas_list.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Data" caption="Data" dataType="Text"
+                controlSourceType="DataSource" controlSource="Data"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Valor" caption="Valor" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Valor"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Tipo_Despesas" caption="Tipo Despesas" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Tipo_Despesas"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Aluguel" caption="Cod Aluguel" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Aluguel"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="tbl_situacao_Cod_Situacao" caption="Tbl Situacao Cod Situacao" dataType="Integer"
+                controlSourceType="DataSource" controlSource="tbl_situacao_Cod_Situacao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Select query="SELECT * FROM tbl_despesas {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Despesas6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Despesas6" field="Cod_Despesas" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Despesas"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_despesas ( Data, Valor, Tipo_Despesas, Cod_Aluguel, tbl_situacao_Cod_Situacao ) VALUES ( {Data}, {Valor}, {Tipo_Despesas}, {Cod_Aluguel}, {tbl_situacao_Cod_Situacao} )" type="raw">
+            <SqlParameter name="Data" type="Text" sourceName="Data" sourceType="Control" dbFormat="" fieldSource="Data" omitIfEmpty="True"/>
+            <SqlParameter name="Valor" type="Integer" sourceName="Valor" sourceType="Control" dbFormat="" fieldSource="Valor" omitIfEmpty="True"/>
+            <SqlParameter name="Tipo_Despesas" type="Integer" sourceName="Tipo_Despesas" sourceType="Control" dbFormat="" fieldSource="Tipo_Despesas" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Aluguel" type="Integer" sourceName="Cod_Aluguel" sourceType="Control" dbFormat="" fieldSource="Cod_Aluguel" omitIfEmpty="True"/>
+            <SqlParameter name="tbl_situacao_Cod_Situacao" type="Integer" sourceName="tbl_situacao_Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="tbl_situacao_Cod_Situacao" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_despesas SET Data = {Data}, Valor = {Valor}, Tipo_Despesas = {Tipo_Despesas}, Cod_Aluguel = {Cod_Aluguel}, tbl_situacao_Cod_Situacao = {tbl_situacao_Cod_Situacao}" type="raw">
+            <SqlParameter name="Data" type="Text" sourceName="Data" sourceType="Control" dbFormat="" fieldSource="Data" omitIfEmpty="True"/>
+            <SqlParameter name="Valor" type="Integer" sourceName="Valor" sourceType="Control" dbFormat="" fieldSource="Valor" omitIfEmpty="True"/>
+            <SqlParameter name="Tipo_Despesas" type="Integer" sourceName="Tipo_Despesas" sourceType="Control" dbFormat="" fieldSource="Tipo_Despesas" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Aluguel" type="Integer" sourceName="Cod_Aluguel" sourceType="Control" dbFormat="" fieldSource="Cod_Aluguel" omitIfEmpty="True"/>
+            <SqlParameter name="tbl_situacao_Cod_Situacao" type="Integer" sourceName="tbl_situacao_Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="tbl_situacao_Cod_Situacao" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Despesas6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Despesas6" field="Cod_Despesas" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Despesas"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_despesas" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Despesas6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Despesas6" field="Cod_Despesas" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Despesas"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_despesas model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

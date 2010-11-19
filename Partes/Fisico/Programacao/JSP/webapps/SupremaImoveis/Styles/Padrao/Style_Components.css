@@ -1,0 +1,1096 @@
+/* CCSTheme v 3.x */
+/* General */
+
+/* Colors */
+.PageBgColorPadrao {
+	background-color: #cfcfcf;
+	}
+
+.FormTitleBgColorPadrao {
+	background-color: #777777;
+	}
+
+.FormTitleFontColorPadrao {
+	color: #ffffff;
+	}
+
+.CaptionBgColorPadrao {
+	background-color: #d7d7d7;
+	}
+
+.CaptionFontColorPadrao {
+	color: #000000;
+	}
+
+.DataBgColorPadrao {
+	background-color: #f7f7f7;
+	}
+
+.AltDataBgColorPadrao {
+	background-color: #ececec;
+	}
+
+.DataFontColorPadrao {
+	color: #000000;
+	}
+
+.LinkColorPadrao {
+	color: #0033cc;
+	}
+
+.VisitedLinkColorPadrao {
+	color: #840084;
+	}
+
+.HoverLinkColorPadrao {
+	color: #ff0000;
+	}
+
+.ColorBgButtonPadrao {
+	background-color: #777777;
+}
+
+.ColorFontButtonPadrao {
+	color: #ffffff;
+}
+
+.ColorBgButtonPassivePadrao {
+	background-color: #bababa;
+}
+
+.ColorFontButtonPassivePadrao {
+	color: #ffffff;
+}
+
+
+
+.HeaderPadrao {
+	width: 100%;
+	}
+
+.HeaderPadrao th { 
+	font-family: Arial; font-size: 110%; font-weight: bold; text-align: center !important;
+	padding: 3px;
+	background-image: url('Images/HeaderBg.gif'); color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+	
+	}
+
+
+
+/*ie6*/
+* html body .HeaderPadrao th {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.HeaderPadrao a:link { 
+	color: #ffffff;
+	}
+
+.HeaderPadrao a:visited { 
+	color: #ffffff;
+	}
+
+.HeaderPadrao a:hover, .CaptionPadrao a:active { 
+	color: #ffffff; text-decoration: none;
+	}
+
+.HeaderLeftPadrao { 
+	background-image: url('Images/HeaderLeft.gif');
+	}
+
+.HeaderRightPadrao { 
+	background-image: url('Images/HeaderRight.gif');
+	background-position: right top;
+	}
+
+.HeaderLeftPadrao img{
+	width: 12px;
+	}
+
+.HeaderRightPadrao img{
+	width: 12px;
+	}
+
+
+/* Grid Options */
+.GridPadrao { 
+	border: 1px solid #777777;
+	width: 100%;
+	}
+
+.CaptionPadrao th { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+.CaptionPadrao td { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+	}
+
+
+
+/*ie6*/
+* html body .CaptionPadrao th, * html body .CaptionPadrao td {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.CaptionPadrao a:link { 
+	color: #000000;
+	}
+
+.CaptionPadrao a:visited { 
+	color: #000000;
+	}
+
+.CaptionPadrao a:hover, .CaptionPadrao a:active { 
+	color: #ff0000;
+	}
+
+.CaptionPadrao img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.CaptionPadrao input {
+	vertical-align: middle;
+	}
+
+.RowPadrao th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.RowPadrao td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+	
+
+
+/*ie6*/
+* html body .RowPadrao th, * html body .RowPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+caption.RowPadrao { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #777777; border-bottom: 0px;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body caption.RowPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.RowPadrao a:link { 
+	color: #0033cc;
+	}
+
+.RowPadrao a:visited { 
+	color: #840084;
+	}
+
+.RowPadrao a:hover, .RowPadrao a:active { 
+	color: #ff0000;
+	}
+
+.SeparatorPadrao{
+	color: #777777;
+	}
+
+.SeparatorPadrao td{
+	height: 1px;
+	}
+
+
+.AltRowPadrao th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.AltRowPadrao td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	vertical-align: top;
+	background-color: #ececec; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .AltRowPadrao th, * html body .AltRowPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.AltRowPadrao a:link { 
+	color: #0033cc;
+	}
+
+.AltRowPadrao a:visited { 
+	color: #840084;
+	}
+
+.AltRowPadrao a:hover, .AltRowPadrao a:active { 
+	color: #ff0000;
+	}
+
+.NoRecordsPadrao td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	background-color: #f7f7f7; 
+	color: #000000;
+	vertical-align: top;
+	}
+
+.FooterPadrao td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .NoRecordsPadrao td, * html body .FooterPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.FooterPadrao a:link { 
+	color: #0033cc;
+	}
+
+.FooterPadrao a:visited { 
+	color: #840084;
+	}
+
+.FooterPadrao a:hover, .FooterPadrao a:active { 
+	color: #ff0000;
+	}
+
+.FooterPadrao img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.FooterPadrao input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Record Options */
+.RecordPadrao { 
+	border: 1px solid #777777;
+	width: 100%;
+	}
+
+.ErrorPadrao td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	color: #FF0000;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	}
+
+
+
+/*ie6*/
+* html body .ErrorPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.ControlsPadrao th { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+.ControlsPadrao td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	vertical-align: top;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+	
+.BottomPadrao td { 
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: right;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .ControlsPadrao th, * html body .ControlsPadrao td, * html body .BottomPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.BottomPadrao a:link { 
+	color: #0033cc;
+	}
+
+.BottomPadrao a:visited { 
+	color: #840084;
+	}
+
+.BottomPadrao a:hover, .CaptionPadrao a:active { 
+	color: #ff0000;
+	}
+
+.BottomPadrao img {
+	margin: 2px;
+	vertical-align: middle; 
+	}
+
+.BottomPadrao input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+/* Report */
+.GroupCaptionPadrao th{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	white-space: nowrap;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #ececec; 
+	color: #000000;
+	}
+
+.GroupCaptionPadrao td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #f7f7f7; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .GroupCaptionPadrao th, * html body .GroupCaptionPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupCaptionPadrao a:link {
+	color: #000000;
+	}
+
+.GroupCaptionPadrao a:visited{
+	color: #000000;
+	}
+
+.GroupCaptionPadrao a:hover, .GroupCaptionPadrao a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterPadrao td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	background-color: #d7d7d7; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .GroupFooterPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.GroupFooterPadrao a:link {
+	color: #0033cc;
+	}
+
+.GroupFooterPadrao a:visited{
+	color: #840084;
+	}
+
+.GroupFooterPadrao a:hover, .GroupFooterPadrao a:active{
+	color: #ff0000;
+	}
+
+.GroupFooterPadrao img {
+	margin: 2px; 
+	vertical-align: middle;
+	}
+
+.GroupFooterPadrao input {
+	margin: 2px;
+	vertical-align: middle;
+	}
+
+.SubTotalPadrao td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #ececec; 
+	color: #000000;
+	border-bottom: 2px solid #777777;
+	}
+
+
+
+/*ie6*/
+* html body .SubTotalPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.SubTotalPadrao a:link {
+	color: #0033cc;
+	}
+
+.SubTotalPadrao a:visited{
+	color: #840084;
+	}
+
+.SubTotalPadrao a:hover, .SubTotalPadrao a:active{
+	color: #ff0000;
+	}
+
+.TotalPadrao td{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+	font-weight: bold;
+	background-color: #ececec; 
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .TotalPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.TotalPadrao a:link {
+	color: #0033cc;
+	}
+
+.TotalPadrao a:visited{
+	color: #840084;
+	}
+
+.TotalPadrao a:hover, .TotalPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Form Options */
+.ButtonPadrao { 
+	background-color: #777777; color: #ffffff; border-left: solid 1px #EDEDED; border-top: solid 1px #EDEDED; border-right: solid 1px #848284; border-bottom: solid 1px #848284; padding: 2px; font-weight: bold; font-family: Tahoma; font-size: 11px; font-weight: bold;
+	}
+
+/* Calendar */
+
+.CalendarPadrao { 
+	border: 1px solid #777777;
+	width: 100%;
+	}
+
+.CalendarWeekdayNamePadrao{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: center; 
+	vertical-align: top;
+	white-space: nowrap;
+	background-color: #ececec; 
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekdayNamePadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekdayNamePadrao a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekdayNamePadrao a:visited{
+	color: #840084;
+	}
+
+.CalendarWeekdayNamePadrao a:hover, .CalendarWeekdayNamePadrao a:active{
+	color: #ff0000;
+	}
+
+.CalendarWeekendNamePadrao{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	white-space: nowrap;
+	text-align: center; 
+	vertical-align: top;
+	background-color: #ececec;	
+	color: #000000;
+	font-weight: normal;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendNamePadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendNamePadrao a:link {
+	color: #000000;
+	}
+
+.CalendarWeekendNamePadrao a:visited{
+	color: #000000;
+	}
+
+.CalendarWeekendNamePadrao a:link, .CalendarWeekendNamePadrao a:visited{
+	color: #ff0000;
+	}
+
+/* Calendar Day */
+.CalendarDayPadrao{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarDayPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarDayPadrao a:link {
+	color: #0033cc;
+	}
+
+.CalendarDayPadrao a:visited{
+	color: #840084;
+	}
+
+.CalendarDayPadrao a:hover, .CalendarDayPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Weekend */
+.CalendarWeekendPadrao{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: center;
+	background-color: #ececec;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendPadrao a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendPadrao a:visited{
+	color: #840084;
+	}
+
+.CalendarWeekendPadrao a:hover, .CalendarWeekendPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Today */
+.CalendarTodayPadrao {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #777777;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarTodayPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarTodayPadrao a:link {
+	color: #0033cc;
+	}
+
+.CalendarTodayPadrao a:visited{
+	color: #840084;
+	}
+
+.CalendarTodayPadrao a:hover, .CalendarTodayPadrao a:active {
+	color: #ff0000;
+	}
+
+/* Calendar Weekend Today */
+.CalendarWeekendTodayPadrao {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #777777;
+	text-align: center;
+	background-color: #ececec;	
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarWeekendTodayPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarWeekendTodayPadrao a:link {
+	color: #0033cc;
+	}
+
+.CalendarWeekendTodayPadrao a:visited{
+	color: #840084;
+	}
+
+.CalendarWeekendTodayPadrao a:hover, .CalendarWeekendTodayPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Day */
+.CalendarOtherMonthDayPadrao{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #777777;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthDayPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthDayPadrao a:link {
+	color: #777777;
+	}
+
+.CalendarOtherMonthDayPadrao a:visited{
+	color: #777777;
+	}
+
+.CalendarOtherMonthDayPadrao a:hover, .CalendarOtherMonthDayPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Today */
+.CalendarOtherMonthTodayPadrao {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #777777;
+	text-align: center;
+	background-color: #f7f7f7;	
+	color: #777777;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthTodayPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthTodayPadrao a:link {
+	color: #777777;
+	}
+
+.CalendarOtherMonthTodayPadrao a:visited{
+	color: #777777;
+	}
+
+.CalendarOtherMonthTodayPadrao a:hover, .CalendarOtherMonthTodayPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend */
+.CalendarOtherMonthWeekendPadrao {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: center;
+	background-color: #ececec;	
+	color: #777777;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendPadrao a:link {
+	color: #777777;
+	}
+
+.CalendarOtherMonthWeekendPadrao a:visited{
+	color: #777777;
+	}
+
+.CalendarOtherMonthWeekendPadrao a:hover, .CalendarOtherMonthWeekendPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Other Month's Weekend Today */
+.CalendarOtherMonthWeekendTodayPadrao {
+	font-family: Arial; font-size: 80%;
+	padding: 1px;
+	border: 2px solid #777777;
+	text-align: center;
+	color: #777777;
+	background-color: #ececec;	
+	}
+	
+
+
+/*ie6*/
+* html body .CalendarOtherMonthWeekendTodayPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarOtherMonthWeekendTodayPadrao a:link {
+	color: #777777;
+	}
+
+.CalendarOtherMonthWeekendTodayPadrao a:visited{
+	color: #777777;
+	}
+
+.CalendarOtherMonthWeekendTodayPadrao a:hover, .CalendarOtherMonthWeekendTodayPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Selected Day (for DatePicker) */
+.CalendarSelectedDayPadrao{
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-color: #d7d7d7;
+	color: #000000;
+	text-align: center;
+	font-weight: bold;
+	}
+	
+
+
+/*ie6*/
+* html body .CalendarSelectedDayPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarSelectedDayPadrao a:link {
+	color: #000000;
+	}
+
+.CalendarSelectedDayPadrao a:visited{
+	color: #000000;
+	}
+
+.CalendarSelectedDayPadrao a:hover, .CalendarSelectedDayPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Calendar Navigator */
+.CalendarNavigatorPadrao {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	text-align: center;
+	vertical-align: middle;
+	white-space: nowrap;
+	color: #000000;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarNavigatorPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarNavigatorPadrao a:link {
+	color: #0033cc;
+	}
+
+.CalendarNavigatorPadrao a:visited{
+	color: #840084;
+	}
+
+.CalendarNavigatorPadrao a:hover, .CalendarNavigatorPadrao a:active{
+	color: #ff0000;
+	}
+
+.CalendarNavigatorPadrao img{
+	margin: 2px;
+	vertical-align: middle; 	
+	}
+
+.CalendarNavigatorPadrao td {
+	font-family: Arial; font-size: 80%;
+	}
+
+.CalendarNavigatorPadrao th {
+	font-family: Arial; font-size: 80%;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarNavigatorPadrao th, * html body .CalendarNavigatorPadrao td {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+/* Calendar Extra */
+.CalendarEventPadrao{
+	font-family: Arial; font-size: 80%;
+	text-align: left;
+	}
+
+
+
+/*ie6*/
+* html body .CalendarEventPadrao {
+	font-family: Arial; font-size: 100%;
+}
+/*end*/
+
+.CalendarEventPadrao a:link {
+	color: #0033cc;
+	}
+
+.CalendarEventPadrao a:visited{
+	color: #840084;
+	}
+
+.CalendarEventPadrao a:hover, .CalendarEventPadrao a:active{
+	color: #ff0000;
+	}
+
+/* Changes for Section508 */
+table tr td strong {
+	padding: 0px;
+	margin: 0px;
+}
+
+.thPadrao { 
+	font-family: Arial; font-size: 80%;
+	font-weight: bold;
+}
+
+
+
+/*ie6*/
+* html body .thPadrao {
+	font-size: 100%;
+}
+/*end*/
+
+.HeaderPadrao .thPadrao { 
+	font-family: Arial; font-size: 110%; font-weight: bold; text-align: center !important;
+	padding: 3px;
+	background-image: url('Images/HeaderBg.gif'); color: #ffffff;
+	width: 100%;
+	white-space: nowrap;
+}
+
+
+
+/*ie6*/
+* html body .HeaderPadrao .thPadrao {
+	font-family: Arial; font-size: 140%; font-weight: bold; text-align: center !important;
+}
+/*end*/
+
+.CaptionPadrao .thPadrao { 
+	font-family: Arial; font-size: 80%; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-image: url('Images/CaptionBg.gif'); color: #000000;
+	white-space: nowrap;
+}
+
+
+
+/*ie6*/
+* html body .CaptionPadrao .thPadrao {
+	font-family: Arial; font-size: 100%; text-align: left; vertical-align: top;
+}
+/*end*/
+
+.RowPadrao .thPadrao { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.AltRowPadrao .thPadrao { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.ControlsPadrao .thPadrao { 
+	font-family: Arial; font-size: 80%; font-weight: normal; text-align: left; vertical-align: top;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	background-color: #f7f7f7; color: #000000;
+	white-space: nowrap;
+	color: #000000;
+}
+
+.GroupCaptionPadrao .thPadrao {
+	font-family: Arial; font-size: 80%;
+	padding: 3px;
+	border: 1px solid #d7d7d7;
+	text-align: left;
+	white-space: nowrap;
+	vertical-align: top;
+	font-weight: bold;
+	background-color: #ececec; 
+	color: #000000;
+}
+
+
+
+/*ie6*/
+* html body .GroupCaptionPadrao .thPadrao {
+	font-family: Arial; font-size: 100%;
+}
+
+* html body .RowPadrao .thPadrao, * html body .AltRowPadrao .thPadrao, * html body .ControlsPadrao .thPadrao {
+	font-family: Arial; font-size: 100%; font-weight: normal; text-align: left; vertical-align: top;
+}
+/*end*/
+
+/* Class for Application Builder Menu */
+.simpleMenuPadrao td {
+	font-family: Arial; font-size: 80%;
+}
+
+
+
+/*ie6*/
+* html body .simpleMenuPadrao td {
+	font-family: Arial; font-size: 100%;
+} 
+/*end*/
