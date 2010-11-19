@@ -10,7 +10,7 @@
     <Include name="Footer"/>
 <!--End Page componets-->
 
-<!--Record tbl_visita model @2-4DF372D9-->
+<!--Record tbl_visita model @2-F5FB74D5-->
     <Record name="tbl_visita" connection="Conexao" restricted="False" returnPage="tbl_visita_list.jsp" convertRule="Relative" preserveParams="GET" 
             allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
         <Button name="Button_Insert" operation="Insert"
@@ -34,13 +34,20 @@
                 controlSourceType="DataSource" controlSource="Hora"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
-        <DatePicker name="DatePicker_Hora" control="Hora" style="Styles/Padrao/Style.css"/>
         <TextBox name="Cod_Imovel" caption="Cod Imovel" dataType="Integer"
                 controlSourceType="DataSource" controlSource="Cod_Imovel"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
         <TextBox name="Cod_Funcionario" caption="Cod Funcionario" dataType="Integer"
                 controlSourceType="DataSource" controlSource="Cod_Funcionario"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cliente" caption="{res:Text1}" dataType="Text"
+                controlSourceType="DataSource" controlSource="Cliente"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Contato" caption="{res:Text1}" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Contato"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
         <Select query="SELECT * FROM tbl_visita {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
@@ -54,17 +61,21 @@
                         format="" dbFormat=""/>
             </Where>
         </Select>
-        <Insert query="INSERT INTO tbl_visita ( Data, Hora, Cod_Imovel, Cod_Funcionario ) VALUES ( {Data}, {Hora}, {Cod_Imovel}, {Cod_Funcionario} )" type="raw">
+        <Insert query="INSERT INTO tbl_visita ( Data, Hora, Cod_Imovel, Cod_Funcionario, Cliente, Contato ) VALUES ( {Data}, {Hora}, {Cod_Imovel}, {Cod_Funcionario}, {Cliente}, {Contato} )" type="raw">
             <SqlParameter name="Data" type="Date" sourceName="Data" sourceType="Control" dbFormat="" fieldSource="Data" omitIfEmpty="True"/>
             <SqlParameter name="Hora" type="Date" sourceName="Hora" sourceType="Control" dbFormat="" fieldSource="Hora" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Imovel" type="Integer" sourceName="Cod_Imovel" sourceType="Control" dbFormat="" fieldSource="Cod_Imovel" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+            <SqlParameter name="Cliente" type="Text" sourceName="Cliente" sourceType="Control" dbFormat="" fieldSource="Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Contato" type="Integer" sourceName="Contato" sourceType="Control" dbFormat="" fieldSource="Contato" omitIfEmpty="True"/>
         </Insert>
-        <Update query="UPDATE tbl_visita SET Data = {Data}, Hora = {Hora}, Cod_Imovel = {Cod_Imovel}, Cod_Funcionario = {Cod_Funcionario}" type="raw">
+        <Update query="UPDATE tbl_visita SET Data = {Data}, Hora = {Hora}, Cod_Imovel = {Cod_Imovel}, Cod_Funcionario = {Cod_Funcionario}, Cliente = {Cliente}, Contato = {Contato}" type="raw">
             <SqlParameter name="Data" type="Date" sourceName="Data" sourceType="Control" dbFormat="" fieldSource="Data" omitIfEmpty="True"/>
             <SqlParameter name="Hora" type="Date" sourceName="Hora" sourceType="Control" dbFormat="" fieldSource="Hora" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Imovel" type="Integer" sourceName="Cod_Imovel" sourceType="Control" dbFormat="" fieldSource="Cod_Imovel" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+            <SqlParameter name="Cliente" type="Text" sourceName="Cliente" sourceType="Control" dbFormat="" fieldSource="Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Contato" type="Integer" sourceName="Contato" sourceType="Control" dbFormat="" fieldSource="Contato" omitIfEmpty="True"/>
             <Where>
                 <WhereClause>
                     <Parameter name="Cod_Visita6"/>

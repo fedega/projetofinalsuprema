@@ -31,6 +31,11 @@
         public void afterInitialize(Event e) {
 //End tbl_visita afterInitialize Method Head
 
+//tbl_visita handle localized properties @2-CC0CB405
+            e.getComponent().getControl("Cliente").setCaption(e.getPage().getResourceString("Text1"));
+            e.getComponent().getControl("Contato").setCaption(e.getPage().getResourceString("Text1"));
+//End tbl_visita handle localized properties
+
 //tbl_visita afterInitialize Method Tail @2-FCB6E20C
         }
 //End tbl_visita afterInitialize Method Tail

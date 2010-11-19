@@ -20,31 +20,35 @@
 			<SecurityGroups/>
 			<Attributes/>
 			<MenuItems>
-				<MenuItem id="4" name="MenuItem1" caption="Grafico Imoveis" url="Imoveis.ccp"/>
-				<MenuItem id="5" name="MenuItem5" caption="Aluguel" url="ListaAluguel.ccp"/>
-				<MenuItem id="6" name="MenuItem6" caption="Cidade" url="ListaCidade.ccp"/>
-				<MenuItem id="7" name="MenuItem7" caption="Causula" url="ListaClausula.ccp"/>
-				<MenuItem id="8" name="MenuItem7Item1" parent="MenuItem7" caption="Tipo de Clasula" url="ListaTipoClausula.ccp"/>
-				<MenuItem id="9" name="MenuItem8" caption="Cliente" url="ListaCliente.ccp"/>
-				<MenuItem id="10" name="MenuItem8Item1" parent="MenuItem8" caption="Tipo de Cliente" url="ListaTipoCliente.ccp"/>
-				<MenuItem id="11" name="MenuItem9" caption="Contrato" url="ListaContrato.ccp"/>
-				<MenuItem id="12" name="MenuItem10" caption="Despesas" url="ListaDespesas.ccp"/>
-				<MenuItem id="13" name="MenuItem10Item1" parent="MenuItem10" caption="Tipo de Despesas" url="ListaTipoDesp.ccp"/>
-				<MenuItem id="14" name="MenuItem11" caption="Destinacao" url="ListaDestinacao.ccp"/>
-				<MenuItem id="15" name="MenuItem12" caption="Documentacao" url="ListaDocumentacao.ccp"/>
-				<MenuItem id="16" name="MenuItem12Item1" parent="MenuItem12" caption="Tipo de Documentacao" url="ListaTipoDoc.ccp"/>
-				<MenuItem id="17" name="MenuItem13" caption="Estado" url="ListaEstado.ccp"/>
-				<MenuItem id="18" name="MenuItem14" caption="Fiador" url="ListaFiador.ccp"/>
-				<MenuItem id="19" name="MenuItem15" caption="Funcionario" url="ListaFuncionario.ccp"/>
-				<MenuItem id="20" name="MenuItem16" caption="Imovel" url="ListaImovel.ccp"/>
-				<MenuItem id="21" name="MenuItem17" caption="Orgao" url="ListaOrgao.ccp"/>
-				<MenuItem id="22" name="MenuItem18" caption="Preferencia" url="ListaPreferencia.ccp"/>
-				<MenuItem id="23" name="MenuItem19" caption="Situacao" url="ListaSituacao.ccp"/>
-				<MenuItem id="24" name="MenuItem20" caption="Solicitacoes" url="ListaSolicitacoes.ccp"/>
-				<MenuItem id="25" name="MenuItem20Item1" parent="MenuItem20" caption="Tipo de Solicitacao" url="ListaTipoSolici.ccp"/>
-				<MenuItem id="26" name="MenuItem21" caption="Venda" url="ListaVenda.ccp"/>
-				<MenuItem id="27" name="MenuItem22" caption="Visita" url="ListaVisita.ccp"/>
-			</MenuItems>
+				<MenuItem id="4" name="MenuItem1" caption="Cadastrar"/>
+<MenuItem id="5" name="MenuItem1Item1" parent="MenuItem1" caption="Cliente" url="ManterCliente.ccp"/>
+<MenuItem id="6" name="MenuItem1Item2" parent="MenuItem1" caption="Imóvel" url="ManterImovel.ccp"/>
+<MenuItem id="7" name="MenuItem1Item4" parent="MenuItem1" caption="Contrato"/>
+<MenuItem id="8" name="MenuItem1Item4Item1" parent="MenuItem1Item4" caption="Contrato" url="ManterContrato.ccp"/>
+<MenuItem id="9" name="MenuItem1Item4Item2" parent="MenuItem1Item4" caption="Clausula" url="ManterClausula.ccp"/>
+<MenuItem id="10" name="MenuItem1Item5" parent="MenuItem1" caption="Fiador" url="ManterFiador.ccp"/>
+<MenuItem id="11" name="MenuItem1Item6" parent="MenuItem1" caption="Despesas" url="ManterDespesas.ccp"/>
+<MenuItem id="12" name="MenuItem2" caption="Consultar"/>
+<MenuItem id="13" name="MenuItem2Item1" parent="MenuItem2" caption="Clientes" url="ListaCliente.ccp"/>
+<MenuItem id="14" name="MenuItem2Item2" parent="MenuItem2" caption="Imóveis" url="ListaImovel.ccp"/>
+<MenuItem id="15" name="MenuItem2Item3" parent="MenuItem2" caption="Contratos"/>
+<MenuItem id="16" name="MenuItem2Item3Item1" parent="MenuItem2Item3" caption="Contrato" url="ListaContrato.ccp"/>
+<MenuItem id="17" name="MenuItem2Item3Item2" parent="MenuItem2Item3" caption="Clausulas" url="ListaClausula.ccp"/>
+<MenuItem id="18" name="MenuItem2Item4" parent="MenuItem2" caption="Fiadores" url="ListaFiador.ccp"/>
+<MenuItem id="19" name="MenuItem2Item5" parent="MenuItem2" caption="Despesas" url="ListaDespesas.ccp"/>
+<MenuItem id="20" name="MenuItem3" caption="Visitas"/>
+<MenuItem id="21" name="MenuItem3Item1" parent="MenuItem3" caption="Agendar" url="ManterVisita.ccp"/>
+<MenuItem id="22" name="MenuItem3Item2" parent="MenuItem3" caption="Consultar" url="ListaVisita.ccp"/>
+<MenuItem id="23" name="MenuItem4" caption="Fechamento"/>
+<MenuItem id="24" name="MenuItem4Item1" parent="MenuItem4" caption="Venda" url="ManterVenda.ccp"/>
+<MenuItem id="25" name="MenuItem4Item2" parent="MenuItem4" caption="Aluguel" url="ManterAluguel.ccp"/>
+<MenuItem id="26" name="MenuItem5" caption="Estatisticas"/>
+<MenuItem id="27" name="MenuItem5Item1" parent="MenuItem5" caption="Carteira de Imoveis"/>
+<MenuItem id="28" name="MenuItem5Item2" parent="MenuItem5" caption="Desempenho de Funcionarios" url="DesempenhoFuncionario.ccp"/>
+<MenuItem id="29" name="MenuItem5Item3" parent="MenuItem5" caption="Transações Concluidas" url="TransConcluidas.ccp"/>
+<MenuItem id="30" name="MenuItem5Item4" parent="MenuItem5" caption="Lucros" url="Lucros.ccp"/>
+<MenuItem id="31" name="MenuItem6" caption="Suporte" url="Suporte.ccp"/>
+</MenuItems>
 			<Features/>
 		</Menu>
 	</Components>

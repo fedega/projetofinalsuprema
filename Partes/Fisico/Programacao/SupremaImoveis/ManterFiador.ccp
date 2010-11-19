@@ -2,7 +2,7 @@
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_fiador" dataSource="tbl_fiador" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Fiador " wizardFormMethod="post" returnPage="tbl_fiador_list.ccp" PathID="tbl_fiador">
 			<Components>
-				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_Insert" operation="Insert" wizardCaption="Add" parentName="tbl_fiador" PathID="tbl_fiadorButton_Insert">
+				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_Insert" operation="Insert" wizardCaption="Add" parentName="tbl_fiador" PathID="tbl_fiadorButton_Insert" returnPage="ListaFiador.ccp">
 					<Components/>
 					<Events/>
 					<Attributes/>

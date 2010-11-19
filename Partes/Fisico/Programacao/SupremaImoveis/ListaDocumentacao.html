@@ -4,7 +4,7 @@
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Documentacao</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
+<script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-F3587A4D
 </script>
@@ -23,19 +23,20 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 
 //End CCS script
 </script>
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 </head>
 <body>
 {Header} 
 <!-- BEGIN Record tbl_documentacaoSearch -->
-<form id="tbl_documentacaoSearch" name="{HTMLFormName}" action="{Action}" method="post">
-  <table cellspacing="0" cellpadding="0" border="0">
+<form id="tbl_documentacaoSearch" method="post" name="{HTMLFormName}" action="{Action}">
+  <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td valign="top">
-        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <table class="Header" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Buscar Documentacao </strong></td> 
-            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
         </table>
  
@@ -47,12 +48,12 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_documentacaoSearchs_Anexo">Anexo</label></td> 
-            <td><input type="text" name="{s_Anexo_Name}" value="{s_Anexo}" size="50" id="tbl_documentacaoSearchs_Anexo"></td>
+            <td><input id="tbl_documentacaoSearchs_Anexo" value="{s_Anexo}" size="50" name="{s_Anexo_Name}"></td>
           </tr>
  
           <tr class="Bottom">
-            <td align="right" colspan="2">
-              <!-- BEGIN Button Button_DoSearch --><input class="Button" id="tbl_documentacaoSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_DoSearch --><input id="tbl_documentacaoSearchButton_DoSearch" class="Button" value="Buscar" alt="Buscar" type="submit" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
           </tr>
         </table>
       </td>
@@ -61,14 +62,14 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </form>
 <!-- END Record tbl_documentacaoSearch --><br>
 <!-- BEGIN Grid tbl_documentacao -->
-<table cellspacing="0" cellpadding="0" border="0">
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top">
-      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+      <table class="Header" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
           <td class="th"><strong>Lista de&nbsp;Documentacao</strong></td> 
-          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+          <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
         </tr>
       </table>
  
@@ -76,23 +77,25 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
         <tr class="Caption">
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Cod_Doc --><a href="{Sort_URL}" id="tbl_documentacaoSorter_Cod_Doc">N° do Documento</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Doc --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Doc --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Tipo_Doc --><a href="{Sort_URL}" id="tbl_documentacaoSorter_Tipo_Doc">Tipo do Documento</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Tipo_Doc --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Tipo_Doc --></th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Cod_Cliente --><a href="{Sort_URL}" id="tbl_documentacaoSorter_Cod_Cliente">Cliente</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Cliente --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Cliente --></th>
+ 
+          <th scope="col">&nbsp;</th>
  
           <th scope="col">
           <!-- BEGIN Sorter Sorter_Cod_Fiador --><a href="{Sort_URL}" id="tbl_documentacaoSorter_Cod_Fiador">Fiador</a> 
-          <!-- BEGIN Asc_On --><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"><!-- END Asc_On -->
-          <!-- BEGIN Desc_On --><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Fiador --></th>
+          <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
+          <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Cod_Fiador --></th>
         </tr>
  
         <!-- BEGIN Row -->
@@ -100,16 +103,17 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <td style="TEXT-ALIGN: right"><a href="{Cod_Doc_Src}" id="tbl_documentacaoCod_Doc_{tbl_documentacao:rowNumber}">{Cod_Doc}</a>&nbsp;</td> 
           <td style="TEXT-ALIGN: right">{Tipo_Doc}&nbsp;</td> 
           <td style="TEXT-ALIGN: right">{Cod_Cliente}&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">&nbsp;</td> 
           <td style="TEXT-ALIGN: right">{Cod_Fiador}&nbsp;</td>
         </tr>
  <!-- END Row -->
         <!-- BEGIN NoRecords -->
         <tr class="NoRecords">
-          <td colspan="4">Sem registros</td>
+          <td colspan="5">Sem registros</td>
         </tr>
         <!-- END NoRecords -->
         <tr class="Footer">
-          <td colspan="4"><a href="{tbl_documentacao_Insert_Src}" id="tbl_documentacaotbl_documentacao_Insert">Novo Registro</a>&nbsp; 
+          <td colspan="5"><a href="{tbl_documentacao_Insert_Src}" id="tbl_documentacaotbl_documentacao_Insert">Novo Registro</a>&nbsp; 
             <!-- BEGIN Navigator Navigator -->
             <!-- BEGIN First_On --><a href="{First_URL}">|&lt;</a> <!-- END First_On -->
             <!-- BEGIN Prev_On --><a href="{Prev_URL}">&lt;&lt;</a> <!-- END Prev_On -->&nbsp;{Page_Number} de&nbsp;{Total_Pages}&nbsp; 
@@ -121,6 +125,6 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
   </tr>
 </table>
 <!-- END Grid tbl_documentacao --><br>
-{Footer} 
+{Footer} <br>
 </body>
 </html>

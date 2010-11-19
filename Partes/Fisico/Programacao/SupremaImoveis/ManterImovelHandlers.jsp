@@ -10,9 +10,10 @@
     public class ManterImovelServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-6DADF1A6
+//feature binding @1-238BAEF2
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
+            if ((new HeaderServiceChecker()).check(request, response, context)) return true;
             return false;
         }
 //End feature binding
@@ -315,7 +316,7 @@
 %> <%
 //End Comment workaround
 
-//Processing @1-E19DFF25
+//Processing @1-40C9B221
     Page ManterImovelModel = (Page)request.getAttribute("ManterImovel_page");
     Page ManterImovelParent = (Page)request.getAttribute("ManterImovelParent");
     if (ManterImovelModel == null) {
@@ -329,6 +330,8 @@
         ((Record)ManterImovelModel.getChild("tbl_imovel")).addRecordListener(new ManterImoveltbl_imovelRecordHandler());
         ManterImovelCntr.process();
 %>
+        <% request.setAttribute("HeaderParent", ManterImovelModel); %>
+        <%{%><%@include file="/HeaderHandlers.jsp"%><%}%>
 <%
         if (ManterImovelParent == null) {
             ManterImovelModel.setCookies();

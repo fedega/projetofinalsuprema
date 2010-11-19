@@ -10,7 +10,7 @@
     public class ImoveisServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-99B86260
+//feature binding @1-E1F77624
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
             if ((new HeaderServiceChecker()).check(request, response, context)) return true;
@@ -39,8 +39,8 @@
                 JDBCConnection ds = JDBCConnectionFactory.getJDBCConnection( "Conexao" );
                 RawCommand command = new RawCommand( ds );
 
-                command.setSql( "SELECT *  \n"
-                            + "FROM tbl_funcionario {SQL_Where} {SQL_OrderBy}" );
+                command.setSql( "SELECT COUNT  \n"
+                            + "FROM tbl_imovel where cod_situacao=2 {SQL_OrderBy}" );
 
                 command.setFetchSize(25);
                 Enumeration records = null;
@@ -51,9 +51,9 @@
                         DbRow record = null;
                         while (records.hasMoreElements()) {
                             record = (DbRow) records.nextElement();
-                            tmpl.setTag("main/Row", "@Cod_Orgao", ""+record.get("Cod_Orgao") );
-                            tmpl.setTag("main/Row", "@Nivel_Controle", ""+record.get("Nivel_Controle") );
-                            tmpl.setTag("main/Row", "@Data_Nasc", ""+record.get("Data_Nasc") );
+                            tmpl.setTag("main/Row", "@Cod_Situacao", ""+record.get("Cod_Situacao") );
+                            tmpl.setTag("main/Row", "@Cod_destinacao", ""+record.get("Cod_destinacao") );
+                            tmpl.setTag("main/Row", "@Data", ""+record.get("Data") );
                             tmpl.render("main/Row", "main/Row", true, Template.IF_DOESNT_EXIST_IS_ERROR);
                         }
                     }

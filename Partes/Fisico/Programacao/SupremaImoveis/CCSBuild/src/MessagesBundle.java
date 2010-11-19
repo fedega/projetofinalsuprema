@@ -1,4 +1,4 @@
-//MessagesBundle class @0-0D3E5E85
+//MessagesBundle class @0-07A6F8BF
 import java.util.ListResourceBundle;
 
 /** Message Recource Bundle. */
@@ -112,7 +112,8 @@ public class MessagesBundle extends ListResourceBundle {
     {"CCS_UploadComponentNotFound", "{0} uploading component {1} is not found. Please install the component or select another one."},
     {"CCS_UploadingError", "An error occured when uploading file specified in {0}. Error description: {1}."},
     {"CCS_UploadingTempFolderError", "An error occured when uploading file specified in {0} into temporary folder. Error description: {1}."},
-    {"CCS_WrongType", "The file type specified in field {0} is not allowed."},    
+    {"CCS_WrongType", "The file type specified in field {0} is not allowed."},
+    {"Text1", "Cliente"},    
     {"NoSuchComponent", "Component {0} doesn''t contain a {1} with name {2}"},
     {"PageSizeParameterIsIncorrect", "The value parameter {0}PageSize is incorrect"},
     {"NoSuchComponentPage", "Page {0} doesn''t contain a {1} with name {2}"},

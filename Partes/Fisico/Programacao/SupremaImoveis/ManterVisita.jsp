@@ -20,7 +20,7 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-C04E7DB6--%>
+<%--JSP Page Content @1-660C2D9B--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -37,19 +37,13 @@
 <script language="JavaScript" type="text/javascript">
 //End Include Common JSFunctions
 
-//Date Picker Object Definitions @1-B29C9375
+//Date Picker Object Definitions @1-AE21A20C
 
 var tbl_visita_DatePicker_Data = new Object(); 
 tbl_visita_DatePicker_Data.format           = "ShortDate";
 tbl_visita_DatePicker_Data.style            = "Styles/Padrao/Style.css";
 tbl_visita_DatePicker_Data.relativePathPart = "";
 tbl_visita_DatePicker_Data.themeVersion = "3.0";
-
-var tbl_visita_DatePicker_Hora = new Object(); 
-tbl_visita_DatePicker_Hora.format           = "ShortDate";
-tbl_visita_DatePicker_Hora.style            = "Styles/Padrao/Style.css";
-tbl_visita_DatePicker_Hora.relativePathPart = "";
-tbl_visita_DatePicker_Hora.themeVersion = "3.0";
 
 //End Date Picker Object Definitions
 
@@ -76,15 +70,15 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 <body>
 <jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_visita'>
-<form id="tbl_visita" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
-  <table cellspacing="0" cellpadding="0" border="0">
+<form id="tbl_visita" method="post" name="<ccs:form_name/>" action="<ccs:form_action/>">
+  <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td valign="top">
-        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <table class="Header" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Adicionar/Editar Visita </strong></td> 
-            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
         </table>
  
@@ -95,32 +89,41 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           </tr>
           </ccs:error_block>
           <tr class="Controls">
+            <td class="th"><label for="tbl_visitaCod_Funcionario">Cliente</label></td> 
+            <td><input id="tbl_visitaCliente" value="<ccs:control name='Cliente'/>" maxlength="10" size="10" name="<ccs:control name='Cliente' property='name'/>"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th">Contato</td> 
+            <td><input id="tbl_visitaContato" value="<ccs:control name='Contato'/>" maxlength="10" size="10" name="<ccs:control name='Contato' property='name'/>"></td>
+          </tr>
+ 
+          <tr class="Controls">
             <td class="th"><label for="tbl_visitaData">Data</label></td> 
-            <td><input id="tbl_visitaData" maxlength="100" size="10" value="<ccs:control name='Data'/>" name="<ccs:control name='Data' property='name'/>">
-              <ccs:datepicker name='DatePicker_Data'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_visitaDatePicker_Data"><img id="tbl_visitaDatePicker_Data_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a></ccs:datepicker></td>
+            <td><input id="tbl_visitaData" value="<ccs:control name='Data'/>" maxlength="100" size="10" name="<ccs:control name='Data' property='name'/>">
+              <ccs:datepicker name='DatePicker_Data'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_visitaDatePicker_Data"><img id="tbl_visitaDatePicker_Data_Image" border="0" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif"></a></ccs:datepicker></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_visitaHora">Hora</label></td> 
-            <td><input id="tbl_visitaHora" maxlength="100" size="10" value="<ccs:control name='Hora'/>" name="<ccs:control name='Hora' property='name'/>">
-              <ccs:datepicker name='DatePicker_Hora'><a href="javascript:showDatePicker('<ccs:dpvalue property='Name'/>','<ccs:dpvalue property='FormName'/>','<ccs:dpvalue property='DateControl'/>');" id="tbl_visitaDatePicker_Hora"><img id="tbl_visitaDatePicker_Hora_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a></ccs:datepicker></td>
+            <td><input id="tbl_visitaHora" value="<ccs:control name='Hora'/>" maxlength="100" size="10" name="<ccs:control name='Hora' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_visitaCod_Imovel">Imovel</label></td> 
-            <td><input id="tbl_visitaCod_Imovel" maxlength="10" size="10" value="<ccs:control name='Cod_Imovel'/>" name="<ccs:control name='Cod_Imovel' property='name'/>"></td>
+            <td><input id="tbl_visitaCod_Imovel" value="<ccs:control name='Cod_Imovel'/>" maxlength="10" size="10" name="<ccs:control name='Cod_Imovel' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_visitaCod_Funcionario">Funcionario</label></td> 
-            <td><input id="tbl_visitaCod_Funcionario" maxlength="10" size="10" value="<ccs:control name='Cod_Funcionario'/>" name="<ccs:control name='Cod_Funcionario' property='name'/>"></td>
+            <td><input id="tbl_visitaCod_Funcionario" value="<ccs:control name='Cod_Funcionario'/>" maxlength="10" size="10" name="<ccs:control name='Cod_Funcionario' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td align="right" colspan="2">
-              <ccs:button name='Button_Insert'><input class="Button" id="tbl_visitaButton_Insert" type="submit" alt="Add" value="Adicionar" name="<ccs:control name='Button_Insert' property='name'/>"></ccs:button>
-              <ccs:button name='Button_Update'><input class="Button" id="tbl_visitaButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="<ccs:control name='Button_Update' property='name'/>"></ccs:button>
-              <ccs:button name='Button_Delete'><input class="Button" id="tbl_visitaButton_Delete" type="submit" alt="Delete" value="Remover" name="<ccs:control name='Button_Delete' property='name'/>"></ccs:button></td>
+            <td colspan="2" align="right">
+              <ccs:button name='Button_Insert'><input id="tbl_visitaButton_Insert" class="Button" value="Adicionar" alt="Add" type="submit" name="<ccs:control name='Button_Insert' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Update'><input id="tbl_visitaButton_Update" class="Button" value="Atualizar" alt="Atualizar" type="submit" name="<ccs:control name='Button_Update' property='name'/>"></ccs:button>
+              <ccs:button name='Button_Delete'><input id="tbl_visitaButton_Delete" class="Button" value="Remover" alt="Delete" type="submit" name="<ccs:control name='Button_Delete' property='name'/>"></ccs:button></td>
           </tr>
         </table>
       </td>

@@ -14,19 +14,13 @@
 <script language="JavaScript" type="text/javascript">
 //End Include Common JSFunctions
 
-//Date Picker Object Definitions @1-B29C9375
+//Date Picker Object Definitions @1-AE21A20C
 
 var tbl_visita_DatePicker_Data = new Object(); 
 tbl_visita_DatePicker_Data.format           = "ShortDate";
 tbl_visita_DatePicker_Data.style            = "Styles/Padrao/Style.css";
 tbl_visita_DatePicker_Data.relativePathPart = "";
 tbl_visita_DatePicker_Data.themeVersion = "3.0";
-
-var tbl_visita_DatePicker_Hora = new Object(); 
-tbl_visita_DatePicker_Hora.format           = "ShortDate";
-tbl_visita_DatePicker_Hora.style            = "Styles/Padrao/Style.css";
-tbl_visita_DatePicker_Hora.relativePathPart = "";
-tbl_visita_DatePicker_Hora.themeVersion = "3.0";
 
 //End Date Picker Object Definitions
 
@@ -53,15 +47,15 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 <body>
 {Header} 
 <!-- BEGIN Record tbl_visita -->
-<form id="tbl_visita" name="{HTMLFormName}" action="{Action}" method="post">
-  <table cellspacing="0" cellpadding="0" border="0">
+<form id="tbl_visita" method="post" name="{HTMLFormName}" action="{Action}">
+  <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td valign="top">
-        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <table class="Header" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Adicionar/Editar Visita </strong></td> 
-            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
         </table>
  
@@ -72,32 +66,41 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           </tr>
           <!-- END Error -->
           <tr class="Controls">
+            <td class="th"><label for="tbl_visitaCod_Funcionario">Cliente</label></td> 
+            <td><input id="tbl_visitaCliente" value="{Cliente}" maxlength="10" size="10" name="{Cliente_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th">Contato</td> 
+            <td><input id="tbl_visitaContato" value="{Contato}" maxlength="10" size="10" name="{Contato_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
             <td class="th"><label for="tbl_visitaData">Data</label></td> 
-            <td><input id="tbl_visitaData" maxlength="100" size="10" value="{Data}" name="{Data_Name}">
-              <!-- BEGIN DatePicker DatePicker_Data --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_visitaDatePicker_Data"><img id="tbl_visitaDatePicker_Data_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_Data --></td>
+            <td><input id="tbl_visitaData" value="{Data}" maxlength="100" size="10" name="{Data_Name}">
+              <!-- BEGIN DatePicker DatePicker_Data --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_visitaDatePicker_Data"><img id="tbl_visitaDatePicker_Data_Image" border="0" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif"></a><!-- END DatePicker DatePicker_Data --></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_visitaHora">Hora</label></td> 
-            <td><input id="tbl_visitaHora" maxlength="100" size="10" value="{Hora}" name="{Hora_Name}">
-              <!-- BEGIN DatePicker DatePicker_Hora --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_visitaDatePicker_Hora"><img id="tbl_visitaDatePicker_Hora_Image" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif" border="0"></a><!-- END DatePicker DatePicker_Hora --></td>
+            <td><input id="tbl_visitaHora" value="{Hora}" maxlength="100" size="10" name="{Hora_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_visitaCod_Imovel">Imovel</label></td> 
-            <td><input id="tbl_visitaCod_Imovel" maxlength="10" size="10" value="{Cod_Imovel}" name="{Cod_Imovel_Name}"></td>
+            <td><input id="tbl_visitaCod_Imovel" value="{Cod_Imovel}" maxlength="10" size="10" name="{Cod_Imovel_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_visitaCod_Funcionario">Funcionario</label></td> 
-            <td><input id="tbl_visitaCod_Funcionario" maxlength="10" size="10" value="{Cod_Funcionario}" name="{Cod_Funcionario_Name}"></td>
+            <td><input id="tbl_visitaCod_Funcionario" value="{Cod_Funcionario}" maxlength="10" size="10" name="{Cod_Funcionario_Name}"></td>
           </tr>
  
           <tr class="Bottom">
-            <td align="right" colspan="2">
-              <!-- BEGIN Button Button_Insert --><input class="Button" id="tbl_visitaButton_Insert" type="submit" alt="Add" value="Adicionar" name="{Button_Name}"><!-- END Button Button_Insert -->
-              <!-- BEGIN Button Button_Update --><input class="Button" id="tbl_visitaButton_Update" type="submit" alt="Atualizar" value="Atualizar" name="{Button_Name}"><!-- END Button Button_Update -->
-              <!-- BEGIN Button Button_Delete --><input class="Button" id="tbl_visitaButton_Delete" type="submit" alt="Delete" value="Remover" name="{Button_Name}"><!-- END Button Button_Delete --></td>
+            <td colspan="2" align="right">
+              <!-- BEGIN Button Button_Insert --><input id="tbl_visitaButton_Insert" class="Button" value="Adicionar" alt="Add" type="submit" name="{Button_Name}"><!-- END Button Button_Insert -->
+              <!-- BEGIN Button Button_Update --><input id="tbl_visitaButton_Update" class="Button" value="Atualizar" alt="Atualizar" type="submit" name="{Button_Name}"><!-- END Button Button_Update -->
+              <!-- BEGIN Button Button_Delete --><input id="tbl_visitaButton_Delete" class="Button" value="Remover" alt="Delete" type="submit" name="{Button_Name}"><!-- END Button Button_Delete --></td>
           </tr>
         </table>
       </td>

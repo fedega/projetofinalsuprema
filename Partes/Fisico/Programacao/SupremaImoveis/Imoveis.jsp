@@ -20,7 +20,7 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-5FAED2B5--%>
+<%--JSP Page Content @1-7A587D5B--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -49,9 +49,9 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </head>
 <body>
 <p>&nbsp;<jsp:include page="/Header.jsp" flush="true"/></p>
-<p>&nbsp;&nbsp; 
+<p>&nbsp;&nbsp;&nbsp; 
 <ccs:flash_chart name='FlashChart1'>
-<object title="<ccs:flash_chart_property name="Title" />" tabindex="1" accesskey="q" height="<ccs:flash_chart_property name="Height" />" width="<ccs:flash_chart_property name="Width" />" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="<ccs:flash_chart_property name="Width" />" height="<ccs:flash_chart_property name="Height" />" accesskey="q" tabindex="1" title="<ccs:flash_chart_property name="Title" />">
   <param name="movie" value="<ccs:flash_chart_property name="Src" />" />
   <param name="quality" value="high" />
   <param name="wmode" value="transparent" />

@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0" pasteActions="pasteActions">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_imovel" dataSource="tbl_imovel" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Imovel " wizardFormMethod="post" returnPage="tbl_imovel_list.ccp" PathID="tbl_imovel">
 			<Components>
@@ -146,7 +146,12 @@
 			<Attributes/>
 			<Features/>
 		</Record>
-	</Components>
+		<IncludePage id="25" name="Header" PathID="Header" page="Header.ccp">
+			<Components/>
+			<Events/>
+			<Features/>
+		</IncludePage>
+</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ManterImovel.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
 		<CodeFile id="JSP" language="JSP" name="ManterImovel.jsp" path="." forShow="True" url="ManterImovel.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>

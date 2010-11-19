@@ -20,14 +20,14 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-D89C8AE3--%>
+<%--JSP Page Content @1-9C894046--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <ccs:meta header="Content-Type"/>
 <title>Documentacao</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css"><script language="JavaScript" type="text/javascript">
+<script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-CE0F0269
 </script>
@@ -46,19 +46,20 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 
 //End CCS script
 </script>
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 </head>
 <body>
 <jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_documentacaoSearch'>
-<form id="tbl_documentacaoSearch" name="<ccs:form_name/>" action="<ccs:form_action/>" method="post">
-  <table cellspacing="0" cellpadding="0" border="0">
+<form id="tbl_documentacaoSearch" method="post" name="<ccs:form_name/>" action="<ccs:form_action/>">
+  <table border="0" cellspacing="0" cellpadding="0">
     <tr>
       <td valign="top">
-        <table class="Header" cellspacing="0" cellpadding="0" border="0">
+        <table class="Header" border="0" cellspacing="0" cellpadding="0">
           <tr>
-            <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+            <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Buscar Documentacao </strong></td> 
-            <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
         </table>
  
@@ -70,12 +71,12 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           </ccs:error_block>
           <tr class="Controls">
             <td class="th"><label for="tbl_documentacaoSearchs_Anexo">Anexo</label></td> 
-            <td><input type="text" name="<ccs:control name='s_Anexo' property='name'/>" value="<ccs:control name='s_Anexo'/>" size="50" id="tbl_documentacaoSearchs_Anexo"></td>
+            <td><input id="tbl_documentacaoSearchs_Anexo" value="<ccs:control name='s_Anexo'/>" size="50" name="<ccs:control name='s_Anexo' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
-            <td align="right" colspan="2">
-              <ccs:button name='Button_DoSearch'><input class="Button" id="tbl_documentacaoSearchButton_DoSearch" type="submit" alt="Buscar" value="Buscar" name="<ccs:control name='Button_DoSearch' property='name'/>"></ccs:button></td>
+            <td colspan="2" align="right">
+              <ccs:button name='Button_DoSearch'><input id="tbl_documentacaoSearchButton_DoSearch" class="Button" value="Buscar" alt="Buscar" type="submit" name="<ccs:control name='Button_DoSearch' property='name'/>"></ccs:button></td>
           </tr>
         </table>
       </td>
@@ -84,14 +85,14 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </form>
 </ccs:record><br>
 <ccs:grid name='tbl_documentacao'>
-<table cellspacing="0" cellpadding="0" border="0">
+<table border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td valign="top">
-      <table class="Header" cellspacing="0" cellpadding="0" border="0">
+      <table class="Header" border="0" cellspacing="0" cellpadding="0">
         <tr>
-          <td class="HeaderLeft"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td> 
+          <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
           <td class="th"><strong>Lista de&nbsp;Documentacao</strong></td> 
-          <td class="HeaderRight"><img alt="" src="Styles/Padrao/Images/Spacer.gif" border="0"></td>
+          <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
         </tr>
       </table>
  
@@ -99,23 +100,25 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
         <tr class="Caption">
           <th scope="col">
           <ccs:sorter name='Sorter_Cod_Doc' column='Cod_Doc'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Cod_Doc">N° do Documento</a> 
-          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
-          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+          <ccs:asc_on><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"></ccs:asc_on>
+          <ccs:desc_on><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
           <ccs:sorter name='Sorter_Tipo_Doc' column='Tipo_Doc'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Tipo_Doc">Tipo do Documento</a> 
-          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
-          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+          <ccs:asc_on><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"></ccs:asc_on>
+          <ccs:desc_on><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"></ccs:desc_on></ccs:sorter></th>
  
           <th scope="col">
           <ccs:sorter name='Sorter_Cod_Cliente' column='Cod_Cliente'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Cod_Cliente">Cliente</a> 
-          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
-          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+          <ccs:asc_on><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"></ccs:asc_on>
+          <ccs:desc_on><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"></ccs:desc_on></ccs:sorter></th>
+ 
+          <th scope="col">&nbsp;</th>
  
           <th scope="col">
           <ccs:sorter name='Sorter_Cod_Fiador' column='Cod_Fiador'><a href="<ccs:sorter_href/>" id="tbl_documentacaoSorter_Cod_Fiador">Fiador</a> 
-          <ccs:asc_on><img alt="Ascending" src="Styles/Padrao/Images/Asc.gif" border="0"></ccs:asc_on>
-          <ccs:desc_on><img alt="Descending" src="Styles/Padrao/Images/Desc.gif" border="0"></ccs:desc_on></ccs:sorter></th>
+          <ccs:asc_on><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"></ccs:asc_on>
+          <ccs:desc_on><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"></ccs:desc_on></ccs:sorter></th>
         </tr>
  
         <ccs:repeater><ccs:row>
@@ -123,16 +126,17 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <td style="TEXT-ALIGN: right"><a href="<ccs:control name='Cod_Doc' property='href'/>" id="tbl_documentacaoCod_Doc_<ccs:attribute owner = 'tbl_documentacao' name = 'rowNumber' />"><ccs:control name='Cod_Doc'/></a>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Tipo_Doc'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Cliente'/>&nbsp;</td> 
+          <td style="TEXT-ALIGN: right">&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Cod_Fiador'/>&nbsp;</td>
         </tr>
  </ccs:row></ccs:repeater>
         <ccs:norecords>
         <tr class="NoRecords">
-          <td colspan="4">Sem registros</td>
+          <td colspan="5">Sem registros</td>
         </tr>
         </ccs:norecords>
         <tr class="Footer">
-          <td colspan="4"><a href="<ccs:control name='tbl_documentacao_Insert' property='href'/>" id="tbl_documentacaotbl_documentacao_Insert">Novo Registro</a>&nbsp; 
+          <td colspan="5"><a href="<ccs:control name='tbl_documentacao_Insert' property='href'/>" id="tbl_documentacaotbl_documentacao_Insert">Novo Registro</a>&nbsp; 
             <ccs:navigator name='Navigator' type='Simple' size='10'>
             <ccs:first_on><a href="<ccs:page_href/>">|&lt;</a> </ccs:first_on>
             <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt;</a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
@@ -144,7 +148,7 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
   </tr>
 </table>
 </ccs:grid><br>
-<jsp:include page="/Footer.jsp" flush="true"/> 
+<jsp:include page="/Footer.jsp" flush="true"/> <br>
 </body>
 </html>
 <%--End JSP Page Content--%>

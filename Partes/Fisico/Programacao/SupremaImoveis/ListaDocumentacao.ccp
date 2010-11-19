@@ -2,13 +2,13 @@
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="tbl_documentacaoSearch" returnPage="ListaDocumentacao.ccp" wizardCaption="Buscar Tbl Documentacao " wizardOrientation="Vertical" wizardFormMethod="post" PathID="tbl_documentacaoSearch">
 			<Components>
-				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoSearch" operation="Search" wizardCaption="Buscar" PathID="tbl_documentacaoSearchButton_DoSearch" parentName="tbl_documentacaoSearch">
+				<Button id="3" urlType="Relative" enableValidation="True" isDefault="False" name="Button_DoSearch" operation="Search" wizardCaption="Buscar" PathID="tbl_documentacaoSearchButton_DoSearch">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Button>
-				<TextBox id="4" visible="Yes" fieldSourceType="DBColumn" dataType="Memo" name="s_Anexo" wizardCaption="Anexo" wizardSize="50" wizardIsPassword="False" PathID="tbl_documentacaoSearchs_Anexo" parentName="tbl_documentacaoSearch">
+				<TextBox id="4" visible="Yes" fieldSourceType="DBColumn" dataType="Memo" name="s_Anexo" wizardCaption="Anexo" wizardSize="50" wizardIsPassword="False" PathID="tbl_documentacaoSearchs_Anexo">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -39,7 +39,7 @@
 		</Record>
 		<Grid id="6" secured="False" sourceType="Table" returnValueType="Number" defaultPageSize="20" name="tbl_documentacao" connection="Conexao" pageSizeLimit="100" wizardCaption="List of Tbl Documentacao " wizardGridType="Tabular" wizardAllowSorting="True" wizardSortingType="SimpleDir" wizardUsePageScroller="True" wizardAllowInsert="True" wizardAltRecord="False" wizardRecordSeparator="False" wizardAltRecordType="Controls" dataSource="tbl_documentacao">
 			<Components>
-				<Link id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Text" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="tbl_documentacao_Insert" hrefSource="ManterDocumentacao.ccp" removeParameters="Cod_Doc" wizardThemeItem="NavigatorLink" wizardDefaultValue="Add New" PathID="tbl_documentacaotbl_documentacao_Insert" parentName="tbl_documentacao">
+				<Link id="8" visible="Yes" fieldSourceType="DBColumn" dataType="Text" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="tbl_documentacao_Insert" hrefSource="ManterDocumentacao.ccp" removeParameters="Cod_Doc" wizardThemeItem="NavigatorLink" wizardDefaultValue="Add New" PathID="tbl_documentacaotbl_documentacao_Insert">
 					<Components/>
 					<Events/>
 					<LinkParameters/>
@@ -70,7 +70,7 @@
 					<Attributes/>
 					<Features/>
 				</Sorter>
-				<Link id="15" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="Cod_Doc" fieldSource="Cod_Doc" wizardCaption="Cod Doc" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" hrefSource="ManterDocumentacao.ccp" PathID="tbl_documentacaoCod_Doc" rowNumber="1" parentName="tbl_documentacao">
+				<Link id="15" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" html="False" hrefType="Page" urlType="Relative" preserveParameters="GET" name="Cod_Doc" fieldSource="Cod_Doc" wizardCaption="Cod Doc" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" hrefSource="ManterDocumentacao.ccp" PathID="tbl_documentacaoCod_Doc">
 					<Components/>
 					<Events/>
 					<LinkParameters>
@@ -79,19 +79,19 @@
 					<Attributes/>
 					<Features/>
 				</Link>
-				<Label id="18" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Tipo_Doc" fieldSource="Tipo_Doc" wizardCaption="Tipo Doc" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_documentacaoTipo_Doc" rowNumber="1" parentName="tbl_documentacao">
+				<Label id="18" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Tipo_Doc" fieldSource="Tipo_Doc" wizardCaption="Tipo Doc" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_documentacaoTipo_Doc">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="20" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Cliente" fieldSource="Cod_Cliente" wizardCaption="Cod Cliente" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_documentacaoCod_Cliente" rowNumber="1" parentName="tbl_documentacao">
+				<Label id="20" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Cliente" fieldSource="Cod_Cliente" wizardCaption="Cod Cliente" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_documentacaoCod_Cliente">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</Label>
-				<Label id="22" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Fiador" fieldSource="Cod_Fiador" wizardCaption="Cod Fiador" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_documentacaoCod_Fiador" rowNumber="1" parentName="tbl_documentacao">
+				<Label id="22" fieldSourceType="DBColumn" dataType="Integer" html="False" name="Cod_Fiador" fieldSource="Cod_Fiador" wizardCaption="Cod Fiador" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" wizardAddNbsp="True" wizardAlign="right" PathID="tbl_documentacaoCod_Fiador">
 					<Components/>
 					<Events/>
 					<Attributes/>
@@ -130,12 +130,12 @@
 			<Attributes/>
 			<Features/>
 		</Grid>
-		<IncludePage id="26" name="Header" PathID="Header" page="Header.ccp" parentType="Page">
+		<IncludePage id="26" name="Header" PathID="Header" page="Header.ccp">
 			<Components/>
 			<Events/>
 			<Features/>
 		</IncludePage>
-		<IncludePage id="27" name="Footer" PathID="Footer" page="Footer.ccp" parentType="Page">
+		<IncludePage id="27" name="Footer" PathID="Footer" page="Footer.ccp">
 			<Components/>
 			<Events/>
 			<Features/>

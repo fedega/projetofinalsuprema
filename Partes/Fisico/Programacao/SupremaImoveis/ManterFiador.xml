@@ -10,11 +10,11 @@
     <Include name="Footer"/>
 <!--End Page componets-->
 
-<!--Record tbl_fiador model @2-C66E0A27-->
+<!--Record tbl_fiador model @2-E8A305CE-->
     <Record name="tbl_fiador" connection="Conexao" restricted="False" returnPage="tbl_fiador_list.jsp" convertRule="Relative" preserveParams="GET" 
             allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
         <Button name="Button_Insert" operation="Insert"
-                returnPage="" convertRule="Relative"
+                returnPage="ListaFiador.jsp" convertRule="Relative"
                 defaultButton="False" doValidate="True" order="1">
         </Button>
         <Button name="Button_Update" operation="Update"
