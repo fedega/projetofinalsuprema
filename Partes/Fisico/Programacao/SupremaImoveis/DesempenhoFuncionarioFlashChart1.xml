@@ -1,0 +1,33 @@
+<!--Flash Chart XML template @3-D9B6BC4F-->
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<schema name="Autumn">
+		<mask/>
+		<colors/>
+	</schema>
+	<separator decimal="," group=""/>
+	<background border="yes"/>
+	<chartarea border="yes">
+		<grid line_style="medium" visible="yes"/>
+		<vertical_axis visible="yes"/>
+		<horizontal_axis visible="yes" rotation="degrees" autoRotate="yes"/>
+		<chart line_thick="2" enabled="yes" type="round_columns_horizontal" series="columns">
+			<inscriptions visible="yes"/>
+			<animation type="none"/>
+			<markers size="8" type="0"/>
+			<hints border="yes" enabled="yes"/>
+		</chart>
+		<legend sqr_size="12" sqr_borders="yes" border_thick="0" position="left-center" layout="vertical" visible="yes"/>
+		<title position="top" align="center" border="no" alpha="100" visible="yes" text="Desempenho De Funcionarios"/>
+	</chartarea>
+	<objects>
+	</objects>
+	<data>
+		<columns>
+			<column field="Alugados" name="Alugados"/><column field="Vendidos" name="Vendidos"/></columns>
+		<rows><!-- BEGIN Row --><row col1="{Alugados}" col2="{Vendidos}" name="{Nome}"/><!-- END Row --></rows></data>
+</root>
+
+
+<!--End Flash Chart XML template-->
+

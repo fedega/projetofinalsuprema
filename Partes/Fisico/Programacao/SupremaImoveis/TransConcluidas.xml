@@ -1,0 +1,22 @@
+<!--Page model head @1-58E85020-->
+<Page name="TransConcluidas" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-14CCCE70-->
+    <Include name="Header"/>
+<!--End Page componets-->
+
+<!--FlashChart FlashChart1 model @3-4CD4A1B1-->
+    <FlashChart name="FlashChart1" restricted="False" title="Vendas" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart1" >
+    </FlashChart>
+<!--End FlashChart FlashChart1 model-->
+
+<!--FlashChart FlashChart2 model @31-B23C6899-->
+    <FlashChart name="FlashChart2" restricted="False" title="Alugueis" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart2" >
+    </FlashChart>
+<!--End FlashChart FlashChart2 model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

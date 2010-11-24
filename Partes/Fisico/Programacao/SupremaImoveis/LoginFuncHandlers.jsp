@@ -1,4 +1,4 @@
-<%--== Handlers ==--%> <%--Login Opening Initialization directive @1-A0E75F14--%><%!
+<%--== Handlers ==--%> <%--LoginFunc Opening Initialization directive @1-A0E75F14--%><%!
 
 // //Workaround for JRun 3.1 @1-F81417CB
 
@@ -6,8 +6,8 @@
 %><%@page contentType="text/html; charset=windows-1252"%><%!
 //End content type (workaround for Tomcat 6)
 
-//Feature checker Head @1-635D0B5C
-    public class LoginServiceChecker implements com.codecharge.features.IServiceChecker {
+//Feature checker Head @1-3DD0775A
+    public class LoginFuncServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
 //feature binding @1-6DADF1A6
@@ -28,27 +28,6 @@
 //Button_DoLogin OnClick Method Head @3-A9885EEC
         public void onClick(Event e) {
 //End Button_DoLogin OnClick Method Head
-
-//Event OnClick Action Login @4-B92A5401
-{
-com.codecharge.util.Authenticator auth = com.codecharge.util.AuthenticatorFactory.getAuthenticator( e.getPage().getRequest() );
-auth.setRequest( e.getPage().getRequest() );
-auth.setResponse( e.getPage().getResponse() );
-auth.invalidate();
-if ( auth.authenticate( e.getComponent().getControl("login").getFormattedValue(), e.getComponent().getControl("password").getFormattedValue() ) ) {
-String retLink = e.getPage().getHttpGetParams().getParameter("ret_link");
-if (retLink != null) e.getPage().setRedirectString( retLink );
-if (e.getComponent().hasChild("autoLogin") && !com.codecharge.util.StringUtils.isEmpty(e.getComponent().getControl("autoLogin").getFormattedValue() ) ) {
-com.codecharge.util.Utils.setAutoLoginCookies( e.getPage(), e.getComponent().getControl("login").getFormattedValue(), e.getComponent().getControl("password").getFormattedValue() );
-}
-} else {
-com.codecharge.util.Utils.clearAutoLoginCookies(e.getPage());
-e.getParent().addError(e.getPage().getResourceString("CCS_LoginError"));
-e.getPage().setRedirectString( null );
-e.getComponent().getControl("password").setFormattedValue("");
-}
-}
-//End Event OnClick Action Login
 
 //Button_DoLogin OnClick Method Tail @3-FCB6E20C
         }
@@ -132,27 +111,27 @@ e.getComponent().getControl("password").setFormattedValue("");
 %> <%
 //End Comment workaround
 
-//Processing @1-1B3E25F0
-    Page LoginModel = (Page)request.getAttribute("Login_page");
-    Page LoginParent = (Page)request.getAttribute("LoginParent");
-    if (LoginModel == null) {
-        PageController LoginCntr = new PageController(request, response, application, "/Login.xml" );
-        LoginModel = LoginCntr.getPage();
-        LoginModel.setRelativePath("./");
-        //if (LoginParent != null) {
-            //if (!LoginParent.getChild(LoginModel.getName()).isVisible()) return;
+//Processing @1-1A498EE5
+    Page LoginFuncModel = (Page)request.getAttribute("LoginFunc_page");
+    Page LoginFuncParent = (Page)request.getAttribute("LoginFuncParent");
+    if (LoginFuncModel == null) {
+        PageController LoginFuncCntr = new PageController(request, response, application, "/LoginFunc.xml" );
+        LoginFuncModel = LoginFuncCntr.getPage();
+        LoginFuncModel.setRelativePath("./");
+        //if (LoginFuncParent != null) {
+            //if (!LoginFuncParent.getChild(LoginFuncModel.getName()).isVisible()) return;
         //}
-        ((Button)((Record)LoginModel.getChild("Login")).getChild("Button_DoLogin")).addButtonListener(new LoginButton_DoLoginButtonHandler());
-        ((TextBox)((Record)LoginModel.getChild("Login")).getChild("login")).addValidationListener(new LoginloginTextBoxHandler());
-        ((TextBox)((Record)LoginModel.getChild("Login")).getChild("password")).addValidationListener(new LoginpasswordTextBoxHandler());
-        LoginCntr.process();
+        ((Button)((Record)LoginFuncModel.getChild("Login")).getChild("Button_DoLogin")).addButtonListener(new LoginButton_DoLoginButtonHandler());
+        ((TextBox)((Record)LoginFuncModel.getChild("Login")).getChild("login")).addValidationListener(new LoginloginTextBoxHandler());
+        ((TextBox)((Record)LoginFuncModel.getChild("Login")).getChild("password")).addValidationListener(new LoginpasswordTextBoxHandler());
+        LoginFuncCntr.process();
 %>
 <%
-        if (LoginParent == null) {
-            LoginModel.setCookies();
-            if (LoginModel.redirect()) return;
+        if (LoginFuncParent == null) {
+            LoginFuncModel.setCookies();
+            if (LoginFuncModel.redirect()) return;
         } else {
-            LoginModel.redirect();
+            LoginFuncModel.redirect();
         }
     }
 //End Processing

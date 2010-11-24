@@ -20,12 +20,12 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-E3FEF167--%>
+<%--JSP Page Content @1-79638CD1--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <ccs:meta header="Content-Type"/>
-<title>Tbl Imovel</title>
+<title>Manter Imovel</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
 <link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
@@ -195,6 +195,11 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelGaragem">Garagem</label></td> 
             <td><input id="tbl_imovelGaragem" value="1" type="checkbox" name="<ccs:control name='Garagem' property='name'/>" <ccs:control name='Garagem'/>></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th">&nbsp;Valor</td> 
+            <td><label for="tbl_imovelTextBox1" style="display: none;">&nbsp;</label><input style="WIDTH: 101px; HEIGHT: 26px" id="tbl_imovelTextBox1" value="<ccs:control name='TextBox1'/>" size="11" name="<ccs:control name='TextBox1' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">

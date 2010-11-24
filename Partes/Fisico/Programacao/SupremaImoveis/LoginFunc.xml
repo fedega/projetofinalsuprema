@@ -1,0 +1,36 @@
+<!--Page model head @1-418AEB7A-->
+<Page name="LoginFunc" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Record Login model @2-CD23EA22-->
+    <Record name="Login" connection="Conexao" restricted="False" returnPage="" convertRule="Relative" preserveParams="None" 
+            allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
+        <Button name="Button_DoLogin" operation=""
+                returnPage="ListaFuncionario.jsp" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <TextBox name="login" dataType="Text"
+                controlSourceType="DataSource" controlSource="Nome_U"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="password" dataType="Text"
+                controlSourceType="DataSource" controlSource="Senha_U"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Insert query="INSERT INTO  ( Nome_U, Senha_U ) VALUES ( {login}, {password} )" type="raw">
+            <SqlParameter name="login" type="Text" sourceName="login" sourceType="Control" dbFormat="" fieldSource="Nome_U" omitIfEmpty="True"/>
+            <SqlParameter name="password" type="Text" sourceName="password" sourceType="Control" dbFormat="" fieldSource="Senha_U" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE  SET Nome_U = {login}, Senha_U = {password}" type="raw">
+            <SqlParameter name="login" type="Text" sourceName="login" sourceType="Control" dbFormat="" fieldSource="Nome_U" omitIfEmpty="True"/>
+            <SqlParameter name="password" type="Text" sourceName="password" sourceType="Control" dbFormat="" fieldSource="Senha_U" omitIfEmpty="True"/>
+        </Update>
+        <Delete query="DELETE FROM " type="raw">
+        </Delete>
+    </Record>
+<!--End Record Login model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

@@ -20,14 +20,14 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-98C8C3E5--%>
+<%--JSP Page Content @1-D2C6AFF3--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <ccs:meta header="Content-Type"/>
 <title>Consultar Imovel</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css" />
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-CE0F0269
@@ -48,7 +48,7 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<p>&nbsp;<jsp:include page="/Header.jsp" flush="true"/>
+<p>&nbsp;<jsp:include page="/Header.jsp" flush="true"/> 
 <ccs:record name='tbl_imovelSearch'>
 <form id="tbl_imovelSearch" method="post" name="<ccs:form_name/>" action="<ccs:form_action/>">
   <table border="0" cellspacing="0" cellpadding="0">
@@ -58,44 +58,42 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <tr>
             <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Buscar Imóvel </strong></td> 
-            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <ccs:error_block>
           <tr class="Error">
-            <td colspan="2"><ccs:error_text/></td> 
+            <td colspan="2"><ccs:error_text/></td>
           </tr>
- </ccs:error_block>
+          </ccs:error_block>
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelSearchs_Endereco">Endereco</label></td> 
-            <td><input id="tbl_imovelSearchs_Endereco" value="<ccs:control name='s_Endereco'/>" maxlength="40" size="40" name="<ccs:control name='s_Endereco' property='name'/>"></td> 
+            <td><input id="tbl_imovelSearchs_Endereco" value="<ccs:control name='s_Endereco'/>" maxlength="40" size="40" name="<ccs:control name='s_Endereco' property='name'/>"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelSearchs_Bairro">Bairro</label></td> 
-            <td><input id="tbl_imovelSearchs_Bairro" value="<ccs:control name='s_Bairro'/>" maxlength="20" name="<ccs:control name='s_Bairro' property='name'/>" size="20"></td> 
+            <td><input id="tbl_imovelSearchs_Bairro" value="<ccs:control name='s_Bairro'/>" maxlength="20" name="<ccs:control name='s_Bairro' property='name'/>" size="20"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelSearchs_Cod_Cliente">Cliente</label></td> 
-            <td><input id="tbl_imovelSearchs_Cod_Cliente" value="<ccs:control name='s_Cod_Cliente'/>" maxlength="10" size="10" name="<ccs:control name='s_Cod_Cliente' property='name'/>"></td> 
+            <td><input id="tbl_imovelSearchs_Cod_Cliente" value="<ccs:control name='s_Cod_Cliente'/>" maxlength="10" size="10" name="<ccs:control name='s_Cod_Cliente' property='name'/>"></td>
           </tr>
  
           <tr class="Bottom">
             <td colspan="2" align="right">
-              <ccs:button name='Button_DoSearch'><input id="tbl_imovelSearchButton_DoSearch" class="Button" value="Buscar" alt="Buscar" type="submit" name="<ccs:control name='Button_DoSearch' property='name'/>"></ccs:button></td> 
+              <ccs:button name='Button_DoSearch'><input id="tbl_imovelSearchButton_DoSearch" class="Button" value="Buscar" alt="Buscar" type="submit" name="<ccs:control name='Button_DoSearch' property='name'/>"></ccs:button></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 </ccs:record></p>
+<p>&nbsp;</p>
 <ccs:grid name='tbl_imovel'>
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -104,9 +102,8 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
         <tr>
           <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
           <td class="th"><strong>Lista de&nbsp;Imóveis</strong></td> 
-          <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
+          <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
         </tr>
- 
       </table>
  
       <table class="Grid" cellspacing="0" cellpadding="0">
@@ -205,7 +202,6 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <ccs:sorter name='Sorter_Data' column='Data'><a href="<ccs:sorter_href/>" id="tbl_imovelSorter_Data">Data</a> 
           <ccs:asc_on><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"></ccs:asc_on>
           <ccs:desc_on><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"></ccs:desc_on></ccs:sorter></th>
- 
         </tr>
  
         <ccs:repeater><ccs:row>
@@ -228,25 +224,24 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <td><ccs:control name='Dep_Empregada'/>&nbsp;</td> 
           <td><ccs:control name='Garagem'/>&nbsp;</td> 
           <td style="TEXT-ALIGN: right"><ccs:control name='Mts_Quadrados'/>&nbsp;</td> 
-          <td><ccs:control name='Data'/>&nbsp;</td> 
+          <td><ccs:control name='Data'/>&nbsp;</td>
         </tr>
  </ccs:row></ccs:repeater>
         <ccs:norecords>
         <tr class="NoRecords">
-          <td colspan="19">Sem registros</td> 
+          <td colspan="19">Sem registros</td>
         </tr>
- </ccs:norecords>
+        </ccs:norecords>
         <tr class="Footer">
           <td colspan="19"><a href="<ccs:control name='tbl_imovel_Insert' property='href'/>" id="tbl_imoveltbl_imovel_Insert">Novo Registro</a>&nbsp; 
             <ccs:navigator name='Navigator' type='Simple' size='10'>
             <ccs:first_on><a href="<ccs:page_href/>">|&lt;</a> </ccs:first_on>
             <ccs:prev_on><a href="<ccs:page_href/>">&lt;&lt;</a> </ccs:prev_on>&nbsp;<ccs:page_number/> de&nbsp;<ccs:total_pages/>&nbsp; 
             <ccs:next_on><a href="<ccs:page_href/>">&gt;&gt;</a> </ccs:next_on>
-            <ccs:last_on><a href="<ccs:page_href/>">&gt;|</a> </ccs:last_on></ccs:navigator>&nbsp;</td> 
+            <ccs:last_on><a href="<ccs:page_href/>">&gt;|</a> </ccs:last_on></ccs:navigator>&nbsp;</td>
         </tr>
- 
       </table>
- </td> 
+    </td>
   </tr>
 </table>
 </ccs:grid><br>

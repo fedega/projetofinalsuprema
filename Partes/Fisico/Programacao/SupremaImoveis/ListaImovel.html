@@ -4,7 +4,7 @@
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 <title>Consultar Imovel</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css" />
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
 //Include Common JSFunctions @1-F3587A4D
@@ -25,7 +25,7 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<p>&nbsp;{Header}
+<p>&nbsp;{Header} 
 <!-- BEGIN Record tbl_imovelSearch -->
 <form id="tbl_imovelSearch" method="post" name="{HTMLFormName}" action="{Action}">
   <table border="0" cellspacing="0" cellpadding="0">
@@ -35,44 +35,42 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <tr>
             <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Buscar Imóvel </strong></td> 
-            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <!-- BEGIN Error -->
           <tr class="Error">
-            <td colspan="2">{Error}</td> 
+            <td colspan="2">{Error}</td>
           </tr>
- <!-- END Error -->
+          <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelSearchs_Endereco">Endereco</label></td> 
-            <td><input id="tbl_imovelSearchs_Endereco" value="{s_Endereco}" maxlength="40" size="40" name="{s_Endereco_Name}"></td> 
+            <td><input id="tbl_imovelSearchs_Endereco" value="{s_Endereco}" maxlength="40" size="40" name="{s_Endereco_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelSearchs_Bairro">Bairro</label></td> 
-            <td><input id="tbl_imovelSearchs_Bairro" value="{s_Bairro}" maxlength="20" name="{s_Bairro_Name}" size="20"></td> 
+            <td><input id="tbl_imovelSearchs_Bairro" value="{s_Bairro}" maxlength="20" name="{s_Bairro_Name}" size="20"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelSearchs_Cod_Cliente">Cliente</label></td> 
-            <td><input id="tbl_imovelSearchs_Cod_Cliente" value="{s_Cod_Cliente}" maxlength="10" size="10" name="{s_Cod_Cliente_Name}"></td> 
+            <td><input id="tbl_imovelSearchs_Cod_Cliente" value="{s_Cod_Cliente}" maxlength="10" size="10" name="{s_Cod_Cliente_Name}"></td>
           </tr>
  
           <tr class="Bottom">
             <td colspan="2" align="right">
-              <!-- BEGIN Button Button_DoSearch --><input id="tbl_imovelSearchButton_DoSearch" class="Button" value="Buscar" alt="Buscar" type="submit" name="{Button_Name}"><!-- END Button Button_DoSearch --></td> 
+              <!-- BEGIN Button Button_DoSearch --><input id="tbl_imovelSearchButton_DoSearch" class="Button" value="Buscar" alt="Buscar" type="submit" name="{Button_Name}"><!-- END Button Button_DoSearch --></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 <!-- END Record tbl_imovelSearch --></p>
+<p>&nbsp;</p>
 <!-- BEGIN Grid tbl_imovel -->
 <table border="0" cellspacing="0" cellpadding="0">
   <tr>
@@ -81,9 +79,8 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
         <tr>
           <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
           <td class="th"><strong>Lista de&nbsp;Imóveis</strong></td> 
-          <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
+          <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
         </tr>
- 
       </table>
  
       <table class="Grid" cellspacing="0" cellpadding="0">
@@ -182,7 +179,6 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <!-- BEGIN Sorter Sorter_Data --><a href="{Sort_URL}" id="tbl_imovelSorter_Data">Data</a> 
           <!-- BEGIN Asc_On --><img border="0" alt="Ascending" src="Styles/Padrao/Images/Asc.gif"><!-- END Asc_On -->
           <!-- BEGIN Desc_On --><img border="0" alt="Descending" src="Styles/Padrao/Images/Desc.gif"><!-- END Desc_On --><!-- END Sorter Sorter_Data --></th>
- 
         </tr>
  
         <!-- BEGIN Row -->
@@ -205,25 +201,24 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <td>{Dep_Empregada}&nbsp;</td> 
           <td>{Garagem}&nbsp;</td> 
           <td style="TEXT-ALIGN: right">{Mts_Quadrados}&nbsp;</td> 
-          <td>{Data}&nbsp;</td> 
+          <td>{Data}&nbsp;</td>
         </tr>
  <!-- END Row -->
         <!-- BEGIN NoRecords -->
         <tr class="NoRecords">
-          <td colspan="19">Sem registros</td> 
+          <td colspan="19">Sem registros</td>
         </tr>
- <!-- END NoRecords -->
+        <!-- END NoRecords -->
         <tr class="Footer">
           <td colspan="19"><a href="{tbl_imovel_Insert_Src}" id="tbl_imoveltbl_imovel_Insert">Novo Registro</a>&nbsp; 
             <!-- BEGIN Navigator Navigator -->
             <!-- BEGIN First_On --><a href="{First_URL}">|&lt;</a> <!-- END First_On -->
             <!-- BEGIN Prev_On --><a href="{Prev_URL}">&lt;&lt;</a> <!-- END Prev_On -->&nbsp;{Page_Number} de&nbsp;{Total_Pages}&nbsp; 
             <!-- BEGIN Next_On --><a href="{Next_URL}">&gt;&gt;</a> <!-- END Next_On -->
-            <!-- BEGIN Last_On --><a href="{Last_URL}">&gt;|</a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td> 
+            <!-- BEGIN Last_On --><a href="{Last_URL}">&gt;|</a> <!-- END Last_On --><!-- END Navigator Navigator -->&nbsp;</td>
         </tr>
- 
       </table>
- </td> 
+    </td>
   </tr>
 </table>
 <!-- END Grid tbl_imovel --><br>

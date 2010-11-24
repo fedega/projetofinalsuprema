@@ -10,7 +10,7 @@
     public class TransConcluidasServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-BF0127C6
+//feature binding @1-5AEC0D79
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
             if ((new HeaderServiceChecker()).check(request, response, context)) return true;
@@ -54,6 +54,57 @@
                             tmpl.setTag("main/Row", "@ConcluidasVendas", ""+record.get("ConcluidasVendas") );
                             tmpl.setTag("main/Row", "@EmAndamentoVendas", ""+record.get("EmAndamentoVendas") );
                             tmpl.setTag("main/Row", "@CanceladasVendas", ""+record.get("CanceladasVendas") );
+                            tmpl.render("main/Row", "main/Row", true, Template.IF_DOESNT_EXIST_IS_ERROR);
+                        }
+                    }
+                    String result = tmpl.render("main");
+                    try {
+                        response.getWriter().print(result);
+                    } catch (IOException e22) {}
+                }
+                ds.closeConnection();
+                return true;
+            }
+            if ( "FlashChart2".equals ( attr ) ) {
+                CCSTemplate tmpl = new CCSTemplate();
+                CCLogger logger = CCLogger.getInstance();
+                tmpl.setServletContext(context);
+                tmpl.setTemplateSource((ITemplateSource) context.getAttribute(Names.TEMPLATE_SOURCE_CLASS_NAME_KEY));
+                String templateParserClassName = (String) context.getAttribute(Names.TEMPLATE_PARSER_CLASS_NAME_KEY);
+                Object templateParser = null;
+                try {
+                    templateParser = Class.forName(templateParserClassName).newInstance();
+                } catch (InstantiationException e) {
+                    logger.error("",e);
+                } catch (IllegalAccessException e) {
+                    logger.error("",e);
+                } catch (ClassNotFoundException e) {
+                    logger.error("",e);
+                }
+                CCSLocale local = (CCSLocale) SessionStorage.getInstance( request ).getAttribute(Names.CCS_LOCALE_KEY);
+                tmpl.setLocale(local.getLocale());
+                tmpl.setTemplateParser((ITemplateParser) templateParser);
+                tmpl.setEncoding("UTF-8");
+                tmpl.load("/TransConcluidasFlashChart2.xml");
+                //FlashChart
+                JDBCConnection ds = JDBCConnectionFactory.getJDBCConnection( "Conexao" );
+                RawCommand command = new RawCommand( ds );
+
+                command.setSql( "SELECT *  \n"
+                            + "FROM tbl_transconcluidas {SQL_Where} {SQL_OrderBy}" );
+
+                command.setFetchSize(25);
+                Enumeration records = null;
+                if ( ! ds.hasErrors() ) {
+                    records = command.getRows();
+                    HashMap hRow = new HashMap();
+                    if (records.hasMoreElements()) {
+                        DbRow record = null;
+                        while (records.hasMoreElements()) {
+                            record = (DbRow) records.nextElement();
+                            tmpl.setTag("main/Row", "@ConcluidasAluguel", ""+record.get("ConcluidasAluguel") );
+                            tmpl.setTag("main/Row", "@EmAndamentoAluguel", ""+record.get("EmAndamentoAluguel") );
+                            tmpl.setTag("main/Row", "@CanceladasAluguel", ""+record.get("CanceladasAluguel") );
                             tmpl.render("main/Row", "main/Row", true, Template.IF_DOESNT_EXIST_IS_ERROR);
                         }
                     }
