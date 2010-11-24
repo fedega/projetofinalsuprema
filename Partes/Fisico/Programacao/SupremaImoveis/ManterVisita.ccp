@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_visita" dataSource="tbl_visita" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Visita " wizardFormMethod="post" returnPage="tbl_visita_list.ccp" PathID="tbl_visita" pasteActions="pasteActions">
 			<Components>
@@ -56,13 +56,13 @@
 					<Attributes/>
 					<Features/>
 				</TextBox>
-<TextBox id="17" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" name="Contato" fieldSource="Contato" required="False" caption="{res:Text1}" wizardCaption="Cod Funcionario" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" parentName="tbl_visita" PathID="tbl_visitaContato">
+				<TextBox id="17" visible="Yes" fieldSourceType="DBColumn" dataType="Integer" name="Contato" fieldSource="Contato" required="False" caption="{res:Text1}" wizardCaption="Cod Funcionario" wizardSize="10" wizardMaxLength="10" wizardIsPassword="False" parentName="tbl_visita" PathID="tbl_visitaContato">
 					<Components/>
 					<Events/>
 					<Attributes/>
 					<Features/>
 				</TextBox>
-</Components>
+			</Components>
 			<Events/>
 			<TableParameters>
 				<TableParameter id="6" conditionType="Parameter" useIsNull="False" field="Cod_Visita" parameterSource="Cod_Visita" dataType="Integer" logicOperator="And" searchConditionType="Equal" parameterType="URL" orderNumber="1"/>
@@ -99,9 +99,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ManterVisita.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-		<CodeFile id="JSP" language="JSP" name="ManterVisita.jsp" path="." forShow="True" url="ManterVisita.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-		<CodeFile id="Handlers" language="JSP" name="ManterVisitaHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-	</CodeFiles>
+<CodeFile id="JSP" language="JSP" name="ManterVisita.jsp" path="." forShow="True" url="ManterVisita.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+<CodeFile id="Handlers" language="JSP" name="ManterVisitaHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+</CodeFiles>
 	<SecurityGroups>
 		<Group id="13" groupID="1"/>
 	</SecurityGroups>

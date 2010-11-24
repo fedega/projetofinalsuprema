@@ -2,16 +2,27 @@
 <html>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-<title>Imovel</title>
+<title>Tbl Imovel</title>
 <meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
-<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css" />
+<link rel="stylesheet" type="text/css" href="Styles/Padrao/Style_doctype.css">
 <script language="JavaScript" type="text/javascript">
 //Begin CCS script
-//Include Common JSFunctions @1-F3587A4D
+//Include Common JSFunctions @1-3857DB21
 </script>
 <script language="JavaScript" src="ClientI18N.jsp?file=Functions.js&amp;locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
+<script language="JavaScript" src="ClientI18N.jsp?file=DatePicker.js&amp;locale={res:CCS_LocaleID}" type="text/javascript" charset="utf-8"></script>
 <script language="JavaScript" type="text/javascript">
 //End Include Common JSFunctions
+
+//Date Picker Object Definitions @1-3C20D9B0
+
+var tbl_imovel_DatePicker_Data = new Object(); 
+tbl_imovel_DatePicker_Data.format           = "ShortDate";
+tbl_imovel_DatePicker_Data.style            = "Styles/Padrao/Style.css";
+tbl_imovel_DatePicker_Data.relativePathPart = "";
+tbl_imovel_DatePicker_Data.themeVersion = "3.0";
+
+//End Date Picker Object Definitions
 
 //tbl_imovelButton_Delete_OnClick @5-1AFBB6F1
 function tbl_imovelButton_Delete_OnClick()
@@ -33,7 +44,7 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </script>
 </head>
 <body>
-<p>{Header}</p>
+{Header} 
 <!-- BEGIN Record tbl_imovel -->
 <form id="tbl_imovel" method="post" name="{HTMLFormName}" action="{Action}">
   <table border="0" cellspacing="0" cellpadding="0">
@@ -43,113 +54,146 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
           <tr>
             <td class="HeaderLeft"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
             <td class="th"><strong>Adicionar/Editar Imóvel </strong></td> 
-            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td> 
+            <td class="HeaderRight"><img border="0" alt="" src="Styles/Padrao/Images/Spacer.gif"></td>
           </tr>
- 
         </table>
  
         <table class="Record" cellspacing="0" cellpadding="0">
           <!-- BEGIN Error -->
           <tr class="Error">
-            <td colspan="2">{Error}</td> 
+            <td colspan="2">{Error}</td>
           </tr>
- <!-- END Error -->
+          <!-- END Error -->
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelCod_Cliente">Cliente</label></td> 
-            <td><input id="tbl_imovelCod_Cliente" value="{Cod_Cliente}" maxlength="10" size="10" name="{Cod_Cliente_Name}"></td> 
+            <td>
+              <select id="tbl_imovelCod_Cliente" name="{Cod_Cliente_Name}">
+                <option selected value="">Selecionar valor</option>
+                {Cod_Cliente_Options}
+              </select>
+ </td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelCod_Funcionario">Funcionario</label></td> 
-            <td><input id="tbl_imovelCod_Funcionario" value="{Cod_Funcionario}" maxlength="10" size="10" name="{Cod_Funcionario_Name}"></td> 
+            <td>
+              <select id="tbl_imovelCod_Funcionario" name="{Cod_Funcionario_Name}">
+                <option selected value="">Selecionar valor</option>
+                {Cod_Funcionario_Options}
+              </select>
+ </td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelCod_Situacao">Situacao</label></td> 
-            <td><input id="tbl_imovelCod_Situacao" value="{Cod_Situacao}" maxlength="10" size="10" name="{Cod_Situacao_Name}"></td> 
+            <td>
+              <select id="tbl_imovelCod_Situacao" name="{Cod_Situacao_Name}">
+                <option selected value="">Selecionar valor</option>
+                {Cod_Situacao_Options}
+              </select>
+ </td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_imovelCod_destinacao">Destinacao</label></td> 
-            <td><input id="tbl_imovelCod_destinacao" value="{Cod_destinacao}" maxlength="10" size="10" name="{Cod_destinacao_Name}"></td> 
+            <td class="th"><label for="tbl_imovelCod_destinacao">Destinaçao</label></td> 
+            <td>
+              <select id="tbl_imovelCod_destinacao" name="{Cod_destinacao_Name}">
+                <option selected value="">Selecionar valor</option>
+                {Cod_destinacao_Options}
+              </select>
+ </td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelEndereco">Endereco</label></td> 
-            <td><input id="tbl_imovelEndereco" value="{Endereco}" maxlength="40" size="40" name="{Endereco_Name}"></td> 
+            <td><input id="tbl_imovelEndereco" value="{Endereco}" maxlength="40" size="40" name="{Endereco_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelCEP">CEP</label></td> 
-            <td><input id="tbl_imovelCEP" value="{CEP}" maxlength="10" size="10" name="{CEP_Name}"></td> 
+            <td><input id="tbl_imovelCEP" value="{CEP}" maxlength="10" size="10" name="{CEP_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelBairro">Bairro</label></td> 
-            <td><input id="tbl_imovelBairro" value="{Bairro}" maxlength="20" name="{Bairro_Name}" size="20"></td> 
+            <td><input id="tbl_imovelBairro" value="{Bairro}" maxlength="20" name="{Bairro_Name}" size="20"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelCod_Estado">Estado</label></td> 
-            <td><input id="tbl_imovelCod_Estado" value="{Cod_Estado}" maxlength="10" size="10" name="{Cod_Estado_Name}"></td> 
+            <td>
+              <select id="tbl_imovelCod_Estado" name="{Cod_Estado_Name}">
+                <option selected value="">Selecionar valor</option>
+                {Cod_Estado_Options}
+              </select>
+ </td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelCod_Cidade">Cidade</label></td> 
-            <td><input id="tbl_imovelCod_Cidade" value="{Cod_Cidade}" maxlength="10" size="10" name="{Cod_Cidade_Name}"></td> 
+            <td>
+              <select id="tbl_imovelCod_Cidade" name="{Cod_Cidade_Name}">
+                <option selected value="">Selecionar valor</option>
+                {Cod_Cidade_Options}
+              </select>
+ </td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelN_Quartos">N° Quartos</label></td> 
-            <td><input id="tbl_imovelN_Quartos" value="{N_Quartos}" maxlength="10" size="10" name="{N_Quartos_Name}"></td> 
+            <td><input id="tbl_imovelN_Quartos" value="{N_Quartos}" maxlength="10" size="10" name="{N_Quartos_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelN_Suites">N° Suites</label></td> 
-            <td><input id="tbl_imovelN_Suites" value="{N_Suites}" maxlength="10" size="10" name="{N_Suites_Name}"></td> 
+            <td><input id="tbl_imovelN_Suites" value="{N_Suites}" maxlength="10" size="10" name="{N_Suites_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelN_Banheiros">N° Banheiros</label></td> 
-            <td><input id="tbl_imovelN_Banheiros" value="{N_Banheiros}" maxlength="10" size="10" name="{N_Banheiros_Name}"></td> 
+            <td><input id="tbl_imovelN_Banheiros" value="{N_Banheiros}" maxlength="10" size="10" name="{N_Banheiros_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelN_Salas">N° Salas</label></td> 
-            <td><input id="tbl_imovelN_Salas" value="{N_Salas}" maxlength="10" size="10" name="{N_Salas_Name}"></td> 
+            <td><input id="tbl_imovelN_Salas" value="{N_Salas}" maxlength="10" size="10" name="{N_Salas_Name}"></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelN_Cozinhas">N° Cozinhas</label></td> 
-            <td><input id="tbl_imovelN_Cozinhas" value="{N_Cozinhas}" maxlength="10" size="10" name="{N_Cozinhas_Name}"></td> 
+            <td><input id="tbl_imovelN_Cozinhas" value="{N_Cozinhas}" maxlength="10" size="10" name="{N_Cozinhas_Name}"></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_imovelDep_Empregada">Dependencia de&nbsp;Empregada</label></td> 
-            <td><input id="tbl_imovelDep_Empregada" value="1" type="checkbox" name="{Dep_Empregada_Name}" {Dep_Empregada}></td> 
+            <td class="th"><label for="tbl_imovelDep_Empregada">Dep Empregada</label></td> 
+            <td><input id="tbl_imovelDep_Empregada" value="1" type="checkbox" name="{Dep_Empregada_Name}" {Dep_Empregada}></td>
           </tr>
  
           <tr class="Controls">
             <td class="th"><label for="tbl_imovelGaragem">Garagem</label></td> 
-            <td><input id="tbl_imovelGaragem" value="1" type="checkbox" name="{Garagem_Name}" {Garagem}></td> 
+            <td><input id="tbl_imovelGaragem" value="1" type="checkbox" name="{Garagem_Name}" {Garagem}></td>
           </tr>
  
           <tr class="Controls">
-            <td class="th"><label for="tbl_imovelMts_Quadrados">Metros Quadrados</label></td> 
-            <td><input id="tbl_imovelMts_Quadrados" value="{Mts_Quadrados}" maxlength="10" size="10" name="{Mts_Quadrados_Name}"></td> 
+            <td class="th"><label for="tbl_imovelMts_Quadrados">Mts Quadrados</label></td> 
+            <td><input id="tbl_imovelMts_Quadrados" value="{Mts_Quadrados}" maxlength="10" size="10" name="{Mts_Quadrados_Name}"></td>
+          </tr>
+ 
+          <tr class="Controls">
+            <td class="th"><label for="tbl_imovelData">Data</label></td> 
+            <td><input id="tbl_imovelData" value="{Data}" maxlength="100" size="8" name="{Data_Name}">
+              <!-- BEGIN DatePicker DatePicker_Data --><a href="javascript:showDatePicker('{Name}','{FormName}','{DateControl}');" id="tbl_imovelDatePicker_Data"><img id="tbl_imovelDatePicker_Data_Image" border="0" alt="Show Date Picker" src="Styles/Padrao/Images/DatePicker.gif"></a><!-- END DatePicker DatePicker_Data --></td>
           </tr>
  
           <tr class="Bottom">
             <td colspan="2" align="right">
               <!-- BEGIN Button Button_Insert --><input id="tbl_imovelButton_Insert" class="Button" value="Adicionar" alt="Add" type="submit" name="{Button_Name}"><!-- END Button Button_Insert -->
               <!-- BEGIN Button Button_Update --><input id="tbl_imovelButton_Update" class="Button" value="Atualizar" alt="Atualizar" type="submit" name="{Button_Name}"><!-- END Button Button_Update -->
-              <!-- BEGIN Button Button_Delete --><input id="tbl_imovelButton_Delete" class="Button" value="Apagar" alt="Delete" type="submit" name="{Button_Name}"><!-- END Button Button_Delete --></td> 
+              <!-- BEGIN Button Button_Delete --><input id="tbl_imovelButton_Delete" class="Button" value="Remover" alt="Delete" type="submit" name="{Button_Name}"><!-- END Button Button_Delete --></td>
           </tr>
- 
         </table>
- </td> 
+      </td>
     </tr>
- 
   </table>
 </form>
 <!-- END Record tbl_imovel --><br>

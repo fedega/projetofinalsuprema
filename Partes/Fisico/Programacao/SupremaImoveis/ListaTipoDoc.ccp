@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="tbl_tipo_docSearch" returnPage="ListaTipoDoc.ccp" wizardCaption="Buscar Tbl Tipo Doc " wizardOrientation="Vertical" wizardFormMethod="post" PathID="tbl_tipo_docSearch">
 			<Components>
@@ -116,9 +116,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ListaTipoDoc.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-		<CodeFile id="JSP" language="JSP" name="ListaTipoDoc.jsp" path="." forShow="True" url="ListaTipoDoc.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-		<CodeFile id="Handlers" language="JSP" name="ListaTipoDocHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-	</CodeFiles>
+<CodeFile id="JSP" language="JSP" name="ListaTipoDoc.jsp" path="." forShow="True" url="ListaTipoDoc.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+<CodeFile id="Handlers" language="JSP" name="ListaTipoDocHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+</CodeFiles>
 	<SecurityGroups>
 		<Group id="19" groupID="1"/>
 	</SecurityGroups>

@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" connection="Conexao" needGeneration="0" pasteActions="pasteActions">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" connection="Conexao" needGeneration="0" pasteActions="pasteActions">
 	<Components>
 		<IncludePage id="41" name="Header" PathID="Header" page="Header.ccp">
 			<Components/>
@@ -33,58 +33,58 @@
 		&lt;rows&gt;&lt;!-- BEGIN Row --&gt;&lt;row col1=&quot;{Cod_Funcionario}&quot; col2=&quot;{Cod_Situacao}&quot; name=&quot;{Data}&quot;/&gt;&lt;!-- END Row --&gt;&lt;/rows&gt;&lt;/data&gt;
 &lt;/root&gt;
 " activeCollection="TableParameters">
-<Components/>
-<Events/>
-<Attributes/>
-<DataSeries>
-<Field id="141" fieldName="Cod_Funcionario" alias="Cod_Funcionario"/>
-<Field id="142" fieldName="Cod_Situacao" alias="Cod_Situacao"/>
-</DataSeries>
-<TableParameters>
-<TableParameter id="70" conditionType="Parameter" useIsNull="False" field="Cod_Situacao" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_situacao.Cod_Situacao" leftBrackets="0" rightBrackets="0"/>
-</TableParameters>
-<JoinTables>
-<JoinTable id="67" tableName="tbl_imovel" posLeft="10" posTop="10" posWidth="129" posHeight="180"/>
-</JoinTables>
-<JoinLinks/>
-<Fields/>
-<AllFields>
-<Field id="119" fieldName="Cod_Imovel"/>
-<Field id="120" fieldName="Cod_Cliente"/>
-<Field id="121" fieldName="Cod_Funcionario"/>
-<Field id="123" fieldName="Cod_Situacao"/>
-<Field id="125" fieldName="Cod_destinacao"/>
-<Field id="126" fieldName="Endereco"/>
-<Field id="127" fieldName="CEP"/>
-<Field id="128" fieldName="Bairro"/>
-<Field id="129" fieldName="Cod_Estado"/>
-<Field id="130" fieldName="Cod_Cidade"/>
-<Field id="131" fieldName="N_Quartos"/>
-<Field id="132" fieldName="N_Suites"/>
-<Field id="133" fieldName="N_Banheiros"/>
-<Field id="134" fieldName="N_Salas"/>
-<Field id="135" fieldName="N_Cozinhas"/>
-<Field id="136" fieldName="Dep_Empregada"/>
-<Field id="137" fieldName="Garagem"/>
-<Field id="138" fieldName="Mts_Quadrados"/>
-<Field id="139" fieldName="Data"/>
-</AllFields>
-<SelectedFields>
-<Field id="122" tableName="tbl_imovel" fieldName="Cod_Funcionario" isExpression="False"/>
-<Field id="124" tableName="tbl_imovel" fieldName="Cod_Situacao" isExpression="False"/>
-<Field id="140" tableName="tbl_imovel" fieldName="Data" isExpression="False"/>
-</SelectedFields>
-<SPParameters/>
-<SQLParameters/>
-<SecurityGroups/>
-<Features/>
-</FlashChart>
-</Components>
+			<Components/>
+			<Events/>
+			<Attributes/>
+			<DataSeries>
+				<Field id="141" fieldName="Cod_Funcionario" alias="Cod_Funcionario"/>
+				<Field id="142" fieldName="Cod_Situacao" alias="Cod_Situacao"/>
+			</DataSeries>
+			<TableParameters>
+				<TableParameter id="70" conditionType="Parameter" useIsNull="False" field="Cod_Situacao" dataType="Integer" searchConditionType="Equal" parameterType="URL" logicOperator="And" parameterSource="tbl_situacao.Cod_Situacao" leftBrackets="0" rightBrackets="0"/>
+			</TableParameters>
+			<JoinTables>
+				<JoinTable id="67" tableName="tbl_imovel" posLeft="10" posTop="10" posWidth="129" posHeight="180"/>
+			</JoinTables>
+			<JoinLinks/>
+			<Fields/>
+			<AllFields>
+				<Field id="119" fieldName="Cod_Imovel"/>
+				<Field id="120" fieldName="Cod_Cliente"/>
+				<Field id="121" fieldName="Cod_Funcionario"/>
+				<Field id="123" fieldName="Cod_Situacao"/>
+				<Field id="125" fieldName="Cod_destinacao"/>
+				<Field id="126" fieldName="Endereco"/>
+				<Field id="127" fieldName="CEP"/>
+				<Field id="128" fieldName="Bairro"/>
+				<Field id="129" fieldName="Cod_Estado"/>
+				<Field id="130" fieldName="Cod_Cidade"/>
+				<Field id="131" fieldName="N_Quartos"/>
+				<Field id="132" fieldName="N_Suites"/>
+				<Field id="133" fieldName="N_Banheiros"/>
+				<Field id="134" fieldName="N_Salas"/>
+				<Field id="135" fieldName="N_Cozinhas"/>
+				<Field id="136" fieldName="Dep_Empregada"/>
+				<Field id="137" fieldName="Garagem"/>
+				<Field id="138" fieldName="Mts_Quadrados"/>
+				<Field id="139" fieldName="Data"/>
+			</AllFields>
+			<SelectedFields>
+				<Field id="122" tableName="tbl_imovel" fieldName="Cod_Funcionario" isExpression="False"/>
+				<Field id="124" tableName="tbl_imovel" fieldName="Cod_Situacao" isExpression="False"/>
+				<Field id="140" tableName="tbl_imovel" fieldName="Data" isExpression="False"/>
+			</SelectedFields>
+			<SPParameters/>
+			<SQLParameters/>
+			<SecurityGroups/>
+			<Features/>
+		</FlashChart>
+	</Components>
 	<CodeFiles>
-		<CodeFile id="Model" language="JSP" name="Imoveis.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-		<CodeFile id="JSP" language="JSP" name="Imoveis.jsp" path="." forShow="True" url="Imoveis.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-		<CodeFile id="Handlers" language="JSP" name="ImoveisHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
 		<CodeFile id="FlashChart142" language="JSP" name="ImoveisFlashChart1.xml" path="\" forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
+<CodeFile id="Model" language="JSP" name="Imoveis.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
+<CodeFile id="JSP" language="JSP" name="Imoveis.jsp" path="." forShow="True" url="Imoveis.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+<CodeFile id="Handlers" language="JSP" name="ImoveisHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
 </CodeFiles>
 	<SecurityGroups/>
 	<CachingParameters/>

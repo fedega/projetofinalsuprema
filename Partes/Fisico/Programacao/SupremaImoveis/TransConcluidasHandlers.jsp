@@ -1,4 +1,4 @@
-<%--== Handlers ==--%> <%--Imoveis Opening Initialization directive @1-A0E75F14--%><%!
+<%--== Handlers ==--%> <%--TransConcluidas Opening Initialization directive @1-A0E75F14--%><%!
 
 // //Workaround for JRun 3.1 @1-F81417CB
 
@@ -6,11 +6,11 @@
 %><%@page contentType="text/html; charset=windows-1252"%><%!
 //End content type (workaround for Tomcat 6)
 
-//Feature checker Head @1-8B950456
-    public class ImoveisServiceChecker implements com.codecharge.features.IServiceChecker {
+//Feature checker Head @1-0EE1B4E0
+    public class TransConcluidasServiceChecker implements com.codecharge.features.IServiceChecker {
 //End Feature checker Head
 
-//feature binding @1-769F7FDC
+//feature binding @1-BF0127C6
         public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
             String attr = "" + request.getParameter("callbackControl");
             if ((new HeaderServiceChecker()).check(request, response, context)) return true;
@@ -34,27 +34,13 @@
                 tmpl.setLocale(local.getLocale());
                 tmpl.setTemplateParser((ITemplateParser) templateParser);
                 tmpl.setEncoding("UTF-8");
-                tmpl.load("/ImoveisFlashChart1.xml");
-
-                LongField urlTbl_situacao_Cod_Situacao = new LongField(null, null);
-                
-                urlTbl_situacao_Cod_Situacao.setValue(request.getParameter("tbl_situacao.Cod_Situacao"));
+                tmpl.load("/TransConcluidasFlashChart1.xml");
                 //FlashChart
                 JDBCConnection ds = JDBCConnectionFactory.getJDBCConnection( "Conexao" );
                 RawCommand command = new RawCommand( ds );
 
                 command.setSql( "SELECT *  \n"
-                            + "FROM tbl_imovel {SQL_Where} {SQL_OrderBy}" );
-                String where1 = WhereParams.rawOperation( "Cod_Situacao", FieldOperation.EQUAL, urlTbl_situacao_Cod_Situacao, null, ds );
-                String whereParams = where1;
-
-                if ( ! StringUtils.isEmpty(whereParams) ) {
-                    if ( ! StringUtils.isEmpty(command.getWhere()) ) {
-                        command.setWhere( command.getWhere() + " AND (" + whereParams + ")" );
-                    } else {
-                        command.setWhere( whereParams );
-                    }
-                }
+                            + "FROM tbl_transconcluidas {SQL_Where} {SQL_OrderBy}" );
 
                 command.setFetchSize(25);
                 Enumeration records = null;
@@ -65,9 +51,9 @@
                         DbRow record = null;
                         while (records.hasMoreElements()) {
                             record = (DbRow) records.nextElement();
-                            tmpl.setTag("main/Row", "@Cod_Funcionario", ""+record.get("Cod_Funcionario") );
-                            tmpl.setTag("main/Row", "@Cod_Situacao", ""+record.get("Cod_Situacao") );
-                            tmpl.setTag("main/Row", "@Data", ""+record.get("Data") );
+                            tmpl.setTag("main/Row", "@ConcluidasVendas", ""+record.get("ConcluidasVendas") );
+                            tmpl.setTag("main/Row", "@EmAndamentoVendas", ""+record.get("EmAndamentoVendas") );
+                            tmpl.setTag("main/Row", "@CanceladasVendas", ""+record.get("CanceladasVendas") );
                             tmpl.render("main/Row", "main/Row", true, Template.IF_DOESNT_EXIST_IS_ERROR);
                         }
                     }
@@ -87,61 +73,61 @@
     }
 //End Feature checker Tail
 
-//Imoveis Page Handler Head @1-B1022F07
-    public class ImoveisPageHandler implements PageListener {
-//End Imoveis Page Handler Head
+//TransConcluidas Page Handler Head @1-9AD9A7A5
+    public class TransConcluidasPageHandler implements PageListener {
+//End TransConcluidas Page Handler Head
 
-//Imoveis BeforeInitialize Method Head @1-4C73EADA
+//TransConcluidas BeforeInitialize Method Head @1-4C73EADA
         public void beforeInitialize(Event e) {
-//End Imoveis BeforeInitialize Method Head
+//End TransConcluidas BeforeInitialize Method Head
 
-//Imoveis BeforeInitialize Method Tail @1-FCB6E20C
+//TransConcluidas BeforeInitialize Method Tail @1-FCB6E20C
         }
-//End Imoveis BeforeInitialize Method Tail
+//End TransConcluidas BeforeInitialize Method Tail
 
-//Imoveis AfterInitialize Method Head @1-89E84600
+//TransConcluidas AfterInitialize Method Head @1-89E84600
         public void afterInitialize(Event e) {
-//End Imoveis AfterInitialize Method Head
+//End TransConcluidas AfterInitialize Method Head
 
-//Imoveis AfterInitialize Method Tail @1-FCB6E20C
+//TransConcluidas AfterInitialize Method Tail @1-FCB6E20C
         }
-//End Imoveis AfterInitialize Method Tail
+//End TransConcluidas AfterInitialize Method Tail
 
-//Imoveis OnInitializeView Method Head @1-E3C15E0F
+//TransConcluidas OnInitializeView Method Head @1-E3C15E0F
         public void onInitializeView(Event e) {
-//End Imoveis OnInitializeView Method Head
+//End TransConcluidas OnInitializeView Method Head
 
-//Imoveis OnInitializeView Method Tail @1-FCB6E20C
+//TransConcluidas OnInitializeView Method Tail @1-FCB6E20C
         }
-//End Imoveis OnInitializeView Method Tail
+//End TransConcluidas OnInitializeView Method Tail
 
-//Imoveis BeforeShow Method Head @1-46046458
+//TransConcluidas BeforeShow Method Head @1-46046458
         public void beforeShow(Event e) {
-//End Imoveis BeforeShow Method Head
+//End TransConcluidas BeforeShow Method Head
 
-//Imoveis BeforeShow Method Tail @1-FCB6E20C
+//TransConcluidas BeforeShow Method Tail @1-FCB6E20C
         }
-//End Imoveis BeforeShow Method Tail
+//End TransConcluidas BeforeShow Method Tail
 
-//Imoveis BeforeOutput Method Head @1-BE3571C7
+//TransConcluidas BeforeOutput Method Head @1-BE3571C7
         public void beforeOutput(Event e) {
-//End Imoveis BeforeOutput Method Head
+//End TransConcluidas BeforeOutput Method Head
 
-//Imoveis BeforeOutput Method Tail @1-FCB6E20C
+//TransConcluidas BeforeOutput Method Tail @1-FCB6E20C
         }
-//End Imoveis BeforeOutput Method Tail
+//End TransConcluidas BeforeOutput Method Tail
 
-//Imoveis BeforeUnload Method Head @1-1DDBA584
+//TransConcluidas BeforeUnload Method Head @1-1DDBA584
         public void beforeUnload(Event e) {
-//End Imoveis BeforeUnload Method Head
+//End TransConcluidas BeforeUnload Method Head
 
-//Imoveis BeforeUnload Method Tail @1-FCB6E20C
+//TransConcluidas BeforeUnload Method Tail @1-FCB6E20C
         }
-//End Imoveis BeforeUnload Method Tail
+//End TransConcluidas BeforeUnload Method Tail
 
-//Imoveis onCache Method Head @1-7A88A4B8
+//TransConcluidas onCache Method Head @1-7A88A4B8
         public void onCache(CacheEvent e) {
-//End Imoveis onCache Method Head
+//End TransConcluidas onCache Method Head
 
 //get cachedItem @1-F7EFE9F6
             if (e.getCacheOperation() == ICache.OPERATION_GET) {
@@ -163,39 +149,39 @@
             }
 //End if tail
 
-//Imoveis onCache Method Tail @1-FCB6E20C
+//TransConcluidas onCache Method Tail @1-FCB6E20C
         }
-//End Imoveis onCache Method Tail
+//End TransConcluidas onCache Method Tail
 
-//Imoveis Page Handler Tail @1-FCB6E20C
+//TransConcluidas Page Handler Tail @1-FCB6E20C
     }
-//End Imoveis Page Handler Tail
+//End TransConcluidas Page Handler Tail
 
 //Comment workaround @1-A0AAE532
 %> <%
 //End Comment workaround
 
-//Processing @1-D688324F
-    Page ImoveisModel = (Page)request.getAttribute("Imoveis_page");
-    Page ImoveisParent = (Page)request.getAttribute("ImoveisParent");
-    if (ImoveisModel == null) {
-        PageController ImoveisCntr = new PageController(request, response, application, "/Imoveis.xml" );
-        ImoveisModel = ImoveisCntr.getPage();
-        ImoveisModel.setRelativePath("./");
-        //if (ImoveisParent != null) {
-            //if (!ImoveisParent.getChild(ImoveisModel.getName()).isVisible()) return;
+//Processing @1-2182783B
+    Page TransConcluidasModel = (Page)request.getAttribute("TransConcluidas_page");
+    Page TransConcluidasParent = (Page)request.getAttribute("TransConcluidasParent");
+    if (TransConcluidasModel == null) {
+        PageController TransConcluidasCntr = new PageController(request, response, application, "/TransConcluidas.xml" );
+        TransConcluidasModel = TransConcluidasCntr.getPage();
+        TransConcluidasModel.setRelativePath("./");
+        //if (TransConcluidasParent != null) {
+            //if (!TransConcluidasParent.getChild(TransConcluidasModel.getName()).isVisible()) return;
         //}
-        ImoveisModel.addPageListener(new ImoveisPageHandler());
-        ImoveisCntr.process();
+        TransConcluidasModel.addPageListener(new TransConcluidasPageHandler());
+        TransConcluidasCntr.process();
 %>
-        <% request.setAttribute("HeaderParent", ImoveisModel); %>
+        <% request.setAttribute("HeaderParent", TransConcluidasModel); %>
         <%{%><%@include file="/HeaderHandlers.jsp"%><%}%>
 <%
-        if (ImoveisParent == null) {
-            ImoveisModel.setCookies();
-            if (ImoveisModel.redirect()) return;
+        if (TransConcluidasParent == null) {
+            TransConcluidasModel.setCookies();
+            if (TransConcluidasModel.redirect()) return;
         } else {
-            ImoveisModel.redirect();
+            TransConcluidasModel.redirect();
         }
     }
 //End Processing

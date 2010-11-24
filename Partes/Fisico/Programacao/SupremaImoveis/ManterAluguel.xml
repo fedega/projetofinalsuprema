@@ -1,8 +1,5 @@
-<!--Page model head @1-F419E3E8-->
-<Page name="ManterAluguel" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
-    <Security>
-        <Group id="1"/>
-    </Security>
+<!--Page model head @1-4823CE8F-->
+<Page name="ManterAluguel" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
 <!--Page componets @1-09196063-->

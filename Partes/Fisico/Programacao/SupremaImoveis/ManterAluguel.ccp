@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_aluguel" dataSource="tbl_aluguel" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Aluguel " wizardFormMethod="post" returnPage="ListaAluguel.ccp" PathID="tbl_aluguel">
 			<Components>
@@ -93,9 +93,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ManterAluguel.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-		<CodeFile id="JSP" language="JSP" name="ManterAluguel.jsp" path="." forShow="True" url="ManterAluguel.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-		<CodeFile id="Handlers" language="JSP" name="ManterAluguelHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-	</CodeFiles>
+<CodeFile id="JSP" language="JSP" name="ManterAluguel.jsp" path="." forShow="True" url="ManterAluguel.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+<CodeFile id="Handlers" language="JSP" name="ManterAluguelHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+</CodeFiles>
 	<SecurityGroups>
 		<Group id="13" groupID="1"/>
 	</SecurityGroups>

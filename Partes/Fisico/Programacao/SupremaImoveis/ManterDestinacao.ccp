@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="True" allowUpdate="True" allowDelete="True" validateData="True" preserveParameters="GET" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" connection="Conexao" name="tbl_destinacao" dataSource="tbl_destinacao" errorSummator="Error" wizardCaption="Adicionar/Editar Tbl Destinacao " wizardFormMethod="post" returnPage="tbl_destinacao_list.ccp" PathID="tbl_destinacao">
 			<Components>
@@ -63,9 +63,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ManterDestinacao.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-		<CodeFile id="JSP" language="JSP" name="ManterDestinacao.jsp" path="." forShow="True" url="ManterDestinacao.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-		<CodeFile id="Handlers" language="JSP" name="ManterDestinacaoHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-	</CodeFiles>
+<CodeFile id="JSP" language="JSP" name="ManterDestinacao.jsp" path="." forShow="True" url="ManterDestinacao.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+<CodeFile id="Handlers" language="JSP" name="ManterDestinacaoHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+</CodeFiles>
 	<SecurityGroups>
 		<Group id="8" groupID="1"/>
 	</SecurityGroups>

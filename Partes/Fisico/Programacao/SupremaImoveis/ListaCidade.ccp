@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="tbl_cidadeSearch" returnPage="ListaCidade.ccp" wizardCaption="Buscar Tbl Cidade " wizardOrientation="Vertical" wizardFormMethod="post" PathID="tbl_cidadeSearch">
 			<Components>
@@ -154,9 +154,9 @@
 	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ListaCidade.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-		<CodeFile id="JSP" language="JSP" name="ListaCidade.jsp" path="." forShow="True" url="ListaCidade.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-		<CodeFile id="Handlers" language="JSP" name="ListaCidadeHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-	</CodeFiles>
+<CodeFile id="JSP" language="JSP" name="ListaCidade.jsp" path="." forShow="True" url="ListaCidade.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+<CodeFile id="Handlers" language="JSP" name="ListaCidadeHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+</CodeFiles>
 	<SecurityGroups>
 		<Group id="22" groupID="1"/>
 	</SecurityGroups>

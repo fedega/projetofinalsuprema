@@ -1,4 +1,4 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="True" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
 		<Record id="2" sourceType="Table" urlType="Relative" secured="False" allowInsert="False" allowUpdate="False" allowDelete="False" validateData="True" preserveParameters="None" returnValueType="Number" returnValueTypeForDelete="Number" returnValueTypeForInsert="Number" returnValueTypeForUpdate="Number" name="tbl_vendaSearch" returnPage="ListaVenda.ccp" wizardCaption="Buscar Tbl Venda " wizardOrientation="Vertical" wizardFormMethod="post" PathID="tbl_vendaSearch">
 			<Components>
@@ -135,16 +135,16 @@
 			<Features/>
 		</IncludePage>
 		<IncludePage id="26" name="Header" page="Header.ccp">
-<Components/>
-<Events/>
-<Features/>
-</IncludePage>
-</Components>
+			<Components/>
+			<Events/>
+			<Features/>
+		</IncludePage>
+	</Components>
 	<CodeFiles>
 		<CodeFile id="Model" language="JSP" name="ListaVenda.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
-		<CodeFile id="JSP" language="JSP" name="ListaVenda.jsp" path="." forShow="True" url="ListaVenda.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
-		<CodeFile id="Handlers" language="JSP" name="ListaVendaHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
-	</CodeFiles>
+<CodeFile id="JSP" language="JSP" name="ListaVenda.jsp" path="." forShow="True" url="ListaVenda.jsp" comment="&lt;%--" commentEnd="--%&gt;" codePage="windows-1252"/>
+<CodeFile id="Handlers" language="JSP" name="ListaVendaHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
+</CodeFiles>
 	<SecurityGroups>
 		<Group id="25" groupID="1"/>
 	</SecurityGroups>

@@ -1,33 +1,12 @@
-<!--Page model head @1-B4E9357E-->
-<Page name="ListaImovel" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
-    <Security>
-        <Group id="1"/>
-    </Security>
+<!--Page model head @1-1DBF424C-->
+<Page name="ListaImovel" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
 <!--Page componets @1-14CCCE70-->
     <Include name="Header"/>
 <!--End Page componets-->
 
-<!--Record tbl_imovelSearch model @2-6B4D1903-->
-    <Record name="tbl_imovelSearch" connection="" restricted="False" returnPage="ListaImovel.jsp" convertRule="Relative" preserveParams="None" 
-            allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
-        <Button name="Button_DoSearch" operation="Search"
-                returnPage="" convertRule="Relative"
-                defaultButton="False" doValidate="True" order="1">
-        </Button>
-        <TextBox name="s_Endereco" dataType="Text"
-                controlSourceType="DataSource" controlSource=""
-                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
-        <TextBox name="s_Bairro" dataType="Text"
-                controlSourceType="DataSource" controlSource=""
-                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
-    </Record>
-<!--End Record tbl_imovelSearch model-->
-
-<!--Grid tbl_imovel model @7-CB1F65FD-->
+<!--Grid tbl_imovel model @2-0E091CFB-->
     <Grid name="tbl_imovel" connection="Conexao" restricted="False" fetchSize="20" allowRead="True" 
             fetchSizeLimit="100" useCount="True" visible="True">
         <Row>
@@ -37,40 +16,40 @@
                     format="" dbFormat="" isHtml="False" preserveParams="GET">
                 <LinkParameter name="Cod_Imovel" sourceType="DataField" sourceName="Cod_Imovel" format="yyyy-MM-dd"/>
             </Link>
-            <Label name="Cod_Cliente" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="Cod_Cliente"
-                    isHtml="False" format="" dbFormat="">
-            </Label>
-            <Label name="Cod_Funcionario" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="Cod_Funcionario"
+            <Label name="Nome" dataType="Text"
+                    controlSourceType="DataSource" controlSource="tbl_cliente_Nome"
                     isHtml="False" format="" dbFormat="">
             </Label>
             <Label name="Cod_Situacao" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="Cod_Situacao"
+                    controlSourceType="DataSource" controlSource="Situacao"
                     isHtml="False" format="" dbFormat="">
             </Label>
-            <Label name="Cod_destinacao" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="Cod_destinacao"
+            <Label name="Destinacao" dataType="Text"
+                    controlSourceType="DataSource" controlSource="Destinacao"
                     isHtml="False" format="" dbFormat="">
             </Label>
             <Label name="Endereco" dataType="Text"
-                    controlSourceType="DataSource" controlSource="Endereco"
-                    isHtml="False" format="" dbFormat="">
-            </Label>
-            <Label name="CEP" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="CEP"
+                    controlSourceType="DataSource" controlSource="tbl_imovel_Endereco"
                     isHtml="False" format="" dbFormat="">
             </Label>
             <Label name="Bairro" dataType="Text"
                     controlSourceType="DataSource" controlSource="Bairro"
                     isHtml="False" format="" dbFormat="">
             </Label>
-            <Label name="Cod_Estado" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="Cod_Estado"
+            <Label name="CEP" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="CEP"
                     isHtml="False" format="" dbFormat="">
             </Label>
-            <Label name="Cod_Cidade" dataType="Integer"
-                    controlSourceType="DataSource" controlSource="Cod_Cidade"
+            <Label name="UF" dataType="Text"
+                    controlSourceType="DataSource" controlSource="UF"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="Nome1" dataType="Text"
+                    controlSourceType="DataSource" controlSource="tbl_cidade_Nome"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="Nome2" dataType="Text"
+                    controlSourceType="DataSource" controlSource="tbl_funcionario_Nome"
                     isHtml="False" format="" dbFormat="">
             </Label>
             <Label name="N_Quartos" dataType="Integer"
@@ -105,6 +84,10 @@
                     controlSourceType="DataSource" controlSource="Mts_Quadrados"
                     isHtml="False" format="" dbFormat="">
             </Label>
+            <Label name="Data" dataType="Date"
+                    controlSourceType="DataSource" controlSource="Data"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
         </Row>
         <Link name="tbl_imovel_Insert" dataType="Text"
                 controlSourceType="DataSource" controlSource=""
@@ -113,15 +96,15 @@
             <ExcludeParameter name="Cod_Imovel"/>
         </Link>
         <Sorter name="Sorter_Cod_Imovel" ascColumn="Cod_Imovel" visible="True"/>
-        <Sorter name="Sorter_Cod_Cliente" ascColumn="Cod_Cliente" visible="True"/>
-        <Sorter name="Sorter_Cod_Funcionario" ascColumn="Cod_Funcionario" visible="True"/>
+        <Sorter name="Sorter_Nome" ascColumn="tbl_cliente.Nome" visible="True"/>
         <Sorter name="Sorter_Cod_Situacao" ascColumn="Cod_Situacao" visible="True"/>
-        <Sorter name="Sorter_Cod_destinacao" ascColumn="Cod_destinacao" visible="True"/>
-        <Sorter name="Sorter_Endereco" ascColumn="Endereco" visible="True"/>
-        <Sorter name="Sorter_CEP" ascColumn="CEP" visible="True"/>
+        <Sorter name="Sorter_Destinacao" ascColumn="Destinacao" visible="True"/>
+        <Sorter name="Sorter_Endereco" ascColumn="tbl_imovel.Endereco" visible="True"/>
         <Sorter name="Sorter_Bairro" ascColumn="Bairro" visible="True"/>
-        <Sorter name="Sorter_Cod_Estado" ascColumn="Cod_Estado" visible="True"/>
-        <Sorter name="Sorter_Cod_Cidade" ascColumn="Cod_Cidade" visible="True"/>
+        <Sorter name="Sorter_CEP" ascColumn="CEP" visible="True"/>
+        <Sorter name="Sorter_UF" ascColumn="UF" visible="True"/>
+        <Sorter name="Sorter_Nome1" ascColumn="tbl_cidade.Nome" visible="True"/>
+        <Sorter name="Sorter_Nome2" ascColumn="tbl_funcionario.Nome" visible="True"/>
         <Sorter name="Sorter_N_Quartos" ascColumn="N_Quartos" visible="True"/>
         <Sorter name="Sorter_N_Suites" ascColumn="N_Suites" visible="True"/>
         <Sorter name="Sorter_N_Banheiros" ascColumn="N_Banheiros" visible="True"/>
@@ -130,26 +113,59 @@
         <Sorter name="Sorter_Dep_Empregada" ascColumn="Dep_Empregada" visible="True"/>
         <Sorter name="Sorter_Garagem" ascColumn="Garagem" visible="True"/>
         <Sorter name="Sorter_Mts_Quadrados" ascColumn="Mts_Quadrados" visible="True"/>
+        <Sorter name="Sorter_Data" ascColumn="Data" visible="True"/>
         <Navigator name="Navigator" pageSizes="1;5;10;25;50"/>
-        <Select query="SELECT Cod_Imovel, Cod_Cliente, Cod_Funcionario, Cod_Situacao, Cod_destinacao, Endereco, CEP, Bairro, Cod_Estado, Cod_Cidade, N_Quartos, N_Suites, N_Banheiros, N_Salas, N_Cozinhas, Dep_Empregada, Garagem, Mts_Quadrados FROM tbl_imovel {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
-            <CountSql query="SELECT COUNT(*) FROM tbl_imovel" type="raw"/>
+        <Select query="SELECT tbl_imovel.Cod_Imovel, tbl_cliente.Nome AS tbl_cliente_Nome, tbl_imovel.Cod_Situacao AS tbl_imovel_Cod_Situacao, tbl_destinacao.Destinacao, tbl_imovel.Endereco AS tbl_imovel_Endereco, tbl_imovel.Bairro, tbl_imovel.CEP, tbl_estado.UF, tbl_cidade.Nome AS tbl_cidade_Nome, tbl_funcionario.Nome AS tbl_funcionario_Nome, tbl_imovel.N_Quartos, tbl_imovel.N_Suites, tbl_imovel.N_Banheiros, tbl_imovel.N_Salas, tbl_imovel.N_Cozinhas, tbl_imovel.Dep_Empregada, tbl_imovel.Garagem, tbl_imovel.Mts_Quadrados, tbl_imovel.Data, tbl_situacao.* FROM (((((tbl_imovel LEFT JOIN tbl_cliente ON tbl_imovel.Cod_Cliente = tbl_cliente.Cod_Cliente) LEFT JOIN tbl_destinacao ON tbl_imovel.Cod_destinacao = tbl_destinacao.Cod_destinacao) LEFT JOIN tbl_estado ON tbl_imovel.Cod_Estado = tbl_estado.Cod_Estado) LEFT JOIN tbl_cidade ON tbl_imovel.Cod_Cidade = tbl_cidade.Cod_Cidade) LEFT JOIN tbl_funcionario ON tbl_imovel.Cod_Funcionario = tbl_funcionario.Cod_Funcionario) INNER JOIN tbl_situacao ON tbl_imovel.Cod_Situacao = tbl_situacao.Cod_Situacao {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <CountSql query="SELECT COUNT(*) FROM (((((tbl_imovel LEFT JOIN tbl_cliente ON tbl_imovel.Cod_Cliente = tbl_cliente.Cod_Cliente) LEFT JOIN tbl_destinacao ON tbl_imovel.Cod_destinacao = tbl_destinacao.Cod_destinacao) LEFT JOIN tbl_estado ON tbl_imovel.Cod_Estado = tbl_estado.Cod_Estado) LEFT JOIN tbl_cidade ON tbl_imovel.Cod_Cidade = tbl_cidade.Cod_Cidade) LEFT JOIN tbl_funcionario ON tbl_imovel.Cod_Funcionario = tbl_funcionario.Cod_Funcionario) INNER JOIN tbl_situacao ON tbl_imovel.Cod_Situacao = tbl_situacao.Cod_Situacao" type="raw"/>
             <Where>
                 <WhereClause>
-                    <Parameter name="s_Endereco10"/>
+                    <Parameter name="s_Cod_Cliente15"/>
                     <Operation operator="And"/>
-                    <Parameter name="s_Bairro11"/>
+                    <Parameter name="s_Endereco16"/>
+                    <Operation operator="And"/>
+                    <Parameter name="s_Bairro17"/>
+                    <Operation operator="And"/>
+                    <Parameter name="tbl_imovel.cod_situacao87"/>
 
                 </WhereClause>
-                <WhereParameter name="s_Endereco10" field="Endereco" type="Text"
+                <WhereParameter name="s_Cod_Cliente15" field="tbl_imovel.Cod_Cliente" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="s_Cod_Cliente"
+                        format="" dbFormat=""/>
+                <WhereParameter name="s_Endereco16" field="tbl_imovel.Endereco" type="Text"
                         operation="CONTAINS" useIsNull="False" sourceType="URL" sourceName="s_Endereco"
                         format="" dbFormat=""/>
-                <WhereParameter name="s_Bairro11" field="Bairro" type="Text"
+                <WhereParameter name="s_Bairro17" field="tbl_imovel.Bairro" type="Text"
                         operation="CONTAINS" useIsNull="False" sourceType="URL" sourceName="s_Bairro"
+                        format="" dbFormat=""/>
+                <WhereParameter name="tbl_imovel.cod_situacao87" field="tbl_situacao.Cod_Situacao" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="tbl_imovel.cod_situacao"
                         format="" dbFormat=""/>
             </Where>
         </Select>
     </Grid>
 <!--End Grid tbl_imovel model-->
+
+<!--Record tbl_imovelSearch model @78-84D08FD1-->
+    <Record name="tbl_imovelSearch" connection="" restricted="False" returnPage="ListaImovel.jsp" convertRule="Relative" preserveParams="None" 
+            allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
+        <Button name="Button_DoSearch" operation="Search"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <TextBox name="s_Endereco" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="s_Bairro" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="s_Cod_Cliente" dataType="Integer"
+                controlSourceType="DataSource" controlSource=""
+                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+    </Record>
+<!--End Record tbl_imovelSearch model-->
 
 <!--Page model tail @1-2BAFA7FA-->
 </Page>

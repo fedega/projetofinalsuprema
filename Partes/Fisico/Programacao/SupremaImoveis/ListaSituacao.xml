@@ -1,8 +1,5 @@
-<!--Page model head @1-5277A6EB-->
-<Page name="ListaSituacao" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
-    <Security>
-        <Group id="1"/>
-    </Security>
+<!--Page model head @1-0ABDA158-->
+<Page name="ListaSituacao" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
 <!--Page componets @1-09196063-->

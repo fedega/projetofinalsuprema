@@ -22,30 +22,19 @@
     }
 //End Feature checker Tail
 
-//Navigator Navigator Handler Head @67-A02BCBBC
+//Navigator Navigator Handler Head @76-A02BCBBC
     public class tbl_imovelNavigatorNavigatorHandler implements ControlListener {
 //End Navigator Navigator Handler Head
 
-//Navigator BeforeShow Method Head @67-46046458
+//Navigator BeforeShow Method Head @76-46046458
         public void beforeShow(Event e) {
 //End Navigator BeforeShow Method Head
 
-//Event BeforeShow Action Hide-Show Component @68-68B7BAD2
-        Long TotalPages_68_1 = null;
-        TotalPages_68_1 = com.codecharge.util.Utils.convertToLong(e.getGrid().getTotalPages());
-        Long exprParam2_68_2 = null;
-        exprParam2_68_2 = com.codecharge.util.Utils.convertToLong(2);
-        if (
-                (TotalPages_68_1 != null && exprParam2_68_2 != null && TotalPages_68_1.compareTo(exprParam2_68_2) < 0)) {
-            e.getModel().setVisible(false);
-        }
-//End Event BeforeShow Action Hide-Show Component
-
-//Navigator BeforeShow Method Tail @67-FCB6E20C
+//Navigator BeforeShow Method Tail @76-FCB6E20C
         }
 //End Navigator BeforeShow Method Tail
 
-//Navigator Navigator Handler Tail @67-FCB6E20C
+//Navigator Navigator Handler Tail @76-FCB6E20C
     }
 //End Navigator Navigator Handler Tail
 

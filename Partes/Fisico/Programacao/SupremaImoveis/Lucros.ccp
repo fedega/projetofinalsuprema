@@ -1,11 +1,11 @@
-<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" showSyncDlg="false">
+<Page id="1" templateExtension="html" relativePath="." fullRelativePath="." secured="False" urlType="Relative" isIncluded="False" SSLAccess="False" isService="False" cachingEnabled="False" cachingDuration="1 minutes" wizardTheme="Padrao" wizardThemeVersion="3.0" needGeneration="0">
 	<Components>
 		<IncludePage id="2" name="Header" PathID="Header" page="Header.ccp">
 			<Components/>
 			<Events/>
 			<Features/>
 		</IncludePage>
-<FlashChart id="4" secured="False" dataSeriesIn="Columns" chartType="3d_columns" sourceType="Table" defaultPageSize="25" returnValueType="Number" name="FlashChart1" PathID="FlashChart1" schemaName="Autumn" layout="11" connection="Conexao" dataSource="tbl_funcionario" gridCaptionField="-1" isCaption="true" width="400" height="300" displayTitle="True" title="Chart Title" displayLegend="True" displayLabels="True" displayGridLines="True" directionType="degrees" autoRotate="yes" template="&lt;root&gt;
+		<FlashChart id="4" secured="False" dataSeriesIn="Columns" chartType="3d_columns" sourceType="Table" defaultPageSize="25" returnValueType="Number" name="FlashChart1" PathID="FlashChart1" schemaName="Autumn" layout="11" connection="Conexao" dataSource="tbl_funcionario" gridCaptionField="-1" isCaption="true" width="400" height="300" displayTitle="True" title="Chart Title" displayLegend="True" displayLabels="True" displayGridLines="True" directionType="degrees" autoRotate="yes" template="&lt;root&gt;
 	&lt;schema name=&quot;Autumn&quot;&gt;
 		&lt;mask/&gt;
 		&lt;colors/&gt;
@@ -38,46 +38,46 @@
 			<Attributes/>
 			<DataSeries>
 				<Field id="5" fieldName="Cod_Funcionario" alias="Cod_Funcionario"/>
-<Field id="6" fieldName="Cod_Cidade" alias="Cod_Cidade"/>
-<Field id="7" fieldName="Cod_Estado" alias="Cod_Estado"/>
-<Field id="8" fieldName="Cod_Orgao" alias="Cod_Orgao"/>
-<Field id="9" fieldName="Tel_Fixo" alias="Tel_Fixo"/>
-<Field id="10" fieldName="Nivel_Controle" alias="Nivel_Controle"/>
-</DataSeries>
+				<Field id="6" fieldName="Cod_Cidade" alias="Cod_Cidade"/>
+				<Field id="7" fieldName="Cod_Estado" alias="Cod_Estado"/>
+				<Field id="8" fieldName="Cod_Orgao" alias="Cod_Orgao"/>
+				<Field id="9" fieldName="Tel_Fixo" alias="Tel_Fixo"/>
+				<Field id="10" fieldName="Nivel_Controle" alias="Nivel_Controle"/>
+			</DataSeries>
 			<TableParameters/>
 			<JoinTables/>
 			<JoinLinks/>
 			<Fields/>
 			<AllFields>
 				<Field id="11" fieldName="Cod_Funcionario"/>
-<Field id="12" fieldName="Nome"/>
-<Field id="13" fieldName="Cod_Cidade"/>
-<Field id="14" fieldName="Cod_Estado"/>
-<Field id="15" fieldName="Cod_Orgao"/>
-<Field id="16" fieldName="Nome_U"/>
-<Field id="17" fieldName="Senha_U"/>
-<Field id="18" fieldName="Endereco"/>
-<Field id="19" fieldName="Tel_Fixo"/>
-<Field id="20" fieldName="Tel_Cel"/>
-<Field id="21" fieldName="CPF"/>
-<Field id="22" fieldName="Data_Nasc"/>
-<Field id="23" fieldName="CRECI"/>
-<Field id="24" fieldName="Nivel_Controle"/>
-</AllFields>
+				<Field id="12" fieldName="Nome"/>
+				<Field id="13" fieldName="Cod_Cidade"/>
+				<Field id="14" fieldName="Cod_Estado"/>
+				<Field id="15" fieldName="Cod_Orgao"/>
+				<Field id="16" fieldName="Nome_U"/>
+				<Field id="17" fieldName="Senha_U"/>
+				<Field id="18" fieldName="Endereco"/>
+				<Field id="19" fieldName="Tel_Fixo"/>
+				<Field id="20" fieldName="Tel_Cel"/>
+				<Field id="21" fieldName="CPF"/>
+				<Field id="22" fieldName="Data_Nasc"/>
+				<Field id="23" fieldName="CRECI"/>
+				<Field id="24" fieldName="Nivel_Controle"/>
+			</AllFields>
 			<SelectedFields>
 				<Field id="25" tableName="tbl_funcionario" fieldName="Cod_Funcionario" isExpression="False"/>
-<Field id="26" tableName="tbl_funcionario" fieldName="Cod_Cidade" isExpression="False"/>
-<Field id="27" tableName="tbl_funcionario" fieldName="Cod_Estado" isExpression="False"/>
-<Field id="28" tableName="tbl_funcionario" fieldName="Cod_Orgao" isExpression="False"/>
-<Field id="29" tableName="tbl_funcionario" fieldName="Tel_Fixo" isExpression="False"/>
-<Field id="30" tableName="tbl_funcionario" fieldName="Nivel_Controle" isExpression="False"/>
-</SelectedFields>
+				<Field id="26" tableName="tbl_funcionario" fieldName="Cod_Cidade" isExpression="False"/>
+				<Field id="27" tableName="tbl_funcionario" fieldName="Cod_Estado" isExpression="False"/>
+				<Field id="28" tableName="tbl_funcionario" fieldName="Cod_Orgao" isExpression="False"/>
+				<Field id="29" tableName="tbl_funcionario" fieldName="Tel_Fixo" isExpression="False"/>
+				<Field id="30" tableName="tbl_funcionario" fieldName="Nivel_Controle" isExpression="False"/>
+			</SelectedFields>
 			<SPParameters/>
 			<SQLParameters/>
 			<SecurityGroups/>
 			<Features/>
 		</FlashChart>
-</Components>
+	</Components>
 	<CodeFiles>
 		<CodeFile id="FlashChart14" language="JSP" name="LucrosFlashChart1.xml" path="\" forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
 <CodeFile id="Model" language="JSP" name="Lucros.xml" path="." forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
@@ -85,8 +85,8 @@
 <CodeFile id="Handlers" language="JSP" name="LucrosHandlers.jsp" path="." forShow="False" comment="//" codePage="windows-1252"/>
 </CodeFiles>
 	<SecurityGroups/>
-<CachingParameters/>
-<Attributes/>
-<Features/>
-<Events/>
+	<CachingParameters/>
+	<Attributes/>
+	<Features/>
+	<Events/>
 </Page>

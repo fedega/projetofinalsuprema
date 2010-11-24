@@ -1,19 +1,16 @@
-<!--Page model head @1-064E90F0-->
-<Page name="ManterImovel" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
-    <Security>
-        <Group id="1"/>
-    </Security>
+<!--Page model head @1-121B7B7F-->
+<Page name="ManterImovel" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
 <!--Page componets @1-14CCCE70-->
     <Include name="Header"/>
 <!--End Page componets-->
 
-<!--Record tbl_imovel model @2-7BAB8E69-->
-    <Record name="tbl_imovel" connection="Conexao" restricted="False" returnPage="tbl_imovel_list.jsp" convertRule="Relative" preserveParams="GET" 
+<!--Record tbl_imovel model @2-E4E21D62-->
+    <Record name="tbl_imovel" connection="Conexao" restricted="False" returnPage="ListaImovel.jsp" convertRule="Relative" preserveParams="GET" 
             allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
         <Button name="Button_Insert" operation="Insert"
-                returnPage="ListaImovel.jsp" convertRule="Relative"
+                returnPage="" convertRule="Relative"
                 defaultButton="False" doValidate="True" order="1">
         </Button>
         <Button name="Button_Update" operation="Update"
@@ -24,22 +21,34 @@
                 returnPage="" convertRule="Relative"
                 defaultButton="False" doValidate="False" order="3">
         </Button>
-        <TextBox name="Cod_Cliente" caption="Cod Cliente" dataType="Integer"
-                controlSourceType="DataSource" controlSource="Cod_Cliente"
-                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
-        <TextBox name="Cod_Funcionario" caption="Cod Funcionario" dataType="Integer"
-                controlSourceType="DataSource" controlSource="Cod_Funcionario"
-                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
-        <TextBox name="Cod_Situacao" caption="Cod Situacao" dataType="Integer"
-                controlSourceType="DataSource" controlSource="Cod_Situacao"
-                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
-        <TextBox name="Cod_destinacao" caption="Cod Destinacao" dataType="Integer"
-                controlSourceType="DataSource" controlSource="Cod_destinacao"
-                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
+        <ListBox name="Cod_Cliente" caption="Cod Cliente" dataType="Integer"
+                controlSourceType="DataSource" boundColumn="Cod_Cliente" textColumn="Nome"
+                connection="Conexao" controlSource="Cod_Cliente"
+                required="False" unique="" errorControl="" isHtml="">
+            <Select query="SELECT * FROM tbl_cliente {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            </Select>
+        </ListBox>
+        <ListBox name="Cod_Funcionario" caption="Cod Funcionario" dataType="Integer"
+                controlSourceType="DataSource" boundColumn="Cod_Funcionario" textColumn="Nome"
+                connection="Conexao" controlSource="Cod_Funcionario"
+                required="False" unique="" errorControl="" isHtml="">
+            <Select query="SELECT * FROM tbl_funcionario {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            </Select>
+        </ListBox>
+        <ListBox name="Cod_Situacao" caption="Cod Situacao" dataType="Integer"
+                controlSourceType="DataSource" boundColumn="Cod_Situacao" textColumn="Situacao"
+                connection="Conexao" controlSource="Cod_Situacao"
+                required="False" unique="" errorControl="" isHtml="">
+            <Select query="SELECT * FROM tbl_situacao {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            </Select>
+        </ListBox>
+        <ListBox name="Cod_destinacao" caption="Cod Destinacao" dataType="Integer"
+                controlSourceType="DataSource" boundColumn="Cod_destinacao" textColumn="Destinacao"
+                connection="Conexao" controlSource="Cod_destinacao"
+                required="False" unique="" errorControl="" isHtml="">
+            <Select query="SELECT * FROM tbl_destinacao {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            </Select>
+        </ListBox>
         <TextBox name="Endereco" caption="Endereco" dataType="Text"
                 controlSourceType="DataSource" controlSource="Endereco"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
@@ -52,14 +61,20 @@
                 controlSourceType="DataSource" controlSource="Bairro"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
-        <TextBox name="Cod_Estado" caption="Cod Estado" dataType="Integer"
-                controlSourceType="DataSource" controlSource="Cod_Estado"
-                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
-        <TextBox name="Cod_Cidade" caption="Cod Cidade" dataType="Integer"
-                controlSourceType="DataSource" controlSource="Cod_Cidade"
-                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
+        <ListBox name="Cod_Estado" caption="Cod Estado" dataType="Integer"
+                controlSourceType="DataSource" boundColumn="Cod_Estado" textColumn="Nome"
+                connection="Conexao" controlSource="Cod_Estado"
+                required="False" unique="" errorControl="" isHtml="">
+            <Select query="SELECT * FROM tbl_estado {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            </Select>
+        </ListBox>
+        <ListBox name="Cod_Cidade" caption="Cod Cidade" dataType="Integer"
+                controlSourceType="DataSource" boundColumn="Cod_Cidade" textColumn="Nome"
+                connection="Conexao" controlSource="Cod_Cidade"
+                required="False" unique="" errorControl="" isHtml="">
+            <Select query="SELECT * FROM tbl_cidade {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            </Select>
+        </ListBox>
         <TextBox name="N_Quartos" caption="N Quartos" dataType="Integer"
                 controlSourceType="DataSource" controlSource="N_Quartos"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
@@ -76,10 +91,6 @@
                 controlSourceType="DataSource" controlSource="N_Salas"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
-        <TextBox name="N_Cozinhas" caption="N Cozinhas" dataType="Integer"
-                controlSourceType="DataSource" controlSource="N_Cozinhas"
-                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
-        </TextBox>
         <CheckBox name="Dep_Empregada" dataType="Boolean"
                 controlSourceType="DataSource" controlSource="Dep_Empregada"
                 checkedValue="" uncheckedValue="" errorControl="">
@@ -90,6 +101,15 @@
         </CheckBox>
         <TextBox name="Mts_Quadrados" caption="Mts Quadrados" dataType="Integer"
                 controlSourceType="DataSource" controlSource="Mts_Quadrados"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Data" caption="Data" dataType="Date"
+                controlSourceType="DataSource" controlSource="Data"
+                required="False" unique="" format="" dbFormat="yyyy-MM-dd HH:mm:ss" verificationRule="" errorControl="">
+        </TextBox>
+        <DatePicker name="DatePicker_Data" control="Data" style="Styles/Padrao/Style.css"/>
+        <TextBox name="N_Cozinhas" caption="N Cozinhas" dataType="Integer"
+                controlSourceType="DataSource" controlSource="N_Cozinhas"
                 required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
         </TextBox>
         <Select query="SELECT * FROM tbl_imovel {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
@@ -103,7 +123,7 @@
                         format="" dbFormat=""/>
             </Where>
         </Select>
-        <Insert query="INSERT INTO tbl_imovel ( Cod_Cliente, Cod_Funcionario, Cod_Situacao, Cod_destinacao, Endereco, CEP, Bairro, Cod_Estado, Cod_Cidade, N_Quartos, N_Suites, N_Banheiros, N_Salas, N_Cozinhas, Dep_Empregada, Garagem, Mts_Quadrados ) VALUES ( {Cod_Cliente}, {Cod_Funcionario}, {Cod_Situacao}, {Cod_destinacao}, {Endereco}, {CEP}, {Bairro}, {Cod_Estado}, {Cod_Cidade}, {N_Quartos}, {N_Suites}, {N_Banheiros}, {N_Salas}, {N_Cozinhas}, {Dep_Empregada}, {Garagem}, {Mts_Quadrados} )" type="raw">
+        <Insert query="INSERT INTO tbl_imovel ( Cod_Cliente, Cod_Funcionario, Cod_Situacao, Cod_destinacao, Endereco, CEP, Bairro, Cod_Estado, Cod_Cidade, N_Quartos, N_Suites, N_Banheiros, N_Salas, Dep_Empregada, Garagem, Mts_Quadrados, Data, N_Cozinhas ) VALUES ( {Cod_Cliente}, {Cod_Funcionario}, {Cod_Situacao}, {Cod_destinacao}, {Endereco}, {CEP}, {Bairro}, {Cod_Estado}, {Cod_Cidade}, {N_Quartos}, {N_Suites}, {N_Banheiros}, {N_Salas}, {Dep_Empregada}, {Garagem}, {Mts_Quadrados}, {Data}, {N_Cozinhas} )" type="raw">
             <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Situacao" type="Integer" sourceName="Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="Cod_Situacao" omitIfEmpty="True"/>
@@ -117,12 +137,13 @@
             <SqlParameter name="N_Suites" type="Integer" sourceName="N_Suites" sourceType="Control" dbFormat="" fieldSource="N_Suites" omitIfEmpty="True"/>
             <SqlParameter name="N_Banheiros" type="Integer" sourceName="N_Banheiros" sourceType="Control" dbFormat="" fieldSource="N_Banheiros" omitIfEmpty="True"/>
             <SqlParameter name="N_Salas" type="Integer" sourceName="N_Salas" sourceType="Control" dbFormat="" fieldSource="N_Salas" omitIfEmpty="True"/>
-            <SqlParameter name="N_Cozinhas" type="Integer" sourceName="N_Cozinhas" sourceType="Control" dbFormat="" fieldSource="N_Cozinhas" omitIfEmpty="True"/>
             <SqlParameter name="Dep_Empregada" type="Boolean" sourceName="Dep_Empregada" sourceType="Control" dbFormat="" fieldSource="Dep_Empregada"/>
             <SqlParameter name="Garagem" type="Boolean" sourceName="Garagem" sourceType="Control" dbFormat="" fieldSource="Garagem"/>
             <SqlParameter name="Mts_Quadrados" type="Integer" sourceName="Mts_Quadrados" sourceType="Control" dbFormat="" fieldSource="Mts_Quadrados" omitIfEmpty="True"/>
+            <SqlParameter name="Data" type="Date" sourceName="Data" sourceType="Control" dbFormat="yyyy-MM-dd HH:mm:ss" fieldSource="Data" omitIfEmpty="True"/>
+            <SqlParameter name="N_Cozinhas" type="Integer" sourceName="N_Cozinhas" sourceType="Control" dbFormat="" fieldSource="N_Cozinhas" omitIfEmpty="True"/>
         </Insert>
-        <Update query="UPDATE tbl_imovel SET Cod_Cliente = {Cod_Cliente}, Cod_Funcionario = {Cod_Funcionario}, Cod_Situacao = {Cod_Situacao}, Cod_destinacao = {Cod_destinacao}, Endereco = {Endereco}, CEP = {CEP}, Bairro = {Bairro}, Cod_Estado = {Cod_Estado}, Cod_Cidade = {Cod_Cidade}, N_Quartos = {N_Quartos}, N_Suites = {N_Suites}, N_Banheiros = {N_Banheiros}, N_Salas = {N_Salas}, N_Cozinhas = {N_Cozinhas}, Dep_Empregada = {Dep_Empregada}, Garagem = {Garagem}, Mts_Quadrados = {Mts_Quadrados}" type="raw">
+        <Update query="UPDATE tbl_imovel SET Cod_Cliente = {Cod_Cliente}, Cod_Funcionario = {Cod_Funcionario}, Cod_Situacao = {Cod_Situacao}, Cod_destinacao = {Cod_destinacao}, Endereco = {Endereco}, CEP = {CEP}, Bairro = {Bairro}, Cod_Estado = {Cod_Estado}, Cod_Cidade = {Cod_Cidade}, N_Quartos = {N_Quartos}, N_Suites = {N_Suites}, N_Banheiros = {N_Banheiros}, N_Salas = {N_Salas}, Dep_Empregada = {Dep_Empregada}, Garagem = {Garagem}, Mts_Quadrados = {Mts_Quadrados}, Data = {Data}, N_Cozinhas = {N_Cozinhas}" type="raw">
             <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
             <SqlParameter name="Cod_Situacao" type="Integer" sourceName="Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="Cod_Situacao" omitIfEmpty="True"/>
@@ -136,10 +157,11 @@
             <SqlParameter name="N_Suites" type="Integer" sourceName="N_Suites" sourceType="Control" dbFormat="" fieldSource="N_Suites" omitIfEmpty="True"/>
             <SqlParameter name="N_Banheiros" type="Integer" sourceName="N_Banheiros" sourceType="Control" dbFormat="" fieldSource="N_Banheiros" omitIfEmpty="True"/>
             <SqlParameter name="N_Salas" type="Integer" sourceName="N_Salas" sourceType="Control" dbFormat="" fieldSource="N_Salas" omitIfEmpty="True"/>
-            <SqlParameter name="N_Cozinhas" type="Integer" sourceName="N_Cozinhas" sourceType="Control" dbFormat="" fieldSource="N_Cozinhas" omitIfEmpty="True"/>
             <SqlParameter name="Dep_Empregada" type="Boolean" sourceName="Dep_Empregada" sourceType="Control" dbFormat="" fieldSource="Dep_Empregada"/>
             <SqlParameter name="Garagem" type="Boolean" sourceName="Garagem" sourceType="Control" dbFormat="" fieldSource="Garagem"/>
             <SqlParameter name="Mts_Quadrados" type="Integer" sourceName="Mts_Quadrados" sourceType="Control" dbFormat="" fieldSource="Mts_Quadrados" omitIfEmpty="True"/>
+            <SqlParameter name="Data" type="Date" sourceName="Data" sourceType="Control" dbFormat="yyyy-MM-dd HH:mm:ss" fieldSource="Data" omitIfEmpty="True"/>
+            <SqlParameter name="N_Cozinhas" type="Integer" sourceName="N_Cozinhas" sourceType="Control" dbFormat="" fieldSource="N_Cozinhas" omitIfEmpty="True"/>
             <Where>
                 <WhereClause>
                     <Parameter name="Cod_Imovel6"/>

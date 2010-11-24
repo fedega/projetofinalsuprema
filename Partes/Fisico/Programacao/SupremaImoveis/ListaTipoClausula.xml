@@ -1,8 +1,5 @@
-<!--Page model head @1-5583E7DC-->
-<Page name="ListaTipoClausula" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
-    <Security>
-        <Group id="1"/>
-    </Security>
+<!--Page model head @1-CF2D5AA7-->
+<Page name="ListaTipoClausula" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
 <!--Page componets @1-09196063-->

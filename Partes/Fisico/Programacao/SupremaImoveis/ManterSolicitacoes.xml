@@ -1,8 +1,5 @@
-<!--Page model head @1-CD642879-->
-<Page name="ManterSolicitacoes" restricted="True" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
-    <Security>
-        <Group id="1"/>
-    </Security>
+<!--Page model head @1-C651325B-->
+<Page name="ManterSolicitacoes" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
 <!--End Page model head-->
 
 <!--Page componets @1-09196063-->
