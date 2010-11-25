@@ -1,0 +1,33 @@
+<!--Flash Chart XML template @3-3AEDF989-->
+<?xml version="1.0" encoding="utf-8" ?>
+<root>
+	<schema name="Autumn">
+		<mask/>
+		<colors/>
+	</schema>
+	<separator decimal="," group=""/>
+	<background border="yes"/>
+	<chartarea border="yes">
+		<grid line_style="medium" visible="yes"/>
+		<vertical_axis visible="yes"/>
+		<horizontal_axis visible="yes" rotation="degrees" autoRotate="yes"/>
+		<chart line_thick="2" enabled="yes" type="columns" series="columns">
+			<inscriptions visible="yes"/>
+			<animation type="none"/>
+			<markers size="8" type="0"/>
+			<hints border="yes" enabled="yes"/>
+		</chart>
+		<legend sqr_size="12" sqr_borders="yes" border_thick="0" position="left-center" layout="vertical" visible="yes"/>
+		<title position="top" align="center" border="no" alpha="100" visible="yes" text="Carteira De Imoveis"/>
+	</chartarea>
+	<objects>
+	</objects>
+	<data>
+		<columns>
+			<column field="EmAndamentoAlu" name="Aluguel Em Andamento"/><column field="alugado" name="Alugados"/><column field="DisponivelAlu" name="Disponivel Para Alugar"/><column field="CanceladoAlu" name="Aluguel Cancelado"/><column field="EmAndamentoVenda" name="Venda Em Andamento"/><column field="Vendido" name="Vendidos"/><column field="DisponivelVenda" name="Disponivel Para Venda"/><column field="CanceladoVenda" name="Venda Cancelada"/></columns>
+		<rows><!-- BEGIN Row --><row col1="{EmAndamentoAlu}" col2="{alugado}" col3="{DisponivelAlu}" col4="{CanceladoAlu}" col5="{EmAndamentoVenda}" col6="{Vendido}" col7="{DisponivelVenda}" col8="{CanceladoVenda}"/><!-- END Row --></rows></data>
+</root>
+
+
+<!--End Flash Chart XML template-->
+

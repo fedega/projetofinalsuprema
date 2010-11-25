@@ -1,0 +1,97 @@
+<!--Page model head @1-4823CE8F-->
+<Page name="ManterAluguel" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_aluguel model @2-1CAE23BA-->
+    <Record name="tbl_aluguel" connection="Conexao" restricted="False" returnPage="ListaAluguel.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Data" caption="Data" dataType="Date"
+                controlSourceType="DataSource" controlSource="Data"
+                required="False" unique="" format="dd/MM/yyyy" dbFormat="yyyy-MM-dd HH:mm:ss" verificationRule="" errorControl="">
+        </TextBox>
+        <DatePicker name="DatePicker_Data" control="Data" style="Styles/Padrao/Style.css"/>
+        <TextBox name="Cod_Imovel" caption="Cod Imovel" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Imovel"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Cliente" caption="Cod Cliente" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Cliente"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Fiador" caption="Cod Fiador" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Fiador"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Funcionario" caption="Cod Funcionario" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Funcionario"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Select query="SELECT * FROM tbl_aluguel {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Aluguel6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Aluguel6" field="Cod_Aluguel" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Aluguel"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_aluguel ( Data, Cod_Imovel, Cod_Cliente, Cod_Fiador, Cod_Funcionario ) VALUES ( {Data}, {Cod_Imovel}, {Cod_Cliente}, {Cod_Fiador}, {Cod_Funcionario} )" type="raw">
+            <SqlParameter name="Data" type="Date" sourceName="Data" sourceType="Control" dbFormat="yyyy-MM-dd HH:mm:ss" fieldSource="Data" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Imovel" type="Integer" sourceName="Cod_Imovel" sourceType="Control" dbFormat="" fieldSource="Cod_Imovel" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Fiador" type="Integer" sourceName="Cod_Fiador" sourceType="Control" dbFormat="" fieldSource="Cod_Fiador" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_aluguel SET Data = {Data}, Cod_Imovel = {Cod_Imovel}, Cod_Cliente = {Cod_Cliente}, Cod_Fiador = {Cod_Fiador}, Cod_Funcionario = {Cod_Funcionario}" type="raw">
+            <SqlParameter name="Data" type="Date" sourceName="Data" sourceType="Control" dbFormat="yyyy-MM-dd HH:mm:ss" fieldSource="Data" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Imovel" type="Integer" sourceName="Cod_Imovel" sourceType="Control" dbFormat="" fieldSource="Cod_Imovel" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Fiador" type="Integer" sourceName="Cod_Fiador" sourceType="Control" dbFormat="" fieldSource="Cod_Fiador" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Aluguel6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Aluguel6" field="Cod_Aluguel" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Aluguel"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_aluguel" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Aluguel6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Aluguel6" field="Cod_Aluguel" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Aluguel"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_aluguel model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

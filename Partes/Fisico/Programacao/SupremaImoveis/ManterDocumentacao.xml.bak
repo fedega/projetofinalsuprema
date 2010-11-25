@@ -1,0 +1,89 @@
+<!--Page model head @1-485B44C6-->
+<Page name="ManterDocumentacao" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_documentacao model @2-0ED3FB58-->
+    <Record name="tbl_documentacao" connection="Conexao" restricted="False" returnPage="tbl_documentaca_list.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Tipo_Doc" caption="Tipo Doc" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Tipo_Doc"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Cliente" caption="Cod Cliente" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Cliente"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Fiador" caption="Cod Fiador" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Fiador"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <FileUpload name="FileUpload1" allow="*" disallow="" procFolder="" tempFolder="%TEMP" sizeLimit="100000"
+                controlSourceType="DataSource" controlSource="Anexo"
+                required="" verificationRule="" errorControl=""/>
+        <Select query="SELECT * FROM tbl_documentacao {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Doc6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Doc6" field="Cod_Doc" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Doc"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_documentacao ( Tipo_Doc, Cod_Cliente, Cod_Fiador, Anexo ) VALUES ( {Tipo_Doc}, {Cod_Cliente}, {Cod_Fiador}, {FileUpload1} )" type="raw">
+            <SqlParameter name="Tipo_Doc" type="Integer" sourceName="Tipo_Doc" sourceType="Control" dbFormat="" fieldSource="Tipo_Doc" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Fiador" type="Integer" sourceName="Cod_Fiador" sourceType="Control" dbFormat="" fieldSource="Cod_Fiador" omitIfEmpty="True"/>
+            <SqlParameter name="FileUpload1" type="Text" sourceName="FileUpload1" sourceType="Control" dbFormat="" fieldSource="Anexo" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_documentacao SET Tipo_Doc = {Tipo_Doc}, Cod_Cliente = {Cod_Cliente}, Cod_Fiador = {Cod_Fiador}, Anexo = {FileUpload1}" type="raw">
+            <SqlParameter name="Tipo_Doc" type="Integer" sourceName="Tipo_Doc" sourceType="Control" dbFormat="" fieldSource="Tipo_Doc" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Fiador" type="Integer" sourceName="Cod_Fiador" sourceType="Control" dbFormat="" fieldSource="Cod_Fiador" omitIfEmpty="True"/>
+            <SqlParameter name="FileUpload1" type="Text" sourceName="FileUpload1" sourceType="Control" dbFormat="" fieldSource="Anexo" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Doc6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Doc6" field="Cod_Doc" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Doc"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_documentacao" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Doc6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Doc6" field="Cod_Doc" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Doc"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_documentacao model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

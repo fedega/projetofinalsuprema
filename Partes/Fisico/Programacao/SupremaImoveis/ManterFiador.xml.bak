@@ -1,0 +1,145 @@
+<!--Page model head @1-95196DDB-->
+<Page name="ManterFiador" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_fiador model @2-E8A305CE-->
+    <Record name="tbl_fiador" connection="Conexao" restricted="False" returnPage="tbl_fiador_list.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="ListaFiador.jsp" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Cod_Orgao" caption="Cod Orgao" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Orgao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Estado" caption="Cod Estado" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Estado"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Cidade" caption="Cod Cidade" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Cidade"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Cliente" caption="Cod Cliente" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Cliente"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Nome" caption="Nome" dataType="Text"
+                controlSourceType="DataSource" controlSource="Nome"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Data_Nasc" caption="Data Nasc" dataType="Date"
+                controlSourceType="DataSource" controlSource="Data_Nasc"
+                required="True" unique="" format="dd/MM/yyyy" dbFormat="yyyy-MM-dd HH:mm:ss" verificationRule="" errorControl="">
+        </TextBox>
+        <DatePicker name="DatePicker_Data_Nasc" control="Data_Nasc" style="Styles/Padrao/Style.css"/>
+        <TextBox name="Nome_U" caption="Nome U" dataType="Text"
+                controlSourceType="DataSource" controlSource="Nome_U"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Senha_U" caption="Senha U" dataType="Text"
+                controlSourceType="DataSource" controlSource="Senha_U"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Nacionalidaade" caption="Nacionalidaade" dataType="Text"
+                controlSourceType="DataSource" controlSource="Nacionalidaade"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Endereco" caption="Endereco" dataType="Text"
+                controlSourceType="DataSource" controlSource="Endereco"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Tel_Fixo" caption="Tel Fixo" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Tel_Fixo"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Tel_Cel" caption="Tel Cel" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Tel_Cel"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Tel_Comercial" caption="Tel Comercial" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Tel_Comercial"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Select query="SELECT * FROM tbl_fiador {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Fiador6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Fiador6" field="Cod_Fiador" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Fiador"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_fiador ( Cod_Orgao, Cod_Estado, Cod_Cidade, Cod_Cliente, Nome, Data_Nasc, Nome_U, Senha_U, Nacionalidaade, Endereco, Tel_Fixo, Tel_Cel, Tel_Comercial ) VALUES ( {Cod_Orgao}, {Cod_Estado}, {Cod_Cidade}, {Cod_Cliente}, {Nome}, {Data_Nasc}, {Nome_U}, {Senha_U}, {Nacionalidaade}, {Endereco}, {Tel_Fixo}, {Tel_Cel}, {Tel_Comercial} )" type="raw">
+            <SqlParameter name="Cod_Orgao" type="Integer" sourceName="Cod_Orgao" sourceType="Control" dbFormat="" fieldSource="Cod_Orgao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Estado" type="Integer" sourceName="Cod_Estado" sourceType="Control" dbFormat="" fieldSource="Cod_Estado" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cidade" type="Integer" sourceName="Cod_Cidade" sourceType="Control" dbFormat="" fieldSource="Cod_Cidade" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Nome" type="Text" sourceName="Nome" sourceType="Control" dbFormat="" fieldSource="Nome" omitIfEmpty="True"/>
+            <SqlParameter name="Data_Nasc" type="Date" sourceName="Data_Nasc" sourceType="Control" dbFormat="yyyy-MM-dd HH:mm:ss" fieldSource="Data_Nasc" omitIfEmpty="True"/>
+            <SqlParameter name="Nome_U" type="Text" sourceName="Nome_U" sourceType="Control" dbFormat="" fieldSource="Nome_U" omitIfEmpty="True"/>
+            <SqlParameter name="Senha_U" type="Text" sourceName="Senha_U" sourceType="Control" dbFormat="" fieldSource="Senha_U" omitIfEmpty="True"/>
+            <SqlParameter name="Nacionalidaade" type="Text" sourceName="Nacionalidaade" sourceType="Control" dbFormat="" fieldSource="Nacionalidaade" omitIfEmpty="True"/>
+            <SqlParameter name="Endereco" type="Text" sourceName="Endereco" sourceType="Control" dbFormat="" fieldSource="Endereco" omitIfEmpty="True"/>
+            <SqlParameter name="Tel_Fixo" type="Integer" sourceName="Tel_Fixo" sourceType="Control" dbFormat="" fieldSource="Tel_Fixo" omitIfEmpty="True"/>
+            <SqlParameter name="Tel_Cel" type="Integer" sourceName="Tel_Cel" sourceType="Control" dbFormat="" fieldSource="Tel_Cel" omitIfEmpty="True"/>
+            <SqlParameter name="Tel_Comercial" type="Integer" sourceName="Tel_Comercial" sourceType="Control" dbFormat="" fieldSource="Tel_Comercial" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_fiador SET Cod_Orgao = {Cod_Orgao}, Cod_Estado = {Cod_Estado}, Cod_Cidade = {Cod_Cidade}, Cod_Cliente = {Cod_Cliente}, Nome = {Nome}, Data_Nasc = {Data_Nasc}, Nome_U = {Nome_U}, Senha_U = {Senha_U}, Nacionalidaade = {Nacionalidaade}, Endereco = {Endereco}, Tel_Fixo = {Tel_Fixo}, Tel_Cel = {Tel_Cel}, Tel_Comercial = {Tel_Comercial}" type="raw">
+            <SqlParameter name="Cod_Orgao" type="Integer" sourceName="Cod_Orgao" sourceType="Control" dbFormat="" fieldSource="Cod_Orgao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Estado" type="Integer" sourceName="Cod_Estado" sourceType="Control" dbFormat="" fieldSource="Cod_Estado" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cidade" type="Integer" sourceName="Cod_Cidade" sourceType="Control" dbFormat="" fieldSource="Cod_Cidade" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Cliente" type="Integer" sourceName="Cod_Cliente" sourceType="Control" dbFormat="" fieldSource="Cod_Cliente" omitIfEmpty="True"/>
+            <SqlParameter name="Nome" type="Text" sourceName="Nome" sourceType="Control" dbFormat="" fieldSource="Nome" omitIfEmpty="True"/>
+            <SqlParameter name="Data_Nasc" type="Date" sourceName="Data_Nasc" sourceType="Control" dbFormat="yyyy-MM-dd HH:mm:ss" fieldSource="Data_Nasc" omitIfEmpty="True"/>
+            <SqlParameter name="Nome_U" type="Text" sourceName="Nome_U" sourceType="Control" dbFormat="" fieldSource="Nome_U" omitIfEmpty="True"/>
+            <SqlParameter name="Senha_U" type="Text" sourceName="Senha_U" sourceType="Control" dbFormat="" fieldSource="Senha_U" omitIfEmpty="True"/>
+            <SqlParameter name="Nacionalidaade" type="Text" sourceName="Nacionalidaade" sourceType="Control" dbFormat="" fieldSource="Nacionalidaade" omitIfEmpty="True"/>
+            <SqlParameter name="Endereco" type="Text" sourceName="Endereco" sourceType="Control" dbFormat="" fieldSource="Endereco" omitIfEmpty="True"/>
+            <SqlParameter name="Tel_Fixo" type="Integer" sourceName="Tel_Fixo" sourceType="Control" dbFormat="" fieldSource="Tel_Fixo" omitIfEmpty="True"/>
+            <SqlParameter name="Tel_Cel" type="Integer" sourceName="Tel_Cel" sourceType="Control" dbFormat="" fieldSource="Tel_Cel" omitIfEmpty="True"/>
+            <SqlParameter name="Tel_Comercial" type="Integer" sourceName="Tel_Comercial" sourceType="Control" dbFormat="" fieldSource="Tel_Comercial" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Fiador6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Fiador6" field="Cod_Fiador" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Fiador"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_fiador" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Fiador6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Fiador6" field="Cod_Fiador" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Fiador"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_fiador model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

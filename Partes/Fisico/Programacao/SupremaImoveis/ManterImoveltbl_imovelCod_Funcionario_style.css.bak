@@ -1,0 +1,21 @@
+/*Page Style @1-B47C8CBF*/
+#tbl_imovelCod_Funcionario_choices {
+    position: absolute;
+}
+#tbl_imovelCod_Funcionario_choices ul {
+    background-color: white;
+    border: 1px solid black;
+    border-top: none;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: 0px;
+}
+#tbl_imovelCod_Funcionario_choices ul li.selected { background-color: #aaa;}
+#tbl_imovelCod_Funcionario_choices li {
+    list-style-type: none;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0;
+}
+/*End Page Style*/
+

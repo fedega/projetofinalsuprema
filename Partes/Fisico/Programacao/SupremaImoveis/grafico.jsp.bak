@@ -1,0 +1,105 @@
+<%--JSP Page Init @1-E15237AB--%>
+<%@page import="com.codecharge.*,com.codecharge.components.*,com.codecharge.util.*,com.codecharge.events.*,com.codecharge.db.*,com.codecharge.validation.*,java.util.*,java.io.*,com.codecharge.util.cache.CacheEvent,com.codecharge.util.cache.ICache,com.codecharge.template.*"%>
+<%if ((new graficoServiceChecker()).check(request, response, getServletContext())) return;%>
+<%@page contentType="text/html; charset=windows-1252"%>
+<%@taglib uri="/ccstags" prefix="ccs"%>
+<%--End JSP Page Init--%>
+
+<%--Page Body @1-139241D2--%>
+<%@include file="graficoHandlers.jsp"%>
+<%
+    if (!graficoModel.isVisible()) return;
+    if (graficoParent != null) {
+        if (!graficoParent.getChild(graficoModel.getName()).isVisible()) return;
+    }
+    pageContext.setAttribute("parent", graficoModel);
+    pageContext.setAttribute("page", graficoModel);
+    graficoModel.fireOnInitializeViewEvent(new Event());
+    graficoModel.fireBeforeShowEvent(new Event());
+    if (!graficoModel.isVisible()) return;
+%>
+<% 
+package exemplo;
+
+import java.util.Date;
+import java.util.Map;
+
+import org.jfree.data.category.DefaultCategoryDataset;
+
+import de.laures.cewolf.DatasetProduceException;
+import de.laures.cewolf.DatasetProducer;
+
+public class GraficoExemplo implements DatasetProducer {
+
+public Object produceDataset(Map arg0) throws DatasetProduceException {
+
+DefaultCategoryDataset ds = new DefaultCategoryDataset();
+
+ds.addValue(new Double(25000), “País”, “PR”);
+ds.addValue(new Double(5000), “Exterior”, “PR”);
+ds.addValue(new Double(22000), “País”, “SP”);
+ds.addValue(new Double(10000), “Exterior”, “SP”);
+ds.addValue(new Double(21000), “País”, “SC”);
+ds.addValue(new Double(15000), “Exterior”, “SC”);
+ds.addValue(new Double(15000), “País”, “RJ”);
+ds.addValue(new Double(1000), “Exterior”, “RJ”);
+ds.addValue(new Double(10000), “País”, “RS”);
+ds.addValue(new Double(1500), “Exterior”, “RS”);
+
+return ds;
+}
+
+public boolean hasExpired(Map arg0, Date arg1) {
+return true;
+}
+
+public String getProducerId() {
+return “Grafico1;
+}
+
+}
+
+%>
+<%--End Page Body--%>
+
+<%--JSP Page Content @1-FD18D220--%>
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//End CCS script
+</script>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<%@taglib uri=’/WEB-INF/cewolf.tld’ prefix=’cewolf’ %>
+<HTML>
+<BODY>
+<H1>Grafico Cewolf</H1>
+<HR>
+<jsp:useBean id=”bean” class=”exemplo.GraficoExemplo”/>
+<cewolf:chart id=”grafico1&#8243; title=”Teste de Grafico”
+type=”verticalbar”
+xaxislabel=”Estados”
+yaxislabel=”Valores(US$)”>
+<cewolf:gradientpaint>
+<cewolf:point x=”0&#8243; y=”0&#8243; color=”#FBFBFB” />
+<cewolf:point x=”350&#8243; y=”0&#8243; color=”#F3F3F3&#8243; />
+</cewolf:gradientpaint>
+<cewolf:data>
+<cewolf:producer id=”bean”/>
+</cewolf:data>
+</cewolf:chart>
+<p>
+<cewolf:img chartid=”grafico1&#8243; renderer=”/cewolf” width=”600&#8243; height=”300&#8243;/>
+<P>
+</BODY>
+</HTML>
+
+<%--End JSP Page Content--%>
+
+<%--JSP Page BeforeOutput @1-CF13E2A4--%>
+<%graficoModel.fireBeforeOutputEvent();%>
+<%--End JSP Page BeforeOutput--%>
+
+<%--JSP Page Unload @1-20651C5A--%>
+<%graficoModel.fireBeforeUnloadEvent();%>
+<%--End JSP Page Unload--%>
+

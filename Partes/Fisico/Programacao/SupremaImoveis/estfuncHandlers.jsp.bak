@@ -1,0 +1,50 @@
+<%--== Handlers ==--%> <%--estfunc Opening Initialization directive @1-A0E75F14--%><%!
+
+// //Workaround for JRun 3.1 @1-F81417CB
+
+//content type (workaround for Tomcat 6) @1-07BBDEA7
+%><%@page contentType="text/html; charset=windows-1252"%><%!
+//End content type (workaround for Tomcat 6)
+
+//Feature checker Head @1-D621C240
+    public class estfuncServiceChecker implements com.codecharge.features.IServiceChecker {
+//End Feature checker Head
+
+//feature binding @1-6DADF1A6
+        public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
+            String attr = "" + request.getParameter("callbackControl");
+            return false;
+        }
+//End feature binding
+
+//Feature checker Tail @1-FCB6E20C
+    }
+//End Feature checker Tail
+
+//Comment workaround @1-A0AAE532
+%> <%
+//End Comment workaround
+
+//Processing @1-3CA9B90A
+    Page estfuncModel = (Page)request.getAttribute("estfunc_page");
+    Page estfuncParent = (Page)request.getAttribute("estfuncParent");
+    if (estfuncModel == null) {
+        PageController estfuncCntr = new PageController(request, response, application, "/estfunc.xml" );
+        estfuncModel = estfuncCntr.getPage();
+        //if (estfuncParent != null) {
+            //if (!estfuncParent.getChild(estfuncModel.getName()).isVisible()) return;
+        //}
+        estfuncModel.setAttribute(Page.PAGE_ATTRIBUTE_PATH_TO_ROOT, (String)estfuncParent.getRelativePath());
+        estfuncCntr.process();
+%>
+<%
+        if (estfuncParent == null) {
+            estfuncModel.setCookies();
+            if (estfuncModel.redirect()) return;
+        } else {
+            estfuncModel.redirect();
+        }
+    }
+//End Processing
+
+%>

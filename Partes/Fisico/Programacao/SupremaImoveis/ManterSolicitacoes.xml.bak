@@ -1,0 +1,90 @@
+<!--Page model head @1-C651325B-->
+<Page name="ManterSolicitacoes" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_solicitacoes model @2-30A66C5B-->
+    <Record name="tbl_solicitacoes" connection="Conexao" restricted="False" returnPage="ListaSolicitacoes.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Descricao" caption="Descricao" dataType="Text"
+                controlSourceType="DataSource" controlSource="Descricao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Funcionario" caption="Cod Funcionario" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Funcionario"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Tipo_Solicitacao" caption="Tipo Solicitacao" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Tipo_Solicitacao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <TextBox name="Cod_Situacao" caption="Cod Situacao" dataType="Integer"
+                controlSourceType="DataSource" controlSource="Cod_Situacao"
+                required="False" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Select query="SELECT * FROM tbl_solicitacoes {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Solicitacoes6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Solicitacoes6" field="Cod_Solicitacoes" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Solicitacoes"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_solicitacoes ( Descricao, Cod_Funcionario, Tipo_Solicitacao, Cod_Situacao ) VALUES ( {Descricao}, {Cod_Funcionario}, {Tipo_Solicitacao}, {Cod_Situacao} )" type="raw">
+            <SqlParameter name="Descricao" type="Text" sourceName="Descricao" sourceType="Control" dbFormat="" fieldSource="Descricao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+            <SqlParameter name="Tipo_Solicitacao" type="Integer" sourceName="Tipo_Solicitacao" sourceType="Control" dbFormat="" fieldSource="Tipo_Solicitacao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Situacao" type="Integer" sourceName="Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="Cod_Situacao" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_solicitacoes SET Descricao = {Descricao}, Cod_Funcionario = {Cod_Funcionario}, Tipo_Solicitacao = {Tipo_Solicitacao}, Cod_Situacao = {Cod_Situacao}" type="raw">
+            <SqlParameter name="Descricao" type="Text" sourceName="Descricao" sourceType="Control" dbFormat="" fieldSource="Descricao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Funcionario" type="Integer" sourceName="Cod_Funcionario" sourceType="Control" dbFormat="" fieldSource="Cod_Funcionario" omitIfEmpty="True"/>
+            <SqlParameter name="Tipo_Solicitacao" type="Integer" sourceName="Tipo_Solicitacao" sourceType="Control" dbFormat="" fieldSource="Tipo_Solicitacao" omitIfEmpty="True"/>
+            <SqlParameter name="Cod_Situacao" type="Integer" sourceName="Cod_Situacao" sourceType="Control" dbFormat="" fieldSource="Cod_Situacao" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Solicitacoes6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Solicitacoes6" field="Cod_Solicitacoes" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Solicitacoes"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_solicitacoes" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Solicitacoes6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Solicitacoes6" field="Cod_Solicitacoes" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_Solicitacoes"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_solicitacoes model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

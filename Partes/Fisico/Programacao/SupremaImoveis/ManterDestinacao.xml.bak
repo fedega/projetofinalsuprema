@@ -1,0 +1,72 @@
+<!--Page model head @1-8ED3D918-->
+<Page name="ManterDestinacao" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_destinacao model @2-CB87F932-->
+    <Record name="tbl_destinacao" connection="Conexao" restricted="False" returnPage="tbl_destinacao_list.jsp" convertRule="Relative" preserveParams="GET" 
+            allowInsert="True" allowUpdate="True" allowDelete="True" allowRead="True" visible="True">
+        <Button name="Button_Insert" operation="Insert"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <Button name="Button_Update" operation="Update"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="2">
+        </Button>
+        <Button name="Button_Delete" operation="Delete"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="False" order="3">
+        </Button>
+        <TextBox name="Destinacao" caption="Destinacao" dataType="Text"
+                controlSourceType="DataSource" controlSource="Destinacao"
+                required="True" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+        <Select query="SELECT * FROM tbl_destinacao {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_destinacao6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_destinacao6" field="Cod_destinacao" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_destinacao"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+        <Insert query="INSERT INTO tbl_destinacao ( Destinacao ) VALUES ( {Destinacao} )" type="raw">
+            <SqlParameter name="Destinacao" type="Text" sourceName="Destinacao" sourceType="Control" dbFormat="" fieldSource="Destinacao" omitIfEmpty="True"/>
+        </Insert>
+        <Update query="UPDATE tbl_destinacao SET Destinacao = {Destinacao}" type="raw">
+            <SqlParameter name="Destinacao" type="Text" sourceName="Destinacao" sourceType="Control" dbFormat="" fieldSource="Destinacao" omitIfEmpty="True"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_destinacao6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_destinacao6" field="Cod_destinacao" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_destinacao"
+                        format="" dbFormat=""/>
+            </Where>
+        </Update>
+        <Delete query="DELETE FROM tbl_destinacao" type="raw">
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_destinacao6"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_destinacao6" field="Cod_destinacao" type="Integer"
+                        operation="EQUAL" useIsNull="False" sourceType="URL" sourceName="Cod_destinacao"
+                        format="" dbFormat=""/>
+            </Where>
+        </Delete>
+    </Record>
+<!--End Record tbl_destinacao model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

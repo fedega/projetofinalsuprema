@@ -91,37 +91,37 @@
 		&lt;rows&gt;&lt;!-- BEGIN Row --&gt;&lt;row col1=&quot;{ConcluidasAluguel}&quot; col2=&quot;{EmAndamentoAluguel}&quot; col3=&quot;{CanceladasAluguel}&quot;/&gt;&lt;!-- END Row --&gt;&lt;/rows&gt;&lt;/data&gt;
 &lt;/root&gt;
 ">
-<Components/>
-<Events/>
-<Attributes/>
-<DataSeries>
-<Field id="65" fieldName="ConcluidasAluguel" alias="Concluidos"/>
-<Field id="66" fieldName="EmAndamentoAluguel" alias="Em Andamento"/>
-<Field id="67" fieldName="CanceladasAluguel" alias="Cancelados"/>
-</DataSeries>
-<TableParameters/>
-<JoinTables/>
-<JoinLinks/>
-<Fields/>
-<AllFields>
-<Field id="56" fieldName="ConcluidasVendas"/>
-<Field id="57" fieldName="EmAndamentoVendas"/>
-<Field id="58" fieldName="CanceladasVendas"/>
-<Field id="59" fieldName="ConcluidasAluguel"/>
-<Field id="61" fieldName="EmAndamentoAluguel"/>
-<Field id="63" fieldName="CanceladasAluguel"/>
-</AllFields>
-<SelectedFields>
-<Field id="60" tableName="tbl_transconcluidas" fieldName="ConcluidasAluguel" isExpression="False"/>
-<Field id="62" tableName="tbl_transconcluidas" fieldName="EmAndamentoAluguel" isExpression="False"/>
-<Field id="64" tableName="tbl_transconcluidas" fieldName="CanceladasAluguel" isExpression="False"/>
-</SelectedFields>
-<SPParameters/>
-<SQLParameters/>
-<SecurityGroups/>
-<Features/>
-</FlashChart>
-</Components>
+			<Components/>
+			<Events/>
+			<Attributes/>
+			<DataSeries>
+				<Field id="65" fieldName="ConcluidasAluguel" alias="Concluidos"/>
+				<Field id="66" fieldName="EmAndamentoAluguel" alias="Em Andamento"/>
+				<Field id="67" fieldName="CanceladasAluguel" alias="Cancelados"/>
+			</DataSeries>
+			<TableParameters/>
+			<JoinTables/>
+			<JoinLinks/>
+			<Fields/>
+			<AllFields>
+				<Field id="56" fieldName="ConcluidasVendas"/>
+				<Field id="57" fieldName="EmAndamentoVendas"/>
+				<Field id="58" fieldName="CanceladasVendas"/>
+				<Field id="59" fieldName="ConcluidasAluguel"/>
+				<Field id="61" fieldName="EmAndamentoAluguel"/>
+				<Field id="63" fieldName="CanceladasAluguel"/>
+			</AllFields>
+			<SelectedFields>
+				<Field id="60" tableName="tbl_transconcluidas" fieldName="ConcluidasAluguel" isExpression="False"/>
+				<Field id="62" tableName="tbl_transconcluidas" fieldName="EmAndamentoAluguel" isExpression="False"/>
+				<Field id="64" tableName="tbl_transconcluidas" fieldName="CanceladasAluguel" isExpression="False"/>
+			</SelectedFields>
+			<SPParameters/>
+			<SQLParameters/>
+			<SecurityGroups/>
+			<Features/>
+		</FlashChart>
+	</Components>
 	<CodeFiles>
 		<CodeFile id="FlashChart13" language="JSP" name="TransConcluidasFlashChart1.xml" path="\" forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>
 <CodeFile id="FlashChart231" language="JSP" name="TransConcluidasFlashChart2.xml" path="\" forShow="False" comment="&lt;!--" commentEnd="--&gt;" codePage="windows-1252"/>

@@ -1,0 +1,50 @@
+<%--== Handlers ==--%> <%--ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1 Opening Initialization directive @1-A0E75F14--%><%!
+
+// //Workaround for JRun 3.1 @1-F81417CB
+
+//content type (workaround for Tomcat 6) @1-07BBDEA7
+%><%@page contentType="text/html; charset=windows-1252"%><%!
+//End content type (workaround for Tomcat 6)
+
+//Feature checker Head @1-B98E3683
+    public class ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1ServiceChecker implements com.codecharge.features.IServiceChecker {
+//End Feature checker Head
+
+//feature binding @1-6DADF1A6
+        public boolean check ( HttpServletRequest request, HttpServletResponse response, ServletContext context) {
+            String attr = "" + request.getParameter("callbackControl");
+            return false;
+        }
+//End feature binding
+
+//Feature checker Tail @1-FCB6E20C
+    }
+//End Feature checker Tail
+
+//Comment workaround @1-A0AAE532
+%> <%
+//End Comment workaround
+
+//Processing @1-39C2D84E
+    Page ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model = (Page)request.getAttribute("ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1_page");
+    Page ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Parent = (Page)request.getAttribute("ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Parent");
+    if (ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model == null) {
+        PageController ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Cntr = new PageController(request, response, application, "/services/ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1.xml" );
+        ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model = ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Cntr.getPage();
+        ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model.setRelativePath("../");
+        //if (ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Parent != null) {
+            //if (!ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Parent.getChild(ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model.getName()).isVisible()) return;
+        //}
+        ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Cntr.process();
+%>
+<%
+        if (ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Parent == null) {
+            ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model.setCookies();
+            if (ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model.redirect()) return;
+        } else {
+            ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1Model.redirect();
+        }
+    }
+//End Processing
+
+%>

@@ -1,0 +1,17 @@
+<!--Page model head @1-EA2642BD-->
+<Page name="Lucros" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-14CCCE70-->
+    <Include name="Header"/>
+<!--End Page componets-->
+
+<!--FlashChart FlashChart1 model @4-7F2EDC4C-->
+    <FlashChart name="FlashChart1" restricted="False" title="Chart Title" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart1" >
+    </FlashChart>
+<!--End FlashChart FlashChart1 model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

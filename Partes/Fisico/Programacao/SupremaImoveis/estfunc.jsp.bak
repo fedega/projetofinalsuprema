@@ -1,0 +1,40 @@
+<%--JSP Page Init @1-0D33EE85--%>
+<%@page import="com.codecharge.*,com.codecharge.components.*,com.codecharge.util.*,com.codecharge.events.*,com.codecharge.db.*,com.codecharge.validation.*,java.util.*,java.io.*,com.codecharge.util.cache.CacheEvent,com.codecharge.util.cache.ICache,com.codecharge.template.*"%>
+<%if ((new estfuncServiceChecker()).check(request, response, getServletContext())) return;%>
+<%@page contentType="text/html; charset=windows-1252"%>
+<%@taglib uri="/ccstags" prefix="ccs"%>
+<%--End JSP Page Init--%>
+
+ %>
+<%--Page Body @1-269389F0--%>
+<%@include file="estfuncHandlers.jsp"%>
+<%
+    if (!estfuncModel.isVisible()) return;
+    if (estfuncParent != null) {
+        if (!estfuncParent.getChild(estfuncModel.getName()).isVisible()) return;
+    }
+    pageContext.setAttribute("parent", estfuncModel);
+    pageContext.setAttribute("page", estfuncModel);
+    estfuncModel.fireOnInitializeViewEvent(new Event());
+    estfuncModel.fireBeforeShowEvent(new Event());
+    if (!estfuncModel.isVisible()) return;
+%>
+<%--End Page Body--%>
+
+<%--JSP Page Content @1-46484D4A--%>
+<script language="JavaScript" type="text/javascript">
+//Begin CCS script
+//End CCS script
+</script>
+<meta name="GENERATOR" content="CodeCharge Studio 4.3.00.7676">
+
+<%--End JSP Page Content--%>
+
+<%--JSP Page BeforeOutput @1-A0F4FBEF--%>
+<%estfuncModel.fireBeforeOutputEvent();%>
+<%--End JSP Page BeforeOutput--%>
+
+<%--JSP Page Unload @1-4F820511--%>
+<%estfuncModel.fireBeforeUnloadEvent();%>
+<%--End JSP Page Unload--%>
+

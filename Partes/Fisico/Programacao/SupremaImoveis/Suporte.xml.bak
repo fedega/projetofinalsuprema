@@ -1,0 +1,42 @@
+<!--Page model head @1-FDF2E40B-->
+<Page name="Suporte" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Menu Menu1 model @2-7E8B075A-->
+    <Menu name="Menu1" menu_type="Horizontal" menuSourceType="Static" restricted="False" >
+        <MenuItem name="MenuItem1" caption="Grafico Imoveis" parent="" url="Imoveis.jsp" target="" title="" />
+        <MenuItem name="MenuItem5" caption="Aluguel" parent="" url="ListaAluguel.jsp" target="" title="" />
+        <MenuItem name="MenuItem6" caption="Cidade" parent="" url="ListaCidade.jsp" target="" title="" />
+        <MenuItem name="MenuItem7" caption="Causula" parent="" url="ListaClausula.jsp" target="" title="" />
+        <MenuItem name="MenuItem7Item1" caption="Tipo de Clasula" parent="MenuItem7" url="ListaTipoClausula.jsp" target="" title="" />
+        <MenuItem name="MenuItem8" caption="Cliente" parent="" url="ListaCliente.jsp" target="" title="" />
+        <MenuItem name="MenuItem8Item1" caption="Tipo de Cliente" parent="MenuItem8" url="ListaTipoCliente.jsp" target="" title="" />
+        <MenuItem name="MenuItem9" caption="Contrato" parent="" url="ListaContrato.jsp" target="" title="" />
+        <MenuItem name="MenuItem10" caption="Despesas" parent="" url="ListaDespesas.jsp" target="" title="" />
+        <MenuItem name="MenuItem10Item1" caption="Tipo de Despesas" parent="MenuItem10" url="ListaTipoDesp.jsp" target="" title="" />
+        <MenuItem name="MenuItem11" caption="Destinacao" parent="" url="ListaDestinacao.jsp" target="" title="" />
+        <MenuItem name="MenuItem12" caption="Documentacao" parent="" url="ListaDocumentacao.jsp" target="" title="" />
+        <MenuItem name="MenuItem12Item1" caption="Tipo de Documentacao" parent="MenuItem12" url="ListaTipoDoc.jsp" target="" title="" />
+        <MenuItem name="MenuItem13" caption="Estado" parent="" url="ListaEstado.jsp" target="" title="" />
+        <MenuItem name="MenuItem14" caption="Fiador" parent="" url="ListaFiador.jsp" target="" title="" />
+        <MenuItem name="MenuItem15" caption="Funcionario" parent="" url="ListaFuncionario.jsp" target="" title="" />
+        <MenuItem name="MenuItem16" caption="Imovel" parent="" url="ListaImovel.jsp" target="" title="" />
+        <MenuItem name="MenuItem17" caption="Orgao" parent="" url="ListaOrgao.jsp" target="" title="" />
+        <MenuItem name="MenuItem18" caption="Preferencia" parent="" url="ListaPreferencia.jsp" target="" title="" />
+        <MenuItem name="MenuItem19" caption="Situacao" parent="" url="ListaSituacao.jsp" target="" title="" />
+        <MenuItem name="MenuItem20" caption="Solicitacoes" parent="" url="ListaSolicitacoes.jsp" target="" title="" />
+        <MenuItem name="MenuItem20Item1" caption="Tipo de Solicitacao" parent="MenuItem20" url="ListaTipoSolici.jsp" target="" title="" />
+        <MenuItem name="MenuItem21" caption="Venda" parent="" url="ListaVenda.jsp" target="" title="" />
+        <MenuItem name="MenuItem22" caption="Visita" parent="" url="ListaVisita.jsp" target="" title="" />
+        <Link name="ItemLink" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                hrefType="Page" hrefSource="" convertRule="Relative"
+                format="" dbFormat="" isHtml="False" preserveParams="GET">
+        </Link>
+    </Menu>
+<!--End Menu Menu1 model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

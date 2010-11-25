@@ -1,0 +1,32 @@
+<!--Page model head @1-E81E32E4-->
+<Page name="ManterImovel_tbl_imovel_Cod_Funcionario_PTAutocomplete1" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Grid tbl_cliente model @2-E6F01A5A-->
+    <Grid name="tbl_cliente" connection="Conexao" restricted="False" fetchSize="10" allowRead="True" 
+            fetchSizeLimit="100" useCount="False" visible="True">
+        <Row>
+            <Label name="Nome" dataType="Text"
+                    controlSourceType="DataSource" controlSource="Nome"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+        </Row>
+        <Select query="SELECT Nome FROM tbl_cliente {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <CountSql query="SELECT COUNT(*) FROM tbl_cliente" type="raw"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="Cod_Funcionario33"/>
+
+                </WhereClause>
+                <WhereParameter name="Cod_Funcionario33" field="Nome" type="Text"
+                        operation="BEGINS_WITH" useIsNull="False" sourceType="Form" sourceName="Cod_Funcionario"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+    </Grid>
+<!--End Grid tbl_cliente model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

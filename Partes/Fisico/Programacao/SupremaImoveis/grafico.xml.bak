@@ -1,0 +1,25 @@
+<!--Page model head @1-026C70C8-->
+<Page name="grafico" restricted="False" included="False" accessDeniedPage="Login.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+<servlet>
+<servlet-name>CewolfServlet</servlet-name>
+<servlet-class>de.laures.cewolf.CewolfRenderer</servlet-class>
+<init-param>
+<param-name>storage</param-name>
+<param-value>de.laures.cewolf.storage.TransientSessionStorage</param-value>
+</init-param>
+<init-param>
+<param-name>debug</param-name>
+<param-value>true</param-value>
+</init-param>
+<load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+<servlet-name>CewolfServlet</servlet-name>
+<url-pattern>/cewolf/*</url-pattern>
+</servlet-mapping>
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

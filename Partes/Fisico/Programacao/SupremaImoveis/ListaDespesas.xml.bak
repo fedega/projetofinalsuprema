@@ -1,0 +1,86 @@
+<!--Page model head @1-C24D1E23-->
+<Page name="ListaDespesas" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Page componets @1-09196063-->
+    <Include name="Header"/>
+    <Include name="Footer"/>
+<!--End Page componets-->
+
+<!--Record tbl_despesasSearch model @2-30E4502A-->
+    <Record name="tbl_despesasSearch" connection="" restricted="False" returnPage="ListaDespesas.jsp" convertRule="Relative" preserveParams="None" 
+            allowInsert="False" allowUpdate="False" allowDelete="False" allowRead="True" visible="True">
+        <Button name="Button_DoSearch" operation="Search"
+                returnPage="" convertRule="Relative"
+                defaultButton="False" doValidate="True" order="1">
+        </Button>
+        <TextBox name="s_Data" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                required="" unique="" format="" dbFormat="" verificationRule="" errorControl="">
+        </TextBox>
+    </Record>
+<!--End Record tbl_despesasSearch model-->
+
+<!--Grid tbl_despesas model @6-44CB60FE-->
+    <Grid name="tbl_despesas" connection="Conexao" restricted="False" fetchSize="20" allowRead="True" 
+            fetchSizeLimit="100" useCount="True" visible="True">
+        <Row>
+            <Link name="Cod_Despesas" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="Cod_Despesas"
+                    hrefType="Page" hrefSource="ManterDespesas.jsp" convertRule="Relative"
+                    format="" dbFormat="" isHtml="False" preserveParams="GET">
+                <LinkParameter name="Cod_Despesas" sourceType="DataField" sourceName="Cod_Despesas" format="yyyy-MM-dd"/>
+            </Link>
+            <Label name="Data" dataType="Text"
+                    controlSourceType="DataSource" controlSource="Data"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="Valor" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="Valor"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="Tipo_Despesas" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="Tipo_Despesas"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="Cod_Aluguel" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="Cod_Aluguel"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+            <Label name="tbl_situacao_Cod_Situacao" dataType="Integer"
+                    controlSourceType="DataSource" controlSource="tbl_situacao_Cod_Situacao"
+                    isHtml="False" format="" dbFormat="">
+            </Label>
+        </Row>
+        <Link name="tbl_despesas_Insert" dataType="Text"
+                controlSourceType="DataSource" controlSource=""
+                hrefType="Page" hrefSource="ManterDespesas.jsp" convertRule="Relative"
+                format="" dbFormat="" isHtml="False" preserveParams="GET">
+            <ExcludeParameter name="Cod_Despesas"/>
+        </Link>
+        <Sorter name="Sorter_Cod_Despesas" ascColumn="Cod_Despesas" visible="True"/>
+        <Sorter name="Sorter_Data" ascColumn="Data" visible="True"/>
+        <Sorter name="Sorter_Valor" ascColumn="Valor" visible="True"/>
+        <Sorter name="Sorter_Tipo_Despesas" ascColumn="Tipo_Despesas" visible="True"/>
+        <Sorter name="Sorter_Cod_Aluguel" ascColumn="Cod_Aluguel" visible="True"/>
+        <Sorter name="Sorter_tbl_situacao_Cod_Situacao" ascColumn="tbl_situacao_Cod_Situacao" visible="True"/>
+        <Navigator name="Navigator" pageSizes="1;5;10;25;50"/>
+        <Select query="SELECT Cod_Despesas, Data, Valor, Tipo_Despesas, Cod_Aluguel, tbl_situacao_Cod_Situacao FROM tbl_despesas {SQL_Where} {SQL_OrderBy}" optimize="true" type="raw" orderBy="">
+            <CountSql query="SELECT COUNT(*) FROM tbl_despesas" type="raw"/>
+            <Where>
+                <WhereClause>
+                    <Parameter name="s_Data9"/>
+
+                </WhereClause>
+                <WhereParameter name="s_Data9" field="Data" type="Text"
+                        operation="CONTAINS" useIsNull="False" sourceType="URL" sourceName="s_Data"
+                        format="" dbFormat=""/>
+            </Where>
+        </Select>
+    </Grid>
+<!--End Grid tbl_despesas model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

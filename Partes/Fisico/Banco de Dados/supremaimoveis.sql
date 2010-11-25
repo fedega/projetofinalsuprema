@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50151
 File Encoding         : 65001
 
-Date: 2010-11-24 03:18:52
+Date: 2010-11-25 11:06:42
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -5814,7 +5814,7 @@ CREATE TABLE `tbl_funcionario` (
 -- ----------------------------
 -- Records of tbl_funcionario
 -- ----------------------------
-INSERT INTO tbl_funcionario VALUES ('1', 'Elomar Rodrigues da Silveira', '801', '7', '1', 'elomar', 'elomar', 'uahuhau', '242424424', '242424', '02356402128', '2010-10-19 02:27:28', '242424', '3');
+INSERT INTO tbl_funcionario VALUES ('1', 'Elomar R Silveira', '801', '7', '1', 'elomar', 'elomar', 'uahuhau', '242424424', '242424', '02356402128', '2010-10-19 00:00:00', '242424', '3');
 INSERT INTO tbl_funcionario VALUES ('2', 'Rogerio CMS', '801', '7', '1', 'rogerio', 'rogerio', 'testando', '232323232', '23232323', '02323232333', '2010-10-30 00:00:00', '23233', '3');
 INSERT INTO tbl_funcionario VALUES ('3', 'Jose', '801', '7', '1', 'jose', 'jose', 'qe', '23232323', '232323', '00232323232', '2010-11-17 00:00:00', '232322', '2');
 INSERT INTO tbl_funcionario VALUES ('4', 'Maruo', '40', '7', '1', '23232323', '23333343', 'sdsdsdsds', '23232323', '2323232', '00232323232', '2010-11-17 00:00:00', '323232', '3');
@@ -5858,17 +5858,18 @@ CREATE TABLE `tbl_imovel` (
   CONSTRAINT `Foi` FOREIGN KEY (`Cod_destinacao`) REFERENCES `tbl_destinacao` (`Cod_destinacao`),
   CONSTRAINT `Localizado` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
   CONSTRAINT `Possui` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of tbl_imovel
 -- ----------------------------
-INSERT INTO tbl_imovel VALUES ('2', '1', '1', '2', '1', 'QI 9 Conj 8 lote 10', '23232323', 'Lago Sul', '7', '801', '8', '4', '4', '2', '2', '', '', '1200', '2010-11-16', null);
-INSERT INTO tbl_imovel VALUES ('3', '1', '2', '3', '2', 'Qe 01 conj J casa 100', '71060162', 'Guara', '7', '801', '4', '2', '3', '2', '1', '', '', '220', '2010-11-17', null);
+INSERT INTO tbl_imovel VALUES ('2', '1', '3', '2', '1', 'QI 9 Conj 8 lote 10', '23232323', 'Lago Sul', '7', '801', '8', '4', '4', '2', '2', '', '', '1200', '2010-11-16', null);
+INSERT INTO tbl_imovel VALUES ('3', '1', '1', '4', '1', 'Qe 01 conj J casa 100', '71060162', 'Guara', '7', '801', '4', '2', '3', '2', '1', '', '', '220', '2010-11-17', null);
 INSERT INTO tbl_imovel VALUES ('4', '1', '2', '3', '2', 'SQN 232 bl K ap 10', '23232323', 'SIA', '7', '801', '1', '1', '1', '1', '1', '', '', '80', '2010-11-10', null);
-INSERT INTO tbl_imovel VALUES ('5', '1', '1', '3', '2', 'SCS 706 bl. E apart 232', '424242', 'Asa sul', '7', '801', '5', '2', '3', '1', '1', '', '', '220', '2010-11-23', '750000');
+INSERT INTO tbl_imovel VALUES ('5', '1', '3', '3', '2', 'SCS 706 bl. E apart 232', '424242', 'Asa sul', '7', '801', '5', '2', '3', '1', '1', '', '', '220', '2010-11-23', '750000');
 INSERT INTO tbl_imovel VALUES ('6', '1', '2', '2', '1', 'SCS 706 bl. E apart 232', '23232323', 'Asa sul', '7', '801', '2', '3', '5', '6', '7', '', '', '242', '2010-11-23', null);
 INSERT INTO tbl_imovel VALUES ('8', '1', '1', '3', '2', 'SQN 3 conj b lote 8', '232342', 'Taguatinga', '7', '801', '2', '3', '4', '1', '3', '', '', '2323', '2010-11-24', null);
+INSERT INTO tbl_imovel VALUES ('9', '1', '1', '2', '1', 'SCLS 404 Bloco D AP 101', '2424242', 'Asa sul', '7', '801', '7', '6', '5', '4', '2', '', '', '4242', '2010-11-24', '2000');
 
 -- ----------------------------
 -- Table structure for `tbl_orgaoemissor`
@@ -6039,7 +6040,7 @@ CREATE TABLE `tbl_transconcluidas` (
 -- ----------------------------
 -- Records of tbl_transconcluidas
 -- ----------------------------
-INSERT INTO tbl_transconcluidas VALUES ('4', '0', '0', null, null, null);
+INSERT INTO tbl_transconcluidas VALUES ('3', '0', '0', '3', '0', '0');
 
 -- ----------------------------
 -- Table structure for `tbl_venda`
@@ -6085,6 +6086,12 @@ CREATE TABLE `tbl_visita` (
 -- ----------------------------
 
 -- ----------------------------
+-- View structure for `estatistica carteira`
+-- ----------------------------
+DROP VIEW IF EXISTS `estatistica carteira`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `estatistica carteira` AS select distinct (select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 1) and (`tbl_imovel`.`Cod_destinacao` = 1))) AS `EmAndamentoAlu`,(select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 2) and (`tbl_imovel`.`Cod_destinacao` = 1))) AS `alugado`,(select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 4) and (`tbl_imovel`.`Cod_destinacao` = 1))) AS `DisponivelAlu`,(select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 5) and (`tbl_imovel`.`Cod_destinacao` = 1))) AS `CanceladoAlu`,(select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 1) and (`tbl_imovel`.`Cod_destinacao` = 2))) AS `EmAndamentoVenda`,(select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 3) and (`tbl_imovel`.`Cod_destinacao` = 2))) AS `Vendido`,(select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 4) and (`tbl_imovel`.`Cod_destinacao` = 2))) AS `DisponivelVenda`,(select count(`tbl_imovel`.`Cod_Situacao`) from `tbl_imovel` where ((`tbl_imovel`.`Cod_Situacao` = 5) and (`tbl_imovel`.`Cod_destinacao` = 2))) AS `CanceladoVenda`;
+
+-- ----------------------------
 -- View structure for `view_desempenho_aluguel`
 -- ----------------------------
 DROP VIEW IF EXISTS `view_desempenho_aluguel`;
@@ -6106,6 +6113,27 @@ CREATE EVENT `CanceladasVendas` ON SCHEDULE EVERY 1 SECOND STARTS '2010-11-23 20
          = (SELECT COUNT(cod_situacao)  
               FROM tbl_imovel 
 	      where cod_situacao = 5 AND Cod_destinacao = 2 )
+;;
+DELIMITER ;
+
+-- ----------------------------
+-- Event structure for `ConcluidasAluguel`
+-- ----------------------------
+DROP EVENT IF EXISTS `ConcluidasAluguel`;
+DELIMITER ;;
+CREATE EVENT `ConcluidasAluguel` ON SCHEDULE EVERY 1 SECOND STARTS '2010-11-24 04:27:30' ON COMPLETION NOT PRESERVE ENABLE DO UPDATE tbl_transconcluidas
+  SET CanceladasAluguel
+         = (SELECT COUNT(cod_situacao)  
+              FROM tbl_imovel 
+	      where cod_situacao = 5 AND Cod_destinacao = 1 ),
+ConcluidasAluguel
+         = (SELECT COUNT(cod_situacao)  
+              FROM tbl_imovel 
+	      where cod_situacao = 2 AND Cod_destinacao = 1 ),
+EmAndamentoAluguel
+         = (SELECT COUNT(cod_situacao)  
+              FROM tbl_imovel 
+	      where cod_situacao = 1 AND Cod_destinacao = 1 )
 ;;
 DELIMITER ;
 
