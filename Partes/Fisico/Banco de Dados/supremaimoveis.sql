@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50151
 File Encoding         : 65001
 
-Date: 2010-11-25 11:06:42
+Date: 2010-11-27 22:30:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -5594,12 +5594,13 @@ CREATE TABLE `tbl_cliente` (
   CONSTRAINT `Cliente_Estado` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
   CONSTRAINT `Identificado` FOREIGN KEY (`Tipo_Cliente`) REFERENCES `tbl_tipo_cliente` (`Cod_Tipo_Cliente`),
   CONSTRAINT `Recebido` FOREIGN KEY (`Cod_Funcionario`) REFERENCES `tbl_funcionario` (`Cod_Funcionario`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 AVG_ROW_LENGTH=16384 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of tbl_cliente
 -- ----------------------------
 INSERT INTO tbl_cliente VALUES ('1', 'Felepe Dos Santos', '1988-11-18', 'Filip', 'filip', 'Brasileira', 'SQN 232 bl K ap 10', '2222222', '2222222', '2222222', '7', '811', '1', '1', '1');
+INSERT INTO tbl_cliente VALUES ('2', 'Maria Joaquina Teixeira', '1920-11-30', 'MariaT', 'jojo', 'jojo', 'RUA P2A Casa 30', '38823232', '38823232', '38823232', '7', '801', '1', '1', '3');
 
 -- ----------------------------
 -- Table structure for `tbl_contrato`
@@ -5858,18 +5859,19 @@ CREATE TABLE `tbl_imovel` (
   CONSTRAINT `Foi` FOREIGN KEY (`Cod_destinacao`) REFERENCES `tbl_destinacao` (`Cod_destinacao`),
   CONSTRAINT `Localizado` FOREIGN KEY (`Cod_Cidade`) REFERENCES `tbl_cidade` (`Cod_Cidade`),
   CONSTRAINT `Possui` FOREIGN KEY (`Cod_Cliente`) REFERENCES `tbl_cliente` (`Cod_Cliente`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;
 
 -- ----------------------------
 -- Records of tbl_imovel
 -- ----------------------------
-INSERT INTO tbl_imovel VALUES ('2', '1', '3', '2', '1', 'QI 9 Conj 8 lote 10', '23232323', 'Lago Sul', '7', '801', '8', '4', '4', '2', '2', '', '', '1200', '2010-11-16', null);
+INSERT INTO tbl_imovel VALUES ('2', '1', '3', '4', '1', 'QI 9 Conj 8 lote 10', '23232323', 'Lago Sul', '7', '801', '8', '4', '4', '2', '2', '', '', '1200', '2010-11-16', null);
 INSERT INTO tbl_imovel VALUES ('3', '1', '1', '4', '1', 'Qe 01 conj J casa 100', '71060162', 'Guara', '7', '801', '4', '2', '3', '2', '1', '', '', '220', '2010-11-17', null);
 INSERT INTO tbl_imovel VALUES ('4', '1', '2', '3', '2', 'SQN 232 bl K ap 10', '23232323', 'SIA', '7', '801', '1', '1', '1', '1', '1', '', '', '80', '2010-11-10', null);
-INSERT INTO tbl_imovel VALUES ('5', '1', '3', '3', '2', 'SCS 706 bl. E apart 232', '424242', 'Asa sul', '7', '801', '5', '2', '3', '1', '1', '', '', '220', '2010-11-23', '750000');
+INSERT INTO tbl_imovel VALUES ('5', '1', '3', '1', '2', 'SCS 706 bl. E apart 232', '424242', 'Asa sul', '7', '801', '5', '2', '3', '1', '1', '', '', '220', '2010-11-23', '750000');
 INSERT INTO tbl_imovel VALUES ('6', '1', '2', '2', '1', 'SCS 706 bl. E apart 232', '23232323', 'Asa sul', '7', '801', '2', '3', '5', '6', '7', '', '', '242', '2010-11-23', null);
 INSERT INTO tbl_imovel VALUES ('8', '1', '1', '3', '2', 'SQN 3 conj b lote 8', '232342', 'Taguatinga', '7', '801', '2', '3', '4', '1', '3', '', '', '2323', '2010-11-24', null);
 INSERT INTO tbl_imovel VALUES ('9', '1', '1', '2', '1', 'SCLS 404 Bloco D AP 101', '2424242', 'Asa sul', '7', '801', '7', '6', '5', '4', '2', '', '', '4242', '2010-11-24', '2000');
+INSERT INTO tbl_imovel VALUES ('10', '1', '1', '1', '1', 'SQN 202 Conj G Apt 20', '7203234', 'Asa norte', '7', '801', '3', '2', '1', '1', '1', '', '', '220', '2010-11-30', '1200');
 
 -- ----------------------------
 -- Table structure for `tbl_orgaoemissor`
@@ -6040,7 +6042,7 @@ CREATE TABLE `tbl_transconcluidas` (
 -- ----------------------------
 -- Records of tbl_transconcluidas
 -- ----------------------------
-INSERT INTO tbl_transconcluidas VALUES ('3', '0', '0', '3', '0', '0');
+INSERT INTO tbl_transconcluidas VALUES ('2', '1', '0', '2', '1', '0');
 
 -- ----------------------------
 -- Table structure for `tbl_venda`
