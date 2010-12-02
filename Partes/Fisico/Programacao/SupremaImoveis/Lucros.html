@@ -26,16 +26,49 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </head>
 <body>
 <p>{Header}</p>
+<p>&nbsp; 
+<!-- BEGIN Report Novo -->
+<h2>Novo </h2>
 <p>
-<!-- BEGIN FlashChart FlashChart1 -->
-<object title="{Title}" tabindex="1" accesskey="q" height="{Height}" width="{Width}" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
-  <param name="movie" value="{Src}" />
-  <param name="quality" value="high" />
-  <param name="wmode" value="transparent" />
-  <param name="scale" value="exactfit" />
-  <embed src="{Src}" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="{Width}" height="{Height}" scale="exactfit" wmode="transparent"></embed>
+<table>
+  <!-- BEGIN Section Report_Header --><!-- END Section Report_Header -->
+  <!-- BEGIN Section Page_Header -->
+  <tr>
+    <th scope="col">Label1</th>
  
-</object>
-<!-- END FlashChart FlashChart1 --></p>
+    <th scope="col">Label2</th>
+ 
+    <th scope="col">Label3</th>
+ 
+    <th scope="col">Label4</th>
+  </tr>
+ <!-- END Section Page_Header -->
+  <!-- BEGIN Section Page_Footer -->
+  <tr>
+    <td>{Report_CurrentDate}</td> 
+    <td style="TEXT-ALIGN: right" colspan="3">Pagina {Report_CurrentPage} de {Report_TotalPages}</td>
+  </tr>
+ <!-- END Section Page_Footer -->
+  <!-- BEGIN Section Detail -->
+  <tr>
+    <td>{Label1} </td> 
+    <td>{Label2} </td> 
+    <td>{Label3} </td> 
+    <td>{Label4} </td>
+  </tr>
+ <!-- END Section Detail -->
+  <!-- BEGIN Section Report_Footer -->
+  <!-- BEGIN Panel NoRecords -->
+  <tr>
+    <td colspan="4">Sem registros</td>
+  </tr>
+ <!-- END Panel NoRecords --><!-- END Section Report_Footer -->
+</table>
+&nbsp;</p>
+<!-- END Report Novo --></p>
+<p><br>
+&nbsp;</p>
+<p><br>
+&nbsp;</p>
 </body>
 </html>

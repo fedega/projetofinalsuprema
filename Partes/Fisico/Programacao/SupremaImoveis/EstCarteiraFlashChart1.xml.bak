@@ -1,4 +1,4 @@
-<!--Flash Chart XML template @3-802DC106-->
+<!--Flash Chart XML template @3-3AEDF989-->
 <?xml version="1.0" encoding="utf-8" ?>
 <root>
 	<schema name="Autumn">
@@ -24,10 +24,8 @@
 	</objects>
 	<data>
 		<columns>
-			<column field="EmAndamentoAlu" name="EmAndamentoAlu"/><column field="alugado" name="alugado"/><column field="DisponivelAlu" name="DisponivelAlu"/><column field="CanceladoAlu" name="CanceladoAlu"/><column field="EmAndamentoVenda" name="EmAndamentoVenda"/><column field="Vendido" name="Vendido"/><column field="DisponivelVenda" name="DisponivelVenda"/><column field="CanceladoVenda" name="CanceladoVenda"/></columns>
-		<rows>
-			<!-- BEGIN Row --><row col1="{EmAndamentoAlu}" col2="{alugado}" col3="{DisponivelAlu}" col4="{CanceladoAlu}" col5="{EmAndamentoVenda}" col6="{Vendido}" col7="{DisponivelVenda}" col8="{CanceladoVenda}"/><!-- END Row --></rows>
-	</data>
+			<column field="EmAndamentoAlu" name="Aluguel Em Andamento"/><column field="alugado" name="Alugados"/><column field="DisponivelAlu" name="Disponivel Para Alugar"/><column field="CanceladoAlu" name="Aluguel Cancelado"/><column field="EmAndamentoVenda" name="Venda Em Andamento"/><column field="Vendido" name="Vendidos"/><column field="DisponivelVenda" name="Disponivel Para Venda"/><column field="CanceladoVenda" name="Venda Cancelada"/></columns>
+		<rows><!-- BEGIN Row --><row col1="{EmAndamentoAlu}" col2="{alugado}" col3="{DisponivelAlu}" col4="{CanceladoAlu}" col5="{EmAndamentoVenda}" col6="{Vendido}" col7="{DisponivelVenda}" col8="{CanceladoVenda}"/><!-- END Row --></rows></data>
 </root>
 
 

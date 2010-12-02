@@ -53,6 +53,18 @@
         public void beforeShow(Event e) {
 //End Header BeforeShow Method Head
 
+//Event BeforeShow Action Hide-Show Component @32-09D02FBB
+        String urlViewMode_32_1 = com.codecharge.util.Utils.convertToString(e.getPage().getHttpGetParameter("ViewMode"));
+        String exprParam2_32_2 = com.codecharge.util.Utils.convertToString("Print");
+        // if any of parameters is empty string when assign it null.
+        if (StringUtils.isEmpty(urlViewMode_32_1)) urlViewMode_32_1 = null;
+        if (StringUtils.isEmpty(exprParam2_32_2)) exprParam2_32_2 = null;
+        if ((urlViewMode_32_1 == null && exprParam2_32_2 == null) || 
+                (urlViewMode_32_1 != null && exprParam2_32_2 != null && urlViewMode_32_1.compareTo(exprParam2_32_2) == 0)) {
+            e.getPage().setVisible(false);
+        }
+//End Event BeforeShow Action Hide-Show Component
+
 //Header BeforeShow Method Tail @1-FCB6E20C
         }
 //End Header BeforeShow Method Tail

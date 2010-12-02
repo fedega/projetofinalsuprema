@@ -34,6 +34,17 @@
         public void beforeShow(Event e) {
 //End Navigator BeforeShow Method Head
 
+//Event BeforeShow Action Hide-Show Component @21-E9899BA9
+        Long TotalPages_21_1 = null;
+        TotalPages_21_1 = com.codecharge.util.Utils.convertToLong(e.getGrid().getTotalPages());
+        Long exprParam2_21_2 = null;
+        exprParam2_21_2 = com.codecharge.util.Utils.convertToLong(2);
+        if (
+                (TotalPages_21_1 != null && exprParam2_21_2 != null && TotalPages_21_1.compareTo(exprParam2_21_2) < 0)) {
+            e.getModel().setVisible(false);
+        }
+//End Event BeforeShow Action Hide-Show Component
+
 //Navigator BeforeShow Method Tail @20-FCB6E20C
         }
 //End Navigator BeforeShow Method Tail

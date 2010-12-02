@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-//DeployXML @0-6735F584
+//DeployXML @0-9BE743EA
 -->
 <project name="SupremaImoveis Application Deployer" default="deploy" basedir=".">
     <property name="server.home" value=""/>
@@ -9,7 +9,7 @@
         classpath="${server.home}\server\lib\catalina-ant.jar"/>
     <target name="deploy">
         <tomcatdeploy path="/${project.name}" url="http://localhost:8080/manager" update="true"
-            username="tomcat" password="tomcat" localWar="file:/D:/apache-tomcat-6.0.29/webapps/SupremaImoveis"/>
+            username="tomcat" password="tomcat" localWar="file:/C:/apache-tomcat-6.0.29/webapps/SupremaImoveis"/>
     </target>
 </project>
 <!--

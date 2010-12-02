@@ -20,7 +20,7 @@
 %>
 <%--End Page Body--%>
 
-<%--JSP Page Content @1-529AD10C--%>
+<%--JSP Page Content @1-E3DEEE82--%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -49,17 +49,50 @@ window.onload = bind_events; //Assign bind_events @1-19F7B649
 </head>
 <body>
 <p><jsp:include page="/Header.jsp" flush="true"/></p>
+<p>&nbsp; 
+<ccs:report name='Novo'>
+<h2>Novo </h2>
 <p>
-<ccs:flash_chart name='FlashChart1'>
-<object title="<ccs:flash_chart_property name="Title" />" tabindex="1" accesskey="q" height="<ccs:flash_chart_property name="Height" />" width="<ccs:flash_chart_property name="Width" />" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
-  <param name="movie" value="<ccs:flash_chart_property name="Src" />" />
-  <param name="quality" value="high" />
-  <param name="wmode" value="transparent" />
-  <param name="scale" value="exactfit" />
-  <embed src="<ccs:flash_chart_property name="Src" />" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="<ccs:flash_chart_property name="Width" />" height="<ccs:flash_chart_property name="Height" />" scale="exactfit" wmode="transparent"></embed>
+<table>
+  <ccs:report_repeater><ccs:section group='Report' type='Header'></ccs:section>
+  <ccs:section group='Page' type='Header'>
+  <tr>
+    <th scope="col">Label1</th>
  
-</object>
-</ccs:flash_chart></p>
+    <th scope="col">Label2</th>
+ 
+    <th scope="col">Label3</th>
+ 
+    <th scope="col">Label4</th>
+  </tr>
+ </ccs:section>
+  <ccs:section group='Page' type='Footer'>
+  <tr>
+    <td><ccs:control name='Report_CurrentDate'/></td> 
+    <td style="TEXT-ALIGN: right" colspan="3">Pagina <ccs:control name='Report_CurrentPage'/> de <ccs:control name='Report_TotalPages'/></td>
+  </tr>
+ </ccs:section>
+  <ccs:report_detail>
+  <tr>
+    <td><ccs:control name='Label1'/> </td> 
+    <td><ccs:control name='Label2'/> </td> 
+    <td><ccs:control name='Label3'/> </td> 
+    <td><ccs:control name='Label4'/> </td>
+  </tr>
+ </ccs:report_detail>
+  <ccs:section group='Report' type='Footer'>
+  <ccs:panel name='NoRecords'>
+  <tr>
+    <td colspan="4">Sem registros</td>
+  </tr>
+ </ccs:panel></ccs:section></ccs:report_repeater>
+</table>
+&nbsp;</p>
+</ccs:report></p>
+<p><br>
+&nbsp;</p>
+<p><br>
+&nbsp;</p>
 </body>
 </html>
 <%--End JSP Page Content--%>

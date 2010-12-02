@@ -38,14 +38,14 @@
 			<Attributes/>
 			<DataSeries>
 				<Field id="149" fieldName="EmAndamentoAlu" alias="Aluguel Em Andamento"/>
-<Field id="150" fieldName="alugado" alias="Alugados"/>
-<Field id="151" fieldName="DisponivelAlu" alias="Disponivel Para Alugar"/>
-<Field id="152" fieldName="CanceladoAlu" alias="Aluguel Cancelado"/>
-<Field id="153" fieldName="EmAndamentoVenda" alias="Venda Em Andamento"/>
-<Field id="154" fieldName="Vendido" alias="Vendidos"/>
-<Field id="155" fieldName="DisponivelVenda" alias="Disponivel Para Venda"/>
-<Field id="156" fieldName="CanceladoVenda" alias="Venda Cancelada"/>
-</DataSeries>
+				<Field id="150" fieldName="alugado" alias="Alugados"/>
+				<Field id="151" fieldName="DisponivelAlu" alias="Disponivel Para Alugar"/>
+				<Field id="152" fieldName="CanceladoAlu" alias="Aluguel Cancelado"/>
+				<Field id="153" fieldName="EmAndamentoVenda" alias="Venda Em Andamento"/>
+				<Field id="154" fieldName="Vendido" alias="Vendidos"/>
+				<Field id="155" fieldName="DisponivelVenda" alias="Disponivel Para Venda"/>
+				<Field id="156" fieldName="CanceladoVenda" alias="Venda Cancelada"/>
+			</DataSeries>
 			<TableParameters/>
 			<JoinTables>
 				<JoinTable id="36" tableName="`estatistica carteira`" posLeft="10" posTop="10" posWidth="160" posHeight="180"/>
@@ -54,24 +54,24 @@
 			<Fields/>
 			<AllFields>
 				<Field id="133" fieldName="EmAndamentoAlu"/>
-<Field id="135" fieldName="alugado"/>
-<Field id="137" fieldName="DisponivelAlu"/>
-<Field id="139" fieldName="CanceladoAlu"/>
-<Field id="141" fieldName="EmAndamentoVenda"/>
-<Field id="143" fieldName="Vendido"/>
-<Field id="145" fieldName="DisponivelVenda"/>
-<Field id="147" fieldName="CanceladoVenda"/>
-</AllFields>
+				<Field id="135" fieldName="alugado"/>
+				<Field id="137" fieldName="DisponivelAlu"/>
+				<Field id="139" fieldName="CanceladoAlu"/>
+				<Field id="141" fieldName="EmAndamentoVenda"/>
+				<Field id="143" fieldName="Vendido"/>
+				<Field id="145" fieldName="DisponivelVenda"/>
+				<Field id="147" fieldName="CanceladoVenda"/>
+			</AllFields>
 			<SelectedFields>
 				<Field id="134" tableName="`estatistica carteira`" fieldName="EmAndamentoAlu" isExpression="False"/>
-<Field id="136" tableName="`estatistica carteira`" fieldName="alugado" isExpression="False"/>
-<Field id="138" tableName="`estatistica carteira`" fieldName="DisponivelAlu" isExpression="False"/>
-<Field id="140" tableName="`estatistica carteira`" fieldName="CanceladoAlu" isExpression="False"/>
-<Field id="142" tableName="`estatistica carteira`" fieldName="EmAndamentoVenda" isExpression="False"/>
-<Field id="144" tableName="`estatistica carteira`" fieldName="Vendido" isExpression="False"/>
-<Field id="146" tableName="`estatistica carteira`" fieldName="DisponivelVenda" isExpression="False"/>
-<Field id="148" tableName="`estatistica carteira`" fieldName="CanceladoVenda" isExpression="False"/>
-</SelectedFields>
+				<Field id="136" tableName="`estatistica carteira`" fieldName="alugado" isExpression="False"/>
+				<Field id="138" tableName="`estatistica carteira`" fieldName="DisponivelAlu" isExpression="False"/>
+				<Field id="140" tableName="`estatistica carteira`" fieldName="CanceladoAlu" isExpression="False"/>
+				<Field id="142" tableName="`estatistica carteira`" fieldName="EmAndamentoVenda" isExpression="False"/>
+				<Field id="144" tableName="`estatistica carteira`" fieldName="Vendido" isExpression="False"/>
+				<Field id="146" tableName="`estatistica carteira`" fieldName="DisponivelVenda" isExpression="False"/>
+				<Field id="148" tableName="`estatistica carteira`" fieldName="CanceladoVenda" isExpression="False"/>
+			</SelectedFields>
 			<SPParameters/>
 			<SQLParameters/>
 			<SecurityGroups/>

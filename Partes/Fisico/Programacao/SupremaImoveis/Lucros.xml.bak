@@ -6,10 +6,55 @@
     <Include name="Header"/>
 <!--End Page componets-->
 
-<!--FlashChart FlashChart1 model @4-7F2EDC4C-->
-    <FlashChart name="FlashChart1" restricted="False" title="Chart Title" width="400" height="300" src="FlashChart.swf?XMLDataFile=%3FcallbackControl%3DFlashChart1" >
-    </FlashChart>
-<!--End FlashChart FlashChart1 model-->
+<!--Report Novo model @3-7DAE07DE-->
+    <Report name="Novo" connection="" restricted="False" allowRead="True" 
+            recordsPerWebPage="40" recordsPerPhysicalPage="50" viewMode="Web" enablePrintMode="False" visible="True">
+        <Group name="Report" headerVisible="True" footerVisible="True" headerHeight="0" footerHeight="0">
+            <Section name="Report_Header">
+            </Section>
+            <Section name="Report_Footer">
+                <Panel name="NoRecords" visible="True">
+                </Panel>
+            </Section>
+        </Group>
+        <Group name="Page" headerVisible="True" footerVisible="True" headerHeight="1" footerHeight="1">
+            <Section name="Page_Header">
+            </Section>
+            <Section name="Page_Footer">
+                <ReportLabel name="Report_CurrentDate" dataType="Date"
+                        controlSourceType="DataSource" controlSource=""
+                        function="" emptyValue="" hideDuplicates="False" resetAt="" percentOf=""
+                        isHtml="False" format="ShortDate" dbFormat=""/>
+                <ReportLabel name="Report_CurrentPage" dataType="Integer"
+                        controlSourceType="DataSource" controlSource=""
+                        function="" emptyValue="" hideDuplicates="False" resetAt="" percentOf=""
+                        isHtml="False" format="" dbFormat=""/>
+                <ReportLabel name="Report_TotalPages" dataType="Integer"
+                        controlSourceType="DataSource" controlSource=""
+                        function="" emptyValue="" hideDuplicates="False" resetAt="" percentOf=""
+                        isHtml="False" format="" dbFormat=""/>
+            </Section>
+        </Group>
+        <Detail visible="True" height="1">
+            <ReportLabel name="Label1" dataType="Text"
+                    controlSourceType="DataSource" controlSource=""
+                    function="" emptyValue="" hideDuplicates="False" resetAt="" percentOf=""
+                    isHtml="False" format="" dbFormat=""/>
+            <ReportLabel name="Label2" dataType="Text"
+                    controlSourceType="DataSource" controlSource=""
+                    function="" emptyValue="" hideDuplicates="False" resetAt="" percentOf=""
+                    isHtml="False" format="" dbFormat=""/>
+            <ReportLabel name="Label3" dataType="Text"
+                    controlSourceType="DataSource" controlSource=""
+                    function="" emptyValue="" hideDuplicates="False" resetAt="" percentOf=""
+                    isHtml="False" format="" dbFormat=""/>
+            <ReportLabel name="Label4" dataType="Text"
+                    controlSourceType="DataSource" controlSource=""
+                    function="" emptyValue="" hideDuplicates="False" resetAt="" percentOf=""
+                    isHtml="False" format="" dbFormat=""/>
+        </Detail>
+    </Report>
+<!--End Report Novo model-->
 
 <!--Page model tail @1-2BAFA7FA-->
 </Page>

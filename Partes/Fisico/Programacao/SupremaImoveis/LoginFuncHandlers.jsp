@@ -29,6 +29,27 @@
         public void onClick(Event e) {
 //End Button_DoLogin OnClick Method Head
 
+//Event OnClick Action Login @4-B92A5401
+{
+com.codecharge.util.Authenticator auth = com.codecharge.util.AuthenticatorFactory.getAuthenticator( e.getPage().getRequest() );
+auth.setRequest( e.getPage().getRequest() );
+auth.setResponse( e.getPage().getResponse() );
+auth.invalidate();
+if ( auth.authenticate( e.getComponent().getControl("login").getFormattedValue(), e.getComponent().getControl("password").getFormattedValue() ) ) {
+String retLink = e.getPage().getHttpGetParams().getParameter("ret_link");
+if (retLink != null) e.getPage().setRedirectString( retLink );
+if (e.getComponent().hasChild("autoLogin") && !com.codecharge.util.StringUtils.isEmpty(e.getComponent().getControl("autoLogin").getFormattedValue() ) ) {
+com.codecharge.util.Utils.setAutoLoginCookies( e.getPage(), e.getComponent().getControl("login").getFormattedValue(), e.getComponent().getControl("password").getFormattedValue() );
+}
+} else {
+com.codecharge.util.Utils.clearAutoLoginCookies(e.getPage());
+e.getParent().addError(e.getPage().getResourceString("CCS_LoginError"));
+e.getPage().setRedirectString( null );
+e.getComponent().getControl("password").setFormattedValue("");
+}
+}
+//End Event OnClick Action Login
+
 //Button_DoLogin OnClick Method Tail @3-FCB6E20C
         }
 //End Button_DoLogin OnClick Method Tail

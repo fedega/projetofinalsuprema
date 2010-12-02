@@ -1,0 +1,16 @@
+<!--Page model head @1-68B50A29-->
+<Page name="LocadorPag" restricted="False" included="False" accessDeniedPage="LoginFunc.jsp" convertRule="Absolute" onlySslAccess="False">
+<!--End Page model head-->
+
+<!--Grid AcompanhamentodePendencias model @2-73DEEB99-->
+    <Grid name="AcompanhamentodePendencias" connection="" restricted="False" fetchSize="20" allowRead="True" 
+            fetchSizeLimit="" useCount="False" visible="True">
+        <Row>
+        </Row>
+    </Grid>
+<!--End Grid AcompanhamentodePendencias model-->
+
+<!--Page model tail @1-2BAFA7FA-->
+</Page>
+<!--End Page model tail-->
+

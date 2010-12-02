@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!--
-//BuildXML @0-59B518B2
+//BuildXML @0-9020B50D
 -->
 <project name="SupremaImoveis" default="build" basedir=".">
 
   <target name="init">
     <property name="cp"
-                  value="D:\servlet2.5-jsp2.1-api.jar;"/>
+                  value="C:\apache-tomcat-6.0.29\lib\servlet2.5-jsp2.1-api.jar;"/>
     <property name="deployment.dir"
-                  value="D:\apache-tomcat-6.0.29\webapps\SupremaImoveis"/>
+                  value="C:\apache-tomcat-6.0.29\webapps\SupremaImoveis"/>
     <property name="project.name"
                   value="SupremaImoveis"/>
     <property name="encoding"
